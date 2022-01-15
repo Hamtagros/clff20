@@ -2,7 +2,7 @@
   "name": "clff20",
   "title": "Clone of pathfinder for ffd20",
   "description": "Clone of pathfinder for ffd20",
-  "version": "0.2.6",
+  "version": "0.2.5",
   "author": "Hamtagros",
   "authors": [
     {
@@ -141,10 +141,10 @@
   "primaryTokenAttribute": "attributes.hp",
   "secondaryTokenAttribute": "attributes.mp",
   "minimumCoreVersion": "9.236",
-  "compatibleCoreVersion": "9.238",
+  "compatibleCoreVersion": "9.242",
   "bugs": "https://github.com/Hamtagros/clff20/-/issues",
   "allowBugReporter": true,
   "url": "https://github.com/Hamtagros/clff20",
-  "manifest": "https://github.com/Hamtagros/clff20/-/raw/latest/system.json",
+  "manifest": "https://raw.githubusercontent.com/Hamtagros/clff20/master/system.json",
   "download": "https://github.com/Hamtagros/clff20/archive/refs/heads/master.zip"
 }
