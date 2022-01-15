@@ -6,7 +6,7 @@
 
     <div class="flexrow header-details">
       <h1 class="charname">
-        <input name="name" type="text" value="{{item.name}}" placeholder="{{localize "PF1.ItemName"}}"/>
+        <input name="name" type="text" value="{{item.name}}" placeholder="{{localize "FFD20.ItemName"}}"/>
       </h1>
 
       <ul class="summary">
@@ -15,7 +15,7 @@
         </li>
         <li>
           <label>
-            <input type="checkbox" name="data.disabled" {{checked data.disabled}}> {{localize "PF1.Disabled"}}
+            <input type="checkbox" name="data.disabled" {{checked data.disabled}}> {{localize "FFD20.Disabled"}}
           </label>
         </li>
       </ul>
@@ -24,27 +24,27 @@
 
   {{!-- Item Sheet Navigation --}}
   <nav class="sheet-navigation tabs" data-group="primary">
-    <a class="item active" data-tab="description">{{ localize "PF1.Description" }}</a>
-    <a class="item" data-tab="details">{{ localize "PF1.Details" }}</a>
-    <a class="item" data-tab="changes">{{ localize "PF1.Changes" }}</a>
-    <a class="item" data-tab="links">{{localize "PF1.Links"}}</a>
-    <a class="item" data-tab="advanced">{{localize "PF1.Advanced"}}</a>
+    <a class="item active" data-tab="description">{{ localize "FFD20.Description" }}</a>
+    <a class="item" data-tab="details">{{ localize "FFD20.Details" }}</a>
+    <a class="item" data-tab="changes">{{ localize "FFD20.Changes" }}</a>
+    <a class="item" data-tab="links">{{localize "FFD20.Links"}}</a>
+    <a class="item" data-tab="advanced">{{localize "FFD20.Advanced"}}</a>
   </nav>
 
   {{!-- Item Sheet Body --}}
   <section class="primary-body">
 
     {{!-- Description Tab --}}
-    {{> "systems/pf1/templates/items/parts/item-description.hbs"}}
+    {{> "systems/ffd20/templates/items/parts/item-description.hbs"}}
 
     {{!-- Details Tab --}}
     <div class="tab details" data-group="primary" data-tab="details">
 
-      <h3 class="form-header">{{localize "PF1.Details"}}</h3>
+      <h3 class="form-header">{{localize "FFD20.Details"}}</h3>
 
       {{!-- Feat Type --}}
       <div class="form-group select">
-        <label>{{localize "PF1.Type"}}</label>
+        <label>{{localize "FFD20.Type"}}</label>
         <select name="data.featType" value="{{data.featType}}">
           {{#select data.featType}}
           {{#each config.featTypes as |type a|}}
@@ -65,44 +65,44 @@
 
       {{!-- Proficiencies --}}
       <div class="form-group {{data.armorProf.cssClass}}">
-        <label for="data.weaponProf">{{localize "PF1.TraitWeaponProf"}}</label>
-        <ul class="traits-list tag-list">
+        <label for="data.weaponProf">{{localize "FFD20.TraitWeaponProf"}}</label>
+        <ul class="traits-list">
           {{#each data.weaponProf.selected as |v k|}}
             <li class="tag {{k}}">{{v}}</li>
           {{/each}}
         </ul>
-        <a class="trait-selector" data-options="weaponProficiencies"><i class="fas fa-edit"></i></a>
+        <a class="trait-selector" data-options="weaponProf"><i class="fas fa-edit"></i></a>
       </div>
 
       <div class="form-group {{data.armorProf.cssClass}}">
-        <label for="data.armorProf">{{localize "PF1.TraitArmorProf"}}</label>
-        <ul class="traits-list tag-list">
+        <label for="data.armorProf">{{localize "FFD20.TraitArmorProf"}}</label>
+        <ul class="traits-list">
           {{#each data.armorProf.selected as |v k|}}
             <li class="tag {{k}}">{{v}}</li>
           {{/each}}
         </ul>
-        <a class="trait-selector" data-options="armorProficiencies"><i class="fas fa-edit"></i></a>
+        <a class="trait-selector" data-options="armorProf"><i class="fas fa-edit"></i></a>
       </div>
 
       {{!-- Feat Tags --}}
       <div class="form-group stacked">
         <div class="data-selector">
-          <a class="entry-selector" for="data.tags" data-fields="{{localize "PF1.Tags"}}" data-dtypes="String"><i class="fas fa-edit"></i></a>
-          <label for="data.tags">{{localize "PF1.Tags"}}</label>
+          <a class="entry-selector" for="data.tags" data-fields="{{localize "FFD20.Tags"}}" data-dtypes="String"><i class="fas fa-edit"></i></a>
+          <label for="data.tags">{{localize "FFD20.Tags"}}</label>
         </div>
 
         {{#if isClassFeature}}
         <div class="data-selector">
-          <a class="entry-selector" for="data.associations.classes" data-fields="{{localize "PF1.ClassPlural"}}" data-dtypes="String"><i class="fas fa-edit"></i></a>
-          <label for="data.associations.classes">{{localize "PF1.ClassPlural"}}</label>
+          <a class="entry-selector" for="data.associations.classes" data-fields="{{localize "FFD20.ClassPlural"}}" data-dtypes="String"><i class="fas fa-edit"></i></a>
+          <label for="data.associations.classes">{{localize "FFD20.ClassPlural"}}</label>
         </div>
         {{/if}}
       </div>
 
       {{#if isTemplate}}
       <div class="form-group">
-        <label>{{localize "PF1.CROffset"}}</label>
-        <input type="text" name="data.crOffset" value="{{data.crOffset}}" placeholder="{{localize "PF1.Formula"}}" />
+        <label>{{localize "FFD20.CROffset"}}</label>
+        <input type="text" name="data.crOffset" value="{{data.crOffset}}" placeholder="{{localize "FFD20.Formula"}}" />
       </div>
       {{/if}}
 
@@ -110,49 +110,49 @@
         {{#if owner}}
         {{#unless isTemplate}}
         <label class="checkbox">
-          <input type="checkbox" name="data.showInQuickbar" {{checked data.showInQuickbar}}/> {{localize "PF1.ShowInQuickbar"}}
+          <input type="checkbox" name="data.showInQuickbar" {{checked data.showInQuickbar}}/> {{localize "FFD20.ShowInQuickbar"}}
         </label>
         {{/unless}}
         {{/if}}
 
         <label class="checkbox">
-          <input type="checkbox" name="data.nonlethal" {{checked data.nonlethal}}/> {{localize "PF1.Nonlethal"}}
+          <input type="checkbox" name="data.nonlethal" {{checked data.nonlethal}}/> {{localize "FFD20.Nonlethal"}}
         </label>
       </div>
 
       {{!-- Activation --}}
-      <h3 class="form-header">{{localize "PF1.FeatureUsage"}}</h3>
+      <h3 class="form-header">{{localize "FFD20.FeatureUsage"}}</h3>
 
       {{!-- Item Activation Template --}}
-      {{> "systems/pf1/templates/items/parts/item-activation.hbs"}}
+      {{> "systems/ffd20/templates/items/parts/item-activation.hbs"}}
 
       {{!-- Action --}}
-      <h3 class="form-header">{{localize "PF1.Attack"}}</h3>
+      <h3 class="form-header">{{localize "FFD20.Attack"}}</h3>
 
       {{!-- Item Action Template --}}
-      {{> "systems/pf1/templates/items/parts/item-action.hbs"}}
+      {{> "systems/ffd20/templates/items/parts/item-action.hbs"}}
 
       {{!-- Measure Template --}}
-      <h3 class="form-header">{{localize "PF1.MeasureTemplate"}}</h3>
+      <h3 class="form-header">{{localize "FFD20.MeasureTemplate"}}</h3>
 
       {{!-- Item Measure Template --}}
-      {{> "systems/pf1/templates/items/parts/item-template.hbs"}}
+      {{> "systems/ffd20/templates/items/parts/item-template.hbs"}}
 
       {{!-- Advanced Tag --}}
-      {{> "systems/pf1/templates/items/parts/item-tag.hbs"}}
+      {{> "systems/ffd20/templates/items/parts/item-tag.hbs"}}
     </div>
 
     {{!-- Changes Tab --}}
     <div class="tab flexcol" data-group="primary" data-tab="changes">
-      {{~> "systems/pf1/templates/items/parts/item-changes.hbs"}}
+      {{> "systems/ffd20/templates/items/parts/item-changes.hbs"}}
     </div>
 
     <div class="tab flexcol" data-group="primary" data-tab="links">
-      {{> "systems/pf1/templates/items/parts/item-links.hbs"}}
+      {{> "systems/ffd20/templates/items/parts/item-links.hbs"}}
     </div>
 
     <div class="tab flexcol" data-group="primary" data-tab="advanced">
-      {{> "systems/pf1/templates/items/parts/item-advanced.hbs"}}
+      {{> "systems/ffd20/templates/items/parts/item-advanced.hbs"}}
     </div>
   </section>
 </form>

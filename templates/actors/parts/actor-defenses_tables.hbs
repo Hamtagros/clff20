@@ -9,13 +9,11 @@
                 @shield.type : {{../rollData.shield.type}}
 
                 {{#if ac.sourceDetails.length}}
-                <br/><br/>{{localize "PF1.FromSources"}}:<br/>
+                <br/><br/>{{localize "FFD20.FromSources"}}:<br/>
                 {{#each ac.sourceDetails as |src|}}
                 {{src.name}}: {{src.value}}<br/>
                 {{/each}}
                 {{/if}}
-
-                {{> "systems/pf1/templates/actors/parts/actor-contextNotes.hbs" target="misc.ac"}}
                 </div>
 
                 {{ac.label}}
@@ -26,30 +24,28 @@
                 @attributes.cmd.total : {{data.attributes.cmd.total}}
 
                 {{#if sourceDetails.data.attributes.cmd.total.length}}
-                <br/><br/>{{localize "PF1.FromSources"}}:<br/>
+                <br/><br/>{{localize "FFD20.FromSources"}}:<br/>
                 {{#each sourceDetails.data.attributes.cmd.total as |src|}}
                 {{src.name}}: {{src.value}}<br/>
                 {{/each}}
                 {{/if}}
-
-                {{> "systems/pf1/templates/actors/parts/actor-contextNotes.hbs" target="misc.cmd"}}
                 </div>
 
-                {{localize "PF1.CMDAbbr"}}
+                {{localize "FFD20.CMDAbbr"}}
             </th>
             <th class="tooltip">
                 <div class="tooltipcontent">
                 @attributes.cmd.flatFootedTotal : {{data.attributes.cmd.flatFootedTotal}}
 
                 {{#if sourceDetails.data.attributes.cmd.flatFootedTotal.length}}
-                <br/><br/>{{localize "PF1.FromSources"}}:<br/>
+                <br/><br/>{{localize "FFD20.FromSources"}}:<br/>
                 {{#each sourceDetails.data.attributes.cmd.flatFootedTotal as |src|}}
                 {{src.name}}: {{src.value}}<br/>
                 {{/each}}
                 {{/if}}
                 </div>
 
-                {{localize "PF1.CMDFFAbbr"}}
+                {{localize "FFD20.CMDFFAbbr"}}
             </th>
         </tr>
     </thead>
@@ -79,12 +75,11 @@
                 @attributes.savingThrows.{{id}}.total : {{savingThrow.total}}
 
                 {{#if savingThrow.sourceDetails.length}}
-                <br/><br/>{{localize "PF1.FromSources"}}:<br/>
+                <br/><br/>{{localize "FFD20.FromSources"}}:<br/>
                 {{#each savingThrow.sourceDetails as |src|}}
                 {{src.name}}: {{src.value}}<br/>
                 {{/each}}
                 {{/if}}
-                {{> "systems/pf1/templates/actors/parts/actor-contextNotes.hbs" target=(concat "savingThrow." id)}}
                 </div>
 
                 <a class="rollable"><i class="fas fa-dice"></i><span>{{savingThrow.label}}</span></a>
@@ -95,16 +90,14 @@
                 @attributes.sr.total : {{data.attributes.sr.total}}
 
                 {{#if sourceDetails.data.attributes.sr.total.length}}
-                  <br/><br/>{{localize "PF1.FromSources"}}:<br/>
+                  <br/><br/>{{localize "FFD20.FromSources"}}:<br/>
                   {{#each sourceDetails.data.attributes.sr.total as |src|}}
                     {{src.name}}: {{src.value}}<br/>
                   {{/each}}
                 {{/if}}
-
-                {{> "systems/pf1/templates/actors/parts/actor-contextNotes.hbs" target="misc.sr"}}
                 </div>
 
-                {{localize "PF1.SpellResistance"}}
+                {{localize "FFD20.SpellResistance"}}
             </th>
         </tr>
     </thead>

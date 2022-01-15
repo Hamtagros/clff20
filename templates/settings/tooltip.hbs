@@ -1,7 +1,7 @@
 <form autocomplete="off">
     {{!-- Disable Tooltips globally --}}
     <div class="form-group">
-        <label>{{localize "PF1.TooltipConfigDisable"}}</label>
+        <label>{{localize "FFD20.TooltipConfigDisable"}}</label>
         <div class="form-fields">
             <input type="checkbox" name="disable" data-dtype="Boolean" {{checked data.disable}}/>
         </div>
@@ -9,10 +9,10 @@
 
     {{!-- Anchor --}}
     <div class="flexrow">
-        <label>{{localize "PF1.TooltipConfigAnchor"}}</label>
+        <label>{{localize "FFD20.TooltipConfigAnchor"}}</label>
 
         <div class="form-group">
-            <label>{{localize "PF1.Horizontal"}}</label>
+            <label>{{localize "FFD20.Horizontal"}}</label>
 
             <div class="form-fields">
                 <input class="immediate-change" type="range" name="anchor.x" data-dtype="Number" value="{{data.anchor.x}}"
@@ -22,7 +22,7 @@
         </div>
 
         <div class="form-group">
-            <label>{{localize "PF1.Vertical"}}</label>
+            <label>{{localize "FFD20.Vertical"}}</label>
 
             <div class="form-fields">
                 <input class="immediate-change" type="range" name="anchor.y" data-dtype="Number" value="{{data.anchor.y}}"
@@ -34,10 +34,10 @@
 
     {{!-- Offset --}}
     <div class="flexrow">
-        <label>{{localize "PF1.TooltipConfigOffset"}}</label>
+        <label>{{localize "FFD20.TooltipConfigOffset"}}</label>
 
         <div class="form-group">
-            <label>{{localize "PF1.Horizontal"}}</label>
+            <label>{{localize "FFD20.Horizontal"}}</label>
 
             <div class="form-fields">
                 <input class="immediate-change" type="range" name="offset.x" data-dtype="Number" value="{{data.offset.x}}"
@@ -47,7 +47,7 @@
         </div>
 
         <div class="form-group">
-            <label>{{localize "PF1.Vertical"}}</label>
+            <label>{{localize "FFD20.Vertical"}}</label>
 
             <div class="form-fields">
                 <input class="immediate-change" type="range" name="offset.y" data-dtype="Number" value="{{data.offset.y}}"
@@ -59,14 +59,14 @@
 
     {{!-- Other Positioning Settings --}}
     <div class="form-group">
-        <label>{{localize "PF1.OnMouse"}}</label>
+        <label>{{localize "FFD20.OnMouse"}}</label>
         <div class="form-fields">
             <input type="checkbox" name="onMouse" data-dtype="Boolean" {{checked data.onMouse}}/>
         </div>
     </div>
 
     <div class="form-group">
-        <label>{{localize "PF1.TooltipConfigHidePortraits"}}</label>
+        <label>{{localize "FFD20.TooltipConfigHidePortraits"}}</label>
         <div class="form-fields">
             <input type="checkbox" name="portrait.hide" data-dtype="Boolean" {{checked data.portrait.hide}}/>
         </div>
@@ -74,10 +74,10 @@
 
     {{!-- Portrait Settings --}}
     <div class="form-group">
-        <label>{{localize "PF1.TooltipConfigMaxPortraitSize"}}</label>
+        <label>{{localize "FFD20.TooltipConfigMaxPortraitSize"}}</label>
 
         <div class="form-group">
-            <label>{{localize "PF1.Horizontal"}}</label>
+            <label>{{localize "FFD20.Horizontal"}}</label>
 
             <div class="form-fields">
                 <input class="immediate-change" type="range" name="portrait.maxSize.width" data-dtype="Number" value="{{data.portrait.maxSize.width}}"
@@ -87,7 +87,7 @@
         </div>
 
         <div class="form-group">
-            <label>{{localize "PF1.Vertical"}}</label>
+            <label>{{localize "FFD20.Vertical"}}</label>
 
             <div class="form-fields">
                 <input class="immediate-change" type="range" name="portrait.maxSize.height" data-dtype="Number" value="{{data.portrait.maxSize.height}}"
@@ -99,7 +99,7 @@
 
     {{!-- Hide without key press --}}
     <div class="form-group">
-        <label>{{localize "PF1.TooltipConfigHideWithoutKey" key=hideKey}}</label>
+        <label>{{localize "FFD20.TooltipConfigHideWithoutKey" key=hideKey}}</label>
 
         <div class="form-fields">
             <input type="checkbox" name="hideWithoutKey" data-dtype="Boolean" {{checked data.hideWithoutKey}}/>
@@ -107,7 +107,7 @@
     </div>
 
     <button class="world-settings" type="button">
-        <span class="fas fa-window-maximize"></span> {{localize "PF1.TooltipWorldConfigLabel"}}
+        <span class="fas fa-window-maximize"></span> {{localize "FFD20.TooltipWorldConfigLabel"}}
     </button>
 
     <div class="form-group">

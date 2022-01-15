@@ -8,9 +8,7 @@
 # Node Modules
 node_modules/
 
-# Distribution directory
-dist/
-
 # Misc
 /test-scripts
 /.eslintcache
+*.bak

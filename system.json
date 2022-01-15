@@ -6,6 +6,9 @@
   "author": "Hamtagros",
   "authors": [
     {
+      "name": "Ritsu Voices"
+    },
+    {
       "name": "Furyspark",
       "discord": "Furyspark#7513"
     },
@@ -22,181 +25,104 @@
   ],
   "templateVersion": 2,
   "scripts": [],
-  "esmodules": ["pf1.js"],
-  "styles": ["pf1.css"],
+  "esmodules": ["ffd20.js"],
+  "styles": ["ffd20.css"],
   "packs": [
     {
       "name": "classes",
-      "label": "Classes",
-      "system": "pf1",
+      "label": "Pathfinder Classes",
+      "system": "ffd20",
       "path": "./packs/classes.db",
-      "entity": "Item"
-    },
-    {
-      "name": "mythicpaths",
-      "label": "Mythic Paths",
-      "system": "pf1",
-      "path": "./packs/mythic-paths.db",
       "entity": "Item"
     },
     {
       "name": "commonbuffs",
       "label": "Common Buffs",
-      "system": "pf1",
+      "system": "ffd20",
       "path": "./packs/commonbuffs.db",
       "entity": "Item"
     },
     {
-      "name": "spells",
-      "label": "Spells",
-      "system": "pf1",
-      "path": "./packs/spells.db",
-      "entity": "Item"
-    },
-    {
       "name": "feats",
-      "label": "Feats",
-      "system": "pf1",
+      "label": "Pathfinder Feats",
+      "system": "ffd20",
       "path": "./packs/feats.db",
       "entity": "Item"
     },
     {
       "name": "items",
-      "label": "Items",
-      "system": "pf1",
+      "label": "Pathfinder Items",
+      "system": "ffd20",
       "path": "./packs/items.db",
       "entity": "Item"
     },
     {
       "name": "armors-and-shields",
-      "label": "Armor and Shields",
-      "system": "pf1",
+      "label": "Pathfinder Armor and Shields",
+      "system": "ffd20",
       "path": "./packs/armors-and-shields.db",
       "entity": "Item"
     },
     {
       "name": "weapons-and-ammo",
-      "label": "Weapons and Ammo",
-      "system": "pf1",
+      "label": "Pathfinder Weapons and Ammo",
+      "system": "ffd20",
       "path": "./packs/weapons-and-ammo.db",
       "entity": "Item"
     },
     {
       "name": "racialhd",
-      "label": "Racial HD",
-      "system": "pf1",
+      "label": "Pathfinder Racial HD",
+      "system": "ffd20",
       "path": "./packs/racial-hd.db",
       "entity": "Item"
     },
     {
-      "name": "races",
-      "label": "Races",
-      "system": "pf1",
-      "path": "./packs/races.db",
-      "entity": "Item"
-    },
-    {
       "name": "class-abilities",
-      "label": "Class Abilities",
-      "system": "pf1",
+      "label": "Pathfinder Class Abilities",
+      "system": "ffd20",
       "path": "./packs/class-abilities.db",
       "entity": "Item"
     },
     {
       "name": "monster-templates",
-      "label": "Monster Templates",
-      "system": "pf1",
+      "label": "Pathfinder Monster Templates",
+      "system": "ffd20",
       "path": "./packs/monster-templates.db",
       "entity": "Item"
     },
     {
       "name": "sample-macros",
       "label": "Sample Macros",
-      "system": "pf1",
+      "system": "ffd20",
       "path": "./packs/sample-macros.db",
       "entity": "Macro"
     },
     {
       "name": "roll-tables",
       "label": "Roll Tables",
-      "system": "pf1",
+      "system": "ffd20",
       "path": "./packs/roll-tables.db",
       "entity": "RollTable"
     },
     {
       "name": "ultimate-equipment",
-      "label": "Ultimate Equipment",
-      "system": "pf1",
+      "label": "Pathfinder Ultimate Equipment",
+      "system": "ffd20",
       "path": "./packs/ultimate-equipment.db",
       "entity": "RollTable"
     },
     {
-      "name": "bestiary-00",
-      "label": "Bestiary - CR 0-1",
-      "system": "pf1",
-      "path": "./packs/bestiary-00.db",
-      "entity": "Actor"
-    },
-    {
-      "name": "bestiary-02",
-      "label": "Bestiary - CR 2-3",
-      "system": "pf1",
-      "path": "./packs/bestiary-02.db",
-      "entity": "Actor"
-    },
-    {
-      "name": "bestiary-04",
-      "label": "Bestiary - CR 4-5",
-      "system": "pf1",
-      "path": "./packs/bestiary-04.db",
-      "entity": "Actor"
-    },
-    {
-      "name": "bestiary-06",
-      "label": "Bestiary - CR 6-7",
-      "system": "pf1",
-      "path": "./packs/bestiary-06.db",
-      "entity": "Actor"
-    },
-    {
-      "name": "bestiary-08",
-      "label": "Bestiary - CR 8-10",
-      "system": "pf1",
-      "path": "./packs/bestiary-08.db",
-      "entity": "Actor"
-    },
-    {
-      "name": "bestiary-11",
-      "label": "Bestiary - CR 11-14",
-      "system": "pf1",
-      "path": "./packs/bestiary-11.db",
-      "entity": "Actor"
-    },
-    {
-      "name": "bestiary-15",
-      "label": "Bestiary - CR 15-19",
-      "system": "pf1",
-      "path": "./packs/bestiary-15.db",
-      "entity": "Actor"
-    },
-    {
-      "name": "bestiary-20",
-      "label": "Bestiary - CR 20+",
-      "system": "pf1",
-      "path": "./packs/bestiary-20.db",
-      "entity": "Actor"
-    },
-    {
       "name": "conditions",
       "label": "Conditions",
-      "system": "pf1",
+      "system": "ffd20",
       "path": "./packs/conditions.db",
       "entity": "JournalEntry"
     },
     {
       "name": "skills",
       "label": "Skills",
-      "system": "pf1",
+      "system": "ffd20",
       "path": "./packs/skills.db",
       "entity": "JournalEntry"
     }
@@ -206,31 +132,6 @@
       "lang": "en",
       "name": "English",
       "path": "lang/en.json"
-    },
-    {
-      "lang": "de",
-      "name": "Deutsch (German)",
-      "path": "lang/de.json"
-    },
-    {
-      "lang": "fr",
-      "name": "Française (French)",
-      "path": "lang/fr.json"
-    },
-    {
-      "lang": "it",
-      "name": "Italiano (Italian)",
-      "path": "lang/it.json"
-    },
-    {
-      "lang": "es",
-      "name": "Español (Spanish)",
-      "path": "lang/es.json"
-    },
-    {
-      "lang": "cn",
-      "name": "Chinese",
-      "path": "lang/cn.json"
     }
   ],
   "socket": true,
@@ -238,7 +139,7 @@
   "gridDistance": 5,
   "gridUnits": "ft",
   "primaryTokenAttribute": "attributes.hp",
-  "secondaryTokenAttribute": null,
+  "secondaryTokenAttribute": "attributes.mp",
   "minimumCoreVersion": "9.236",
   "compatibleCoreVersion": "9.238",
   "bugs": "https://github.com/Hamtagros/clff20/-/issues",

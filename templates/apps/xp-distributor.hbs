@@ -1,26 +1,26 @@
 <form autocomplete="off" onsubmit="event.preventDefault();">
   <div class="selectors">
     {{!-- PC selector --}}
-    <h2>{{localize "PF1.PCs"}}</h2>
+    <h2>{{localize "FFD20.PCs"}}</h2>
     <div class="character-selector">
-      {{#each actors.characters as |actor|}}
-        <div class="actor{{#if actor.toggled}} toggled{{/if}}" data-id="{{actor.id}}">
-          <img class="portrait" src="{{actor.actor.img}}">
-          <span class="name">{{actor.actor.name}}</span>
-          <input type="checkbox" {{checked actor.toggled}}/>
+      {{#each combatants.characters as |combatant|}}
+        <div class="actor{{#if combatant.toggled}} toggled{{/if}}" data-id="{{combatant.id}}">
+          <img class="portrait" src="{{combatant.actorData.img}}">
+          <span class="name">{{combatant.actorData.name}}</span>
+          <input type="checkbox" {{checked combatant.toggled}}/>
         </div>
       {{/each}}
     </div>
 
     {{!-- NPC selector --}}
-    <h2>{{localize "PF1.NPCs"}}</h2>
+    <h2>{{localize "FFD20.NPCs"}}</h2>
     <div class="npc-selector">
-      {{#each actors.npcs as |actor|}}
-        <div class="actor{{#if actor.toggled}} toggled{{/if}}" data-id="{{actor.id}}">
-          <img class="portrait" src="{{actor.actor.img}}">
-          <span class="name">{{actor.actor.name}}</span>
-          <span class="xp">{{actor.xpString}} XP</span>
-          <input type="checkbox" {{checked actor.toggled}}/>
+      {{#each combatants.npcs as |combatant|}}
+        <div class="actor{{#if combatant.toggled}} toggled{{/if}}" data-id="{{combatant.id}}">
+          <img class="portrait" src="{{combatant.actorData.img}}">
+          <span class="name">{{combatant.actorData.name}}</span>
+          <span class="xp">{{combatant.xpString}} XP</span>
+          <input type="checkbox" {{checked combatant.toggled}}/>
         </div>
       {{/each}}
     </div>
@@ -28,10 +28,10 @@
 
   <div class="footer">
     {{!-- Options --}}
-    <h2>{{localize "PF1.Options"}}</h2>
+    <h2>{{localize "FFD20.Options"}}</h2>
     <div class="options flexcol">
       <div class="bonus-xp form-group">
-        <label>{{localize "PF1.Application.XPDistributor.Options.BonusExperience"}}
+        <label>{{localize "FFD20.Application.XPDistributor.Options.BonusExperience"}}
           <input class="form-fields" type="number" value="{{bonusXP}}" />
         </label>
       </div>
@@ -42,7 +42,7 @@
       {{!-- Split XP --}}
       <div class="property xp-split">
         <strong>
-          <i class="fas fa-people-arrows"></i> {{localize "PF1.Application.XPDistributor.SplitExperience"}}
+          <i class="fas fa-people-arrows"></i> {{localize "FFD20.Application.XPDistributor.SplitExperience"}}
         </strong>
         <strong class="value">{{labels.xp.split}}</strong>
       </div>
@@ -50,7 +50,7 @@
       {{!-- Total XP --}}
       <div class="property xp-total">
         <strong>
-          <i class="fas fa-star"></i> {{localize "PF1.Application.XPDistributor.TotalExperience"}}
+          <i class="fas fa-star"></i> {{localize "FFD20.Application.XPDistributor.TotalExperience"}}
         </strong>
         <strong class="value">{{labels.xp.total}}</strong>
       </div>
@@ -59,15 +59,15 @@
     {{!-- Buttons --}}
     <div class="flexrow">
       <button type="button" name="split-evenly">
-        <i class="fas fa-people-arrows"></i> {{localize "PF1.Application.XPDistributor.SplitEvenly"}}
+        <i class="fas fa-people-arrows"></i> {{localize "FFD20.Application.XPDistributor.SplitEvenly"}}
       </button>
 
       <button type="button" name="give-to-all">
-        <i class="fas fa-star"></i> {{localize "PF1.Application.XPDistributor.GiveToAll"}}
+        <i class="fas fa-star"></i> {{localize "FFD20.Application.XPDistributor.GiveToAll"}}
       </button>
 
       <button type="button" name="cancel">
-        {{localize "PF1.Cancel"}}
+        {{localize "FFD20.Cancel"}}
       </button>
     </div>
   </div>

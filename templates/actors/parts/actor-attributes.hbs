@@ -3,12 +3,12 @@
     <table class="ability-table">
         <thead>
             <tr>
-                <th>{{localize "PF1.Ability"}}</th>
-                <th>{{localize "PF1.Total"}}</th>
-                <th>{{localize "PF1.Modifier"}}</th>
-                <th>{{localize "PF1.Damage"}}</th>
-                <th>{{localize "PF1.Drain"}}</th>
-                <th>{{localize "PF1.Penalty"}}</th>
+                <th>{{localize "FFD20.Ability"}}</th>
+                <th>{{localize "FFD20.Total"}}</th>
+                <th>{{localize "FFD20.Modifier"}}</th>
+                <th>{{localize "FFD20.Damage"}}</th>
+                <th>{{localize "FFD20.Drain"}}</th>
+                <th>{{localize "FFD20.Penalty"}}</th>
             </tr>
         </thead>
 
@@ -28,18 +28,16 @@
                         @abilities.{{id}}.baseMod : {{ability.baseMod}}<br/>
 
                         {{#if ability.sourceDetails.length}}
-                        <br/>{{localize "PF1.FromSources"}} ({{localize "PF1.AbilityScore"}}):<br/>
+                        <br/>{{localize "FFD20.FromSources"}} ({{localize "FFD20.AbilityScore"}}):<br/>
                         {{#each ability.sourceDetails as |src|}}{{src.name}}: {{src.value}}<br/>{{/each}}
                         {{/if}}
 
                         {{#with (lookup ../sourceDetails.data.abilities id)}}
                         {{#if mod.length}}
-                        <br/>{{localize "PF1.FromSources"}} ({{localize "PF1.Modifier"}}):<br/>
+                        <br/>{{localize "FFD20.FromSources"}} ({{localize "FFD20.Modifier"}}):<br/>
                         {{#each mod as |src|}}{{src.name}}: {{src.value}}<br/>{{/each}}
                         {{/if}}
                         {{/with}}
-
-                        {{> "systems/pf1/templates/actors/parts/actor-contextNotes.hbs" target=(concat "abilityChecks." id)}}
                     </span>
 
                     <a class="ability-name rollable">
@@ -78,42 +76,24 @@
     <table>
         <thead>
             <th class="tooltip">
-                {{localize "PF1.ACP"}}
+                {{localize "FFD20.ACP"}}
                 <div class="tooltipcontent">
                     @attributes.acp.total : {{data.attributes.acp.total}}
 
                     {{#if sourceDetails.data.attributes.acp.total.length}}
-                    <br/><br/>{{localize "PF1.FromSources"}}:<br/>
+                    <br/><br/>{{localize "FFD20.FromSources"}}:<br/>
                     {{#each sourceDetails.data.attributes.acp.total as |src|}}{{src.name}}: {{src.value}}<br/>{{/each}}
-                    {{/if}}
-
-                    {{#if sourceDetails.data.attributes.acp.armorBonus.length}}
-                    <br/>{{localize "PF1.EquipTypeArmor"}}:<br/>
-                    {{#each sourceDetails.data.attributes.acp.armorBonus as |src|}}{{src.name}}: {{numberFormat src.value decimals=0 sign=true}}<br/>{{/each}}
-                    {{/if}}
-                    {{#if sourceDetails.data.attributes.acp.shieldBonus.length}}
-                    <br/>{{localize "PF1.EquipTypeShield"}}:<br/>
-                    {{#each sourceDetails.data.attributes.acp.shieldBonus as |src|}}{{src.name}}: {{numberFormat src.value decimals=0 sign=true}}<br/>{{/each}}
                     {{/if}}
                 </div>
             </th>
             <th class="tooltip">
-                {{localize "PF1.MaxDexShort"}}
+                {{localize "FFD20.MaxDexShort"}}
                 <div class="tooltipcontent">
                     @attributes.maxDexBonus : {{data.attributes.maxDexBonus}}
 
                     {{#if sourceDetails.data.attributes.maxDexBonus.length}}
-                    <br/><br/>{{localize "PF1.FromSources"}}:<br/>
+                    <br/><br/>{{localize "FFD20.FromSources"}}:<br/>
                     {{#each sourceDetails.data.attributes.maxDexBonus as |src|}}{{src.name}}: {{src.value}}<br/>{{/each}}
-                    {{/if}}
-
-                    {{#if sourceDetails.data.attributes.mDex.armorBonus.length}}
-                    <br/>{{localize "PF1.EquipTypeArmor"}}:<br/>
-                    {{#each sourceDetails.data.attributes.mDex.armorBonus as |src|}}{{src.name}}: {{numberFormat src.value decimals=0 sign=true}}<br/>{{/each}}
-                    {{/if}}
-                    {{#if sourceDetails.data.attributes.mDex.shieldBonus.length}}
-                    <br/>{{localize "PF1.EquipTypeShield"}}:<br/>
-                    {{#each sourceDetails.data.attributes.mDex.shieldBonus as |src|}}{{src.name}}: {{numberFormat src.value decimals=0 sign=true}}<br/>{{/each}}
                     {{/if}}
                 </div>
             </th>
@@ -127,4 +107,4 @@
 </div>
 
 {{!-- Traits --}}
-{{> "systems/pf1/templates/actors/parts/actor-traits.hbs"}}
+{{> "systems/ffd20/templates/actors/parts/actor-traits.hbs"}}

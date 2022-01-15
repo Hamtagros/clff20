@@ -1,8 +1,17 @@
-<div class="pf1 chat-card item-card" data-actor-id="{{actor._id}}" data-item-id="{{item._id}}" {{#if tokenUuid}}data-token-uuid="{{tokenUuid}}"{{/if}}>
-  {{~> "systems/pf1/templates/chat/parts/attack-roll-header.hbs"}}
+<div class="ffd20 chat-card item-card" data-actor-id="{{actor._id}}" data-item-id="{{item._id}}" {{#if tokenUuid}}data-token-uuid="{{tokenUuid}}"{{/if}}>
+  <header class="card-header flexrow">
+    <img src="{{item.img}}" title="{{item.name}}" width="36" height="36"/>
+    {{#if name}}<h3 class="item-name">{{name}}</h3>{{/if}}
+  </header>
 
-  {{#if targets}}
-  {{> "systems/pf1/templates/chat/parts/attack-roll-targets.hbs"}}
+  <div class="card-content">
+    {{{data.description.value}}}
+  </div>
+
+  {{#if range}}
+  <div class="card-range" data-range="{{range}}" {{#if rangeFormula}}title="{{rangeFormula}}"{{/if}}>
+    {{localize "FFD20.Range"}}: {{rangeLabel}}
+  </div>
   {{/if}}
 
   {{#each attacks as |atk|}}
@@ -15,7 +24,7 @@
           <th class="attack-flavor" {{#if atk.hasCritConfirm}}colspan="4"{{else}}colspan="2"{{/if}}>
             {{atk.attack.flavor}}
             {{#if atk.rollData.d20}}
-            <i class="fas fa-dice-d20" title="{{localize "PF1.CustomRollDesc"}}"></i>
+            <i class="fas fa-dice-d20" title="{{localize "FFD20.CustomRollDesc"}}"></i>
             {{/if}}
           </th>
         </tr>
@@ -29,7 +38,7 @@
         <tr>
           <th class="attack-damage" colspan="2">
             {{atk.damage.flavor}}
-            <a class="attack-damage total fake-inline-roll inline-result" title="{{localize "PF1.Total"}}">
+            <a class="attack-damage total fake-inline-roll inline-result" title="{{localize "FFD20.Total"}}">
               {{atk.damage.total}}
             </a>
           </th>
@@ -41,15 +50,15 @@
         {{#if atk.hasAttack}}
         <tr>
           <td {{#if atk.hasCritConfirm}}colspan="2"{{else}}colspan="4"{{/if}}>
-            <a class="inline-roll inline-dsn-hidden inline-result{{#if atk.attack.isNat20}} natural-20{{/if}}{{#if atk.attack.isCrit}} critical-threat success{{/if}}{{#if atk.attack.isFumble}} failure{{/if}}"
-            title="{{atk.attack.formula}}" data-roll="{{json-string atk.attack.roll}}">
+            <a class="inline-roll inline-dsn-hidden inline-result{{#if atk.attack.isCrit}} success{{/if}}{{#if atk.attack.isFumble}} failure{{/if}}"
+            title="{{atk.attack.formula}}" data-roll="{{atk.attack.rollJSON}}">
             <i class="fas fa-dice-d20"></i> {{atk.attack.total}}
             </a>
           </td>
           {{#if atk.hasCritConfirm}}
           <td colspan="2">
             <a class="inline-roll inline-dsn-hidden inline-result{{#if atk.critConfirm.isCrit}} success{{/if}}{{#if atk.critConfirm.isFumble}} failure{{/if}}"
-            title="{{atk.critConfirm.formula}}" data-roll="{{json-string atk.critConfirm.roll}}">
+            title="{{atk.critConfirm.formula}}" data-roll="{{atk.critConfirm.rollJSON}}">
             <i class="fas fa-dice-d20"></i> {{atk.critConfirm.total}}
             </a>
           </td>
@@ -60,14 +69,14 @@
         <tr>
           <th colspan="2">
             {{atk.damage.flavor}}
-            <a class="fake-inline-roll inline-dsn-hidden inline-result" title="{{localize "PF1.Total"}}">
+            <a class="fake-inline-roll inline-dsn-hidden inline-result" title="{{localize "FFD20.Total"}}">
               {{atk.damage.total}}
             </a>
           </th>
           {{#if atk.hasCritConfirm}}
           <th colspan="2">
             {{atk.critDamage.flavor}}
-            <a class="fake-inline-roll inline-dsn-hidden inline-result" title="{{localize "PF1.Total"}}">
+            <a class="fake-inline-roll inline-dsn-hidden inline-result" title="{{localize "FFD20.Total"}}">
               {{atk.critDamage.total}}
             </a>
           </th>
@@ -79,7 +88,7 @@
         <tr>
           {{#if dr.normal}}
           <td>
-            <a class="inline-roll inline-dsn-hidden inline-result" title="{{dr.normal.roll.formula}}" data-roll="{{json-string dr.normal.roll}}">
+            <a class="inline-roll inline-dsn-hidden inline-result" title="{{dr.normal.roll.formula}}" data-roll="{{dr.normal.roll.json}}">
               <i class="fas fa-dice-d20"></i> {{dr.normal.roll.total}}
             </a>
           </td>
@@ -91,7 +100,7 @@
           {{#if atk.hasCritConfirm}}
           {{#if dr.crit}}
           <td>
-            <a class="inline-roll inline-dsn-hidden inline-result" title="{{dr.crit.roll.formula}}" data-roll="{{json-string dr.crit.roll}}">
+            <a class="inline-roll inline-dsn-hidden inline-result" title="{{dr.crit.roll.formula}}" data-roll="{{dr.crit.roll.json}}">
               <i class="fas fa-dice-d20"></i> {{dr.crit.roll.total}}
             </a>
           </td>
@@ -112,7 +121,7 @@
         <tr>
           {{#if dr.normal}}
           <td>
-            <a class="inline-roll inline-dsn-hidden inline-result" title="{{dr.normal.roll.formula}}" data-roll="{{json-string dr.normal.roll}}">
+            <a class="inline-roll inline-dsn-hidden inline-result" title="{{dr.normal.roll.formula}}" data-roll="{{dr.normal.roll.json}}">
               <i class="fas fa-dice-d20"></i> {{dr.normal.roll.total}}
             </a>
           </td>
@@ -124,7 +133,7 @@
           {{#if atk.hasCritConfirm}}
           {{#if dr.crit}}
           <td>
-            <a class="inline-roll inline-dsn-hidden inline-result" title="{{dr.crit.roll.formula}}" data-roll="{{json-string dr.crit.roll}}">
+            <a class="inline-roll inline-dsn-hidden inline-result" title="{{dr.crit.roll.formula}}" data-roll="{{dr.crit.roll.json}}">
               <i class="fas fa-dice-d20"></i> {{dr.crit.roll.total}}
             </a>
           </td>
@@ -156,17 +165,13 @@
       </div>
       {{/each}}
       {{#if ../hasSave}}
-      <button data-action="save" data-dc="{{../save.dc}}" data-type="{{../save.type}}"
-        {{#if ../save.gmSensitiveLabel}} data-gm-sensitive-inner="{{../save.gmSensitiveLabel}}"{{/if}}
-        data-tags="{{item.tags}}">{{../save.label}}</button>
+      <button data-action="save" data-dc="{{../save.dc}}" data-type="{{../save.type}}" data-tags="{{item.tags}}">{{../save.label}}</button>
       {{/if}}
     </div>
     {{else}}
     <div class="card-button-group flexcol">
       {{#if ../hasSave}}
-      <button data-action="save" data-dc="{{../save.dc}}" data-type="{{../save.type}}"
-        {{#if ../save.gmSensitiveLabel}} data-gm-sensitive-inner="{{../save.gmSensitiveLabel}}"{{/if}}
-        data-tags="{{item.tags}}">{{../save.label}}</button>
+      <button data-action="save" data-dc="{{../save.dc}}" data-type="{{../save.type}}">{{../save.label}}</button>
       {{/if}}
     </div>
     {{/if}}
@@ -175,5 +180,46 @@
   </div>
   {{/each}}
 
-  {{~> "systems/pf1/templates/chat/parts/attack-roll-footer.hbs"}}
+  <footer class="card-footer">
+    {{#if hasExtraText}}
+      <div class="extra-text gm-sensitive">{{{extraText}}}</div>
+    {{/if}}
+
+    {{#if spellFailure}}
+      <div class="spell-failure">
+        <h3>{{localize "FFD20.ArcaneSpellFailure"}}</h3>
+        <div class="dice-roll">
+          <div class="dice-result">
+            <h4 class="dice-total spell-failure {{#unless spellFailureSuccess}}failure{{/unless}}">{{spellFailure}}</h4>
+          </div>
+        </div>
+      </div>
+    {{/if}}
+    {{#if (or concentrationCheck casterLevelCheck)}}
+    <div class='card-buttons spell-buttons flexrow'>
+      {{#if concentrationCheck}}
+      <div class="concentration">
+          <button data-action="concentration">{{localize "FFD20.ConcentrationCheck"}}</button>
+      </div>
+      {{/if}}
+      {{#if casterLevelCheck}}
+      <div class="caster-level-check">
+          <button data-action="caster-level-check">{{localize "FFD20.CasterLevelCheck"}}</button>
+      </div>
+      {{/if}}
+    </div>
+    {{/if}}
+    {{#if hasProperties}}
+      {{#each properties as |prop|}}
+        <div class="flexcol property-group gm-sensitive general-notes">
+          <label>{{prop.header}}</label>
+          <div class="flexrow">
+            {{#each prop.value as |v|}}
+              <span class="tag">{{{v}}}</span>
+            {{/each}}
+          </div>
+        </div>
+      {{/each}}
+    {{/if}}
+  </footer>
 </div>

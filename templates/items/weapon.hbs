@@ -5,7 +5,7 @@
     <img class="profile" src="{{item.img}}" title="{{item.name}}" data-edit="img" />
 
     <div class="header-details flexrow">
-      {{> "systems/pf1/templates/items/parts/item-name.hbs"}}
+      {{> "systems/ffd20/templates/items/parts/item-name.hbs"}}
 
       <ul class="summary">
         <li>
@@ -23,15 +23,14 @@
 
   {{!-- Item Sheet Navigation --}}
   <nav class="sheet-navigation tabs" data-group="primary">
-    <a class="item active" data-tab="description">{{ localize "PF1.Description" }}</a>
-    <a class="item" data-tab="details">{{ localize "PF1.Details" }}</a>
+    <a class="item active" data-tab="description">{{ localize "FFD20.Description" }}</a>
+    <a class="item" data-tab="details">{{ localize "FFD20.Details" }}</a>
     {{#unless showUnidentifiedData}}
-    <a class="item" data-tab="changes">{{ localize "PF1.Changes" }}</a>
+    <a class="item" data-tab="changes">{{ localize "FFD20.Changes" }}</a>
     {{/unless}}
-    <a class="item" data-tab="conditionals">{{localize "PF1.Conditionals"}}</a>
-    <a class="item" data-tab="links">{{localize "PF1.Links"}}</a>
+    <a class="item" data-tab="links">{{localize "FFD20.Links"}}</a>
     {{#unless showUnidentifiedData}}
-    <a class="item" data-tab="advanced">{{localize "PF1.Advanced"}}</a>
+    <a class="item" data-tab="advanced">{{localize "FFD20.Advanced"}}</a>
     {{/unless}}
   </nav>
 
@@ -39,28 +38,17 @@
   <section class="primary-body">
 
     {{!-- Description Tab --}}
-    {{> "systems/pf1/templates/items/parts/item-description.hbs"}}
+    {{> "systems/ffd20/templates/items/parts/item-description.hbs"}}
 
     {{!-- Details Tab --}}
     <div class="tab details" data-group="primary" data-tab="details">
-      {{#if owner}}
-      <label class="checkbox">
-        <input type="checkbox" name="data.showInQuickbar" {{checked data.showInQuickbar}}/> {{localize "PF1.ShowInQuickbar"}}
-      </label>
-      {{/if}}
-
-      {{> "systems/pf1/templates/items/parts/item-aura.hbs"}}
+      {{> "systems/ffd20/templates/items/parts/item-aura.hbs"}}
 
       <h3 class="form-header">Weapon Details</h3>
-      {{#if (and owner owned)}}
-      <div class="form-group">
-        <button type="button" name="create-attack">{{localize "PF1.CreateAttack"}}</button>
-      </div>
-      {{/if}}
 
       {{!-- Weapon Type --}}
       <div class="form-group">
-        <label>{{localize "PF1.Category"}}</label>
+        <label>{{localize "FFD20.Category"}}</label>
         <select name="data.weaponType">
           {{#select data.weaponType}}
           {{#each weaponCategories.types as |name type|}}
@@ -72,7 +60,7 @@
 
       {{!-- Weapon Subtype --}}
       <div class="form-group">
-        <label>{{localize "PF1.Type"}}</label>
+        <label>{{localize "FFD20.Type"}}</label>
         <select name="data.weaponSubtype">
           {{#select data.weaponSubtype}}
           {{#each weaponCategories.subTypes as |name type|}}
@@ -83,43 +71,31 @@
       </div>
 
       {{!-- Weapon Size --}}
-      {{> "systems/pf1/templates/items/parts/item-size.hbs"}}
-
-      {{!-- Weapon Hold Type --}}
-      <div class="form-group">
-        <label>{{localize "PF1.Held"}}</label>
-        <select name="data.held">
-          {{#select data.held}}
-          {{#each config.weaponHoldTypes as |name type|}}
-          <option value="{{type}}">{{name}}</option>
-          {{/each}}
-          {{/select}}
-        </select>
-      </div>
+      {{> "systems/ffd20/templates/items/parts/item-size.hbs"}}
 
       {{!-- Equipment Status --}}
       <div class="form-group stacked">
-        <label>{{localize "PF1.EquipmentStatus"}}</label>
+        <label>{{localize "FFD20.EquipmentStatus"}}</label>
         <label class="checkbox">
-          <input type="checkbox" name="data.equipped" {{checked data.equipped}}/> {{localize "PF1.Equipped"}}
+          <input type="checkbox" name="data.equipped" {{checked data.equipped}}/> {{localize "FFD20.Equipped"}}
         </label>
         {{#if isGM}}
         <label class="checkbox">
-          <input type="checkbox" name="data.identified" {{checked data.identified}}/> {{localize "PF1.Identified"}}
+          <input type="checkbox" name="data.identified" {{checked data.identified}}/> {{localize "FFD20.Identified"}}
         </label>
         {{/if}}
         <label class="checkbox">
-          <input type="checkbox" name="data.masterwork" {{checked data.masterwork}}/> {{localize "PF1.Masterwork"}}
+          <input type="checkbox" name="data.masterwork" {{checked data.masterwork}}/> {{localize "FFD20.Masterwork"}}
         </label>
         <label class="checkbox">
-          <input type="checkbox" name="data.broken" {{checked data.broken}}/> {{localize "PF1.Broken"}}
+          <input type="checkbox" name="data.broken" {{checked data.broken}}/> {{localize "FFD20.Broken"}}
         </label>
       </div>
 
       {{#unless showUnidentifiedData}}
       {{!-- Weapon Properties --}}
       <div class="form-group stacked weapon-properties">
-        <label>{{localize "PF1.WeaponProperties"}}</label>
+        <label>{{localize "FFD20.WeaponProperties"}}</label>
         {{#each config.weaponProperties as |name prop|}}
         <label class="checkbox">
           <input type="checkbox" name="data.properties.{{prop}}" {{checked (lookup ../data.properties prop)}}/> {{ name }}
@@ -127,52 +103,90 @@
         {{/each}}
       </div>
 
+      {{#if isRanged}}
       <div class="form-group">
-        <label>{{localize "PF1.EnhancementBonus"}}</label>
+        <label>{{localize "FFD20.Range"}}</label>
+        <div class="form-fields">
+          <input type="text" name="data.weaponData.range" value="{{data.weaponData.range}}" data-dtype="Number"/>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>{{localize "FFD20.MaximumRangeIncrements"}}</label>
+        <div class="form-fields">
+          <input type="text" name="data.weaponData.maxRangeIncrements" value="{{data.weaponData.maxRangeIncrements}}" data-dtype="Number"/>
+        </div>
+      </div>
+      {{/if}}
+
+      <div class="form-group">
+        <label>{{localize "FFD20.EnhancementBonus"}}</label>
         <div class="form-fields">
           <input type="text" name="data.enh" value="{{data.enh}}" data-dtype="Number" placeholder="0"/>
         </div>
       </div>
 
-      <h3 class="form-header">{{localize "PF1.AttackUsage"}}</h3>
+      {{!-- Weapon Bonus Attack Formula --}}
+      <div class="form-group">
+        <label>{{localize "FFD20.BonusAttackFormula"}}</label>
+        <div class="form-fields">
+          <input type="text" name="data.weaponData.attackFormula" value="{{data.weaponData.attackFormula}}" placeholder="{{localize "FFD20.BonusAttackFormula"}}"/>
+        </div>
+      </div>
 
-      {{!-- Item Activation Template --}}
-      {{> "systems/pf1/templates/items/parts/item-activation.hbs"}}
+      {{!-- Weapon Damage --}}
+      <div class="form-group">
+        <label>{{localize "FFD20.BaseWeaponDamage"}} ({{localize "FFD20.ActorSizeMedium"}})</label>
+        <div class="form-fields">
+          <input type="text" name="data.weaponData.damageRoll" value="{{data.weaponData.damageRoll}}" placeholder="{{localize "FFD20.DamageRoll"}}"/>
+          <input type="text" name="data.weaponData.damageType" value="{{data.weaponData.damageType}}" placeholder="{{localize "FFD20.DamageType"}}"/>
+        </div>
+      </div>
 
-      <h3 class="form-header">{{localize "PF1.AttackAction"}}</h3>
+      {{!-- Weapon Bonus Damage Formula --}}
+      <div class="form-group">
+        <label>{{localize "FFD20.BonusDamageFormula"}}</label>
+        <div class="form-fields">
+          <input type="text" name="data.weaponData.damageFormula" value="{{data.weaponData.damageFormula}}" placeholder="{{localize "FFD20.BonusDamageFormula"}}"/>
+        </div>
+      </div>
 
-      {{!-- Item Action Template --}}
-      {{> "systems/pf1/templates/items/parts/item-action.hbs"}}
+      {{!-- Weapon Critical Damage --}}
+      <div class="form-group">
+        <label>{{localize "FFD20.BaseWeaponCritical"}}</label>
+        <div class="form-fields">
+          <input type="text" name="data.weaponData.critRange" value="{{data.weaponData.critRange}}" placeholder="20"/>
+          <input type="text" name="data.weaponData.critMult" value="{{data.weaponData.critMult}}" placeholder="2"/>
+        </div>
+      </div>
 
-      <h3 class="form-header">{{localize "PF1.MeasureTemplate"}}</h3>
-
-      {{!-- Item Measure Template --}}
-      {{> "systems/pf1/templates/items/parts/item-template.hbs"}}
+      {{#if owner}}
+      {{#if owned}}
+      <div class="form-group">
+        <button type="button" name="create-attack">{{localize "FFD20.CreateAttack"}}</button>
+      </div>
+      {{/if}}
+      {{/if}}
 
       {{!-- Advanced Tag --}}
-      {{> "systems/pf1/templates/items/parts/item-tag.hbs"}}
+      {{> "systems/ffd20/templates/items/parts/item-tag.hbs"}}
       {{/unless}}
     </div>
 
     {{!-- Changes Tab --}}
     {{#unless showUnidentifiedData}}
     <div class="tab flexcol" data-group="primary" data-tab="changes">
-      {{~> "systems/pf1/templates/items/parts/item-changes.hbs"}}
+      {{> "systems/ffd20/templates/items/parts/item-changes.hbs"}}
     </div>
     {{/unless}}
 
-    {{!-- Conditionals Tab --}}
-    <div class="tab" data-group="primary" data-tab="conditionals">
-      {{> "systems/pf1/templates/items/parts/item-conditionals.hbs"}}
-    </div>
-
     <div class="tab flexcol" data-group="primary" data-tab="links">
-      {{> "systems/pf1/templates/items/parts/item-links.hbs"}}
+      {{> "systems/ffd20/templates/items/parts/item-links.hbs"}}
     </div>
 
     {{#unless showUnidentifiedData}}
     <div class="tab flexcol" data-group="primary" data-tab="advanced">
-      {{> "systems/pf1/templates/items/parts/item-advanced.hbs"}}
+      {{> "systems/ffd20/templates/items/parts/item-advanced.hbs"}}
     </div>
     {{/unless}}
   </section>
