@@ -19685,9 +19685,9 @@ Token.prototype.toggleEffect = async function (effect, { active, overlay = false
 /**
  * A specialized form used to select damage or condition types which apply to an Actor
  *
- * @type {BaseEntitySheet}
+ * @type {DocumentSheet}
  */
-class ActorTraitSelector extends BaseEntitySheet {
+class ActorTraitSelector extends DocumentSheet {
   static get defaultOptions() {
     const options = super.defaultOptions;
     options.classes = ["ffd20", "trait-selector"];
@@ -19807,7 +19807,7 @@ class ActorRestDialog extends DocumentSheet {
   }
 }
 
-class ActorSheetFlags extends BaseEntitySheet {
+class ActorSheetFlags extends DocumentSheet {
   static get defaultOptions() {
     const options = super.defaultOptions;
     return mergeObject(options, {

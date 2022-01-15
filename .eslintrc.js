@@ -39,7 +39,7 @@ module.exports = {
     VideoHelper: "readonly",
     Application: "readonly",
     FormApplication: "readonly",
-    BaseEntitySheet: "readonly",
+    DocumentSheet: "readonly",
     Localization: "readonly",
     Game: "readonly",
     Die: "readonly",
