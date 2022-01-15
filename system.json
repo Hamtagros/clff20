@@ -245,5 +245,5 @@
   "allowBugReporter": true,
   "url": "https://github.com/Hamtagros/clff20",
   "manifest": "https://github.com/Hamtagros/clff20/-/raw/latest/system.json",
-  "download": "https://github.com/Hamtagros/clff20/-/archive/master/clff20.zip"
+  "download": "https://github.com/Hamtagros/clff20/master/clff20.zip"
 }
