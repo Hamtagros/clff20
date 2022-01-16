@@ -3483,7 +3483,7 @@ class SemanticVersion {
 
 class ChatMessageFFD20 extends ChatMessage {
   get isRoll() {
-    return this.data.type === CONST.CHAT_MESSAGE_TYPES.ROLL || this.getFlag("ffd20", "noRollRender");
+    return this.data.type === CONST.CHAT_MESSAGE_TYPES.ROLL || this.getFlag("clff20", "noRollRender");
   }
 
   /**
