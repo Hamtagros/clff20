@@ -1,20 +1,20 @@
 <form class="{{cssClass}} flexcol" autocomplete="off">
 
-  {{#unless hasClasses}}<span class="warning">{{localize "FFD20.Info_MissingClass"}}</span>{{/unless}}
+  {{#unless hasClasses}}<span class="warning">{{localize "clff20.Info_MissingClass"}}</span>{{/unless}}
 
   {{!-- Character Sheet Navigation --}}
   <nav class="sheet-navigation tabs" data-group="primary">
-    <a class="item active" data-tab="summary">{{localize "FFD20.Summary"}}</a>
-    <a class="item" data-tab="attributes">{{ localize "FFD20.Attributes" }}</a>
-    <a class="item" data-tab="combat">{{ localize "FFD20.Combat" }}</a>
-    <a class="item" data-tab="inventory">{{ localize "FFD20.Inventory" }}</a>
-    <a class="item" data-tab="feats">{{ localize "FFD20.Features" }}</a>
-    <a class="item" data-tab="skills">{{ localize "FFD20.Skills" }}</a>
-    <a class="item" data-tab="buffs">{{ localize "FFD20.Buffs" }}</a>
-    {{#if usesAnySpellbook}}<a class="item" data-tab="spellbook">{{ localize "FFD20.Spells" }}</a>{{/if}}
-    <a class="item" data-tab="biography">{{ localize "FFD20.Biography" }}</a>
-    <a class="item" data-tab="notes">{{ localize "FFD20.Notes" }}</a>
-    <a class="item" data-tab="settings">{{ localize "FFD20.Settings" }}</a>
+    <a class="item active" data-tab="summary">{{localize "clff20.Summary"}}</a>
+    <a class="item" data-tab="attributes">{{ localize "clff20.Attributes" }}</a>
+    <a class="item" data-tab="combat">{{ localize "clff20.Combat" }}</a>
+    <a class="item" data-tab="inventory">{{ localize "clff20.Inventory" }}</a>
+    <a class="item" data-tab="feats">{{ localize "clff20.Features" }}</a>
+    <a class="item" data-tab="skills">{{ localize "clff20.Skills" }}</a>
+    <a class="item" data-tab="buffs">{{ localize "clff20.Buffs" }}</a>
+    {{#if usesAnySpellbook}}<a class="item" data-tab="spellbook">{{ localize "clff20.Spells" }}</a>{{/if}}
+    <a class="item" data-tab="biography">{{ localize "clff20.Biography" }}</a>
+    <a class="item" data-tab="notes">{{ localize "clff20.Notes" }}</a>
+    <a class="item" data-tab="settings">{{ localize "clff20.Settings" }}</a>
   </nav>
 
   {{!-- Character Sheet Body --}}
@@ -23,44 +23,44 @@
     {{!-- Details --}}
     <div class="tab summary flexcol" data-group="primary" data-tab="summary">
       <div class="header-summary flexcol">
-        {{> "systems/ffd20/templates/actors/parts/actor-summary.hbs"}}
+        {{> "systems/clff20/templates/actors/parts/actor-summary.hbs"}}
       </div>
     </div>
 
     {{!-- Attributes Tab --}}
     <div class="tab attributes flexcol" data-group="primary" data-tab="attributes">
-      {{> "systems/ffd20/templates/actors/parts/actor-attributes.hbs"}}
+      {{> "systems/clff20/templates/actors/parts/actor-attributes.hbs"}}
     </div>
 
     {{!-- Combat Tab --}}
     <div class="tab combat flexcol" data-group="primary" data-tab="combat">
-      {{> "systems/ffd20/templates/actors/parts/actor-combat.hbs" sections=attacks}}
+      {{> "systems/clff20/templates/actors/parts/actor-combat.hbs" sections=attacks}}
     </div>
 
     {{!-- Inventory Tab --}}
     <div class="tab inventory flexcol" data-group="primary" data-tab="inventory">
-      {{> "systems/ffd20/templates/actors/parts/actor-inventory.hbs" sections=inventory}}
+      {{> "systems/clff20/templates/actors/parts/actor-inventory.hbs" sections=inventory}}
     </div>
 
     {{!-- Features Tab --}}
     <div class="tab feats flexcol" data-group="primary" data-tab="feats">
-      {{> "systems/ffd20/templates/actors/parts/actor-features.hbs" sections=features}}
+      {{> "systems/clff20/templates/actors/parts/actor-features.hbs" sections=features}}
     </div>
 
     {{!-- Skills Tab --}}
     <div class="tab skills flexcol" data-group="primary" data-tab="skills">
-      {{> "systems/ffd20/templates/actors/parts/actor-skills-front.hbs"}}
+      {{> "systems/clff20/templates/actors/parts/actor-skills-front.hbs"}}
     </div>
 
     {{!-- Buffs Tab --}}
     <div class="tab buffs flexcol" data-group="primary" data-tab="buffs">
-      {{> "systems/ffd20/templates/actors/parts/actor-buffs.hbs" sections=buffs}}
+      {{> "systems/clff20/templates/actors/parts/actor-buffs.hbs" sections=buffs}}
     </div>
 
     {{!-- Spellbook Tab --}}
     {{#if usesAnySpellbook}}
     <div class="tab spellbook flexcol" data-group="primary" data-tab="spellbook">
-      {{> "systems/ffd20/templates/actors/parts/actor-spellbook-front.hbs"}}
+      {{> "systems/clff20/templates/actors/parts/actor-spellbook-front.hbs"}}
     </div>
     {{/if}}
 
@@ -84,7 +84,7 @@
 
     {{!-- Settings Tab --}}
     <div class="tab settings flexcol" data-group="primary" data-tab="settings">
-      {{> "systems/ffd20/templates/actors/parts/actor-settings.hbs"}}
+      {{> "systems/clff20/templates/actors/parts/actor-settings.hbs"}}
     </div>
   </section>
 </form>

@@ -1,5 +1,5 @@
 <div class="level-up">
-    <h1>{{localize "FFD20.LevelUp.Chat.Header"}}</h1>
+    <h1>{{localize "clff20.LevelUp.Chat.Header"}}</h1>
 
     {{!-- Level name and icon --}}
     <div class="item">
@@ -9,7 +9,7 @@
 
     {{!-- New level --}}
     <div class="level-change">
-        {{localize "FFD20.Level"}}
+        {{localize "clff20.Level"}}
         <span class="level-previous">{{formData.level.previous}}</span>
         <i class="fas fa-arrow-right"></i>
         <span class="level-new">{{formData.level.new}}</span>
@@ -18,7 +18,7 @@
     {{!-- New HP --}}
     {{#if formData.hp}}
     <div class="part">
-        <h2>{{localize "FFD20.LevelUp.Chat.Health.Header"}}</h2>
+        <h2>{{localize "clff20.LevelUp.Chat.Health.Header"}}</h2>
 
         <span>{{{localize formData.hp.label add=formData.hp.add}}}</span>
     </div>
@@ -27,7 +27,7 @@
     {{!-- Chosen favored class bonus --}}
     {{#if formData.fc}}
     <div class="part">
-        <h2>{{localize "FFD20.LevelUp.Chat.FC.Header"}}</h2>
+        <h2>{{localize "clff20.LevelUp.Chat.FC.Header"}}</h2>
 
         <span><i class="fas {{lookup config.favouredClassBonusIcons formData.fc.type}}"></i> {{localize formData.fc.label}}</span>
     </div>
@@ -36,7 +36,7 @@
     {{!-- New class features --}}
     {{#if formData.newFeatures}}
     <div class="part">
-        <h2>{{localize "FFD20.NewClassFeaturePlural"}}</h2>
+        <h2>{{localize "clff20.NewClassFeaturePlural"}}</h2>
 
         {{#each formData.newFeatures as |ft|}}
         <div class="item">
@@ -50,7 +50,7 @@
     {{!-- Remainder Summary --}}
     {{#if formData.extra.enabled}}
     <div class="part">
-        <h2>{{localize "FFD20.LevelUp.Chat.Extra.Header"}}</h2>
+        <h2>{{localize "clff20.LevelUp.Chat.Extra.Header"}}</h2>
 
         {{#if formData.extra.feats.new}}
         <p class="feats">{{formData.extra.feats.label}}</p>

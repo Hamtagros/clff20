@@ -1,6 +1,6 @@
-<div class="ffd20 chat-card defense-card" data-actor-id="{{actor.id}}"{{#if tokenUuid}} data-token-uuid="{{tokenUuid}}"{{/if}}>
+<div class="clff20 chat-card defense-card" data-actor-id="{{actor.id}}"{{#if tokenUuid}} data-token-uuid="{{tokenUuid}}"{{/if}}>
   <header class="card-header flexrow">
-    <h3 class="actor-name">{{name}} - {{localize "FFD20.Defenses"}}</h3>
+    <h3 class="actor-name">{{name}} - {{localize "clff20.Defenses"}}</h3>
   </header>
 
   <div>
@@ -9,9 +9,9 @@
       <table>
         <thead>
           <tr>
-            <th>{{localize "FFD20.ACNormal"}}</th>
-            <th>{{localize "FFD20.ACTouch"}}</th>
-            <th>{{localize "FFD20.ACFlatFooted"}}</th>
+            <th>{{localize "clff20.ACNormal"}}</th>
+            <th>{{localize "clff20.ACTouch"}}</th>
+            <th>{{localize "clff20.ACFlatFooted"}}</th>
           </tr>
         </thead>
         <tbody>
@@ -26,7 +26,7 @@
 
     {{#if ac.notes}}
     <div class="flexcol property-group">
-      <label>{{localize "FFD20.ACNotes"}}</label>
+      <label>{{localize "clff20.ACNotes"}}</label>
       <div class="flexrow">
         {{#each ac.notes as |v|}}
         <span class="tag">{{{v}}}</span>
@@ -41,8 +41,8 @@
       <table>
         <thead>
           <tr>
-            <th>{{localize "FFD20.CMDAbbr"}}</th>
-            <th>{{localize "FFD20.CMDFlatFooted"}}</th>
+            <th>{{localize "clff20.CMDAbbr"}}</th>
+            <th>{{localize "clff20.CMDFlatFooted"}}</th>
           </tr>
         </thead>
         <tbody>
@@ -56,7 +56,7 @@
 
     {{#if cmd.notes}}
     <div class="flexcol property-group">
-      <label>{{localize "FFD20.CMDNotes"}}</label>
+      <label>{{localize "clff20.CMDNotes"}}</label>
       <div class="flexrow">
         {{#each cmd.notes as |v|}}
         <span class="tag">{{{v}}}</span>
@@ -71,7 +71,7 @@
       <table>
         <thead>
           <tr>
-            <th>{{localize "FFD20.SpellResistance"}}</th>
+            <th>{{localize "clff20.SpellResistance"}}</th>
           </tr>
         </thead>
         <tbody>
@@ -84,7 +84,7 @@
 
     {{#if misc.srNotes}}
     <div class="flexcol property-group">
-      <label>{{localize "FFD20.SpellResistanceNotes"}}</label>
+      <label>{{localize "clff20.SpellResistanceNotes"}}</label>
       <div class="flexrow">
         {{#each misc.srNotes as |v|}}
         <span class="tag">{{{v}}}</span>
@@ -96,7 +96,7 @@
 
     {{#if misc.drNotes}}
     <div class="flexcol property-group">
-      <label>{{localize "FFD20.DamRed"}}</label>
+      <label>{{localize "clff20.DamRed"}}</label>
       <div class="flexrow">
         {{#each misc.drNotes as |v|}}
         <span class="tag">{{{v}}}</span>
@@ -107,7 +107,7 @@
 
     {{#if misc.energyResistance}}
     <div class="flexcol property-group">
-      <label>{{localize "FFD20.EnRes"}}</label>
+      <label>{{localize "clff20.EnRes"}}</label>
       <div class="flexrow">
         {{#each misc.energyResistance as |v|}}
         <span class="tag">{{{v}}}</span>
@@ -121,14 +121,14 @@
       <table>
         <thead>
           <tr>
-            <th>{{localize "FFD20.Regeneration"}}</th>
-            <th>{{localize "FFD20.FastHealing"}}</th>
+            <th>{{localize "clff20.Regeneration"}}</th>
+            <th>{{localize "clff20.FastHealing"}}</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>{{#if regen.regen}}{{regen.regen}}{{else}}{{localize "FFD20.NonApplicable"}}{{/if}}</td>
-            <td>{{#if regen.fastHealing}}{{regen.fastHealing}}{{else}}{{localize "FFD20.NonApplicable"}}{{/if}}</td>
+            <td>{{#if regen.regen}}{{regen.regen}}{{else}}{{localize "clff20.NonApplicable"}}{{/if}}</td>
+            <td>{{#if regen.fastHealing}}{{regen.fastHealing}}{{else}}{{localize "clff20.NonApplicable"}}{{/if}}</td>
           </tr>
         </tbody>
       </table>
@@ -136,9 +136,9 @@
     {{/if}}
 
     <div class="saving-throws flexrow">
-      <button data-action="defense-save" data-save="fort">{{localize "FFD20.SavingThrowFort"}}</button>
-      <button data-action="defense-save" data-save="ref">{{localize "FFD20.SavingThrowRef"}}</button>
-      <button data-action="defense-save" data-save="will">{{localize "FFD20.SavingThrowWill"}}</button>
+      <button data-action="defense-save" data-save="fort">{{localize "clff20.SavingThrowFort"}}</button>
+      <button data-action="defense-save" data-save="ref">{{localize "clff20.SavingThrowRef"}}</button>
+      <button data-action="defense-save" data-save="will">{{localize "clff20.SavingThrowWill"}}</button>
     </div>
   </div>
 </div>

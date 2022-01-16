@@ -5,7 +5,7 @@
     <img class="profile" src="{{item.img}}" title="{{item.name}}" data-edit="img" />
 
     <div class="header-details flexrow">
-      {{> "systems/ffd20/templates/items/parts/item-name.hbs"}}
+      {{> "systems/clff20/templates/items/parts/item-name.hbs"}}
 
       <ul class="summary">
         <li>
@@ -20,11 +20,11 @@
 
   {{!-- Item Sheet Navigation --}}
   <nav class="sheet-navigation tabs" data-group="primary">
-    <a class="item active" data-tab="description">{{ localize "FFD20.Description" }}</a>
-    <a class="item" data-tab="details">{{ localize "FFD20.Details" }}</a>
-    <a class="item" data-tab="links">{{localize "FFD20.Links"}}</a>
+    <a class="item active" data-tab="description">{{ localize "clff20.Description" }}</a>
+    <a class="item" data-tab="details">{{ localize "clff20.Details" }}</a>
+    <a class="item" data-tab="links">{{localize "clff20.Links"}}</a>
     {{#unless showUnidentifiedData}}
-    <a class="item" data-tab="advanced">{{localize "FFD20.Advanced"}}</a>
+    <a class="item" data-tab="advanced">{{localize "clff20.Advanced"}}</a>
     {{/unless}}
   </nav>
 
@@ -32,18 +32,18 @@
   <section class="primary-body">
 
     {{!-- Description Tab --}}
-    {{> "systems/ffd20/templates/items/parts/item-description.hbs"}}
+    {{> "systems/clff20/templates/items/parts/item-description.hbs"}}
 
     {{!-- Details Tab --}}
     <div class="tab details" data-group="primary" data-tab="details">
-      {{> "systems/ffd20/templates/items/parts/item-aura.hbs"}}
+      {{> "systems/clff20/templates/items/parts/item-aura.hbs"}}
 
-      <h3 class="form-header">{{localize "FFD20.Details"}}</h3>
+      <h3 class="form-header">{{localize "clff20.Details"}}</h3>
 
       {{!-- Consumable Type --}}
       {{#unless showUnidentifiedData}}
       <div class="form-group">
-        <label>{{localize "FFD20.Type"}}</label>
+        <label>{{localize "clff20.Type"}}</label>
         <select name="data.consumableType">
           {{#select data.consumableType}}
           {{#each config.consumableTypes as |name type|}}
@@ -55,37 +55,37 @@
 
       {{#if isGM}}
       <label class="checkbox">
-        <input type="checkbox" name="data.identified" {{checked data.identified}}/> {{localize "FFD20.Identified"}}
+        <input type="checkbox" name="data.identified" {{checked data.identified}}/> {{localize "clff20.Identified"}}
       </label>
       {{/if}}
 
-      <h3 class="form-header">{{localize "FFD20.ConsumableUsage"}}</h3>
+      <h3 class="form-header">{{localize "clff20.ConsumableUsage"}}</h3>
 
       {{!-- Item Activation Template --}}
-      {{> "systems/ffd20/templates/items/parts/item-activation.hbs"}}
+      {{> "systems/clff20/templates/items/parts/item-activation.hbs"}}
 
-      <h3 class="form-header">{{localize "FFD20.Action"}}</h3>
+      <h3 class="form-header">{{localize "clff20.Action"}}</h3>
 
       {{!-- Item Action Template --}}
-      {{> "systems/ffd20/templates/items/parts/item-action.hbs"}}
+      {{> "systems/clff20/templates/items/parts/item-action.hbs"}}
 
-      <h3 class="form-header">{{localize "FFD20.MeasureTemplate"}}</h3>
+      <h3 class="form-header">{{localize "clff20.MeasureTemplate"}}</h3>
 
       {{!-- Item Measure Template --}}
-      {{> "systems/ffd20/templates/items/parts/item-template.hbs"}}
+      {{> "systems/clff20/templates/items/parts/item-template.hbs"}}
 
       {{!-- Advanced Tag --}}
-      {{> "systems/ffd20/templates/items/parts/item-tag.hbs"}}
+      {{> "systems/clff20/templates/items/parts/item-tag.hbs"}}
       {{/unless}}
     </div>
 
     <div class="tab flexcol" data-group="primary" data-tab="links">
-      {{> "systems/ffd20/templates/items/parts/item-links.hbs"}}
+      {{> "systems/clff20/templates/items/parts/item-links.hbs"}}
     </div>
 
     {{#unless showUnidentifiedData}}
     <div class="tab flexcol" data-group="primary" data-tab="advanced">
-      {{> "systems/ffd20/templates/items/parts/item-advanced.hbs"}}
+      {{> "systems/clff20/templates/items/parts/item-advanced.hbs"}}
     </div>
     {{/unless}}
   </section>

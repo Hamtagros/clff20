@@ -1,8 +1,8 @@
-<div class="ffd20 chat-card" {{#if tokenId}}data-token-id="{{tokenId}}"{{/if}}>
+<div class="clff20 chat-card" {{#if tokenId}}data-token-id="{{tokenId}}"{{/if}}>
     <table>
         <thead>
             <th>
-                {{#if isHealing}}{{localize "FFD20.Healing"}}{{else}}{{localize "FFD20.Damage"}}{{/if}}
+                {{#if isHealing}}{{localize "clff20.Healing"}}{{else}}{{localize "clff20.Damage"}}{{/if}}
             </th>
         </thead>
         <tbody>
@@ -17,16 +17,16 @@
     <div class="flexcol card-buttons">
         <div class="card-button-group flexcol">
             {{#if isHealing}}
-            <label>{{localize "FFD20.Healing"}}</label>
+            <label>{{localize "clff20.Healing"}}</label>
             <div class="flexrow">
-                <button type="button" data-action="applyDamage" data-value="-{{roll.value}}">{{localize "FFD20.Apply"}}</button>
-                <button type="button" data-action="applyDamage" data-value="-{{roll.halfValue}}">{{localize "FFD20.ApplyHalf"}}</button>
+                <button type="button" data-action="applyDamage" data-value="-{{roll.value}}">{{localize "clff20.Apply"}}</button>
+                <button type="button" data-action="applyDamage" data-value="-{{roll.halfValue}}">{{localize "clff20.ApplyHalf"}}</button>
             </div>
             {{else}}
-            <label>{{localize "FFD20.Damage"}}</label>
+            <label>{{localize "clff20.Damage"}}</label>
             <div class="flexrow">
-                <button type="button" data-action="applyDamage" data-value="{{roll.value}}">{{localize "FFD20.Apply"}}</button>
-                <button type="button" data-action="applyDamage" data-value="{{roll.halfValue}}">{{localize "FFD20.ApplyHalf"}}</button>
+                <button type="button" data-action="applyDamage" data-value="{{roll.value}}">{{localize "clff20.Apply"}}</button>
+                <button type="button" data-action="applyDamage" data-value="{{roll.halfValue}}">{{localize "clff20.ApplyHalf"}}</button>
             </div>
             {{/if}}
         </div>

@@ -1,6 +1,6 @@
 # Final Fantasy D20 for Foundry VTT
 
-An implementation of the Final Fantasy d20 (ffd20) system for for Foundry 
+An implementation of the Final Fantasy d20 (clff20) system for for Foundry 
 Virtual Tabletop (http://foundryvtt.com), based on the Pathfinder 1 
 implementation by Furyspark [https://gitlab.com/Furyspark/foundryvtt-pathfinder1](https://gitlab.com/Furyspark/foundryvtt-pathfinder1).
 
@@ -14,8 +14,8 @@ Install the following game system in FoundryVTT's game system tab: [https://raw.
 And then Install in modules: [https://raw.githubusercontent.com/Ritsuna/FFd20_content/main/module.json](https://raw.githubusercontent.com/Ritsuna/FFd20_content/main/module.json)
 
 If you wish to manually install the system, you must clone or extract it into
-the Data/systems/ffd20 folder. You may do this by cloning the repository or
-downloading a zip archive from the [Releases Page](https://github.com/Ritsuna/ffd20-foundry/releases).
+the Data/systems/clff20 folder. You may do this by cloning the repository or
+downloading a zip archive from the [Releases Page](https://github.com/Ritsuna/clff20-foundry/releases).
 
 ## Building
 

@@ -2,17 +2,17 @@
 <div class="flexcol skill-rank">
   <ol class="form-group">
     <li class="flexrow skill-rank-formula">
-      <label>{{localize "FFD20.SkillBonusRankFormula"}}</label>
-      <input class="formula" type="text" name="data.details.bonusSkillRankFormula" value="{{data.details.bonusSkillRankFormula}}" placeholder="{{localize "FFD20.Formula"}}"/>
+      <label>{{localize "clff20.SkillBonusRankFormula"}}</label>
+      <input class="formula" type="text" name="data.details.bonusSkillRankFormula" value="{{data.details.bonusSkillRankFormula}}" placeholder="{{localize "clff20.Formula"}}"/>
     </li>
-    <a class='skill-lock-button' title="{{localize "FFD20.ToggleSkillLock"}}"></a>
+    <a class='skill-lock-button' title="{{localize "clff20.ToggleSkillLock"}}"></a>
   </ol>
   {{#unless useBGSkills}}
   <ol class="form-group">
     <li class="flexrow skill-rank-info tooltip">
       <span class="tooltipcontent">
         {{#if sourceData.skillRanks}}
-        {{localize "FFD20.FromSources"}}:<br/>
+        {{localize "clff20.FromSources"}}:<br/>
         {{#each sourceData.skillRanks as |src|}}
         {{src.name}}: {{src.value}}<br/>
         {{/each}}
@@ -21,8 +21,8 @@
       <table class="skill-ranks">
         <thead>
           <tr>
-            <th>{{localize "FFD20.SkillRankPlural"}}</th>
-            <th>{{localize "FFD20.Used"}}</th>
+            <th>{{localize "clff20.SkillRankPlural"}}</th>
+            <th>{{localize "clff20.Used"}}</th>
           </tr>
         </thead>
         <tbody>
@@ -39,7 +39,7 @@
     <li class="flexrow skill-rank-info">
       <span class="tooltipcontent">
         {{#if sourceData.skillRanks}}
-        {{localize "FFD20.FromSources"}}:<br/>
+        {{localize "clff20.FromSources"}}:<br/>
         {{#each sourceData.skillRanks as |src|}}
         {{src.name}}: {{src.value}}<br/>
         {{/each}}
@@ -48,11 +48,11 @@
       <table class="skill-ranks">
         <thead>
           <tr>
-            <th>{{localize "FFD20.SkillRankPlural"}}</th>
-            <th>{{localize "FFD20.Used"}}</th>
-            <th>{{localize "FFD20.AdventureRanksToBG"}}</th>
-            <th>{{localize "FFD20.BGSkillRanks"}}</th>
-            <th>{{localize "FFD20.BGUsed"}}</th>
+            <th>{{localize "clff20.SkillRankPlural"}}</th>
+            <th>{{localize "clff20.Used"}}</th>
+            <th>{{localize "clff20.AdventureRanksToBG"}}</th>
+            <th>{{localize "clff20.BGSkillRanks"}}</th>
+            <th>{{localize "clff20.BGUsed"}}</th>
           </tr>
         </thead>
         <tbody>
@@ -72,27 +72,27 @@
 
 {{#if useBGSkills}}
 <nav class="sheet-navigation tabs" data-group="skillset">
-  <a class="item" data-tab="adventure">{{localize "FFD20.SkillTypeAdventure"}}</a>
-  <a class="item" data-tab="background">{{localize "FFD20.SkillTypeBackground"}}</a>
+  <a class="item" data-tab="adventure">{{localize "clff20.SkillTypeAdventure"}}</a>
+  <a class="item" data-tab="background">{{localize "clff20.SkillTypeBackground"}}</a>
 </nav>
 
 <section class="skillset-body">
   <div class="tab flexcol" data-group="skillset" data-tab="adventure">
-    {{> "systems/ffd20/templates/actors/parts/actor-skills.hbs" skillset=skillsets.adventure.skills isBackgroundSkills="false" skillGroup="adventure"}}
+    {{> "systems/clff20/templates/actors/parts/actor-skills.hbs" skillset=skillsets.adventure.skills isBackgroundSkills="false" skillGroup="adventure"}}
   </div>
 
   <div class="tab flexcol" data-group="skillset" data-tab="background">
-    {{> "systems/ffd20/templates/actors/parts/actor-skills.hbs" skillset=skillsets.background.skills isBackgroundSkills="true" skillGroup="background"}}
+    {{> "systems/clff20/templates/actors/parts/actor-skills.hbs" skillset=skillsets.background.skills isBackgroundSkills="true" skillGroup="background"}}
   </div>
 </section>
 {{else}}
 <nav class="sheet-navigation tabs" data-group="skillset" style="display: none">
-  <a class="item" data-tab="all">{{localize "FFD20.AllSkills"}}</a>
+  <a class="item" data-tab="all">{{localize "clff20.AllSkills"}}</a>
 </nav>
 
 <section class="skillset-body">
   <div class="tab flexcol" data-group="skillset" data-tab="all">
-    {{> "systems/ffd20/templates/actors/parts/actor-skills.hbs" skillset=skillsets.all.skills isBackgroundSkills="false" skillGroup="adventure"}}
+    {{> "systems/clff20/templates/actors/parts/actor-skills.hbs" skillset=skillsets.all.skills isBackgroundSkills="false" skillGroup="adventure"}}
   </div>
 </section>
 {{/if}}

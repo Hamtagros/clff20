@@ -1,5 +1,5 @@
 <div class="inventory-filters flexrow">
-  {{~> "systems/ffd20/templates/internal/item-search.hbs" category="features"}}
+  {{~> "systems/clff20/templates/internal/item-search.hbs" category="features"}}
 
   <ul class="filter-list flexrow" data-filter="features">
     {{#each sections as |section sid|}}
@@ -17,17 +17,17 @@
         <h3 class="item-name flexrow">{{section.label}}</h3>
 
         {{#unless section.isClass}}
-        <div class="item-detail item-type"><i class="icon icon-magic-palm large" title="{{localize "FFD20.Type"}}"></i></div>
+        <div class="item-detail item-type"><i class="icon icon-magic-palm large" title="{{localize "clff20.Type"}}"></i></div>
         {{/unless}}
 
         {{#if section.hasActions}}
-        <div class="item-detail item-actions"><i class="icon icon-gears large" title="{{localize "FFD20.ActionPlural"}}"></i></div>
-        <div class="item-detail item-uses"><i class="icon icon-battery-pack large" title="{{localize "FFD20.ChargePlural"}}"></i></div>
-        <div class="item-detail item-usage"><i class="icon icon-hand large" title="{{localize "FFD20.Usage"}}"></i></div>
+        <div class="item-detail item-actions"><i class="icon icon-gears large" title="{{localize "clff20.ActionPlural"}}"></i></div>
+        <div class="item-detail item-uses"><i class="icon icon-battery-pack large" title="{{localize "clff20.ChargePlural"}}"></i></div>
+        <div class="item-detail item-usage"><i class="icon icon-hand large" title="{{localize "clff20.Usage"}}"></i></div>
         {{/if}}
 
         {{#if section.isClass}}
-        <div class="item-detail item-feat-level"><i class="icon icon-upgrade large" title="{{localize "FFD20.Level"}}"></i></div>
+        <div class="item-detail item-feat-level"><i class="icon icon-upgrade large" title="{{localize "clff20.Level"}}"></i></div>
         {{/if}}
 
         {{#if ../owner}}
@@ -37,7 +37,7 @@
             <i class="fas fa-plus"></i>
           </a>
           {{/if}}
-          <a data-action="compendium" data-action-target="feats" title="{{localize "FFD20.OpenCompendium"}}"><i class="fas fa-folder-plus"></i></a>
+          <a data-action="compendium" data-action-target="feats" title="{{localize "clff20.OpenCompendium"}}"><i class="fas fa-folder-plus"></i></a>
         </div>
         {{/if}}
       </li>
@@ -62,9 +62,9 @@
               {{#unless item.data.disabled}}
               {{#if item.hasAction}}
               <span class="tooltipcontent">
-                {{localize "FFD20.UseFeat"}}
+                {{localize "clff20.UseFeat"}}
               </span>
-              <a class="item-control item-attack"><img class="icon" src="systems/ffd20/icons/actions/gladius.svg"></a>
+              <a class="item-control item-attack"><img class="icon" src="systems/clff20/icons/actions/gladius.svg"></a>
               {{/if}}
               {{/unless}}
             </div>
@@ -88,16 +88,16 @@
           </div>
           {{else if section.isClass}}
           <div class="item-detail item-feat-level tooltip">
-            <span>{{localize "FFD20.Level"}} {{item.data.level}}</span>
+            <span>{{localize "clff20.Level"}} {{item.data.level}}</span>
             <span class="tooltipcontent">@classes.{{item.data.tag}}.level : {{item.data.level}}</span>
           </div>
           {{/if}}
 
           {{#if ../../owner}}
           <div class="item-controls">
-            <a class="item-control item-edit" title="{{localize "FFD20.EditItem"}}"><i class="fas fa-edit"></i></a>
-            <a class="item-control item-duplicate" title="{{localize "FFD20.DuplicateItem"}}"><i class="fas fa-copy"></i></a>
-            <a class="item-control item-delete" title="{{localize "FFD20.DeleteItem"}}"><i class="fas fa-trash"></i></a>
+            <a class="item-control item-edit" title="{{localize "clff20.EditItem"}}"><i class="fas fa-edit"></i></a>
+            <a class="item-control item-duplicate" title="{{localize "clff20.DuplicateItem"}}"><i class="fas fa-copy"></i></a>
+            <a class="item-control item-delete" title="{{localize "clff20.DeleteItem"}}"><i class="fas fa-trash"></i></a>
           </div>
           {{/if}}
         </li>
@@ -113,23 +113,23 @@
 <div class="tab-footer flexcol tooltip">
   <span class="tooltipcontent">
     {{#if sourceData.bonusFeats}}
-    {{localize "FFD20.FromSources"}}:<br/>
+    {{localize "clff20.FromSources"}}:<br/>
     {{#each sourceData.bonusFeats as |src|}}
     {{src.name}}: {{src.value}}<br/>
     {{/each}}
     {{/if}}
   </span>
   <div class="flexrow form-group">
-    <label>{{localize "FFD20.BonusFeatFormula"}}</label>
-    <input class="formula" type="text" name="data.details.bonusFeatFormula" value="{{data.details.bonusFeatFormula}}" placeholder="{{localize "FFD20.Formula"}}" />
+    <label>{{localize "clff20.BonusFeatFormula"}}</label>
+    <input class="formula" type="text" name="data.details.bonusFeatFormula" value="{{data.details.bonusFeatFormula}}" placeholder="{{localize "clff20.Formula"}}" />
   </div>
   <table class='feat-counts'>
     <thead>
       <tr>
-        <th>{{localize "FFD20.Feats"}}</th>
-        <th>{{localize "FFD20.ByLevel"}}</th>
-        <th>{{localize "FFD20.ByBonus"}}</th>
-        <th>{{localize "FFD20.Total"}}</th>
+        <th>{{localize "clff20.Feats"}}</th>
+        <th>{{localize "clff20.ByLevel"}}</th>
+        <th>{{localize "clff20.ByBonus"}}</th>
+        <th>{{localize "clff20.Total"}}</th>
       </tr>
     </thead>
     <tbody>

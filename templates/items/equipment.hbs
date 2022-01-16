@@ -5,7 +5,7 @@
     <img class="profile" src="{{item.img}}" title="{{item.name}}" data-edit="img" />
 
     <div class="header-details flexrow">
-      {{> "systems/ffd20/templates/items/parts/item-name.hbs"}}
+      {{> "systems/clff20/templates/items/parts/item-name.hbs"}}
 
       <ul class="summary">
         <li>
@@ -28,14 +28,14 @@
 
   {{!-- Item Sheet Navigation --}}
   <nav class="sheet-navigation tabs" data-group="primary">
-    <a class="item active" data-tab="description">{{ localize "FFD20.Description" }}</a>
-    <a class="item" data-tab="details">{{ localize "FFD20.Details" }}</a>
+    <a class="item active" data-tab="description">{{ localize "clff20.Description" }}</a>
+    <a class="item" data-tab="details">{{ localize "clff20.Details" }}</a>
     {{#unless showUnidentifiedData}}
-    <a class="item" data-tab="changes">{{ localize "FFD20.Changes" }}</a>
+    <a class="item" data-tab="changes">{{ localize "clff20.Changes" }}</a>
     {{/unless}}
-    <a class="item" data-tab="links">{{localize "FFD20.Links"}}</a>
+    <a class="item" data-tab="links">{{localize "clff20.Links"}}</a>
     {{#unless showUnidentifiedData}}
-    <a class="item" data-tab="advanced">{{localize "FFD20.Advanced"}}</a>
+    <a class="item" data-tab="advanced">{{localize "clff20.Advanced"}}</a>
     {{/unless}}
   </nav>
 
@@ -43,17 +43,17 @@
   <section class="primary-body">
 
     {{!-- Description Tab --}}
-    {{> "systems/ffd20/templates/items/parts/item-description.hbs"}}
+    {{> "systems/clff20/templates/items/parts/item-description.hbs"}}
 
     {{!-- Details Tab --}}
     <div class="tab details" data-group="primary" data-tab="details">
-      {{> "systems/ffd20/templates/items/parts/item-aura.hbs"}}
+      {{> "systems/clff20/templates/items/parts/item-aura.hbs"}}
 
-      <h3 class="form-header">{{localize "FFD20.Details"}}</h3>
+      <h3 class="form-header">{{localize "clff20.Details"}}</h3>
 
       {{!-- Equipment Type --}}
       <div class="form-group">
-        <label>{{localize "FFD20.Category"}}</label>
+        <label>{{localize "clff20.Category"}}</label>
         <select name="data.equipmentType">
           {{#select data.equipmentType}}
           {{#each equipmentCategories.types as |name type|}}
@@ -65,7 +65,7 @@
 
       {{!-- Equipment Subtype --}}
       <div class="form-group">
-        <label>{{localize "FFD20.Type"}}</label>
+        <label>{{localize "clff20.Type"}}</label>
         <select name="data.equipmentSubtype">
           {{#select data.equipmentSubtype}}
           {{#each equipmentCategories.subTypes as |name type|}}
@@ -78,7 +78,7 @@
       {{!-- Equipment Slot --}}
       {{#if hasMultipleSlots}}
       <div class="form-group">
-        <label>{{localize "FFD20.Slot"}}</label>
+        <label>{{localize "clff20.Slot"}}</label>
         <select name="data.slot">
           {{#select data.slot}}
           {{#each equipmentSlots as |name type|}}
@@ -94,7 +94,7 @@
       {{!-- Materia Rarity --}}
       {{#if isMateria}}
       <div class="form-group">
-        <label>{{localize "FFD20.MateriaRarity"}}</label>
+        <label>{{localize "clff20.MateriaRarity"}}</label>
         <select name="data.materiaRarity">
           {{#select data.materiaRarity}}
           {{#each config.materiaRarity as |name type|}}
@@ -105,34 +105,34 @@
       </div>
       {{else}}
       {{!-- Equipment Size --}}
-      {{> "systems/ffd20/templates/items/parts/item-size.hbs"}}
+      {{> "systems/clff20/templates/items/parts/item-size.hbs"}}
       {{/if}}
 
       {{!-- Equipment Status --}}
       <div class="form-group stacked">
-        <label>{{localize "FFD20.EquipmentStatus"}}</label>
+        <label>{{localize "clff20.EquipmentStatus"}}</label>
         <label class="checkbox">
-          <input type="checkbox" name="data.equipped" {{checked data.equipped}}/> {{localize "FFD20.Equipped"}}
+          <input type="checkbox" name="data.equipped" {{checked data.equipped}}/> {{localize "clff20.Equipped"}}
         </label>
         {{#if isGM}}
         <label class="checkbox">
-          <input type="checkbox" name="data.identified" {{checked data.identified}}/> {{localize "FFD20.Identified"}}
+          <input type="checkbox" name="data.identified" {{checked data.identified}}/> {{localize "clff20.Identified"}}
         </label>
         {{/if}}
         <label class="checkbox">
-          <input type="checkbox" name="data.masterwork" {{checked data.masterwork}}/> {{localize "FFD20.Masterwork"}}
+          <input type="checkbox" name="data.masterwork" {{checked data.masterwork}}/> {{localize "clff20.Masterwork"}}
         </label>
         <label class="checkbox">
-          <input type="checkbox" name="data.broken" {{checked data.broken}}/> {{localize "FFD20.Broken"}}
+          <input type="checkbox" name="data.broken" {{checked data.broken}}/> {{localize "clff20.Broken"}}
         </label>
         <label class="checkbox">
-          <input type="checkbox" name="data.nonlethal" {{checked data.nonlethal}}/> {{localize "FFD20.Nonlethal"}}
+          <input type="checkbox" name="data.nonlethal" {{checked data.nonlethal}}/> {{localize "clff20.Nonlethal"}}
         </label>
     </div>
 
       {{!-- Armor Class --}}
       <div class="form-group">
-        <label>{{localize "FFD20.ArmorClass"}}</label>
+        <label>{{localize "clff20.ArmorClass"}}</label>
         <div class="form-fields">
           <input type="text" name="data.armor.value" value="{{data.armor.value}}" data-dtype="Number"/>
         </div>
@@ -141,7 +141,7 @@
       {{!-- Enhancement Bonus --}}
       {{#unless showUnidentifiedData}}
       <div class="form-group">
-        <label>{{localize "FFD20.EnhancementBonus"}}</label>
+        <label>{{localize "clff20.EnhancementBonus"}}</label>
         <div class="form-fields">
           <input type="text" name="data.armor.enh" value="{{data.armor.enh}}" data-dtype="Number"/>
         </div>
@@ -151,15 +151,15 @@
       {{!-- Dexterity Modifier --}}
       {{#unless showUnidentifiedData}}
       <div class="form-group">
-        <label>{{localize "FFD20.MaxDexterityModifier"}}</label>
+        <label>{{localize "clff20.MaxDexterityModifier"}}</label>
         <div class="form-fields">
-          <input type="text" name="data.armor.dex" value="{{data.armor.dex}}" placeholder="{{localize "FFD20.Unlimited"}}" data-dtype="Number"/>
+          <input type="text" name="data.armor.dex" value="{{data.armor.dex}}" placeholder="{{localize "clff20.Unlimited"}}" data-dtype="Number"/>
         </div>
       </div>
 
       {{!-- Armor Check Penalty --}}
       <div class="form-group">
-        <label>{{localize "FFD20.ArmorCheckPenalty"}}</label>
+        <label>{{localize "clff20.ArmorCheckPenalty"}}</label>
         <div class="form-fields">
           <input type="text" name="data.armor.acp" value="{{data.armor.acp}}" data-dtype="Number" placeholder="0"/>
         </div>
@@ -167,46 +167,46 @@
 
       {{!-- Spell Failure --}}
       <div class="form-group">
-        <label>{{localize "FFD20.ArcaneSpellFailure"}}</label>
+        <label>{{localize "clff20.ArcaneSpellFailure"}}</label>
         <div class="form-fields">
           <input type="text" name="data.spellFailure" value="{{data.spellFailure}}" data-dtype="Number" placeholder="0"/>
         </div>
       </div>
 
-      <h3 class="form-header">{{localize "FFD20.EquipmentUsage"}}</h3>
+      <h3 class="form-header">{{localize "clff20.EquipmentUsage"}}</h3>
 
       {{!-- Item Activation Template --}}
-      {{> "systems/ffd20/templates/items/parts/item-activation.hbs"}}
+      {{> "systems/clff20/templates/items/parts/item-activation.hbs"}}
 
-      <h3 class="form-header">{{localize "FFD20.Action"}}</h3>
+      <h3 class="form-header">{{localize "clff20.Action"}}</h3>
 
       {{!-- Item Action Template --}}
-      {{> "systems/ffd20/templates/items/parts/item-action.hbs"}}
+      {{> "systems/clff20/templates/items/parts/item-action.hbs"}}
 
-      <h3 class="form-header">{{localize "FFD20.MeasureTemplate"}}</h3>
+      <h3 class="form-header">{{localize "clff20.MeasureTemplate"}}</h3>
 
       {{!-- Item Measure Template --}}
-      {{> "systems/ffd20/templates/items/parts/item-template.hbs"}}
+      {{> "systems/clff20/templates/items/parts/item-template.hbs"}}
 
       {{!-- Advanced Tag --}}
-      {{> "systems/ffd20/templates/items/parts/item-tag.hbs"}}
+      {{> "systems/clff20/templates/items/parts/item-tag.hbs"}}
       {{/unless}}
     </div>
 
     {{!-- Changes Tab --}}
     {{#unless showUnidentifiedData}}
     <div class="tab flexcol" data-group="primary" data-tab="changes">
-      {{> "systems/ffd20/templates/items/parts/item-changes.hbs"}}
+      {{> "systems/clff20/templates/items/parts/item-changes.hbs"}}
     </div>
     {{/unless}}
 
     <div class="tab flexcol" data-group="primary" data-tab="links">
-      {{> "systems/ffd20/templates/items/parts/item-links.hbs"}}
+      {{> "systems/clff20/templates/items/parts/item-links.hbs"}}
     </div>
 
     {{#unless showUnidentifiedData}}
     <div class="tab flexcol" data-group="primary" data-tab="advanced">
-      {{> "systems/ffd20/templates/items/parts/item-advanced.hbs"}}
+      {{> "systems/clff20/templates/items/parts/item-advanced.hbs"}}
     </div>
     {{/unless}}
   </section>

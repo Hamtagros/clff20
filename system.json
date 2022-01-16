@@ -1,7 +1,7 @@
 {
   "name": "clff20",
-  "title": "Clone of pathfinder for ffd20",
-  "description": "Clone of pathfinder for ffd20",
+  "title": "Clone of pathfinder for clff20",
+  "description": "Clone of pathfinder for clff20",
   "version": "0.2.5",
   "author": "Hamtagros",
   "authors": [
@@ -25,8 +25,8 @@
   ],
   "templateVersion": 2,
   "scripts": [],
-  "esmodules": ["ffd20.js"],
-  "styles": ["ffd20.css"],
+  "esmodules": ["clff20.js"],
+  "styles": ["clff20.css"],
   "packs": [
     {
       "name": "classes",

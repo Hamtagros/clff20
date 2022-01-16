@@ -16,10 +16,10 @@
     <div class="form-fields">
       <select name="track" id="xp-track">
         {{#select settings.track}}
-        <option value="slow">{{localize "FFD20.XPTrackSlow"}}</option>
-        <option value="medium">{{localize "FFD20.XPTrackMedium"}}</option>
-        <option value="fast">{{localize "FFD20.XPTrackFast"}}</option>
-        <option value="customFormula">{{localize "FFD20.XPTrackCustomFormula"}}</option>
+        <option value="slow">{{localize "clff20.XPTrackSlow"}}</option>
+        <option value="medium">{{localize "clff20.XPTrackMedium"}}</option>
+        <option value="fast">{{localize "clff20.XPTrackFast"}}</option>
+        <option value="customFormula">{{localize "clff20.XPTrackCustomFormula"}}</option>
         {{/select}}
       </select>
     </div>
@@ -28,9 +28,9 @@
 
   {{#if hasCustomFormula}}
   <div class="form-group">
-    <label for="xp-custom-formula">{{localize "FFD20.Formula"}}</label>
+    <label for="xp-custom-formula">{{localize "clff20.Formula"}}</label>
     <div class="form-fields">
-      <input type="text" placeholder="{{localize "FFD20.XPTrackCustomFormulaHint"}}" name="custom.formula" value="{{settings.custom.formula}}" id="xp-custom-formula" />
+      <input type="text" placeholder="{{localize "clff20.XPTrackCustomFormulaHint"}}" name="custom.formula" value="{{settings.custom.formula}}" id="xp-custom-formula" />
     </div>
   </div>
   {{/if}}

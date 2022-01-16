@@ -61,13 +61,13 @@
 .strikethrough-text {
   text-decoration: line-through;
 }
-.ffd20-sheet-group {
+.clff20-sheet-group {
   padding: 2px;
   margin: 2px;
   border: 1px solid rgba(0, 0, 0, 0);
   border-radius: 2px;
 }
-.ffd20-sheet-group:hover {
+.clff20-sheet-group:hover {
   border-color: #666;
 }
 /* ----------------------------------------- */
@@ -79,22 +79,22 @@
   }
 }
 /* ----------------------------------------- */
-/*  All FFD20 Apps                           */
+/*  All clff20 Apps                           */
 /* ----------------------------------------- */
-.ffd20 {
+.clff20 {
   /* ----------------------------------------- */
   /*  Element Styles                           */
   /* ----------------------------------------- */
   /* Form Groups */
   /* Tags */
 }
-.ffd20 header {
+.clff20 header {
   flex: 0;
 }
-.ffd20 .switch-check {
+.clff20 .switch-check {
   display: none;
 }
-.ffd20 .switch-label > span {
+.clff20 .switch-label > span {
   display: block;
   border: 1px solid #191813;
   border-radius: 4px;
@@ -104,187 +104,187 @@
   width: calc(100% - 2px);
   text-align: center;
 }
-.ffd20 .switch-label > span.switch-primary {
+.clff20 .switch-label > span.switch-primary {
   background-color: rgba(240, 240, 240, 0.75);
   color: #191813;
 }
-.ffd20 .switch-label > span.switch-secondary {
+.clff20 .switch-label > span.switch-secondary {
   background-color: rgba(25, 24, 19, 0.75);
   color: #f0f0f0;
 }
-.ffd20 .switch-check:not(:checked) + .switch-label .switch-primary {
+.clff20 .switch-check:not(:checked) + .switch-label .switch-primary {
   display: none;
 }
-.ffd20 .switch-check:checked + .switch-label .switch-secondary {
+.clff20 .switch-check:checked + .switch-label .switch-secondary {
   display: none;
 }
-.ffd20 input[type="text"]::placeholder,
-.ffd20 .placeholder {
+.clff20 input[type="text"]::placeholder,
+.clff20 .placeholder {
   color: #7a7971;
 }
-.ffd20 input[type="text"][disabled] {
+.clff20 input[type="text"][disabled] {
   color: #7a7971;
 }
-.ffd20 .align-left {
+.clff20 .align-left {
   text-align: start;
 }
-.ffd20 .align-center {
+.clff20 .align-center {
   text-align: center;
 }
-.ffd20 .align-right {
+.clff20 .align-right {
   text-align: end;
 }
-.ffd20 li {
+.clff20 li {
   align-items: center;
 }
-.ffd20 .window-content {
+.clff20 .window-content {
   background: url("ui/parchment.jpg") repeat;
   font-size: 13px;
   color: #191813;
   overflow: hidden;
 }
-.ffd20 input[type="text"],
-.ffd20 input[type="number"],
-.ffd20 select {
+.clff20 input[type="text"],
+.clff20 input[type="number"],
+.clff20 select {
   border: 1px solid #7a7971;
   background: rgba(0, 0, 0, 0.05);
   color: #191813;
 }
-.ffd20 input[type="text"]:hover,
-.ffd20 input[type="number"]:hover,
-.ffd20 input[type="text"]:focus,
-.ffd20 input[type="number"]:focus {
+.clff20 input[type="text"]:hover,
+.clff20 input[type="number"]:hover,
+.clff20 input[type="text"]:focus,
+.clff20 input[type="number"]:focus {
   border: 1px solid #111;
   box-shadow: 0 0 8px red;
 }
-.ffd20 input:disabled,
-.ffd20 select:disabled,
-.ffd20 textarea:disabled,
-.ffd20 input:readonly {
+.clff20 input:disabled,
+.clff20 select:disabled,
+.clff20 textarea:disabled,
+.clff20 input:readonly {
   color: #4b4a44;
 }
-.ffd20 input:disabled:hover,
-.ffd20 select:disabled:hover,
-.ffd20 textarea:disabled:hover,
-.ffd20 input:readonly:hover,
-.ffd20 input:disabled:focus,
-.ffd20 select:disabled:focus,
-.ffd20 textarea:disabled:focus,
-.ffd20 input:readonly:focus {
+.clff20 input:disabled:hover,
+.clff20 select:disabled:hover,
+.clff20 textarea:disabled:hover,
+.clff20 input:readonly:hover,
+.clff20 input:disabled:focus,
+.clff20 select:disabled:focus,
+.clff20 textarea:disabled:focus,
+.clff20 input:readonly:focus {
   box-shadow: none !important;
 }
-.ffd20 button {
+.clff20 button {
   background: rgba(0, 0, 0, 0.1);
   border: 2px groove #eeede0;
 }
-.ffd20 button:active {
+.clff20 button:active {
   background: rgba(0, 0, 0, 0.3);
 }
-.ffd20 label.checkbox {
+.clff20 label.checkbox {
   flex: auto;
   margin: 0;
   line-height: 20px;
   font-size: 11px;
 }
-.ffd20 label.checkbox input[type="checkbox"] {
+.clff20 label.checkbox input[type="checkbox"] {
   height: auto;
   margin: 0 5px 0;
   position: relative;
   top: 3px;
 }
-.ffd20 .form-group {
+.clff20 .form-group {
   flex: 0 0 24px;
 }
-.ffd20 .form-group label.header {
+.clff20 .form-group label.header {
   flex: 0 0 100%;
 }
-.ffd20 .form-group label:nth-child(1n + 1) {
+.clff20 .form-group label:nth-child(1n + 1) {
   margin-left: 4px;
 }
-.ffd20 .form-group .buff-flags {
+.clff20 .form-group .buff-flags {
   display: flex;
   flex-wrap: wrap;
   min-width: 100%;
   max-height: 76px;
   overflow-y: auto;
 }
-.ffd20 .form-group .buff-flags label.checkbox {
+.clff20 .form-group .buff-flags label.checkbox {
   flex: 0 0 50%;
   text-align: left;
 }
-.ffd20 .form-group label {
+.clff20 .form-group label {
   flex: 0 0 200px;
   color: #4b4a44;
   font-weight: bold;
   white-space: nowrap;
 }
-.ffd20 .form-group label.checkbox {
+.clff20 .form-group label.checkbox {
   flex: 0;
 }
-.ffd20 .form-group label.aura-strength {
+.clff20 .form-group label.aura-strength {
   text-align: right;
   margin-right: 4px;
 }
-.ffd20 .form-group label ~ label {
+.clff20 .form-group label ~ label {
   flex-basis: unset;
 }
-.ffd20 .form-group span {
+.clff20 .form-group span {
   flex: 0 0 1px;
 }
-.ffd20 .form-group .form-fields {
+.clff20 .form-group .form-fields {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
-.ffd20 .form-group .form-fields > * {
+.clff20 .form-group .form-fields > * {
   flex: 1;
 }
-.ffd20 .form-group .form-fields .flex1 {
+.clff20 .form-group .form-fields .flex1 {
   flex: 1;
 }
-.ffd20 .form-group .form-fields .flex2 {
+.clff20 .form-group .form-fields .flex2 {
   flex: 2;
 }
-.ffd20 .form-group .form-fields .flex3 {
+.clff20 .form-group .form-fields .flex3 {
   flex: 3;
 }
-.ffd20 .form-group .form-fields .flex4 {
+.clff20 .form-group .form-fields .flex4 {
   flex: 4;
 }
-.ffd20 .form-group .form-fields > * {
+.clff20 .form-group .form-fields > * {
   margin: 0 3px 0 0;
 }
-.ffd20 .form-group .form-fields > *:last-child {
+.clff20 .form-group .form-fields > *:last-child {
   margin-right: 0;
 }
-.ffd20 .form-group .group {
+.clff20 .form-group .group {
   flex: 1 1 96px;
 }
-.ffd20 .form-group .group label {
+.clff20 .form-group .group label {
   flex: 1;
   font-weight: normal;
 }
-.ffd20 .form-group .group a {
+.clff20 .form-group .group a {
   flex: 0 0 16px;
 }
-.ffd20 .form-group.stacked label {
+.clff20 .form-group.stacked label {
   flex: 0 0 100%;
 }
-.ffd20 .form-group.stacked label.checkbox {
+.clff20 .form-group.stacked label.checkbox {
   text-align: left;
 }
-.ffd20 .form-group.stacked .data-selector {
+.clff20 .form-group.stacked .data-selector {
   flex: 1;
 }
-.ffd20 .form-group.stacked .data-selector label {
+.clff20 .form-group.stacked .data-selector label {
   font-weight: normal;
   flex: 1;
 }
-.ffd20 .form-group.stacked .data-selector .entry-selector {
+.clff20 .form-group.stacked .data-selector .entry-selector {
   flex: 0 0 16px;
 }
-.ffd20 .form-header {
+.clff20 .form-header {
   margin: 0 0 0.25em 0;
   padding: 0 2px;
   font-family: "Nodesto", "Signika", "Palatino Linotype", serif;
@@ -294,7 +294,7 @@
   border-top: 2px groove #eeede0;
   border-bottom: 2px groove #eeede0;
 }
-.ffd20 .tag {
+.clff20 .tag {
   display: inline-block;
   margin: 0 2px 1px 0;
   padding: 0 3px;
@@ -304,55 +304,55 @@
   border-radius: 3px;
   background: rgba(0, 0, 0, 0.05);
 }
-.ffd20 .tag.type1 {
+.clff20 .tag.type1 {
   background: rgba(255, 0, 0, 0.1);
 }
-.ffd20 .tag.type2 {
+.clff20 .tag.type2 {
   background: rgba(0, 255, 0, 0.1);
 }
-.ffd20 .tag.type3 {
+.clff20 .tag.type3 {
   background: rgba(0, 0, 255, 0.1);
 }
-.ffd20 div.links-body table .links-item-extra-field {
+.clff20 div.links-body table .links-item-extra-field {
   width: 128px;
 }
-.ffd20 div.links-body table .links-controls {
+.clff20 div.links-body table .links-controls {
   width: 48px;
 }
-.ffd20 div.links-body table .links-controls > div {
+.clff20 div.links-body table .links-controls > div {
   display: flex;
   justify-content: center;
 }
-.ffd20 div.links-body table .links-item .links-item-name img {
+.clff20 div.links-body table .links-item .links-item-name img {
   vertical-align: middle;
 }
-.ffd20 div.links-body table .links-item .links-item-name span {
+.clff20 div.links-body table .links-item .links-item-name span {
   vertical-align: middle;
 }
-.ffd20 div.links-body table th {
+.clff20 div.links-body table th {
   background-color: #747474;
 }
-.ffd20 div.links-body table tr:not(:last-child) {
+.clff20 div.links-body table tr:not(:last-child) {
   border-bottom: 1px solid #888888;
 }
-.ffd20 div.links-body table td:not(:last-child),
-.ffd20 div.links-body table th:not(:last-child) {
+.clff20 div.links-body table td:not(:last-child),
+.clff20 div.links-body table th:not(:last-child) {
   border-right: 1px solid #888888;
 }
-.ffd20 .help-icon {
+.clff20 .help-icon {
   flex: 0;
 }
-.ffd20 .help-text {
+.clff20 .help-text {
   background-color: rgba(10, 0, 0, 0.05);
   border: dotted rgba(0, 0, 0, 0.2);
   flex: 0 0 24px;
   padding: 3px;
   margin-bottom: 3px;
 }
-.ffd20 .item-links {
+.clff20 .item-links {
   flex: 0 0 24px;
 }
-.ffd20 .fake-inline-roll {
+.clff20 .fake-inline-roll {
   background: #ddd;
   padding: 1px 4px;
   border: 1px solid #4b4a44;
@@ -363,16 +363,16 @@
 /* ----------------------------------------- */
 /*  Trait Selectors Specifically             */
 /* ----------------------------------------- */
-.ffd20.trait-selector {
+.clff20.trait-selector {
   max-height: 720px;
 }
-.ffd20.trait-selector .window-content {
+.clff20.trait-selector .window-content {
   overflow: auto;
 }
 /* ----------------------------------------- */
 /*  Entity Sheets Specifically               */
 /* ----------------------------------------- */
-.ffd20.sheet {
+.clff20.sheet {
   /* ----------------------------------------- */
   /*  Element Styles                           */
   /* ----------------------------------------- */
@@ -392,220 +392,220 @@
   /*  List Filters                             */
   /* ----------------------------------------- */
 }
-.ffd20.sheet .window-content {
+.clff20.sheet .window-content {
   overflow-y: hidden;
   padding: 5px;
   background: url("ui/parchment.jpg") repeat;
   font-size: 13px;
   color: #191813;
 }
-.ffd20.sheet .window-content form {
+.clff20.sheet .window-content form {
   height: 100%;
   overflow: hidden;
 }
-.ffd20.sheet .window-content .tab {
+.clff20.sheet .window-content .tab {
   height: 100%;
   overflow-y: auto;
   align-content: flex-start;
 }
-.ffd20.sheet .inventory-list,
-.ffd20.sheet .items-list {
+.clff20.sheet .inventory-list,
+.clff20.sheet .items-list {
   list-style: none;
   margin: 0;
   padding: 0 0;
   overflow-y: auto;
 }
-.ffd20.sheet .inventory-list .inventory-header .fas,
-.ffd20.sheet .items-list .inventory-header .fas,
-.ffd20.sheet .inventory-list .items-header .fas,
-.ffd20.sheet .items-list .items-header .fas,
-.ffd20.sheet .inventory-list .items-list .fas,
-.ffd20.sheet .items-list .items-list .fas {
+.clff20.sheet .inventory-list .inventory-header .fas,
+.clff20.sheet .items-list .inventory-header .fas,
+.clff20.sheet .inventory-list .items-header .fas,
+.clff20.sheet .items-list .items-header .fas,
+.clff20.sheet .inventory-list .items-list .fas,
+.clff20.sheet .items-list .items-list .fas {
   text-align: center;
 }
-.ffd20.sheet .inventory-list .inventory-header .item-name,
-.ffd20.sheet .items-list .inventory-header .item-name,
-.ffd20.sheet .inventory-list .items-header .item-name,
-.ffd20.sheet .items-list .items-header .item-name,
-.ffd20.sheet .inventory-list .items-list .item-name,
-.ffd20.sheet .items-list .items-list .item-name {
+.clff20.sheet .inventory-list .inventory-header .item-name,
+.clff20.sheet .items-list .inventory-header .item-name,
+.clff20.sheet .inventory-list .items-header .item-name,
+.clff20.sheet .items-list .items-header .item-name,
+.clff20.sheet .inventory-list .items-list .item-name,
+.clff20.sheet .items-list .items-list .item-name {
   align-items: baseline;
 }
-.ffd20.sheet .inventory-list .inventory-header .item-name .change-formula,
-.ffd20.sheet .items-list .inventory-header .item-name .change-formula,
-.ffd20.sheet .inventory-list .items-header .item-name .change-formula,
-.ffd20.sheet .items-list .items-header .item-name .change-formula,
-.ffd20.sheet .inventory-list .items-list .item-name .change-formula,
-.ffd20.sheet .items-list .items-list .item-name .change-formula {
+.clff20.sheet .inventory-list .inventory-header .item-name .change-formula,
+.clff20.sheet .items-list .inventory-header .item-name .change-formula,
+.clff20.sheet .inventory-list .items-header .item-name .change-formula,
+.clff20.sheet .items-list .items-header .item-name .change-formula,
+.clff20.sheet .inventory-list .items-list .item-name .change-formula,
+.clff20.sheet .items-list .items-list .item-name .change-formula {
   margin: 0 2px;
 }
-.ffd20.sheet .inventory-list .inventory-header .item-name > textarea,
-.ffd20.sheet .items-list .inventory-header .item-name > textarea,
-.ffd20.sheet .inventory-list .items-header .item-name > textarea,
-.ffd20.sheet .items-list .items-header .item-name > textarea,
-.ffd20.sheet .inventory-list .items-list .item-name > textarea,
-.ffd20.sheet .items-list .items-list .item-name > textarea {
+.clff20.sheet .inventory-list .inventory-header .item-name > textarea,
+.clff20.sheet .items-list .inventory-header .item-name > textarea,
+.clff20.sheet .inventory-list .items-header .item-name > textarea,
+.clff20.sheet .items-list .items-header .item-name > textarea,
+.clff20.sheet .inventory-list .items-list .item-name > textarea,
+.clff20.sheet .items-list .items-list .item-name > textarea {
   margin: 0 2px;
 }
-.ffd20.sheet .inventory-list .inventory-header .item-name .item-info,
-.ffd20.sheet .items-list .inventory-header .item-name .item-info,
-.ffd20.sheet .inventory-list .items-header .item-name .item-info,
-.ffd20.sheet .items-list .items-header .item-name .item-info,
-.ffd20.sheet .inventory-list .items-list .item-name .item-info,
-.ffd20.sheet .items-list .items-list .item-name .item-info {
+.clff20.sheet .inventory-list .inventory-header .item-name .item-info,
+.clff20.sheet .items-list .inventory-header .item-name .item-info,
+.clff20.sheet .inventory-list .items-header .item-name .item-info,
+.clff20.sheet .items-list .items-header .item-name .item-info,
+.clff20.sheet .inventory-list .items-list .item-name .item-info,
+.clff20.sheet .items-list .items-list .item-name .item-info {
   flex: 0 0 16px;
   margin-right: 4px;
 }
-.ffd20.sheet .inventory-list .inventory-header .item-enabled,
-.ffd20.sheet .items-list .inventory-header .item-enabled,
-.ffd20.sheet .inventory-list .items-header .item-enabled,
-.ffd20.sheet .items-list .items-header .item-enabled,
-.ffd20.sheet .inventory-list .items-list .item-enabled,
-.ffd20.sheet .items-list .items-list .item-enabled {
+.clff20.sheet .inventory-list .inventory-header .item-enabled,
+.clff20.sheet .items-list .inventory-header .item-enabled,
+.clff20.sheet .inventory-list .items-header .item-enabled,
+.clff20.sheet .items-list .items-header .item-enabled,
+.clff20.sheet .inventory-list .items-list .item-enabled,
+.clff20.sheet .items-list .items-list .item-enabled {
   flex: 0 0 48px;
 }
-.ffd20.sheet .inventory-list .inventory-header .item-operator,
-.ffd20.sheet .items-list .inventory-header .item-operator,
-.ffd20.sheet .inventory-list .items-header .item-operator,
-.ffd20.sheet .items-list .items-header .item-operator,
-.ffd20.sheet .inventory-list .items-list .item-operator,
-.ffd20.sheet .items-list .items-list .item-operator {
+.clff20.sheet .inventory-list .inventory-header .item-operator,
+.clff20.sheet .items-list .inventory-header .item-operator,
+.clff20.sheet .inventory-list .items-header .item-operator,
+.clff20.sheet .items-list .items-header .item-operator,
+.clff20.sheet .inventory-list .items-list .item-operator,
+.clff20.sheet .items-list .items-list .item-operator {
   flex: 0 0 56px;
 }
-.ffd20.sheet .inventory-list .inventory-header .item-target,
-.ffd20.sheet .items-list .inventory-header .item-target,
-.ffd20.sheet .inventory-list .items-header .item-target,
-.ffd20.sheet .items-list .items-header .item-target,
-.ffd20.sheet .inventory-list .items-list .item-target,
-.ffd20.sheet .items-list .items-list .item-target {
+.clff20.sheet .inventory-list .inventory-header .item-target,
+.clff20.sheet .items-list .inventory-header .item-target,
+.clff20.sheet .inventory-list .items-header .item-target,
+.clff20.sheet .items-list .items-header .item-target,
+.clff20.sheet .inventory-list .items-list .item-target,
+.clff20.sheet .items-list .items-list .item-target {
   flex: 0 0 160px;
 }
-.ffd20.sheet .inventory-list .inventory-header .item-target .change-target,
-.ffd20.sheet .items-list .inventory-header .item-target .change-target,
-.ffd20.sheet .inventory-list .items-header .item-target .change-target,
-.ffd20.sheet .items-list .items-header .item-target .change-target,
-.ffd20.sheet .inventory-list .items-list .item-target .change-target,
-.ffd20.sheet .items-list .items-list .item-target .change-target,
-.ffd20.sheet .inventory-list .inventory-header .item-target .context-note-target,
-.ffd20.sheet .items-list .inventory-header .item-target .context-note-target,
-.ffd20.sheet .inventory-list .items-header .item-target .context-note-target,
-.ffd20.sheet .items-list .items-header .item-target .context-note-target,
-.ffd20.sheet .inventory-list .items-list .item-target .context-note-target,
-.ffd20.sheet .items-list .items-list .item-target .context-note-target {
+.clff20.sheet .inventory-list .inventory-header .item-target .change-target,
+.clff20.sheet .items-list .inventory-header .item-target .change-target,
+.clff20.sheet .inventory-list .items-header .item-target .change-target,
+.clff20.sheet .items-list .items-header .item-target .change-target,
+.clff20.sheet .inventory-list .items-list .item-target .change-target,
+.clff20.sheet .items-list .items-list .item-target .change-target,
+.clff20.sheet .inventory-list .inventory-header .item-target .context-note-target,
+.clff20.sheet .items-list .inventory-header .item-target .context-note-target,
+.clff20.sheet .inventory-list .items-header .item-target .context-note-target,
+.clff20.sheet .items-list .items-header .item-target .context-note-target,
+.clff20.sheet .inventory-list .items-list .item-target .context-note-target,
+.clff20.sheet .items-list .items-list .item-target .context-note-target {
   flex: 0 0 156px;
   width: 156px;
 }
-.ffd20.sheet .inventory-list .inventory-header .item-modifier,
-.ffd20.sheet .items-list .inventory-header .item-modifier,
-.ffd20.sheet .inventory-list .items-header .item-modifier,
-.ffd20.sheet .items-list .items-header .item-modifier,
-.ffd20.sheet .inventory-list .items-list .item-modifier,
-.ffd20.sheet .items-list .items-list .item-modifier {
+.clff20.sheet .inventory-list .inventory-header .item-modifier,
+.clff20.sheet .items-list .inventory-header .item-modifier,
+.clff20.sheet .inventory-list .items-header .item-modifier,
+.clff20.sheet .items-list .items-header .item-modifier,
+.clff20.sheet .inventory-list .items-list .item-modifier,
+.clff20.sheet .items-list .items-list .item-modifier {
   flex: 0 0 112px;
 }
-.ffd20.sheet .inventory-list .inventory-header .item-modifier .change-modifier,
-.ffd20.sheet .items-list .inventory-header .item-modifier .change-modifier,
-.ffd20.sheet .inventory-list .items-header .item-modifier .change-modifier,
-.ffd20.sheet .items-list .items-header .item-modifier .change-modifier,
-.ffd20.sheet .inventory-list .items-list .item-modifier .change-modifier,
-.ffd20.sheet .items-list .items-list .item-modifier .change-modifier {
+.clff20.sheet .inventory-list .inventory-header .item-modifier .change-modifier,
+.clff20.sheet .items-list .inventory-header .item-modifier .change-modifier,
+.clff20.sheet .inventory-list .items-header .item-modifier .change-modifier,
+.clff20.sheet .items-list .items-header .item-modifier .change-modifier,
+.clff20.sheet .inventory-list .items-list .item-modifier .change-modifier,
+.clff20.sheet .items-list .items-list .item-modifier .change-modifier {
   flex: 0 0 108px;
   width: 108px;
 }
-.ffd20.sheet .inventory-list .inventory-header .item-priority,
-.ffd20.sheet .items-list .inventory-header .item-priority,
-.ffd20.sheet .inventory-list .items-header .item-priority,
-.ffd20.sheet .items-list .items-header .item-priority,
-.ffd20.sheet .inventory-list .items-list .item-priority,
-.ffd20.sheet .items-list .items-list .item-priority {
+.clff20.sheet .inventory-list .inventory-header .item-priority,
+.clff20.sheet .items-list .inventory-header .item-priority,
+.clff20.sheet .inventory-list .items-header .item-priority,
+.clff20.sheet .items-list .items-header .item-priority,
+.clff20.sheet .inventory-list .items-list .item-priority,
+.clff20.sheet .items-list .items-list .item-priority {
   flex: 0 0 32px;
 }
-.ffd20.sheet .inventory-list.flexcol,
-.ffd20.sheet .items-list.flexcol {
+.clff20.sheet .inventory-list.flexcol,
+.clff20.sheet .items-list.flexcol {
   height: 100%;
 }
-.ffd20.sheet .inventory-list .item,
-.ffd20.sheet .items-list .item {
+.clff20.sheet .inventory-list .item,
+.clff20.sheet .items-list .item {
   line-height: 24px;
   padding: 0 2px;
   border-bottom: 1px solid #c9c7b8;
   background-color: rgba(155, 155, 155, 0.3);
 }
-.ffd20.sheet .inventory-list .item:last-child,
-.ffd20.sheet .items-list .item:last-child {
+.clff20.sheet .inventory-list .item:last-child,
+.clff20.sheet .items-list .item:last-child {
   border-bottom: none;
 }
-.ffd20.sheet .inventory-list .item:nth-child(2n + 1),
-.ffd20.sheet .items-list .item:nth-child(2n + 1) {
+.clff20.sheet .inventory-list .item:nth-child(2n + 1),
+.clff20.sheet .items-list .item:nth-child(2n + 1) {
   background-color: rgba(210, 210, 210, 0.3);
 }
-.ffd20.sheet .inventory-list .item:hover,
-.ffd20.sheet .items-list .item:hover {
+.clff20.sheet .inventory-list .item:hover,
+.clff20.sheet .items-list .item:hover {
   background-color: rgba(64, 64, 192, 0.3);
 }
-.ffd20.sheet .inventory-list .item.disabled .item-name h4,
-.ffd20.sheet .items-list .item.disabled .item-name h4 {
+.clff20.sheet .inventory-list .item.disabled .item-name h4,
+.clff20.sheet .items-list .item.disabled .item-name h4 {
   text-decoration: line-through;
   color: #7a7971;
 }
-.ffd20.sheet .inventory-list .item .item-name,
-.ffd20.sheet .items-list .item .item-name {
+.clff20.sheet .inventory-list .item .item-name,
+.clff20.sheet .items-list .item .item-name {
   cursor: pointer;
   white-space: nowrap;
   overflow: hidden;
   align-items: center;
 }
-.ffd20.sheet .inventory-list .item .item-name.flag-name,
-.ffd20.sheet .items-list .item .item-name.flag-name {
+.clff20.sheet .inventory-list .item .item-name.flag-name,
+.clff20.sheet .items-list .item .item-name.flag-name {
   cursor: initial;
 }
-.ffd20.sheet .inventory-list .item .item-name .item-image,
-.ffd20.sheet .items-list .item .item-name .item-image {
+.clff20.sheet .inventory-list .item .item-name .item-image,
+.clff20.sheet .items-list .item .item-name .item-image {
   height: 24px;
   flex: 0 0 24px;
   background-size: 24px;
   margin-right: 5px;
 }
-.ffd20.sheet .inventory-list .item .item-name h4,
-.ffd20.sheet .items-list .item .item-name h4 {
+.clff20.sheet .inventory-list .item .item-name h4,
+.clff20.sheet .items-list .item .item-name h4 {
   margin: 0;
   min-width: 0;
 }
-.ffd20.sheet .inventory-list .item .item-name .item-image:hover:not(.no-hover),
-.ffd20.sheet .items-list .item .item-name .item-image:hover:not(.no-hover) {
+.clff20.sheet .inventory-list .item .item-name .item-image:hover:not(.no-hover),
+.clff20.sheet .items-list .item .item-name .item-image:hover:not(.no-hover) {
   background-image: url("../../icons/svg/d20-black.svg") !important;
 }
-.ffd20.sheet .inventory-list .item input[type="checkbox"],
-.ffd20.sheet .items-list .item input[type="checkbox"] {
+.clff20.sheet .inventory-list .item input[type="checkbox"],
+.clff20.sheet .items-list .item input[type="checkbox"] {
   height: 12px;
 }
-.ffd20.sheet .inventory-list .item .item-properties,
-.ffd20.sheet .items-list .item .item-properties {
+.clff20.sheet .inventory-list .item .item-properties,
+.clff20.sheet .items-list .item .item-properties {
   margin-top: 3px;
 }
-.ffd20.sheet .inventory-list .item .item-recharge,
-.ffd20.sheet .items-list .item .item-recharge {
+.clff20.sheet .inventory-list .item .item-recharge,
+.clff20.sheet .items-list .item .item-recharge {
   flex: 0 0 80px;
   text-align: right;
   font-size: 14px;
   color: #7a7971;
 }
-.ffd20.sheet .inventory-list .item .item-actions > div a,
-.ffd20.sheet .items-list .item .item-actions > div a {
+.clff20.sheet .inventory-list .item .item-actions > div a,
+.clff20.sheet .items-list .item .item-actions > div a {
   display: flex;
   flex: 0 0 16px;
   padding: 0;
   margin-right: 1px;
   height: 16px;
 }
-.ffd20.sheet .inventory-list .item .item-actions > div a:last-child,
-.ffd20.sheet .items-list .item .item-actions > div a:last-child {
+.clff20.sheet .inventory-list .item .item-actions > div a:last-child,
+.clff20.sheet .items-list .item .item-actions > div a:last-child {
   margin-right: 0;
 }
-.ffd20.sheet .inventory-list .inventory-header,
-.ffd20.sheet .items-list .inventory-header,
-.ffd20.sheet .inventory-list .items-header,
-.ffd20.sheet .items-list .items-header {
+.clff20.sheet .inventory-list .inventory-header,
+.clff20.sheet .items-list .inventory-header,
+.clff20.sheet .inventory-list .items-header,
+.clff20.sheet .items-list .items-header {
   margin: 2px 0;
   padding: 0;
   background: rgba(0, 0, 0, 0.05);
@@ -613,39 +613,39 @@
   line-height: 24px;
   flex: 0 0 24px;
 }
-.ffd20.sheet .inventory-list .inventory-header h3,
-.ffd20.sheet .items-list .inventory-header h3,
-.ffd20.sheet .inventory-list .items-header h3,
-.ffd20.sheet .items-list .items-header h3 {
+.clff20.sheet .inventory-list .inventory-header h3,
+.clff20.sheet .items-list .inventory-header h3,
+.clff20.sheet .inventory-list .items-header h3,
+.clff20.sheet .items-list .items-header h3 {
   margin: 0;
   padding-left: 5px;
   font-size: 14px;
   font-weight: bold;
 }
-.ffd20.sheet .inventory-list .inventory-header .item-controls,
-.ffd20.sheet .items-list .inventory-header .item-controls,
-.ffd20.sheet .inventory-list .items-header .item-controls,
-.ffd20.sheet .items-list .items-header .item-controls {
+.clff20.sheet .inventory-list .inventory-header .item-controls,
+.clff20.sheet .items-list .inventory-header .item-controls,
+.clff20.sheet .inventory-list .items-header .item-controls,
+.clff20.sheet .items-list .items-header .item-controls {
   justify-content: space-evenly;
 }
-.ffd20.sheet .inventory-list .inventory-header > *:not(:last-child),
-.ffd20.sheet .items-list .inventory-header > *:not(:last-child),
-.ffd20.sheet .inventory-list .items-header > *:not(:last-child),
-.ffd20.sheet .items-list .items-header > *:not(:last-child),
-.ffd20.sheet .inventory-list .item > *:not(:last-child),
-.ffd20.sheet .items-list .item > *:not(:last-child) {
+.clff20.sheet .inventory-list .inventory-header > *:not(:last-child),
+.clff20.sheet .items-list .inventory-header > *:not(:last-child),
+.clff20.sheet .inventory-list .items-header > *:not(:last-child),
+.clff20.sheet .items-list .items-header > *:not(:last-child),
+.clff20.sheet .inventory-list .item > *:not(:last-child),
+.clff20.sheet .items-list .item > *:not(:last-child) {
   border-right: 1px solid #b5b3a4;
 }
-.ffd20.sheet .inventory-list .inventory-header > *:not(.item-name),
-.ffd20.sheet .items-list .inventory-header > *:not(.item-name),
-.ffd20.sheet .inventory-list .items-header > *:not(.item-name),
-.ffd20.sheet .items-list .items-header > *:not(.item-name),
-.ffd20.sheet .inventory-list .item > *:not(.item-name),
-.ffd20.sheet .items-list .item > *:not(.item-name) {
+.clff20.sheet .inventory-list .inventory-header > *:not(.item-name),
+.clff20.sheet .items-list .inventory-header > *:not(.item-name),
+.clff20.sheet .inventory-list .items-header > *:not(.item-name),
+.clff20.sheet .items-list .items-header > *:not(.item-name),
+.clff20.sheet .inventory-list .item > *:not(.item-name),
+.clff20.sheet .items-list .item > *:not(.item-name) {
   justify-content: space-evenly;
 }
-.ffd20.sheet .inventory-list .item-detail,
-.ffd20.sheet .items-list .item-detail {
+.clff20.sheet .inventory-list .item-detail,
+.clff20.sheet .items-list .item-detail {
   height: 24px;
   flex: 0 0 80px;
   font-size: 14px;
@@ -660,149 +660,149 @@
   justify-content: flex-end;
   align-items: center;
 }
-.ffd20.sheet .inventory-list .item-detail > *,
-.ffd20.sheet .items-list .item-detail > * {
+.clff20.sheet .inventory-list .item-detail > *,
+.clff20.sheet .items-list .item-detail > * {
   flex: 1;
 }
-.ffd20.sheet .inventory-list .item-detail .flex1,
-.ffd20.sheet .items-list .item-detail .flex1 {
+.clff20.sheet .inventory-list .item-detail .flex1,
+.clff20.sheet .items-list .item-detail .flex1 {
   flex: 1;
 }
-.ffd20.sheet .inventory-list .item-detail .flex2,
-.ffd20.sheet .items-list .item-detail .flex2 {
+.clff20.sheet .inventory-list .item-detail .flex2,
+.clff20.sheet .items-list .item-detail .flex2 {
   flex: 2;
 }
-.ffd20.sheet .inventory-list .item-detail .flex3,
-.ffd20.sheet .items-list .item-detail .flex3 {
+.clff20.sheet .inventory-list .item-detail .flex3,
+.clff20.sheet .items-list .item-detail .flex3 {
   flex: 3;
 }
-.ffd20.sheet .inventory-list .item-detail .flex4,
-.ffd20.sheet .items-list .item-detail .flex4 {
+.clff20.sheet .inventory-list .item-detail .flex4,
+.clff20.sheet .items-list .item-detail .flex4 {
   flex: 4;
 }
-.ffd20.sheet .inventory-list .item-detail .icon,
-.ffd20.sheet .items-list .item-detail .icon {
+.clff20.sheet .inventory-list .item-detail .icon,
+.clff20.sheet .items-list .item-detail .icon {
   background-color: #7a7971;
 }
-.ffd20.sheet .inventory-list .item-detail.item-actions,
-.ffd20.sheet .items-list .item-detail.item-actions {
+.clff20.sheet .inventory-list .item-detail.item-actions,
+.clff20.sheet .items-list .item-detail.item-actions {
   flex: 0 0 32px;
   padding: 0 1px 0 1px;
   justify-content: center;
 }
-.ffd20.sheet .inventory-list .item-detail.item-actions > div,
-.ffd20.sheet .items-list .item-detail.item-actions > div {
+.clff20.sheet .inventory-list .item-detail.item-actions > div,
+.clff20.sheet .items-list .item-detail.item-actions > div {
   flex: 0 0 16px;
 }
-.ffd20.sheet .inventory-list .item-detail.item-slot,
-.ffd20.sheet .items-list .item-detail.item-slot {
+.clff20.sheet .inventory-list .item-detail.item-slot,
+.clff20.sheet .items-list .item-detail.item-slot {
   flex: 0 0 64px;
   padding: 0 1px 0 1px;
 }
-.ffd20.sheet .inventory-list .item-detail.item-usage,
-.ffd20.sheet .items-list .item-detail.item-usage {
+.clff20.sheet .inventory-list .item-detail.item-usage,
+.clff20.sheet .items-list .item-detail.item-usage {
   flex: 0 0 80px;
   padding: 0 1px 0 1px;
 }
-.ffd20.sheet .inventory-list .item-detail.item-type,
-.ffd20.sheet .items-list .item-detail.item-type {
+.clff20.sheet .inventory-list .item-detail.item-type,
+.clff20.sheet .items-list .item-detail.item-type {
   flex: 0 0 120px;
   padding: 0 1px 0 1px;
 }
-.ffd20.sheet .inventory-list .item-detail.item-value,
-.ffd20.sheet .items-list .item-detail.item-value {
+.clff20.sheet .inventory-list .item-detail.item-value,
+.clff20.sheet .items-list .item-detail.item-value {
   flex: 0 0 72px;
   padding: 0 1px 0 1px;
 }
-.ffd20.sheet .inventory-list .item-detail.item-weight,
-.ffd20.sheet .items-list .item-detail.item-weight {
+.clff20.sheet .inventory-list .item-detail.item-weight,
+.clff20.sheet .items-list .item-detail.item-weight {
   flex: 0 0 56px;
   padding: 0 1px 0 1px;
 }
-.ffd20.sheet .inventory-list .item-detail.item-hidden,
-.ffd20.sheet .items-list .item-detail.item-hidden {
+.clff20.sheet .inventory-list .item-detail.item-hidden,
+.clff20.sheet .items-list .item-detail.item-hidden {
   flex: 0 0 32px;
   padding: 0 1px 0 1px;
 }
-.ffd20.sheet .inventory-list .item-detail.item-identified,
-.ffd20.sheet .items-list .item-detail.item-identified {
+.clff20.sheet .inventory-list .item-detail.item-identified,
+.clff20.sheet .items-list .item-detail.item-identified {
   flex: 0 0 32px;
   padding: 0 1px 0 1px;
 }
-.ffd20.sheet .inventory-list .item-detail.item-carried,
-.ffd20.sheet .items-list .item-detail.item-carried {
+.clff20.sheet .inventory-list .item-detail.item-carried,
+.clff20.sheet .items-list .item-detail.item-carried {
   flex: 0 0 32px;
   padding: 0 1px 0 1px;
 }
-.ffd20.sheet .inventory-list .item-detail.item-equipped,
-.ffd20.sheet .items-list .item-detail.item-equipped {
+.clff20.sheet .inventory-list .item-detail.item-equipped,
+.clff20.sheet .items-list .item-detail.item-equipped {
   flex: 0 0 32px;
   padding: 0 1px 0 1px;
 }
-.ffd20.sheet .inventory-list .item-detail.item-uses,
-.ffd20.sheet .items-list .item-detail.item-uses {
+.clff20.sheet .inventory-list .item-detail.item-uses,
+.clff20.sheet .items-list .item-detail.item-uses {
   flex: 0 0 64px;
   padding: 0 1px 0 1px;
 }
-.ffd20.sheet .inventory-list .item-detail.item-uses .sep,
-.ffd20.sheet .items-list .item-detail.item-uses .sep {
+.clff20.sheet .inventory-list .item-detail.item-uses .sep,
+.clff20.sheet .items-list .item-detail.item-uses .sep {
   flex: 0;
 }
-.ffd20.sheet .inventory-list .item-detail.item-attacks,
-.ffd20.sheet .items-list .item-detail.item-attacks {
+.clff20.sheet .inventory-list .item-detail.item-attacks,
+.clff20.sheet .items-list .item-detail.item-attacks {
   flex: 0 0 80px;
 }
-.ffd20.sheet .inventory-list .item-detail.item-damage,
-.ffd20.sheet .items-list .item-detail.item-damage {
+.clff20.sheet .inventory-list .item-detail.item-damage,
+.clff20.sheet .items-list .item-detail.item-damage {
   flex: 0 0 100px;
 }
-.ffd20.sheet .inventory-list .item-detail.item-range,
-.ffd20.sheet .items-list .item-detail.item-range {
+.clff20.sheet .inventory-list .item-detail.item-range,
+.clff20.sheet .items-list .item-detail.item-range {
   flex: 0 1 56px;
 }
-.ffd20.sheet .inventory-list .item-detail.item-button,
-.ffd20.sheet .items-list .item-detail.item-button {
+.clff20.sheet .inventory-list .item-detail.item-button,
+.clff20.sheet .items-list .item-detail.item-button {
   flex: 0 0 64px;
 }
-.ffd20.sheet .inventory-list .item-detail.item-button button,
-.ffd20.sheet .items-list .item-detail.item-button button {
+.clff20.sheet .inventory-list .item-detail.item-button button,
+.clff20.sheet .items-list .item-detail.item-button button {
   height: 24px;
   font-size: 11px;
   padding: 0;
   line-height: 24px;
 }
-.ffd20.sheet .inventory-list a.item-control,
-.ffd20.sheet .items-list a.item-control {
+.clff20.sheet .inventory-list a.item-control,
+.clff20.sheet .items-list a.item-control {
   height: 100%;
 }
-.ffd20.sheet .inventory-list a.item-control.item-toggle-data,
-.ffd20.sheet .items-list a.item-control.item-toggle-data {
+.clff20.sheet .inventory-list a.item-control.item-toggle-data,
+.clff20.sheet .items-list a.item-control.item-toggle-data {
   color: rgba(75, 75, 75, 0.3);
 }
-.ffd20.sheet .inventory-list a.item-control.item-toggle-data.enabled,
-.ffd20.sheet .items-list a.item-control.item-toggle-data.enabled {
+.clff20.sheet .inventory-list a.item-control.item-toggle-data.enabled,
+.clff20.sheet .items-list a.item-control.item-toggle-data.enabled {
   color: #4b4b4b;
 }
-.ffd20.sheet .inventory-list .item-level,
-.ffd20.sheet .items-list .item-level {
+.clff20.sheet .inventory-list .item-level,
+.clff20.sheet .items-list .item-level {
   flex: 0 0 40px;
 }
-.ffd20.sheet .inventory-list .item-feat-level,
-.ffd20.sheet .items-list .item-feat-level {
+.clff20.sheet .inventory-list .item-feat-level,
+.clff20.sheet .items-list .item-feat-level {
   flex: 0 0 60px;
 }
-.ffd20.sheet .inventory-list .item-active,
-.ffd20.sheet .items-list .item-active {
+.clff20.sheet .inventory-list .item-active,
+.clff20.sheet .items-list .item-active {
   flex: 0 0 60px;
 }
-.ffd20.sheet .inventory-list .item-list,
-.ffd20.sheet .items-list .item-list {
+.clff20.sheet .inventory-list .item-list,
+.clff20.sheet .items-list .item-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.ffd20.sheet .inventory-list .item-controls,
-.ffd20.sheet .items-list .item-controls {
+.clff20.sheet .inventory-list .item-controls,
+.clff20.sheet .items-list .item-controls {
   flex: 0 0 100px;
   display: flex;
   flex-direction: row;
@@ -812,57 +812,57 @@
   white-space: nowrap;
   justify-content: center;
 }
-.ffd20.sheet .inventory-list .item-controls > *,
-.ffd20.sheet .items-list .item-controls > * {
+.clff20.sheet .inventory-list .item-controls > *,
+.clff20.sheet .items-list .item-controls > * {
   flex: 1;
 }
-.ffd20.sheet .inventory-list .item-controls .flex1,
-.ffd20.sheet .items-list .item-controls .flex1 {
+.clff20.sheet .inventory-list .item-controls .flex1,
+.clff20.sheet .items-list .item-controls .flex1 {
   flex: 1;
 }
-.ffd20.sheet .inventory-list .item-controls .flex2,
-.ffd20.sheet .items-list .item-controls .flex2 {
+.clff20.sheet .inventory-list .item-controls .flex2,
+.clff20.sheet .items-list .item-controls .flex2 {
   flex: 2;
 }
-.ffd20.sheet .inventory-list .item-controls .flex3,
-.ffd20.sheet .items-list .item-controls .flex3 {
+.clff20.sheet .inventory-list .item-controls .flex3,
+.clff20.sheet .items-list .item-controls .flex3 {
   flex: 3;
 }
-.ffd20.sheet .inventory-list .item-controls .flex4,
-.ffd20.sheet .items-list .item-controls .flex4 {
+.clff20.sheet .inventory-list .item-controls .flex4,
+.clff20.sheet .items-list .item-controls .flex4 {
   flex: 4;
 }
-.ffd20.sheet .inventory-list .item-controls a,
-.ffd20.sheet .items-list .item-controls a {
+.clff20.sheet .inventory-list .item-controls a,
+.clff20.sheet .items-list .item-controls a {
   flex: 0 0 16px;
   font-size: 14px;
   text-align: center;
   color: #666;
 }
-.ffd20.sheet .inventory-list .item-controls.basic,
-.ffd20.sheet .items-list .item-controls.basic {
+.clff20.sheet .inventory-list .item-controls.basic,
+.clff20.sheet .items-list .item-controls.basic {
   flex: 0 0 48px;
 }
-.ffd20.sheet .inventory-list .item-summary,
-.ffd20.sheet .items-list .item-summary {
+.clff20.sheet .inventory-list .item-summary,
+.clff20.sheet .items-list .item-summary {
   flex: 0 0 100%;
   font-size: 14px;
   line-height: 16px;
   padding: 0.25em 0.5em;
   border-top: 1px solid #c9c7b8;
 }
-.ffd20.sheet input[type="text"],
-.ffd20.sheet input[type="number"] {
+.clff20.sheet input[type="text"],
+.clff20.sheet input[type="number"] {
   background: none;
   border: 1px solid transparent;
 }
-.ffd20.sheet input[type="text"]:hover,
-.ffd20.sheet input[type="number"]:hover,
-.ffd20.sheet input[type="text"]:focus,
-.ffd20.sheet input[type="number"]:focus {
+.clff20.sheet input[type="text"]:hover,
+.clff20.sheet input[type="number"]:hover,
+.clff20.sheet input[type="text"]:focus,
+.clff20.sheet input[type="number"]:focus {
   border: 1px solid #111;
 }
-.ffd20.sheet textarea {
+.clff20.sheet textarea {
   font-family: sans-serif;
   padding: 1px 5px;
   resize: none;
@@ -870,49 +870,49 @@
   background: rgba(0, 0, 0, 0.05);
   white-space: nowrap;
 }
-.ffd20.sheet textarea:hover {
+.clff20.sheet textarea:hover {
   border: 1px solid #111;
 }
-.ffd20.sheet select {
+.clff20.sheet select {
   flex: 1;
   font-size: 12px;
   height: 24px;
   background: transparent;
 }
-.ffd20.sheet .editable .rollable:hover {
+.clff20.sheet .editable .rollable:hover {
   color: #000;
   text-shadow: 0 0 10px red;
   cursor: pointer;
 }
-.ffd20.sheet .editor {
+.clff20.sheet .editor {
   height: 100%;
 }
-.ffd20.sheet .editor .tox-toolbar-overlord,
-.ffd20.sheet .editor .tox-toolbar__primary {
+.clff20.sheet .editor .tox-toolbar-overlord,
+.clff20.sheet .editor .tox-toolbar__primary {
   background: none;
 }
-.ffd20.sheet .notImp {
+.clff20.sheet .notImp {
   text-decoration: firebrick dotted underline;
   text-decoration-skip-ink: none;
 }
-.ffd20.sheet .notImp::after {
+.clff20.sheet .notImp::after {
   color: firebrick;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f071";
   text-shadow: 0 0 4px white;
 }
-.ffd20.sheet .needSteps {
+.clff20.sheet .needSteps {
   text-decoration: goldenrod double underline;
 }
-.ffd20.sheet .needSteps::after {
+.clff20.sheet .needSteps::after {
   color: goldenrod;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f14a";
   text-shadow: 0 0 4px black;
 }
-.ffd20.sheet .sheet-header {
+.clff20.sheet .sheet-header {
   flex: 0 0 100px;
   border-bottom: 2px groove #eeede0;
   align-items: center;
@@ -920,29 +920,29 @@
   /* Profile Image */
   /* Header Summary Details */
 }
-.ffd20.sheet .sheet-header h1,
-.ffd20.sheet .sheet-header h2,
-.ffd20.sheet .sheet-header h3,
-.ffd20.sheet .sheet-header h4,
-.ffd20.sheet .sheet-header h5 {
+.clff20.sheet .sheet-header h1,
+.clff20.sheet .sheet-header h2,
+.clff20.sheet .sheet-header h3,
+.clff20.sheet .sheet-header h4,
+.clff20.sheet .sheet-header h5 {
   font-family: "Nodesto", "Signika", "Palatino Linotype", serif;
   font-size: 22px;
   font-variant: small-caps;
 }
-.ffd20.sheet .sheet-header h1 {
+.clff20.sheet .sheet-header h1 {
   flex: 1;
   border-bottom: none;
   height: 60px;
   margin: 0;
   padding: 5px;
 }
-.ffd20.sheet .sheet-header h1 input {
+.clff20.sheet .sheet-header h1 input {
   height: 50px;
   font-size: 36px;
   font-variant-caps: small-caps;
   margin: 0;
 }
-.ffd20.sheet .sheet-header img.profile {
+.clff20.sheet .sheet-header img.profile {
   flex: 0 0 100px;
   width: 100px;
   height: 100px;
@@ -950,7 +950,7 @@
   border: none;
   border-right: 2px groove #eeede0;
 }
-.ffd20.sheet .sheet-header .summary {
+.clff20.sheet .sheet-header .summary {
   flex: 0 0 100%;
   height: 36px;
   margin: 0;
@@ -959,7 +959,7 @@
   border-top: 2px groove #eeede0;
   border-bottom: none;
 }
-.ffd20.sheet .sheet-header .summary li {
+.clff20.sheet .sheet-header .summary li {
   width: 33.33%;
   float: left;
   height: 24px;
@@ -969,13 +969,13 @@
   line-height: 24px;
   color: #4b4a44;
 }
-.ffd20.sheet .sheet-header .summary li input {
+.clff20.sheet .sheet-header .summary li input {
   vertical-align: top;
 }
-.ffd20.sheet .sheet-header .header-details .summary input[type="checkbox"] {
+.clff20.sheet .sheet-header .header-details .summary input[type="checkbox"] {
   margin: 0;
 }
-.ffd20.sheet .sheet-navigation {
+.clff20.sheet .sheet-navigation {
   flex: 0 0 30px;
   font-family: "Nodesto", "Signika", "Palatino Linotype", serif;
   font-size: 22px;
@@ -985,7 +985,7 @@
   border: 1px solid rgba(0, 0, 0, 0);
   border-radius: 6px 6px 0 0;
 }
-.ffd20.sheet .sheet-navigation .item {
+.clff20.sheet .sheet-navigation .item {
   height: 30px;
   line-height: 32px;
   margin: 0 2px;
@@ -993,79 +993,79 @@
   border: 1px solid rgba(0, 0, 0, 0);
   border-radius: 12px 12px 0 0;
 }
-.ffd20.sheet .sheet-navigation .item.active {
+.clff20.sheet .sheet-navigation .item.active {
   background: rgba(155, 155, 155, 0.5);
 }
-.ffd20.sheet .sheet-navigation .item:hover {
+.clff20.sheet .sheet-navigation .item:hover {
   background: rgba(155, 155, 155, 0.2);
 }
-.ffd20.sheet .sheet-navigation.tabs {
+.clff20.sheet .sheet-navigation.tabs {
   border-bottom: 2px groove #eeede0;
 }
-.ffd20.sheet .sheet-navigation.subtabs {
+.clff20.sheet .sheet-navigation.subtabs {
   font-size: 18px;
 }
-.ffd20.sheet .primary-body {
+.clff20.sheet .primary-body {
   flex: 1;
   overflow: hidden;
 }
-.ffd20.sheet .filter-list {
+.clff20.sheet .filter-list {
   list-style: none;
   margin: 0;
   padding: 0;
   line-height: 16px;
 }
-.ffd20.sheet .filter-list .filter-title {
+.clff20.sheet .filter-list .filter-title {
   flex: 3;
 }
-.ffd20.sheet .filter-list .filter-item {
+.clff20.sheet .filter-list .filter-item {
   text-align: center;
   font-size: 12px;
   margin: 0 6px;
   border-bottom: 3px solid #b5b3a4;
   white-space: nowrap;
 }
-.ffd20.sheet .filter-list .filter-item:hover {
+.clff20.sheet .filter-list .filter-item:hover {
   text-shadow: 0 0 4px red;
   border-bottom: 3px solid #7a7971;
 }
-.ffd20.sheet .filter-list .filter-item.active {
+.clff20.sheet .filter-list .filter-item.active {
   border-bottom: 3px solid #44191a;
 }
-.ffd20.sheet a > .icon:hover {
+.clff20.sheet a > .icon:hover {
   opacity: 0.5;
 }
-.ffd20.sheet .icon {
+.clff20.sheet .icon {
   border: none;
   display: inline-block;
   width: 16px;
   height: 16px;
 }
-.ffd20.sheet .icon.large {
+.clff20.sheet .icon.large {
   width: 24px;
   height: 24px;
 }
-.ffd20.sheet div.info {
+.clff20.sheet div.info {
   text-align: center;
   justify-content: center;
 }
-.ffd20.sheet div.info span {
+.clff20.sheet div.info span {
   color: #7a7971;
   flex: 0;
 }
-.ffd20.sheet div.info span a {
+.clff20.sheet div.info span a {
   color: #7e78dc;
 }
-.ffd20.sheet .currency {
+.clff20.sheet .currency {
   list-style: none;
   margin: 0;
   padding: 0;
   font-size: 14px;
 }
-.ffd20.sheet .currency h3 {
+.clff20.sheet .currency h3 {
   flex: 0 0 160px;
 }
-.ffd20.sheet .currency label.denomination {
+.clff20.sheet .currency label.denomination {
   flex: 3;
   margin-left: 4px;
   text-align: right;
@@ -1073,17 +1073,17 @@
   color: #7a7971;
   cursor: grab;
 }
-.ffd20.sheet .currency label.denomination::before {
+.clff20.sheet .currency label.denomination::before {
   content: "\f58e";
   font-weight: 900;
   font-family: "Font Awesome 5 Free";
   visibility: hidden;
 }
-.ffd20.sheet .currency label.denomination:hover::before {
+.clff20.sheet .currency label.denomination:hover::before {
   visibility: visible;
 }
-.ffd20.sheet .currency input[type="text"],
-.ffd20.sheet .currency span.text-box {
+.clff20.sheet .currency input[type="text"],
+.clff20.sheet .currency span.text-box {
   flex: 6;
   text-align: center;
   margin-left: 8px;
@@ -1093,7 +1093,7 @@
   height: auto;
   line-height: 20px;
 }
-.ffd20.sheet .currency .convert-currency {
+.clff20.sheet .currency .convert-currency {
   flex: 0;
 }
 /* ----------------------------------------- */
@@ -1108,27 +1108,27 @@
   height: 24px;
   margin: 2px;
 }
-.ffd20.entry table,
+.clff20.entry table,
 .notes table {
   border: 1px solid #888888;
   font-weight: normal;
   table-layout: fixed;
 }
-.ffd20.entry table th.entry-control,
+.clff20.entry table th.entry-control,
 .notes table th.entry-control {
   width: 16px;
 }
-.ffd20.entry table tr,
+.clff20.entry table tr,
 .notes table tr {
   height: 16px;
 }
-.ffd20.entry thead {
+.clff20.entry thead {
   background-color: #cfe2f3;
 }
-.ffd20.entry tbody tr {
+.clff20.entry tbody tr {
   background-color: white;
 }
-.ffd20.entry tbody tr:nth-child(even) {
+.clff20.entry tbody tr:nth-child(even) {
   background-color: #f3f3f3;
 }
 .compendium-browser {
@@ -1223,54 +1223,54 @@
   color: #888888;
   opacity: 1;
 }
-.ffd20.pointbuy-calculator ol.item-list li {
+.clff20.pointbuy-calculator ol.item-list li {
   background-color: rgba(155, 155, 155, 0.3);
 }
-.ffd20.pointbuy-calculator ol.item-list li:nth-child(2n + 1) {
+.clff20.pointbuy-calculator ol.item-list li:nth-child(2n + 1) {
   background-color: rgba(210, 210, 210, 0.3);
 }
-.ffd20.pointbuy-calculator ol.item-list .ability-controls {
+.clff20.pointbuy-calculator ol.item-list .ability-controls {
   flex: 0 0 32px;
   padding: 0 1px 0 1px;
 }
-.ffd20.pointbuy-calculator ol.item-list .item-detail.ability-value {
+.clff20.pointbuy-calculator ol.item-list .item-detail.ability-value {
   flex: 0 0 32px;
   padding: 0 1px 0 1px;
 }
-.ffd20 .currency-transfer .form-group:nth-child(5) {
+.clff20 .currency-transfer .form-group:nth-child(5) {
   background-color: rgba(170, 170, 170, 0.3);
   border-top: 1px dashed #aaa;
 }
-.ffd20 .currency-transfer .form-group > label {
+.clff20 .currency-transfer .form-group > label {
   flex: 0 0 150px;
 }
-.ffd20 .currency-transfer .form-fields input,
-.ffd20 .currency-transfer .form-fields span {
+.clff20 .currency-transfer .form-fields input,
+.clff20 .currency-transfer .form-fields span {
   flex: 2;
   font-weight: bold;
 }
-.ffd20 .currency-transfer .form-fields input.text-box,
-.ffd20 .currency-transfer .form-fields span.text-box {
+.clff20 .currency-transfer .form-fields input.text-box,
+.clff20 .currency-transfer .form-fields span.text-box {
   line-height: 22px;
   border: 1px dotted #777;
   color: #333;
 }
-.ffd20 .currency-transfer .form-fields input:not(.text-box),
-.ffd20 .currency-transfer .form-fields span:not(.text-box) {
+.clff20 .currency-transfer .form-fields input:not(.text-box),
+.clff20 .currency-transfer .form-fields span:not(.text-box) {
   color: black;
   border: initial;
   border-bottom: 2px groove #eeede0;
 }
-.ffd20 .currency-transfer .form-fields button > i:only-child {
+.clff20 .currency-transfer .form-fields button > i:only-child {
   margin: 0;
 }
-.ffd20 .currency-transfer .form-group.currency-total .form-fields label:nth-child(1) {
+.clff20 .currency-transfer .form-group.currency-total .form-fields label:nth-child(1) {
   text-align: right;
 }
-.ffd20 .currency-transfer .form-group.currency-total .form-fields label:nth-child(2) {
+.clff20 .currency-transfer .form-group.currency-total .form-fields label:nth-child(2) {
   flex: initial;
 }
-.ffd20 .currency-transfer .form-group.currency-total .form-fields label:nth-child(3) {
+.clff20 .currency-transfer .form-group.currency-total .form-fields label:nth-child(3) {
   text-align: left;
 }
 .dialog-get-actor {
@@ -1298,128 +1298,128 @@
 /* ----------------------------------------- */
 /* Changelog
 /* ----------------------------------------- */
-.ffd20.changelog .content {
+.clff20.changelog .content {
   overflow-y: auto;
   max-height: 640px;
 }
-.ffd20.changelog .content li > ul {
+.clff20.changelog .content li > ul {
   margin: 0;
 }
 /* ----------------------------------------- */
 /* Help Browser
 /* ----------------------------------------- */
-.ffd20.help-browser section.window-content {
+.clff20.help-browser section.window-content {
   padding: 0;
 }
-.ffd20.help-browser section.window-content .top-bar {
+.clff20.help-browser section.window-content .top-bar {
   padding: 6px;
   flex: 0 0 24px;
   border-bottom: 2px groove #eeede0;
 }
-.ffd20.help-browser section.window-content .top-bar > * {
+.clff20.help-browser section.window-content .top-bar > * {
   margin-right: 8px;
 }
-.ffd20.help-browser section.window-content .top-bar i {
+.clff20.help-browser section.window-content .top-bar i {
   font-size: 24px;
 }
-.ffd20.help-browser section.window-content .top-bar i.gray {
+.clff20.help-browser section.window-content .top-bar i.gray {
   color: gray;
 }
-.ffd20.help-browser section.window-content .content a,
-.ffd20.help-browser section.window-content nav a {
+.clff20.help-browser section.window-content .content a,
+.clff20.help-browser section.window-content nav a {
   color: #ff6400;
   text-decoration: underline;
 }
-.ffd20.help-browser section.window-content .primary {
+.clff20.help-browser section.window-content .primary {
   height: calc(100% - 32px);
 }
-.ffd20.help-browser section.window-content nav {
+.clff20.help-browser section.window-content nav {
   flex: 0 0 200px;
   border-right: 2px groove #eeede0;
   height: 100%;
   overflow: auto;
 }
-.ffd20.help-browser section.window-content .content {
+.clff20.help-browser section.window-content .content {
   height: 100%;
   overflow: auto;
   padding-bottom: 32px;
 }
-.ffd20.help-browser section.window-content .content code {
+.clff20.help-browser section.window-content .content code {
   padding: 2px;
   background-color: black;
   color: white;
 }
-.ffd20.help-browser section.window-content .content img {
+.clff20.help-browser section.window-content .content img {
   margin-left: 8px;
 }
-.ffd20.help-browser section.window-content .content h2 {
+.clff20.help-browser section.window-content .content h2 {
   margin-top: 1em;
 }
 /* ----------------------------------------- */
 /* Script Editor
 /* ----------------------------------------- */
-.ffd20.script-editor .form-group.command {
+.clff20.script-editor .form-group.command {
   flex: 1;
   flex-direction: column;
   align-items: unset;
 }
-.ffd20.script-editor .form-group.command label {
+.clff20.script-editor .form-group.command label {
   flex: 0;
 }
-.ffd20.script-editor .form-group.command textarea {
+.clff20.script-editor .form-group.command textarea {
   flex: 1;
 }
-.ffd20.script-editor footer {
+.clff20.script-editor footer {
   flex: 0 0 32px;
 }
 /* ----------------------------------------- */
 /* Level Up Dialog
 /* ----------------------------------------- */
-.ffd20.level-up div.part {
+.clff20.level-up div.part {
   margin-bottom: 4px;
 }
-.ffd20.level-up div.health {
+.clff20.level-up div.health {
   display: flex;
   flex-flow: row nowrap;
 }
-.ffd20.level-up div.health .switch.roll-health {
+.clff20.level-up div.health .switch.roll-health {
   flex: 0 0 96px;
 }
-.ffd20.level-up div.health .switch.roll-health .switch-label span {
+.clff20.level-up div.health .switch.roll-health .switch-label span {
   height: 26px;
   line-height: 26px;
   padding: 0;
 }
-.ffd20.level-up div.health input[type="text"] {
+.clff20.level-up div.health input[type="text"] {
   flex: 0 0 64px;
 }
 /* ----------------------------------------- */
 /* Experience Distributor
 /* ----------------------------------------- */
-.ffd20.xp-distributor form {
+.clff20.xp-distributor form {
   display: flex;
   flex-flow: column nowrap;
   overflow: hidden;
 }
-.ffd20.xp-distributor form .selectors {
+.clff20.xp-distributor form .selectors {
   overflow-y: auto;
   flex: 1;
 }
-.ffd20.xp-distributor form .selectors .character-selector .actor {
+.clff20.xp-distributor form .selectors .character-selector .actor {
   grid-template-rows: 96px 36px 18px;
 }
-.ffd20.xp-distributor form .selectors .npc-selector .actor {
+.clff20.xp-distributor form .selectors .npc-selector .actor {
   grid-template-rows: 96px 36px 16px 18px;
 }
-.ffd20.xp-distributor form .selectors .character-selector,
-.ffd20.xp-distributor form .selectors .npc-selector {
+.clff20.xp-distributor form .selectors .character-selector,
+.clff20.xp-distributor form .selectors .npc-selector {
   display: grid;
   flex-flow: row wrap;
   grid-template-columns: repeat(auto-fit, 96px);
   grid-gap: 0.4rem;
 }
-.ffd20.xp-distributor form .selectors .character-selector .actor,
-.ffd20.xp-distributor form .selectors .npc-selector .actor {
+.clff20.xp-distributor form .selectors .character-selector .actor,
+.clff20.xp-distributor form .selectors .npc-selector .actor {
   cursor: pointer;
   width: 96px;
   padding: 4px;
@@ -1429,19 +1429,19 @@
   justify-items: center;
   grid-row-gap: 2px;
 }
-.ffd20.xp-distributor form .selectors .character-selector .actor input[type="checkbox"],
-.ffd20.xp-distributor form .selectors .npc-selector .actor input[type="checkbox"] {
+.clff20.xp-distributor form .selectors .character-selector .actor input[type="checkbox"],
+.clff20.xp-distributor form .selectors .npc-selector .actor input[type="checkbox"] {
   cursor: pointer;
 }
-.ffd20.xp-distributor form .selectors .character-selector .actor img.portrait,
-.ffd20.xp-distributor form .selectors .npc-selector .actor img.portrait {
+.clff20.xp-distributor form .selectors .character-selector .actor img.portrait,
+.clff20.xp-distributor form .selectors .npc-selector .actor img.portrait {
   height: 88px;
   width: 88px;
   object-fit: cover;
   object-position: 50% 0;
 }
-.ffd20.xp-distributor form .selectors .character-selector .actor span,
-.ffd20.xp-distributor form .selectors .npc-selector .actor span {
+.clff20.xp-distributor form .selectors .character-selector .actor span,
+.clff20.xp-distributor form .selectors .npc-selector .actor span {
   overflow: hidden;
   text-align: center;
   text-overflow: ellipsis;
@@ -1449,42 +1449,42 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
 }
-.ffd20.xp-distributor form .selectors .character-selector .actor.toggled,
-.ffd20.xp-distributor form .selectors .npc-selector .actor.toggled {
+.clff20.xp-distributor form .selectors .character-selector .actor.toggled,
+.clff20.xp-distributor form .selectors .npc-selector .actor.toggled {
   background: rgba(155, 155, 155, 0.5);
 }
-.ffd20.xp-distributor form .selectors .character-selector .actor.toggled span.name,
-.ffd20.xp-distributor form .selectors .npc-selector .actor.toggled span.name {
+.clff20.xp-distributor form .selectors .character-selector .actor.toggled span.name,
+.clff20.xp-distributor form .selectors .npc-selector .actor.toggled span.name {
   text-shadow: 0 0 10px red;
 }
-.ffd20.xp-distributor form .selectors .character-selector .actor:hover,
-.ffd20.xp-distributor form .selectors .npc-selector .actor:hover {
+.clff20.xp-distributor form .selectors .character-selector .actor:hover,
+.clff20.xp-distributor form .selectors .npc-selector .actor:hover {
   background: rgba(155, 155, 155, 0.2);
 }
-.ffd20.xp-distributor form .selectors .character-selector .actor:hover span.name,
-.ffd20.xp-distributor form .selectors .npc-selector .actor:hover span.name {
+.clff20.xp-distributor form .selectors .character-selector .actor:hover span.name,
+.clff20.xp-distributor form .selectors .npc-selector .actor:hover span.name {
   text-shadow: 0 0 10px red;
 }
-.ffd20.xp-distributor form .footer {
+.clff20.xp-distributor form .footer {
   flex: 0;
   line-height: 24px;
   margin-bottom: 5px;
 }
-.ffd20.xp-distributor form .footer .property {
+.clff20.xp-distributor form .footer .property {
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
-.ffd20.xp-distributor form .footer .options label {
+.clff20.xp-distributor form .footer .options label {
   flex: 1;
   margin-left: 0;
   justify-content: space-between;
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
-.ffd20.xp-distributor form .footer .options input {
+.clff20.xp-distributor form .footer .options input {
   flex: 0.8;
 }
-.ffd20.sheet.actor {
+.clff20.sheet.actor {
   min-width: 672px;
   min-height: 736px;
   /* ----------------------------------------- */
@@ -1532,60 +1532,60 @@
   /*  Misc                                     */
   /* ----------------------------------------- */
 }
-.ffd20.sheet.actor .warning {
+.clff20.sheet.actor .warning {
   flex: 0;
   background-color: #cece00;
   border: 1px solid #909000;
   border-radius: 2px;
 }
-.ffd20.sheet.actor .tab-footer {
+.clff20.sheet.actor .tab-footer {
   flex: 0;
 }
-.ffd20.sheet.actor .tab.summary {
+.clff20.sheet.actor .tab.summary {
   border-left: 2px groove #eeede0;
 }
-.ffd20.sheet.actor .tab.summary .summary-header {
+.clff20.sheet.actor .tab.summary .summary-header {
   flex: 0;
   border-bottom: 2px groove #eeede0;
 }
-.ffd20.sheet.actor .tab.summary .summary-header .name-xp {
+.clff20.sheet.actor .tab.summary .summary-header .name-xp {
   flex: 0;
 }
-.ffd20.sheet.actor .tab.summary .summary-header .name-xp h1.charname input {
+.clff20.sheet.actor .tab.summary .summary-header .name-xp h1.charname input {
   height: 32px;
   padding: 0;
 }
-.ffd20.sheet.actor .tab.summary .summary-header .character-summary {
+.clff20.sheet.actor .tab.summary .summary-header .character-summary {
   flex: 0;
 }
-.ffd20.sheet.actor .tab.summary .summary-header .character-summary > div {
+.clff20.sheet.actor .tab.summary .summary-header .character-summary > div {
   flex: 0 0 33%;
   height: 32px;
   line-height: 28px;
   border-right: 2px groove #eeede0;
   border-bottom: 2px groove #eeede0;
 }
-.ffd20.sheet.actor .tab.summary .summary-header .character-summary > div:nth-child(3n + 0) {
+.clff20.sheet.actor .tab.summary .summary-header .character-summary > div:nth-child(3n + 0) {
   border-right: none;
 }
-.ffd20.sheet.actor .tab.summary .summary-header .character-summary > div.alignment {
+.clff20.sheet.actor .tab.summary .summary-header .character-summary > div.alignment {
   padding: 1px 3px;
 }
-.ffd20.sheet.actor .tab.summary .summary-header .race-container {
+.clff20.sheet.actor .tab.summary .summary-header .race-container {
   flex: 1;
   margin: 3px 0;
 }
-.ffd20.sheet.actor .tab.summary .summary-header .race-container .item-controls {
+.clff20.sheet.actor .tab.summary .summary-header .race-container .item-controls {
   flex: 0;
   align-items: flex-start;
 }
-.ffd20.sheet.actor .tab.summary .summary-header .race-container .item-controls a {
+.clff20.sheet.actor .tab.summary .summary-header .race-container .item-controls a {
   flex: 0 0 12px;
   font-size: 12px;
   text-align: center;
   color: #666;
 }
-.ffd20.sheet.actor .tab.summary .summary-header .race-container .race {
+.clff20.sheet.actor .tab.summary .summary-header .race-container .race {
   flex: 0 0 32px;
   background-size: contain;
   line-height: 32px;
@@ -1595,13 +1595,13 @@
   height: 32px;
   color: #7a7971;
 }
-.ffd20.sheet.actor .tab.summary .summary-header .race-container .race.rollable:hover {
+.clff20.sheet.actor .tab.summary .summary-header .race-container .race.rollable:hover {
   background-image: url("../../icons/svg/d20-black.svg") !important;
 }
-.ffd20.sheet.actor .tab.summary .summary-header .race-container .race-info {
+.clff20.sheet.actor .tab.summary .summary-header .race-container .race-info {
   margin-left: 8px;
 }
-.ffd20.sheet.actor .tab.summary .attributes > .attribute {
+.clff20.sheet.actor .tab.summary .attributes > .attribute {
   margin: 0;
   border-left: none;
   border-bottom: none;
@@ -1610,7 +1610,7 @@
   border-radius: 0;
   height: auto;
 }
-.ffd20.sheet.actor .tab.summary img.profile {
+.clff20.sheet.actor .tab.summary img.profile {
   flex: 0 0 160px;
   width: 160px;
   height: 160px;
@@ -1619,69 +1619,69 @@
   border: none;
   border-right: 2px groove #eeede0;
 }
-.ffd20.sheet.actor .tab.summary .misc-header-items {
+.clff20.sheet.actor .tab.summary .misc-header-items {
   flex: 0;
 }
-.ffd20.sheet.actor .tab.summary .misc-header-items > * {
+.clff20.sheet.actor .tab.summary .misc-header-items > * {
   margin-right: 8px;
 }
-.ffd20.sheet.actor .tab.summary .misc-header-items .actor-quick-actions {
+.clff20.sheet.actor .tab.summary .misc-header-items .actor-quick-actions {
   display: flex;
   justify-content: space-evenly;
   flex-flow: row wrap;
 }
-.ffd20.sheet.actor .tab.summary .misc-header-items .actor-quick-actions button {
+.clff20.sheet.actor .tab.summary .misc-header-items .actor-quick-actions button {
   min-height: 24px;
   width: calc(50% - 6px);
   height: calc(50% - 6px);
   line-height: 50%;
 }
-.ffd20.sheet.actor .tab.summary .hd-level {
+.clff20.sheet.actor .tab.summary .hd-level {
   flex: 0 0 256px;
   overflow-x: hidden;
   margin: 0 0 4px 8px;
 }
-.ffd20.sheet.actor .tab.summary .hd-level table {
+.clff20.sheet.actor .tab.summary .hd-level table {
   margin-bottom: 4px;
 }
-.ffd20.sheet.actor .tab.summary .hd-level table:hover a.config-icon {
+.clff20.sheet.actor .tab.summary .hd-level table:hover a.config-icon {
   color: #b5b3a4;
 }
-.ffd20.sheet.actor .tab.summary .hd-level table th.level {
+.clff20.sheet.actor .tab.summary .hd-level table th.level {
   width: 32px;
 }
-.ffd20.sheet.actor .tab.summary .hd-level table tr td {
+.clff20.sheet.actor .tab.summary .hd-level table tr td {
   padding: 0;
   text-align: center;
 }
-.ffd20.sheet.actor .tab.summary .hd-level table tr td.experience,
-.ffd20.sheet.actor .tab.summary .hd-level table tr th.experience {
+.clff20.sheet.actor .tab.summary .hd-level table tr td.experience,
+.clff20.sheet.actor .tab.summary .hd-level table tr th.experience {
   width: 50%;
 }
-.ffd20.sheet.actor .tab.summary .hd-level table tr a.config-icon {
+.clff20.sheet.actor .tab.summary .hd-level table tr a.config-icon {
   flex: 0 0 16px;
   width: 16px;
   font-size: 16px;
   color: rgba(0, 0, 0, 0);
 }
-.ffd20.sheet.actor .tab.summary .hd-level table tr a.config-icon:hover {
+.clff20.sheet.actor .tab.summary .hd-level table tr a.config-icon:hover {
   color: #191813;
 }
-.ffd20.sheet.actor .tab.summary .hd-level table tr input[type="text"] {
+.clff20.sheet.actor .tab.summary .hd-level table tr input[type="text"] {
   flex: 1 0 32px;
   height: auto;
 }
-.ffd20.sheet.actor .tab.summary .hd-level table tr td.experience input[type="text"],
-.ffd20.sheet.actor .tab.summary .hd-level table tr td.experience span.text-box,
-.ffd20.sheet.actor .tab.summary .hd-level table tr td.experience .max {
+.clff20.sheet.actor .tab.summary .hd-level table tr td.experience input[type="text"],
+.clff20.sheet.actor .tab.summary .hd-level table tr td.experience span.text-box,
+.clff20.sheet.actor .tab.summary .hd-level table tr td.experience .max {
   padding: 0;
   flex: 1;
   text-align: center;
 }
-.ffd20.sheet.actor .tab.summary .hd-level table tr td.experience .separator {
+.clff20.sheet.actor .tab.summary .hd-level table tr td.experience .separator {
   flex: 0;
 }
-.ffd20.sheet.actor .tab.summary .hd-level .xpbar {
+.clff20.sheet.actor .tab.summary .hd-level .xpbar {
   width: 100%;
   height: 12px;
   font-size: 16px;
@@ -1690,36 +1690,36 @@
   border: 1px solid #191813;
   border-radius: 4px;
 }
-.ffd20.sheet.actor .tab.summary .hd-level .xpbar span.bar {
+.clff20.sheet.actor .tab.summary .hd-level .xpbar span.bar {
   background: #63ff00;
   border: 1px solid #d0ffb2;
   border-radius: 2px;
   height: 10px;
   display: block;
 }
-.ffd20.sheet.actor .tab.summary .attributes {
+.clff20.sheet.actor .tab.summary .attributes {
   border-bottom: 2px groove #eeede0;
 }
-.ffd20.sheet.actor .tab.summary .attributes li {
+.clff20.sheet.actor .tab.summary .attributes li {
   padding: 0;
   border-top: 2px groove #eeede0;
 }
-.ffd20.sheet.actor .tab.summary .attributes li:not(:last-child) {
+.clff20.sheet.actor .tab.summary .attributes li:not(:last-child) {
   border-right: 2px groove #eeede0;
 }
-.ffd20.sheet.actor .tab.summary .tab.quick-info ul.attributes {
+.clff20.sheet.actor .tab.summary .tab.quick-info ul.attributes {
   margin: 2px 0;
 }
-.ffd20.sheet.actor .tab.summary .tab.quick-info table {
+.clff20.sheet.actor .tab.summary .tab.quick-info table {
   margin-bottom: 4px;
 }
-.ffd20.sheet.actor .tab.summary .tab.quick-info .quick-actions {
+.clff20.sheet.actor .tab.summary .tab.quick-info .quick-actions {
   display: flex;
   flex-direction: row;
   padding: 0;
   margin: 0;
 }
-.ffd20.sheet.actor .tab.summary .tab.quick-info .quick-actions li {
+.clff20.sheet.actor .tab.summary .tab.quick-info .quick-actions li {
   cursor: pointer;
   flex: 0 0 52px;
   border-width: 2px;
@@ -1729,21 +1729,21 @@
   margin: 2px;
   overflow: hidden;
 }
-.ffd20.sheet.actor .tab.summary .tab.quick-info .quick-actions li:hover {
+.clff20.sheet.actor .tab.summary .tab.quick-info .quick-actions li:hover {
   filter: brightness(150%);
 }
-.ffd20.sheet.actor .tab.summary .tab.quick-info .quick-actions li:hover .icon-label {
+.clff20.sheet.actor .tab.summary .tab.quick-info .quick-actions li:hover .icon-label {
   visibility: initial;
 }
-.ffd20.sheet.actor .tab.summary .tab.quick-info .quick-actions li img {
+.clff20.sheet.actor .tab.summary .tab.quick-info .quick-actions li img {
   border: none;
   width: 48px;
   height: 48px;
 }
-.ffd20.sheet.actor .tab.summary .tab.quick-info .quick-actions li .icon-label {
+.clff20.sheet.actor .tab.summary .tab.quick-info .quick-actions li .icon-label {
   visibility: hidden;
 }
-.ffd20.sheet.actor .tab.summary .tab.quick-info charges {
+.clff20.sheet.actor .tab.summary .tab.quick-info charges {
   position: sticky;
   display: inline-flex;
   align-self: flex-end;
@@ -1758,117 +1758,117 @@
   padding-top: 0.05em;
   padding-right: 0.1em;
 }
-.ffd20.sheet.actor .alignment {
+.clff20.sheet.actor .alignment {
   color: black;
 }
-.ffd20.sheet.actor .controls .control {
+.clff20.sheet.actor .controls .control {
   flex: 0;
   visibility: hidden;
   margin-right: 4px;
 }
-.ffd20.sheet.actor .controls:hover .control {
+.clff20.sheet.actor .controls:hover .control {
   visibility: visible;
 }
-.ffd20.sheet.actor .attributes input[type="text"] {
+.clff20.sheet.actor .attributes input[type="text"] {
   height: 24px;
 }
-.ffd20.sheet.actor .attributes input.temphp {
+.clff20.sheet.actor .attributes input.temphp {
   width: 48%;
 }
-.ffd20.sheet.actor h4.box-title {
+.clff20.sheet.actor h4.box-title {
   line-height: 16px;
   margin: 4px 8px 2px;
   font-size: 20px;
   border-bottom: 1px solid #b5b3a4;
 }
-.ffd20.sheet.actor .primary-body section {
+.clff20.sheet.actor .primary-body section {
   overflow-y: hidden;
 }
-.ffd20.sheet.actor .attributes .traits {
+.clff20.sheet.actor .attributes .traits {
   overflow-y: scroll;
   height: 100%;
 }
-.ffd20.sheet.actor .attributes .traits > * {
+.clff20.sheet.actor .attributes .traits > * {
   flex: 0 0 24px;
   background-color: rgba(170, 170, 170, 0.3);
 }
-.ffd20.sheet.actor .attributes .traits > *:nth-child(even) {
+.clff20.sheet.actor .attributes .traits > *:nth-child(even) {
   background-color: rgba(210, 210, 210, 0.3);
 }
-.ffd20.sheet.actor .attributes .traits > *:hover {
+.clff20.sheet.actor .attributes .traits > *:hover {
   background-color: rgba(64, 64, 192, 0.3);
 }
-.ffd20.sheet.actor .attributes table {
+.clff20.sheet.actor .attributes table {
   margin: 0;
 }
-.ffd20.sheet.actor ul.attributes.misc-base .attribute-footer input,
-.ffd20.sheet.actor ul.attributes.misc-defenses .attribute-footer input {
+.clff20.sheet.actor ul.attributes.misc-base .attribute-footer input,
+.clff20.sheet.actor ul.attributes.misc-defenses .attribute-footer input {
   width: 100%;
 }
-.ffd20.sheet.actor .attributes-root {
+.clff20.sheet.actor .attributes-root {
   flex: 0 0 30%;
 }
-.ffd20.sheet.actor ul.attributes {
+.clff20.sheet.actor ul.attributes {
   list-style: none;
   margin: 0;
   padding: 0;
   flex: 0;
 }
-.ffd20.sheet.actor ul.attributes h3 {
+.clff20.sheet.actor ul.attributes h3 {
   margin: 0;
 }
-.ffd20.sheet.actor ul.attributes table span.text-box,
-.ffd20.sheet.actor ul.attributes table input[type="text"] {
+.clff20.sheet.actor ul.attributes table span.text-box,
+.clff20.sheet.actor ul.attributes table input[type="text"] {
   height: 20px;
   padding: 1px 3px;
 }
-.ffd20.sheet.actor .defenses .attributes {
+.clff20.sheet.actor .defenses .attributes {
   flex: 0;
 }
-.ffd20.sheet.actor .defenses .attribute .attribute-footer input {
+.clff20.sheet.actor .defenses .attribute .attribute-footer input {
   width: 32px;
 }
-.ffd20.sheet.actor .defenses .defense-rolls label,
-.ffd20.sheet.actor .defenses .defense-notes label {
+.clff20.sheet.actor .defenses .defense-rolls label,
+.clff20.sheet.actor .defenses .defense-notes label {
   line-height: 20px;
   white-space: nowrap;
 }
-.ffd20.sheet.actor .defenses .defense-rolls label h3,
-.ffd20.sheet.actor .defenses .defense-notes label h3 {
+.clff20.sheet.actor .defenses .defense-rolls label h3,
+.clff20.sheet.actor .defenses .defense-notes label h3 {
   font-family: "Nodesto", "Signika", "Palatino Linotype", serif;
   font-size: 22px;
   font-variant: small-caps;
   font-size: 24px;
 }
-.ffd20.sheet.actor .defenses .defense-notes {
+.clff20.sheet.actor .defenses .defense-notes {
   margin-top: 5px;
   overflow-y: scroll;
   flex: 1;
 }
-.ffd20.sheet.actor .defenses .defense-notes label {
+.clff20.sheet.actor .defenses .defense-notes label {
   flex: 1;
 }
-.ffd20.sheet.actor .defenses .defense-notes textarea {
+.clff20.sheet.actor .defenses .defense-notes textarea {
   flex: 3;
 }
-.ffd20.sheet.actor .ability-scores {
+.clff20.sheet.actor .ability-scores {
   flex: 0;
   margin-bottom: 4px;
 }
-.ffd20.sheet.actor .ability-scores table {
+.clff20.sheet.actor .ability-scores table {
   margin-bottom: 4px;
 }
-.ffd20.sheet.actor .bottom {
+.clff20.sheet.actor .bottom {
   overflow-y: auto;
 }
-.ffd20.sheet.actor div.skill-rank {
+.clff20.sheet.actor div.skill-rank {
   flex: 0;
 }
-.ffd20.sheet.actor div.skill-rank ol,
-.ffd20.sheet.actor div.skill-rank ul {
+.clff20.sheet.actor div.skill-rank ol,
+.clff20.sheet.actor div.skill-rank ul {
   padding-inline-start: 0;
 }
-.ffd20.sheet.actor ul.skills-list {
+.clff20.sheet.actor ul.skills-list {
   flex: 1;
   overflow-y: auto;
   list-style: none;
@@ -1877,114 +1877,114 @@
   border: 2px groove #eeede0;
   border-radius: 3px;
 }
-.ffd20.sheet.actor ul.skills-list li.skill,
-.ffd20.sheet.actor ul.skills-list li.sub-skill {
+.clff20.sheet.actor ul.skills-list li.skill,
+.clff20.sheet.actor ul.skills-list li.sub-skill {
   height: 28px;
   display: flex;
   flex-direction: row;
   background-color: rgba(170, 170, 170, 0.3);
 }
-.ffd20.sheet.actor ul.skills-list li.skill:nth-child(even),
-.ffd20.sheet.actor ul.skills-list li.sub-skill:nth-child(even) {
+.clff20.sheet.actor ul.skills-list li.skill:nth-child(even),
+.clff20.sheet.actor ul.skills-list li.sub-skill:nth-child(even) {
   background-color: rgba(210, 210, 210, 0.3);
 }
-.ffd20.sheet.actor ul.skills-list li.skill:hover,
-.ffd20.sheet.actor ul.skills-list li.sub-skill:hover {
+.clff20.sheet.actor ul.skills-list li.skill:hover,
+.clff20.sheet.actor ul.skills-list li.sub-skill:hover {
   background-color: rgba(64, 64, 192, 0.3);
 }
-.ffd20.sheet.actor ul.skills-list li.skill .skill-name.untrained,
-.ffd20.sheet.actor ul.skills-list li.sub-skill .skill-name.untrained {
+.clff20.sheet.actor ul.skills-list li.skill .skill-name.untrained,
+.clff20.sheet.actor ul.skills-list li.sub-skill .skill-name.untrained {
   color: rgba(0, 0, 0, 0.6);
 }
-.ffd20.sheet.actor ul.skills-list li.skill .skill-name.untrained .rollable img,
-.ffd20.sheet.actor ul.skills-list li.sub-skill .skill-name.untrained .rollable img {
+.clff20.sheet.actor ul.skills-list li.skill .skill-name.untrained .rollable img,
+.clff20.sheet.actor ul.skills-list li.sub-skill .skill-name.untrained .rollable img {
   opacity: 60%;
 }
-.ffd20.sheet.actor ul.skills-list li.skill .skill-name.untrained .rollable img:hover,
-.ffd20.sheet.actor ul.skills-list li.sub-skill .skill-name.untrained .rollable img:hover {
+.clff20.sheet.actor ul.skills-list li.skill .skill-name.untrained .rollable img:hover,
+.clff20.sheet.actor ul.skills-list li.sub-skill .skill-name.untrained .rollable img:hover {
   animation: 0;
 }
-.ffd20.sheet.actor ul.skills-list li.skill .skill-name,
-.ffd20.sheet.actor ul.skills-list li.sub-skill .skill-name {
+.clff20.sheet.actor ul.skills-list li.skill .skill-name,
+.clff20.sheet.actor ul.skills-list li.sub-skill .skill-name {
   display: flex;
   flex: 180px;
   margin: 0;
   font-size: 14px;
   align-items: center;
 }
-.ffd20.sheet.actor ul.skills-list li.skill .skill-name .untrained-label,
-.ffd20.sheet.actor ul.skills-list li.sub-skill .skill-name .untrained-label {
+.clff20.sheet.actor ul.skills-list li.skill .skill-name .untrained-label,
+.clff20.sheet.actor ul.skills-list li.sub-skill .skill-name .untrained-label {
   vertical-align: super;
   font-size: 14px;
   flex: 0;
 }
-.ffd20.sheet.actor ul.skills-list li.skill .skill-name .rollable,
-.ffd20.sheet.actor ul.skills-list li.sub-skill .skill-name .rollable {
+.clff20.sheet.actor ul.skills-list li.skill .skill-name .rollable,
+.clff20.sheet.actor ul.skills-list li.sub-skill .skill-name .rollable {
   display: flex;
   flex-direction: row;
   flex: 0 0 16px;
   margin-right: 2px;
 }
-.ffd20.sheet.actor ul.skills-list li.skill .skill-name .rollable img,
-.ffd20.sheet.actor ul.skills-list li.sub-skill .skill-name .rollable img {
+.clff20.sheet.actor ul.skills-list li.skill .skill-name .rollable img,
+.clff20.sheet.actor ul.skills-list li.sub-skill .skill-name .rollable img {
   width: 24px;
   height: 24px;
   border: unset;
 }
-.ffd20.sheet.actor ul.skills-list li.skill .skill-name .rollable img:hover,
-.ffd20.sheet.actor ul.skills-list li.sub-skill .skill-name .rollable img:hover {
+.clff20.sheet.actor ul.skills-list li.skill .skill-name .rollable img:hover,
+.clff20.sheet.actor ul.skills-list li.sub-skill .skill-name .rollable img:hover {
   animation: dice-spin 250ms cubic-bezier(0.6, -0.28, 0.735, 0.045) 1 forwards;
   transform-origin: 50% 40%;
   filter: invert(16%) sepia(51.5%) saturate(4012%) hue-rotate(345deg) brightness(100%) contrast(86%);
 }
-.ffd20.sheet.actor ul.skills-list li.skill .skill-name h4,
-.ffd20.sheet.actor ul.skills-list li.sub-skill .skill-name h4,
-.ffd20.sheet.actor ul.skills-list li.skill .skill-name input[type="text"],
-.ffd20.sheet.actor ul.skills-list li.sub-skill .skill-name input[type="text"] {
+.clff20.sheet.actor ul.skills-list li.skill .skill-name h4,
+.clff20.sheet.actor ul.skills-list li.sub-skill .skill-name h4,
+.clff20.sheet.actor ul.skills-list li.skill .skill-name input[type="text"],
+.clff20.sheet.actor ul.skills-list li.sub-skill .skill-name input[type="text"] {
   display: inline-block;
   margin: 0;
   white-space: nowrap;
   overflow: hidden;
 }
-.ffd20.sheet.actor ul.skills-list li.skill .skill-name .compendium-entry > h4,
-.ffd20.sheet.actor ul.skills-list li.sub-skill .skill-name .compendium-entry > h4 {
+.clff20.sheet.actor ul.skills-list li.skill .skill-name .compendium-entry > h4,
+.clff20.sheet.actor ul.skills-list li.sub-skill .skill-name .compendium-entry > h4 {
   border-bottom: 1px #111 dotted;
 }
-.ffd20.sheet.actor ul.skills-list li.skill .skill-name .compendium-entry:hover .compendium-icon,
-.ffd20.sheet.actor ul.skills-list li.sub-skill .skill-name .compendium-entry:hover .compendium-icon {
+.clff20.sheet.actor ul.skills-list li.skill .skill-name .compendium-entry:hover .compendium-icon,
+.clff20.sheet.actor ul.skills-list li.sub-skill .skill-name .compendium-entry:hover .compendium-icon {
   visibility: visible;
 }
-.ffd20.sheet.actor ul.skills-list li.skill .skill-name .compendium-icon,
-.ffd20.sheet.actor ul.skills-list li.sub-skill .skill-name .compendium-icon {
+.clff20.sheet.actor ul.skills-list li.skill .skill-name .compendium-icon,
+.clff20.sheet.actor ul.skills-list li.sub-skill .skill-name .compendium-icon {
   visibility: hidden;
   flex: 0 0 24px;
   margin-left: 5px;
   position: relative;
   top: -4px;
 }
-.ffd20.sheet.actor ul.skills-list li.skill .skill-name .skill-control,
-.ffd20.sheet.actor ul.skills-list li.sub-skill .skill-name .skill-control {
+.clff20.sheet.actor ul.skills-list li.skill .skill-name .skill-control,
+.clff20.sheet.actor ul.skills-list li.sub-skill .skill-name .skill-control {
   display: flex;
   align-items: center;
 }
-.ffd20.sheet.actor ul.skills-list li.skill .skill-name .skill-control .fas,
-.ffd20.sheet.actor ul.skills-list li.sub-skill .skill-name .skill-control .fas {
+.clff20.sheet.actor ul.skills-list li.skill .skill-name .skill-control .fas,
+.clff20.sheet.actor ul.skills-list li.sub-skill .skill-name .skill-control .fas {
   display: inline-block;
   text-align: center;
   width: 24px;
 }
-.ffd20.sheet.actor ul.skills-list li.skill .checkbox,
-.ffd20.sheet.actor ul.skills-list li.sub-skill .checkbox {
+.clff20.sheet.actor ul.skills-list li.skill .checkbox,
+.clff20.sheet.actor ul.skills-list li.sub-skill .checkbox {
   flex: 0 0 64px;
   font-size: 14px;
 }
-.ffd20.sheet.actor ul.skills-list li.skill .skill-ability,
-.ffd20.sheet.actor ul.skills-list li.sub-skill .skill-ability {
+.clff20.sheet.actor ul.skills-list li.skill .skill-ability,
+.clff20.sheet.actor ul.skills-list li.sub-skill .skill-ability {
   flex: 0 0 48px;
   margin: 0 2px;
 }
-.ffd20.sheet.actor ul.skills-list li.skill .skill-mod,
-.ffd20.sheet.actor ul.skills-list li.sub-skill .skill-mod {
+.clff20.sheet.actor ul.skills-list li.skill .skill-mod,
+.clff20.sheet.actor ul.skills-list li.sub-skill .skill-mod {
   flex: 0 0 28px;
   line-height: 22px;
   font-weight: bold;
@@ -1993,87 +1993,87 @@
   border: 1px dotted #111;
   cursor: initial;
 }
-.ffd20.sheet.actor ul.skills-list li.skill .skill-rank,
-.ffd20.sheet.actor ul.skills-list li.sub-skill .skill-rank {
+.clff20.sheet.actor ul.skills-list li.skill .skill-rank,
+.clff20.sheet.actor ul.skills-list li.sub-skill .skill-rank {
   flex: 0 0 48px;
   border-bottom: 2px groove #eeede0;
   margin-right: 12px;
 }
-.ffd20.sheet.actor ul.skills-list li.skill .skill-controls,
-.ffd20.sheet.actor ul.skills-list li.sub-skill .skill-controls {
+.clff20.sheet.actor ul.skills-list li.skill .skill-controls,
+.clff20.sheet.actor ul.skills-list li.sub-skill .skill-controls {
   flex: 0 0 24px;
 }
-.ffd20.sheet.actor ul.skills-list li.skill input[type="text"],
-.ffd20.sheet.actor ul.skills-list li.sub-skill input[type="text"] {
+.clff20.sheet.actor ul.skills-list li.skill input[type="text"],
+.clff20.sheet.actor ul.skills-list li.sub-skill input[type="text"] {
   height: auto;
 }
-.ffd20.sheet.actor ul.skills-list li.sub-skill .skill-name input[type="text"] {
+.clff20.sheet.actor ul.skills-list li.sub-skill .skill-name input[type="text"] {
   padding-left: 8px;
 }
-.ffd20.sheet.actor .condition {
+.clff20.sheet.actor .condition {
   flex: 0;
   align-content: center;
   margin: 2px;
   flex-basis: calc(20% - 4px);
 }
-.ffd20.sheet.actor .condition label {
+.clff20.sheet.actor .condition label {
   line-height: 20px;
   flex: 0;
   white-space: nowrap;
 }
-.ffd20.sheet.actor .condition label span {
+.clff20.sheet.actor .condition label span {
   font-size: 14px;
 }
-.ffd20.sheet.actor .traits {
+.clff20.sheet.actor .traits {
   overflow-x: hidden;
   overflow-y: hidden;
   margin: 0 5px;
 }
-.ffd20.sheet.actor .traits .form-group,
-.ffd20.sheet.actor .traits .form-group-stacked {
+.clff20.sheet.actor .traits .form-group,
+.clff20.sheet.actor .traits .form-group-stacked {
   margin: 0;
   justify-content: space-between;
 }
-.ffd20.sheet.actor .traits .trait-selector {
+.clff20.sheet.actor .traits .trait-selector {
   flex: 0 0 16px;
   padding: 2px 0;
   color: #666;
   font-size: 14px;
 }
-.ffd20.sheet.actor .traits .configure-flags {
+.clff20.sheet.actor .traits .configure-flags {
   flex: 1;
 }
-.ffd20.sheet.actor .traits .traits-list {
+.clff20.sheet.actor .traits .traits-list {
   list-style: none;
   margin: 0;
   padding: 0;
   text-align: right;
 }
-.ffd20.sheet.actor .traits select {
+.clff20.sheet.actor .traits select {
   flex: 0 0 180px;
 }
-.ffd20.sheet.actor .traits label {
+.clff20.sheet.actor .traits label {
   flex: 0 0 150px;
   line-height: 20px;
   font-weight: bold;
   margin: 0;
   text-align: right;
 }
-.ffd20.sheet.actor .traits input {
+.clff20.sheet.actor .traits input {
   text-align: right;
 }
-.ffd20.sheet.actor .traits i.fas {
+.clff20.sheet.actor .traits i.fas {
   float: right;
   margin-right: 3px;
   text-align: right;
 }
-.ffd20.sheet.actor .traits i.fas:hover {
+.clff20.sheet.actor .traits i.fas:hover {
   text-shadow: 0 0 10px red;
 }
-.ffd20.sheet.actor .traits .inactive {
+.clff20.sheet.actor .traits .inactive {
   color: #7a7971;
 }
-.ffd20.sheet.actor .encumbrance {
+.clff20.sheet.actor .encumbrance {
   height: 12px;
   background: #7a7971;
   margin: 1px 15px 0 1px;
@@ -2081,7 +2081,7 @@
   border-radius: 3px;
   position: relative;
 }
-.ffd20.sheet.actor .encumbrance .encumbrance-bar {
+.clff20.sheet.actor .encumbrance .encumbrance-bar {
   position: absolute;
   top: 1px;
   left: 1px;
@@ -2090,7 +2090,7 @@
   border: 1px solid #cde4ff;
   border-radius: 2px;
 }
-.ffd20.sheet.actor .encumbrance .encumbrance-label {
+.clff20.sheet.actor .encumbrance .encumbrance-label {
   height: 10px;
   padding: 0 5px;
   position: absolute;
@@ -2102,15 +2102,15 @@
   color: #eee;
   text-shadow: 0 0 5px #000;
 }
-.ffd20.sheet.actor .encumbrance.encumbered .encumbrance-bar {
+.clff20.sheet.actor .encumbrance.encumbered .encumbrance-bar {
   background: #a80d0d;
   border-color: #e14949;
 }
-.ffd20.sheet.actor .encumbrance .encumbrance-breakpoint {
+.clff20.sheet.actor .encumbrance .encumbrance-breakpoint {
   position: absolute;
   left: 66%;
 }
-.ffd20.sheet.actor .encumbrance .arrow-up {
+.clff20.sheet.actor .encumbrance .arrow-up {
   bottom: 0;
   width: 0;
   height: 0;
@@ -2118,7 +2118,7 @@
   border-right: 4px solid transparent;
   border-bottom: 4px solid #666;
 }
-.ffd20.sheet.actor .encumbrance .arrow-down {
+.clff20.sheet.actor .encumbrance .arrow-down {
   top: 0;
   width: 0;
   height: 0;
@@ -2126,138 +2126,138 @@
   border-right: 4px solid transparent;
   border-top: 4px solid #666;
 }
-.ffd20.sheet.actor .encumbrance.encumbered .arrow-up {
+.clff20.sheet.actor .encumbrance.encumbered .arrow-up {
   border-bottom: 4px solid #000;
 }
-.ffd20.sheet.actor .encumbrance.encumbered .arrow-down {
+.clff20.sheet.actor .encumbrance.encumbered .arrow-down {
   border-top: 4px solid #000;
 }
-.ffd20.sheet.actor .tab-footer .tag {
+.clff20.sheet.actor .tab-footer .tag {
   flex: 0 1 auto;
 }
-.ffd20.sheet.actor .tab.features,
-.ffd20.sheet.actor .tab.inventory,
-.ffd20.sheet.actor .tab.spellbook,
-.ffd20.sheet.actor .tab.attributes,
-.ffd20.sheet.actor .tab.combat,
-.ffd20.sheet.actor .tab.buffs {
+.clff20.sheet.actor .tab.features,
+.clff20.sheet.actor .tab.inventory,
+.clff20.sheet.actor .tab.spellbook,
+.clff20.sheet.actor .tab.attributes,
+.clff20.sheet.actor .tab.combat,
+.clff20.sheet.actor .tab.buffs {
   overflow-y: hidden;
 }
-.ffd20.sheet.actor .tab.features label.checkbox,
-.ffd20.sheet.actor .tab.inventory label.checkbox,
-.ffd20.sheet.actor .tab.spellbook label.checkbox,
-.ffd20.sheet.actor .tab.attributes label.checkbox,
-.ffd20.sheet.actor .tab.combat label.checkbox,
-.ffd20.sheet.actor .tab.buffs label.checkbox {
+.clff20.sheet.actor .tab.features label.checkbox,
+.clff20.sheet.actor .tab.inventory label.checkbox,
+.clff20.sheet.actor .tab.spellbook label.checkbox,
+.clff20.sheet.actor .tab.attributes label.checkbox,
+.clff20.sheet.actor .tab.combat label.checkbox,
+.clff20.sheet.actor .tab.buffs label.checkbox {
   text-align: left;
   flex: 0;
   margin: 0 0 0 4px;
 }
-.ffd20.sheet.actor .tab.features label.checkbox:first-child,
-.ffd20.sheet.actor .tab.inventory label.checkbox:first-child,
-.ffd20.sheet.actor .tab.spellbook label.checkbox:first-child,
-.ffd20.sheet.actor .tab.attributes label.checkbox:first-child,
-.ffd20.sheet.actor .tab.combat label.checkbox:first-child,
-.ffd20.sheet.actor .tab.buffs label.checkbox:first-child {
+.clff20.sheet.actor .tab.features label.checkbox:first-child,
+.clff20.sheet.actor .tab.inventory label.checkbox:first-child,
+.clff20.sheet.actor .tab.spellbook label.checkbox:first-child,
+.clff20.sheet.actor .tab.attributes label.checkbox:first-child,
+.clff20.sheet.actor .tab.combat label.checkbox:first-child,
+.clff20.sheet.actor .tab.buffs label.checkbox:first-child {
   margin-top: 4px;
 }
-.ffd20.sheet.actor .tab.features a.checkbox,
-.ffd20.sheet.actor .tab.inventory a.checkbox,
-.ffd20.sheet.actor .tab.spellbook a.checkbox,
-.ffd20.sheet.actor .tab.attributes a.checkbox,
-.ffd20.sheet.actor .tab.combat a.checkbox,
-.ffd20.sheet.actor .tab.buffs a.checkbox {
+.clff20.sheet.actor .tab.features a.checkbox,
+.clff20.sheet.actor .tab.inventory a.checkbox,
+.clff20.sheet.actor .tab.spellbook a.checkbox,
+.clff20.sheet.actor .tab.attributes a.checkbox,
+.clff20.sheet.actor .tab.combat a.checkbox,
+.clff20.sheet.actor .tab.buffs a.checkbox {
   display: flex;
   flex-direction: row;
   align-items: center;
   color: #191813;
 }
-.ffd20.sheet.actor .tab.features a.checkbox img,
-.ffd20.sheet.actor .tab.inventory a.checkbox img,
-.ffd20.sheet.actor .tab.spellbook a.checkbox img,
-.ffd20.sheet.actor .tab.attributes a.checkbox img,
-.ffd20.sheet.actor .tab.combat a.checkbox img,
-.ffd20.sheet.actor .tab.buffs a.checkbox img {
+.clff20.sheet.actor .tab.features a.checkbox img,
+.clff20.sheet.actor .tab.inventory a.checkbox img,
+.clff20.sheet.actor .tab.spellbook a.checkbox img,
+.clff20.sheet.actor .tab.attributes a.checkbox img,
+.clff20.sheet.actor .tab.combat a.checkbox img,
+.clff20.sheet.actor .tab.buffs a.checkbox img {
   border: none;
 }
-.ffd20.sheet.actor .tab.features a.checkbox:not(.active) > img,
-.ffd20.sheet.actor .tab.inventory a.checkbox:not(.active) > img,
-.ffd20.sheet.actor .tab.spellbook a.checkbox:not(.active) > img,
-.ffd20.sheet.actor .tab.attributes a.checkbox:not(.active) > img,
-.ffd20.sheet.actor .tab.combat a.checkbox:not(.active) > img,
-.ffd20.sheet.actor .tab.buffs a.checkbox:not(.active) > img {
+.clff20.sheet.actor .tab.features a.checkbox:not(.active) > img,
+.clff20.sheet.actor .tab.inventory a.checkbox:not(.active) > img,
+.clff20.sheet.actor .tab.spellbook a.checkbox:not(.active) > img,
+.clff20.sheet.actor .tab.attributes a.checkbox:not(.active) > img,
+.clff20.sheet.actor .tab.combat a.checkbox:not(.active) > img,
+.clff20.sheet.actor .tab.buffs a.checkbox:not(.active) > img {
   filter: invert(88%) sepia(11%) saturate(158%) hue-rotate(13deg) brightness(98%) contrast(93%);
 }
-.ffd20.sheet.actor .tab.features a.checkbox.active,
-.ffd20.sheet.actor .tab.inventory a.checkbox.active,
-.ffd20.sheet.actor .tab.spellbook a.checkbox.active,
-.ffd20.sheet.actor .tab.attributes a.checkbox.active,
-.ffd20.sheet.actor .tab.combat a.checkbox.active,
-.ffd20.sheet.actor .tab.buffs a.checkbox.active {
+.clff20.sheet.actor .tab.features a.checkbox.active,
+.clff20.sheet.actor .tab.inventory a.checkbox.active,
+.clff20.sheet.actor .tab.spellbook a.checkbox.active,
+.clff20.sheet.actor .tab.attributes a.checkbox.active,
+.clff20.sheet.actor .tab.combat a.checkbox.active,
+.clff20.sheet.actor .tab.buffs a.checkbox.active {
   font-weight: 600;
   background-color: rgba(155, 155, 155, 0.5);
   border: 1px transparent;
   border-radius: 10px;
   text-shadow: 0 0 8px red;
 }
-.ffd20.sheet.actor .tab.features a.checkbox > :first-child,
-.ffd20.sheet.actor .tab.inventory a.checkbox > :first-child,
-.ffd20.sheet.actor .tab.spellbook a.checkbox > :first-child,
-.ffd20.sheet.actor .tab.attributes a.checkbox > :first-child,
-.ffd20.sheet.actor .tab.combat a.checkbox > :first-child,
-.ffd20.sheet.actor .tab.buffs a.checkbox > :first-child {
+.clff20.sheet.actor .tab.features a.checkbox > :first-child,
+.clff20.sheet.actor .tab.inventory a.checkbox > :first-child,
+.clff20.sheet.actor .tab.spellbook a.checkbox > :first-child,
+.clff20.sheet.actor .tab.attributes a.checkbox > :first-child,
+.clff20.sheet.actor .tab.combat a.checkbox > :first-child,
+.clff20.sheet.actor .tab.buffs a.checkbox > :first-child {
   margin-right: 4px;
 }
-.ffd20.sheet.actor .tab.features .buffs-conditions,
-.ffd20.sheet.actor .tab.inventory .buffs-conditions,
-.ffd20.sheet.actor .tab.spellbook .buffs-conditions,
-.ffd20.sheet.actor .tab.attributes .buffs-conditions,
-.ffd20.sheet.actor .tab.combat .buffs-conditions,
-.ffd20.sheet.actor .tab.buffs .buffs-conditions {
+.clff20.sheet.actor .tab.features .buffs-conditions,
+.clff20.sheet.actor .tab.inventory .buffs-conditions,
+.clff20.sheet.actor .tab.spellbook .buffs-conditions,
+.clff20.sheet.actor .tab.attributes .buffs-conditions,
+.clff20.sheet.actor .tab.combat .buffs-conditions,
+.clff20.sheet.actor .tab.buffs .buffs-conditions {
   flex: 0;
 }
-.ffd20.sheet.actor .tab.features .inventory-group,
-.ffd20.sheet.actor .tab.inventory .inventory-group,
-.ffd20.sheet.actor .tab.spellbook .inventory-group,
-.ffd20.sheet.actor .tab.attributes .inventory-group,
-.ffd20.sheet.actor .tab.combat .inventory-group,
-.ffd20.sheet.actor .tab.buffs .inventory-group {
+.clff20.sheet.actor .tab.features .inventory-group,
+.clff20.sheet.actor .tab.inventory .inventory-group,
+.clff20.sheet.actor .tab.spellbook .inventory-group,
+.clff20.sheet.actor .tab.attributes .inventory-group,
+.clff20.sheet.actor .tab.combat .inventory-group,
+.clff20.sheet.actor .tab.buffs .inventory-group {
   height: 100%;
 }
-.ffd20.sheet.actor .tab.features .inventory-body .inventory-list,
-.ffd20.sheet.actor .tab.inventory .inventory-body .inventory-list,
-.ffd20.sheet.actor .tab.spellbook .inventory-body .inventory-list,
-.ffd20.sheet.actor .tab.attributes .inventory-body .inventory-list,
-.ffd20.sheet.actor .tab.combat .inventory-body .inventory-list,
-.ffd20.sheet.actor .tab.buffs .inventory-body .inventory-list {
+.clff20.sheet.actor .tab.features .inventory-body .inventory-list,
+.clff20.sheet.actor .tab.inventory .inventory-body .inventory-list,
+.clff20.sheet.actor .tab.spellbook .inventory-body .inventory-list,
+.clff20.sheet.actor .tab.attributes .inventory-body .inventory-list,
+.clff20.sheet.actor .tab.combat .inventory-body .inventory-list,
+.clff20.sheet.actor .tab.buffs .inventory-body .inventory-list {
   height: 100%;
   overflow-y: scroll;
 }
-.ffd20.sheet.actor .tab.combat .combat-attacks {
+.clff20.sheet.actor .tab.combat .combat-attacks {
   flex: 1 1 320px;
   overflow-y: scroll;
 }
-.ffd20.sheet.actor .tab.combat .combat-defenses table {
+.clff20.sheet.actor .tab.combat .combat-defenses table {
   margin-bottom: 4px;
 }
-.ffd20.sheet.actor .tab.settings {
+.clff20.sheet.actor .tab.settings {
   overflow-x: hidden;
 }
-.ffd20.sheet.actor .tab.settings div.ability-scores {
+.clff20.sheet.actor .tab.settings div.ability-scores {
   min-width: 32em;
   max-width: 36em;
 }
-.ffd20.sheet.actor div.attributes-traits {
+.clff20.sheet.actor div.attributes-traits {
   align-items: flex-start;
   margin: 0;
   overflow-y: hidden;
 }
-.ffd20.sheet.actor .inventory-filters {
+.clff20.sheet.actor .inventory-filters {
   margin: 0 8px;
   flex: 0 0 20px;
 }
-.ffd20.sheet.actor .inventory-filters h3,
-.ffd20.sheet.actor .inventory-filters .filter-title {
+.clff20.sheet.actor .inventory-filters h3,
+.clff20.sheet.actor .inventory-filters .filter-title {
   font-family: "Nodesto", "Signika", "Palatino Linotype", serif;
   font-size: 22px;
   font-variant: small-caps;
@@ -2265,27 +2265,27 @@
   font-size: 24px;
   margin: 0;
 }
-.ffd20.sheet.actor .inventory-filters.spellbook-filters {
+.clff20.sheet.actor .inventory-filters.spellbook-filters {
   flex: 0 0 40px;
 }
-.ffd20.sheet.actor .tab.inventory .tab-footer > * {
+.clff20.sheet.actor .tab.inventory .tab-footer > * {
   flex: 0 0 100%;
 }
-.ffd20.sheet.actor .tab.inventory .tab-footer table {
+.clff20.sheet.actor .tab.inventory .tab-footer table {
   margin-top: 4px;
 }
-.ffd20.sheet.actor .tab.inventory .inventory-tags,
-.ffd20.sheet.actor .tab.inventory .carry-bonus {
+.clff20.sheet.actor .tab.inventory .inventory-tags,
+.clff20.sheet.actor .tab.inventory .carry-bonus {
   flex-basis: 50%;
   align-self: center;
 }
-.ffd20.sheet.actor .tab.inventory .inventory-tags {
+.clff20.sheet.actor .tab.inventory .inventory-tags {
   justify-content: flex-end;
 }
-.ffd20.sheet.actor .carry-label {
+.clff20.sheet.actor .carry-label {
   flex: 0 0 24px;
 }
-.ffd20.sheet.actor .carry-bonus label {
+.clff20.sheet.actor .carry-bonus label {
   flex: 0;
   margin-left: 8px;
   text-align: right;
@@ -2293,92 +2293,92 @@
   color: #7a7971;
   white-space: nowrap;
 }
-.ffd20.sheet.actor .carry-bonus input[type="text"],
-.ffd20.sheet.actor .carry-bonus span.text-box {
+.clff20.sheet.actor .carry-bonus input[type="text"],
+.clff20.sheet.actor .carry-bonus span.text-box {
   height: 20px;
   flex: 0 0 48px;
   text-align: center;
   margin-left: 8px;
   border-bottom: 2px groove #eeede0;
 }
-.ffd20.sheet.actor section.feats-body {
+.clff20.sheet.actor section.feats-body {
   overflow-y: scroll;
 }
-.ffd20.sheet.actor section.feats-body .feats-group .item-detail.item-type {
+.clff20.sheet.actor section.feats-body .feats-group .item-detail.item-type {
   flex: 0 0 40px;
 }
-.ffd20.sheet.actor .spellbook-group label {
+.clff20.sheet.actor .spellbook-group label {
   margin: 0;
 }
-.ffd20.sheet.actor .spellbook-group .spell-settings > .flexcol {
+.clff20.sheet.actor .spellbook-group .spell-settings > .flexcol {
   height: min-content;
 }
-.ffd20.sheet.actor .spellbook-group .spell-settings > .flexcol > *:not(:last-child) {
+.clff20.sheet.actor .spellbook-group .spell-settings > .flexcol > *:not(:last-child) {
   margin-bottom: 2px;
 }
-.ffd20.sheet.actor .spellbook-group .spell-points-current {
+.clff20.sheet.actor .spellbook-group .spell-points-current {
   flex: 0;
 }
-.ffd20.sheet.actor .spellbook-group .spell-points-current h3 {
+.clff20.sheet.actor .spellbook-group .spell-points-current h3 {
   font-family: "Nodesto", "Signika", "Palatino Linotype", serif;
   font-variant: small-caps;
   font-size: 22px;
   flex: 0 0 160px;
 }
-.ffd20.sheet.actor .spellbook-group .spell-points-current .value,
-.ffd20.sheet.actor .spellbook-group .spell-points-current .max {
+.clff20.sheet.actor .spellbook-group .spell-points-current .value,
+.clff20.sheet.actor .spellbook-group .spell-points-current .max {
   display: flex;
   flex: 0 0 32px;
   text-align: center;
 }
-.ffd20.sheet.actor .spellbook-group .spell-points-current .sep {
+.clff20.sheet.actor .spellbook-group .spell-points-current .sep {
   flex: 0;
 }
-.ffd20.sheet.actor .spellbook-group .radios {
+.clff20.sheet.actor .spellbook-group .radios {
   display: flex;
   justify-content: space-evenly;
 }
-.ffd20.sheet.actor .spellbook-group .radios label {
+.clff20.sheet.actor .spellbook-group .radios label {
   white-space: nowrap;
 }
-.ffd20.sheet.actor .spellbook-group .radios label.checkbox {
+.clff20.sheet.actor .spellbook-group .radios label.checkbox {
   display: flex;
 }
-.ffd20.sheet.actor .spellbook-group .radios label.checkbox:first-child {
+.clff20.sheet.actor .spellbook-group .radios label.checkbox:first-child {
   margin-top: unset;
 }
-.ffd20.sheet.actor .spellbook-group .radios input {
+.clff20.sheet.actor .spellbook-group .radios input {
   margin-inline-end: 4px;
 }
-.ffd20.sheet.actor .spellbook-group .radios *:not(:last-child) {
+.clff20.sheet.actor .spellbook-group .radios *:not(:last-child) {
   margin-inline-end: 4px;
 }
-.ffd20.sheet.actor .spellbook-group .spell-level-mod-container {
+.clff20.sheet.actor .spellbook-group .spell-level-mod-container {
   column-gap: 12px;
   display: grid;
   grid-auto-rows: auto;
   grid-template-columns: min-content 1fr;
 }
-.ffd20.sheet.actor .spellbook-group .spell-level-mod-container > label h3 {
+.clff20.sheet.actor .spellbook-group .spell-level-mod-container > label h3 {
   white-space: nowrap;
 }
-.ffd20.sheet.actor .spellbook-group .spell-level-mod-container .spell-mod-formulas {
+.clff20.sheet.actor .spellbook-group .spell-level-mod-container .spell-mod-formulas {
   display: flex;
   flex-direction: row;
 }
-.ffd20.sheet.actor .spellbook-group .spell-level-mod-container .spell-mod-formulas .ppdoffset,
-.ffd20.sheet.actor .spellbook-group .spell-level-mod-container .spell-mod-formulas .cpdoffset {
+.clff20.sheet.actor .spellbook-group .spell-level-mod-container .spell-mod-formulas .ppdoffset,
+.clff20.sheet.actor .spellbook-group .spell-level-mod-container .spell-mod-formulas .cpdoffset {
   overflow: none;
   width: 50%;
 }
-.ffd20.sheet.actor .spellbook-group .spell-level-mod-container.hide-cpd .ppdoffset {
+.clff20.sheet.actor .spellbook-group .spell-level-mod-container.hide-cpd .ppdoffset {
   width: 100%;
 }
-.ffd20.sheet.actor .spellbook-group .spell-level-mod-container.hide-cpd .cpdoffset {
+.clff20.sheet.actor .spellbook-group .spell-level-mod-container.hide-cpd .cpdoffset {
   display: none;
 }
-.ffd20.sheet.actor .spellbook-group .spell-comps,
-.ffd20.sheet.actor .spellbook-group .spell-uses {
+.clff20.sheet.actor .spellbook-group .spell-comps,
+.clff20.sheet.actor .spellbook-group .spell-uses {
   white-space: nowrap;
   overflow: hidden;
   flex: 0 0 96px;
@@ -2389,8 +2389,8 @@
   align-items: center;
   justify-content: center;
 }
-.ffd20.sheet.actor .spellbook-group .spell-comps input[type="number"],
-.ffd20.sheet.actor .spellbook-group .spell-uses input[type="number"] {
+.clff20.sheet.actor .spellbook-group .spell-comps input[type="number"],
+.clff20.sheet.actor .spellbook-group .spell-uses input[type="number"] {
   width: calc(100% - 2px);
   min-width: 40px;
   height: 24px;
@@ -2405,30 +2405,30 @@
   -ms-user-select: text;
   user-select: text;
 }
-.ffd20.sheet.actor .spellbook-group .spell-comps .spell-input-readonly,
-.ffd20.sheet.actor .spellbook-group .spell-uses .spell-input-readonly {
+.clff20.sheet.actor .spellbook-group .spell-comps .spell-input-readonly,
+.clff20.sheet.actor .spellbook-group .spell-uses .spell-input-readonly {
   color: black;
 }
-.ffd20.sheet.actor .spellbook-group .spell-comps input[type="text"].base,
-.ffd20.sheet.actor .spellbook-group .spell-uses input[type="text"].base,
-.ffd20.sheet.actor .spellbook-group .spell-comps input[type="number"].base,
-.ffd20.sheet.actor .spellbook-group .spell-uses input[type="number"].base {
+.clff20.sheet.actor .spellbook-group .spell-comps input[type="text"].base,
+.clff20.sheet.actor .spellbook-group .spell-uses input[type="text"].base,
+.clff20.sheet.actor .spellbook-group .spell-comps input[type="number"].base,
+.clff20.sheet.actor .spellbook-group .spell-uses input[type="number"].base {
   flex: 1;
 }
-.ffd20.sheet.actor .spellbook-group .spell-comps input,
-.ffd20.sheet.actor .spellbook-group .spell-uses input,
-.ffd20.sheet.actor .spellbook-group .spell-comps span.sep,
-.ffd20.sheet.actor .spellbook-group .spell-uses span.sep {
+.clff20.sheet.actor .spellbook-group .spell-comps input,
+.clff20.sheet.actor .spellbook-group .spell-uses input,
+.clff20.sheet.actor .spellbook-group .spell-comps span.sep,
+.clff20.sheet.actor .spellbook-group .spell-uses span.sep {
   text-align: center;
 }
-.ffd20.sheet.actor .spellbook-group .spell-comps span.sep,
-.ffd20.sheet.actor .spellbook-group .spell-uses span.sep {
+.clff20.sheet.actor .spellbook-group .spell-comps span.sep,
+.clff20.sheet.actor .spellbook-group .spell-uses span.sep {
   flex: 0 0 8px;
 }
-.ffd20.sheet.actor .spellbook-group .spell-uses input {
+.clff20.sheet.actor .spellbook-group .spell-uses input {
   flex: 0 0 24px;
 }
-.ffd20.sheet.actor .spellbook-group .spell-school {
+.clff20.sheet.actor .spellbook-group .spell-school {
   white-space: nowrap;
   overflow: hidden;
   flex: 0 0 96px;
@@ -2437,7 +2437,7 @@
   text-align: center;
   border-right: 1px solid #c9c7b8;
 }
-.ffd20.sheet.actor .spellbook-group .spell-activation {
+.clff20.sheet.actor .spellbook-group .spell-activation {
   white-space: nowrap;
   overflow: hidden;
   flex: 0 0 120px;
@@ -2446,7 +2446,7 @@
   text-align: center;
   border-right: 1px solid #c9c7b8;
 }
-.ffd20.sheet.actor .spellbook-group .spell-components {
+.clff20.sheet.actor .spellbook-group .spell-components {
   white-space: nowrap;
   overflow: hidden;
   flex: 0 0 80px;
@@ -2455,91 +2455,91 @@
   text-align: center;
   border-right: 1px solid #c9c7b8;
 }
-.ffd20.sheet.actor .spellbook-group .spellbook-empty .item-controls {
+.clff20.sheet.actor .spellbook-group .spellbook-empty .item-controls {
   flex: 1;
 }
-.ffd20.sheet.actor .spellbook-group .alt-name input[type="text"],
-.ffd20.sheet.actor .spellbook-group .spell-failure input[type="text"] {
+.clff20.sheet.actor .spellbook-group .alt-name input[type="text"],
+.clff20.sheet.actor .spellbook-group .spell-failure input[type="text"] {
   flex: 1;
 }
-.ffd20.sheet.actor .spellbook-group .spell-level-message {
+.clff20.sheet.actor .spellbook-group .spell-level-message {
   font-style: italic;
   font-weight: bold;
   text-align: center;
 }
-.ffd20.sheet.actor .spellbook-group .spell-range label {
+.clff20.sheet.actor .spellbook-group .spell-range label {
   flex: 1 1 48px;
   text-align: right;
   margin-right: 8px;
   white-space: nowrap;
 }
-.ffd20.sheet.actor .spellbook-group .spell-range input[type="text"] {
+.clff20.sheet.actor .spellbook-group .spell-range input[type="text"] {
   flex: 1 1 48px;
 }
-.ffd20.sheet.actor .spellbook-group .spell-range table {
+.clff20.sheet.actor .spellbook-group .spell-range table {
   margin-bottom: 4px;
 }
-.ffd20.sheet.actor a.rollable span {
+.clff20.sheet.actor a.rollable span {
   margin: 0 2px;
 }
-.ffd20.sheet.actor .rollable.image-d20 {
+.clff20.sheet.actor .rollable.image-d20 {
   flex: 0 0 24px;
   display: inline-block;
   background-image: url(../../icons/dice/d20black.svg);
   background-size: 100%;
   height: 24px;
 }
-.ffd20.sheet.actor .editor {
+.clff20.sheet.actor .editor {
   padding: 0 8px;
 }
-.ffd20.sheet.actor hr {
+.clff20.sheet.actor hr {
   margin: 4px 0 4px 0;
   flex: 0;
 }
-.ffd20.sheet.actor .actor-notes .primary-content {
+.clff20.sheet.actor .actor-notes .primary-content {
   flex: 1 0 320px;
 }
-.ffd20.sheet.actor table {
+.clff20.sheet.actor table {
   table-layout: fixed;
   overflow: hidden;
 }
-.ffd20.sheet.actor table.ability-table input[type="text"] {
+.clff20.sheet.actor table.ability-table input[type="text"] {
   height: 20px;
 }
-.ffd20.sheet.actor table td img {
+.clff20.sheet.actor table td img {
   vertical-align: middle;
   margin-right: 2px;
 }
-.ffd20.sheet.actor .table .header {
+.clff20.sheet.actor .table .header {
   background: rgba(0, 0, 0, 0.5);
 }
-.ffd20.sheet.actor .table .sub-header {
+.clff20.sheet.actor .table .sub-header {
   background: rgba(0, 0, 0, 0.2);
 }
-.ffd20.sheet.actor .table .header label,
-.ffd20.sheet.actor .table .sub-header label {
+.clff20.sheet.actor .table .header label,
+.clff20.sheet.actor .table .sub-header label {
   color: #f0f0e0;
   text-shadow: #000000 1px 1px 0px;
 }
-.ffd20.sheet.actor .table .cell {
+.clff20.sheet.actor .table .cell {
   background: rgba(0, 0, 0, 0.05);
 }
-.ffd20.sheet.actor .table .cell .midsize {
+.clff20.sheet.actor .table .cell .midsize {
   flex-basis: 40%;
 }
-.ffd20.sheet.actor .table .cell .left-label {
+.clff20.sheet.actor .table .cell .left-label {
   flex-basis: 60%;
 }
-.ffd20.sheet.actor .skill-lock-button {
+.clff20.sheet.actor .skill-lock-button {
   flex: 0;
 }
-.ffd20.sheet.actor .skill-lock-button:before {
+.clff20.sheet.actor .skill-lock-button:before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f023";
   margin-right: 0.5em;
 }
-.ffd20.sheet.actor .skill-lock-button.unlocked:before {
+.clff20.sheet.actor .skill-lock-button.unlocked:before {
   content: "\f3c1";
 }
 .locked img.sheet-profile {
@@ -2547,7 +2547,7 @@
   max-width: 240px;
   float: left;
 }
-.ffd20.sheet.item {
+.clff20.sheet.item {
   min-width: 580px;
   min-height: 620px;
   max-height: calc(100% - 24px);
@@ -2567,10 +2567,10 @@
   /*  Loot Sheet (No Tabs)                     */
   /* ----------------------------------------- */
 }
-.ffd20.sheet.item .sheet-header img.profile {
+.clff20.sheet.item .sheet-header img.profile {
   border: 1px solid #000;
 }
-.ffd20.sheet.item .sheet-header .item-subtitle {
+.clff20.sheet.item .sheet-header .item-subtitle {
   flex: 0 0 auto;
   height: 60px;
   margin: 0;
@@ -2578,49 +2578,49 @@
   text-align: right;
   color: #7a7971;
 }
-.ffd20.sheet.item .sheet-header .item-subtitle .item-type {
+.clff20.sheet.item .sheet-header .item-subtitle .item-type {
   font-size: 24px;
   line-height: 26px;
   margin: 0;
 }
-.ffd20.sheet.item .sheet-header .item-subtitle .item-status {
+.clff20.sheet.item .sheet-header .item-subtitle .item-status {
   font-size: 16px;
   line-height: 24px;
 }
-.ffd20.sheet.item .sheet-navigation {
+.clff20.sheet.item .sheet-navigation {
   margin-bottom: 5px;
 }
-.ffd20.sheet.item .sheet-navigation .item {
+.clff20.sheet.item .sheet-navigation .item {
   font-size: 18px;
 }
-.ffd20.sheet.item .primary-body {
+.clff20.sheet.item .primary-body {
   overflow: hidden;
 }
-.ffd20.sheet.item .primary-body .tab {
+.clff20.sheet.item .primary-body .tab {
   padding: 0 5px;
 }
-.ffd20.sheet.item .primary-body .item-properties {
+.clff20.sheet.item .primary-body .item-properties {
   flex: 0 0 120px;
   margin: 5px 5px 5px 0;
   padding-right: 5px;
   border-right: 2px groove #eeede0;
 }
-.ffd20.sheet.item .primary-body .item-properties .form-group {
+.clff20.sheet.item .primary-body .item-properties .form-group {
   margin: 0;
 }
-.ffd20.sheet.item .primary-body .item-properties .form-group label {
+.clff20.sheet.item .primary-body .item-properties .form-group label {
   line-height: 20px;
   flex: 0;
 }
-.ffd20.sheet.item .primary-body .item-properties .form-group input {
+.clff20.sheet.item .primary-body .item-properties .form-group input {
   text-align: right;
 }
-.ffd20.sheet.item .primary-body .item-properties .properties-list {
+.clff20.sheet.item .primary-body .item-properties .properties-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.ffd20.sheet.item .primary-body .item-properties .properties-list li {
+.clff20.sheet.item .primary-body .item-properties .properties-list li {
   margin: 3px 0;
   padding: 0 2px;
   background: rgba(0, 0, 0, 0.05);
@@ -2629,86 +2629,86 @@
   font-size: 12px;
   line-height: 18px;
 }
-.ffd20.sheet.item .details input[type="text"],
-.ffd20.sheet.item .details select {
+.clff20.sheet.item .details input[type="text"],
+.clff20.sheet.item .details select {
   border: 1px solid #7a7971;
   background: rgba(0, 0, 0, 0.05);
 }
-.ffd20.sheet.item .details .trait-selector {
+.clff20.sheet.item .details .trait-selector {
   flex: 0 0 16px;
   padding: 2px 0;
   color: #666;
   font-size: 14px;
 }
-.ffd20.sheet.item .details .traits-list {
+.clff20.sheet.item .details .traits-list {
   list-style: none;
   margin: 0;
   padding: 0;
   text-align: right;
 }
-.ffd20.sheet.item .details .form-group .entry-selector {
+.clff20.sheet.item .details .form-group .entry-selector {
   flex: 1;
   height: 28px;
   overflow: hidden;
 }
-.ffd20.sheet.item .details .form-group.input-select select {
+.clff20.sheet.item .details .form-group.input-select select {
   flex: 1.8;
 }
-.ffd20.sheet.item .details .form-group.input-select-select select {
+.clff20.sheet.item .details .form-group.input-select-select select {
   flex: 1.5;
 }
-.ffd20.sheet.item .details .form-group.uses-per input {
+.clff20.sheet.item .details .form-group.uses-per input {
   flex: 1;
 }
-.ffd20.sheet.item .details .form-group.uses-per span {
+.clff20.sheet.item .details .form-group.uses-per span {
   text-align: center;
   flex: 0 0 16px;
   line-height: 24px;
 }
-.ffd20.sheet.item .details .form-group.uses-per select {
+.clff20.sheet.item .details .form-group.uses-per select {
   flex: 3;
 }
-.ffd20.sheet.item .details span.sep {
+.clff20.sheet.item .details span.sep {
   flex: 0 0 8px;
   line-height: 24px;
   text-align: center;
 }
-.ffd20.sheet.item .details .prepared {
+.clff20.sheet.item .details .prepared {
   flex: 1.3 !important;
   text-align: right;
   padding-right: 10px;
 }
-.ffd20.sheet.item .details .spell-materials {
+.clff20.sheet.item .details .spell-materials {
   flex: 0 0 100%;
   margin: 0.25em 0;
   justify-content: flex-end;
 }
-.ffd20.sheet.item .details .spell-materials label {
+.clff20.sheet.item .details .spell-materials label {
   flex: 0 0 64px;
   text-align: right;
   margin-right: 5px;
   font-size: 12px;
   line-height: 24px;
 }
-.ffd20.sheet.item .details .spell-materials input[type="text"] {
+.clff20.sheet.item .details .spell-materials input[type="text"] {
   flex: 0 0 48px;
   margin-right: 10px;
 }
-.ffd20.sheet.item .details .item-list .item {
+.clff20.sheet.item .details .item-list .item {
   line-height: 24px;
   border-bottom: 1px solid #c9c7b8;
   background-color: rgba(155, 155, 155, 0.3);
 }
-.ffd20.sheet.item .details .item-list .item:last-child {
+.clff20.sheet.item .details .item-list .item:last-child {
   border-bottom: none;
 }
-.ffd20.sheet.item .details .item-list .item:nth-child(2n + 1) {
+.clff20.sheet.item .details .item-list .item:nth-child(2n + 1) {
   background-color: rgba(210, 210, 210, 0.3);
 }
-.ffd20.sheet.item .details .item-list .item .checkbox {
+.clff20.sheet.item .details .item-list .item .checkbox {
   flex: 0;
 }
-.ffd20.sheet.item .tab .inventory-header {
+.clff20.sheet.item .tab .inventory-header {
   margin: 2px 0;
   padding: 0;
   background: rgba(0, 0, 0, 0.05);
@@ -2716,197 +2716,197 @@
   font-weight: bold;
   line-height: 24px;
 }
-.ffd20.sheet.item .tab .inventory-header h3 {
+.clff20.sheet.item .tab .inventory-header h3 {
   padding-left: 5px;
   font-size: 13px;
   font-weight: bold;
 }
-.ffd20.sheet.item .tab .item-weight {
+.clff20.sheet.item .tab .item-weight {
   flex: 0 0 60px;
   border-left: 1px solid #c9c7b8;
   border-right: 1px solid #c9c7b8;
 }
-.ffd20.sheet.item .tab .item-list {
+.clff20.sheet.item .tab .item-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.ffd20.sheet.item .tab .item-summary {
+.clff20.sheet.item .tab .item-summary {
   flex: 0 0 100%;
   font-size: 12px;
   line-height: 16px;
   padding: 0.25em 0.5em;
   border-top: 1px solid #c9c7b8;
 }
-.ffd20.sheet.item h4.damage-header,
-.ffd20.sheet.item h4.change-header,
-.ffd20.sheet.item h4.context-notes-header,
-.ffd20.sheet.item h4.attack-header,
-.ffd20.sheet.item h4.conditional-header {
+.clff20.sheet.item h4.damage-header,
+.clff20.sheet.item h4.change-header,
+.clff20.sheet.item h4.context-notes-header,
+.clff20.sheet.item h4.attack-header,
+.clff20.sheet.item h4.conditional-header {
   margin: 0;
   padding: 0;
   font-weight: bold;
   line-height: 24px;
   color: #4b4a44;
 }
-.ffd20.sheet.item h4.attack-header {
+.clff20.sheet.item h4.attack-header {
   margin-left: 4px;
 }
-.ffd20.sheet.item .damage-parts,
-.ffd20.sheet.item .attack-parts {
+.clff20.sheet.item .damage-parts,
+.clff20.sheet.item .attack-parts {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.ffd20.sheet.item .damage-parts .damage-part,
-.ffd20.sheet.item .attack-parts .damage-part,
-.ffd20.sheet.item .damage-parts .attack-part,
-.ffd20.sheet.item .attack-parts .attack-part {
+.clff20.sheet.item .damage-parts .damage-part,
+.clff20.sheet.item .attack-parts .damage-part,
+.clff20.sheet.item .damage-parts .attack-part,
+.clff20.sheet.item .attack-parts .attack-part {
   flex: 0 0 100%;
   padding: 2px;
 }
-.ffd20.sheet.item .damage-parts .damage-part .damage-type,
-.ffd20.sheet.item .attack-parts .damage-part .damage-type,
-.ffd20.sheet.item .damage-parts .attack-part .damage-type,
-.ffd20.sheet.item .attack-parts .attack-part .damage-type {
+.clff20.sheet.item .damage-parts .damage-part .damage-type,
+.clff20.sheet.item .attack-parts .damage-part .damage-type,
+.clff20.sheet.item .damage-parts .attack-part .damage-type,
+.clff20.sheet.item .attack-parts .attack-part .damage-type {
   flex: 0 0 80px;
 }
-.ffd20.sheet.item .damage-parts .damage-part input,
-.ffd20.sheet.item .attack-parts .damage-part input,
-.ffd20.sheet.item .damage-parts .attack-part input,
-.ffd20.sheet.item .attack-parts .attack-part input {
+.clff20.sheet.item .damage-parts .damage-part input,
+.clff20.sheet.item .attack-parts .damage-part input,
+.clff20.sheet.item .damage-parts .attack-part input,
+.clff20.sheet.item .attack-parts .attack-part input {
   flex: 3;
 }
-.ffd20.sheet.item .damage-parts .damage-part input:not(:first-child),
-.ffd20.sheet.item .attack-parts .damage-part input:not(:first-child),
-.ffd20.sheet.item .damage-parts .attack-part input:not(:first-child),
-.ffd20.sheet.item .attack-parts .attack-part input:not(:first-child) {
+.clff20.sheet.item .damage-parts .damage-part input:not(:first-child),
+.clff20.sheet.item .attack-parts .damage-part input:not(:first-child),
+.clff20.sheet.item .damage-parts .attack-part input:not(:first-child),
+.clff20.sheet.item .attack-parts .attack-part input:not(:first-child) {
   margin-left: 5px;
 }
-.ffd20.sheet.item .damage-parts .damage-part select,
-.ffd20.sheet.item .attack-parts .damage-part select,
-.ffd20.sheet.item .damage-parts .attack-part select,
-.ffd20.sheet.item .attack-parts .attack-part select {
+.clff20.sheet.item .damage-parts .damage-part select,
+.clff20.sheet.item .attack-parts .damage-part select,
+.clff20.sheet.item .damage-parts .attack-part select,
+.clff20.sheet.item .attack-parts .attack-part select {
   margin-left: 5px;
   flex: 1;
 }
-.ffd20.sheet.item .changes,
-.ffd20.sheet.item .context-notes,
-.ffd20.sheet.item .conditionals {
+.clff20.sheet.item .changes,
+.clff20.sheet.item .context-notes,
+.clff20.sheet.item .conditionals {
   list-style: none;
   margin: 0;
   padding: 0;
   display: block;
 }
-.ffd20.sheet.item .changes .change,
-.ffd20.sheet.item .context-notes .change,
-.ffd20.sheet.item .conditionals .change,
-.ffd20.sheet.item .changes .context-note,
-.ffd20.sheet.item .context-notes .context-note,
-.ffd20.sheet.item .conditionals .context-note {
+.clff20.sheet.item .changes .change,
+.clff20.sheet.item .context-notes .change,
+.clff20.sheet.item .conditionals .change,
+.clff20.sheet.item .changes .context-note,
+.clff20.sheet.item .context-notes .context-note,
+.clff20.sheet.item .conditionals .context-note {
   flex: 0 0 100%;
   padding: 1px;
 }
-.ffd20.sheet.item .changes .change input,
-.ffd20.sheet.item .context-notes .change input,
-.ffd20.sheet.item .conditionals .change input,
-.ffd20.sheet.item .changes .context-note input,
-.ffd20.sheet.item .context-notes .context-note input,
-.ffd20.sheet.item .conditionals .context-note input {
+.clff20.sheet.item .changes .change input,
+.clff20.sheet.item .context-notes .change input,
+.clff20.sheet.item .conditionals .change input,
+.clff20.sheet.item .changes .context-note input,
+.clff20.sheet.item .context-notes .context-note input,
+.clff20.sheet.item .conditionals .context-note input {
   flex: 3;
   border: 1px solid #7a7971;
   background: rgba(0, 0, 0, 0.05);
   height: 24px;
 }
-.ffd20.sheet.item .changes .change input[type="text"]:invalid,
-.ffd20.sheet.item .context-notes .change input[type="text"]:invalid,
-.ffd20.sheet.item .conditionals .change input[type="text"]:invalid,
-.ffd20.sheet.item .changes .context-note input[type="text"]:invalid,
-.ffd20.sheet.item .context-notes .context-note input[type="text"]:invalid,
-.ffd20.sheet.item .conditionals .context-note input[type="text"]:invalid {
+.clff20.sheet.item .changes .change input[type="text"]:invalid,
+.clff20.sheet.item .context-notes .change input[type="text"]:invalid,
+.clff20.sheet.item .conditionals .change input[type="text"]:invalid,
+.clff20.sheet.item .changes .context-note input[type="text"]:invalid,
+.clff20.sheet.item .context-notes .context-note input[type="text"]:invalid,
+.clff20.sheet.item .conditionals .context-note input[type="text"]:invalid {
   border: 2px solid #782e22;
   background: url(icons/misc/hazard-sign.svg) no-repeat 95% 50% rgba(0, 0, 0, 0.05);
 }
-.ffd20.sheet.item .changes .change select,
-.ffd20.sheet.item .context-notes .change select,
-.ffd20.sheet.item .conditionals .change select,
-.ffd20.sheet.item .changes .context-note select,
-.ffd20.sheet.item .context-notes .context-note select,
-.ffd20.sheet.item .conditionals .context-note select {
+.clff20.sheet.item .changes .change select,
+.clff20.sheet.item .context-notes .change select,
+.clff20.sheet.item .conditionals .change select,
+.clff20.sheet.item .changes .context-note select,
+.clff20.sheet.item .context-notes .context-note select,
+.clff20.sheet.item .conditionals .context-note select {
   background: rgba(0, 0, 0, 0.05);
 }
-.ffd20.sheet.item .changes .change select:invalid,
-.ffd20.sheet.item .context-notes .change select:invalid,
-.ffd20.sheet.item .conditionals .change select:invalid,
-.ffd20.sheet.item .changes .context-note select:invalid,
-.ffd20.sheet.item .context-notes .context-note select:invalid,
-.ffd20.sheet.item .conditionals .context-note select:invalid {
+.clff20.sheet.item .changes .change select:invalid,
+.clff20.sheet.item .context-notes .change select:invalid,
+.clff20.sheet.item .conditionals .change select:invalid,
+.clff20.sheet.item .changes .context-note select:invalid,
+.clff20.sheet.item .context-notes .context-note select:invalid,
+.clff20.sheet.item .conditionals .context-note select:invalid {
   border: 2px solid #782e22;
   background: url(icons/misc/hazard-sign.svg) no-repeat 75% 50% rgba(0, 0, 0, 0.05);
 }
-.ffd20.sheet.item .changes .change input[type="text"]:not(:first-child),
-.ffd20.sheet.item .context-notes .change input[type="text"]:not(:first-child),
-.ffd20.sheet.item .conditionals .change input[type="text"]:not(:first-child),
-.ffd20.sheet.item .changes .context-note input[type="text"]:not(:first-child),
-.ffd20.sheet.item .context-notes .context-note input[type="text"]:not(:first-child),
-.ffd20.sheet.item .conditionals .context-note input[type="text"]:not(:first-child),
-.ffd20.sheet.item .changes .change select:not(:first-child),
-.ffd20.sheet.item .context-notes .change select:not(:first-child),
-.ffd20.sheet.item .conditionals .change select:not(:first-child),
-.ffd20.sheet.item .changes .context-note select:not(:first-child),
-.ffd20.sheet.item .context-notes .context-note select:not(:first-child),
-.ffd20.sheet.item .conditionals .context-note select:not(:first-child),
-.ffd20.sheet.item .changes .change span:not(:first-child),
-.ffd20.sheet.item .context-notes .change span:not(:first-child),
-.ffd20.sheet.item .conditionals .change span:not(:first-child),
-.ffd20.sheet.item .changes .context-note span:not(:first-child),
-.ffd20.sheet.item .context-notes .context-note span:not(:first-child),
-.ffd20.sheet.item .conditionals .context-note span:not(:first-child),
-.ffd20.sheet.item .changes .change button:not(:first-child),
-.ffd20.sheet.item .context-notes .change button:not(:first-child),
-.ffd20.sheet.item .conditionals .change button:not(:first-child),
-.ffd20.sheet.item .changes .context-note button:not(:first-child),
-.ffd20.sheet.item .context-notes .context-note button:not(:first-child),
-.ffd20.sheet.item .conditionals .context-note button:not(:first-child) {
+.clff20.sheet.item .changes .change input[type="text"]:not(:first-child),
+.clff20.sheet.item .context-notes .change input[type="text"]:not(:first-child),
+.clff20.sheet.item .conditionals .change input[type="text"]:not(:first-child),
+.clff20.sheet.item .changes .context-note input[type="text"]:not(:first-child),
+.clff20.sheet.item .context-notes .context-note input[type="text"]:not(:first-child),
+.clff20.sheet.item .conditionals .context-note input[type="text"]:not(:first-child),
+.clff20.sheet.item .changes .change select:not(:first-child),
+.clff20.sheet.item .context-notes .change select:not(:first-child),
+.clff20.sheet.item .conditionals .change select:not(:first-child),
+.clff20.sheet.item .changes .context-note select:not(:first-child),
+.clff20.sheet.item .context-notes .context-note select:not(:first-child),
+.clff20.sheet.item .conditionals .context-note select:not(:first-child),
+.clff20.sheet.item .changes .change span:not(:first-child),
+.clff20.sheet.item .context-notes .change span:not(:first-child),
+.clff20.sheet.item .conditionals .change span:not(:first-child),
+.clff20.sheet.item .changes .context-note span:not(:first-child),
+.clff20.sheet.item .context-notes .context-note span:not(:first-child),
+.clff20.sheet.item .conditionals .context-note span:not(:first-child),
+.clff20.sheet.item .changes .change button:not(:first-child),
+.clff20.sheet.item .context-notes .change button:not(:first-child),
+.clff20.sheet.item .conditionals .change button:not(:first-child),
+.clff20.sheet.item .changes .context-note button:not(:first-child),
+.clff20.sheet.item .context-notes .context-note button:not(:first-child),
+.clff20.sheet.item .conditionals .context-note button:not(:first-child) {
   margin-left: 5px;
 }
-.ffd20.sheet.item .changes .change button.edit-change-contents,
-.ffd20.sheet.item .context-notes .change button.edit-change-contents,
-.ffd20.sheet.item .conditionals .change button.edit-change-contents,
-.ffd20.sheet.item .changes .context-note button.edit-change-contents,
-.ffd20.sheet.item .context-notes .context-note button.edit-change-contents,
-.ffd20.sheet.item .conditionals .context-note button.edit-change-contents {
+.clff20.sheet.item .changes .change button.edit-change-contents,
+.clff20.sheet.item .context-notes .change button.edit-change-contents,
+.clff20.sheet.item .conditionals .change button.edit-change-contents,
+.clff20.sheet.item .changes .context-note button.edit-change-contents,
+.clff20.sheet.item .context-notes .context-note button.edit-change-contents,
+.clff20.sheet.item .conditionals .context-note button.edit-change-contents {
   height: 24px;
   line-height: 24px;
 }
-.ffd20.sheet.item .changes .change .change-priority,
-.ffd20.sheet.item .context-notes .change .change-priority,
-.ffd20.sheet.item .conditionals .change .change-priority,
-.ffd20.sheet.item .changes .context-note .change-priority,
-.ffd20.sheet.item .context-notes .context-note .change-priority,
-.ffd20.sheet.item .conditionals .context-note .change-priority {
+.clff20.sheet.item .changes .change .change-priority,
+.clff20.sheet.item .context-notes .change .change-priority,
+.clff20.sheet.item .conditionals .change .change-priority,
+.clff20.sheet.item .changes .context-note .change-priority,
+.clff20.sheet.item .context-notes .context-note .change-priority,
+.clff20.sheet.item .conditionals .context-note .change-priority {
   flex: 0 0 24px;
 }
-.ffd20.sheet.item .changes .change .change-operator,
-.ffd20.sheet.item .context-notes .change .change-operator,
-.ffd20.sheet.item .conditionals .change .change-operator,
-.ffd20.sheet.item .changes .context-note .change-operator,
-.ffd20.sheet.item .context-notes .context-note .change-operator,
-.ffd20.sheet.item .conditionals .context-note .change-operator {
+.clff20.sheet.item .changes .change .change-operator,
+.clff20.sheet.item .context-notes .change .change-operator,
+.clff20.sheet.item .conditionals .change .change-operator,
+.clff20.sheet.item .changes .context-note .change-operator,
+.clff20.sheet.item .context-notes .context-note .change-operator,
+.clff20.sheet.item .conditionals .context-note .change-operator {
   flex: 0 0 24px;
 }
-.ffd20.sheet.item .changes .change .change-target,
-.ffd20.sheet.item .context-notes .change .change-target,
-.ffd20.sheet.item .conditionals .change .change-target,
-.ffd20.sheet.item .changes .context-note .change-target,
-.ffd20.sheet.item .context-notes .context-note .change-target,
-.ffd20.sheet.item .conditionals .context-note .change-target,
-.ffd20.sheet.item .changes .change .context-note-target,
-.ffd20.sheet.item .context-notes .change .context-note-target,
-.ffd20.sheet.item .conditionals .change .context-note-target,
-.ffd20.sheet.item .changes .context-note .context-note-target,
-.ffd20.sheet.item .context-notes .context-note .context-note-target,
-.ffd20.sheet.item .conditionals .context-note .context-note-target {
+.clff20.sheet.item .changes .change .change-target,
+.clff20.sheet.item .context-notes .change .change-target,
+.clff20.sheet.item .conditionals .change .change-target,
+.clff20.sheet.item .changes .context-note .change-target,
+.clff20.sheet.item .context-notes .context-note .change-target,
+.clff20.sheet.item .conditionals .context-note .change-target,
+.clff20.sheet.item .changes .change .context-note-target,
+.clff20.sheet.item .context-notes .change .context-note-target,
+.clff20.sheet.item .conditionals .change .context-note-target,
+.clff20.sheet.item .changes .context-note .context-note-target,
+.clff20.sheet.item .context-notes .context-note .context-note-target,
+.clff20.sheet.item .conditionals .context-note .context-note-target {
   border: 1px solid #7a7971;
   background: rgba(0, 0, 0, 0.05);
   white-space: nowrap;
@@ -2918,113 +2918,113 @@
   cursor: pointer;
   font-size: 12px;
 }
-.ffd20.sheet.item .changes .change .change-target:hover,
-.ffd20.sheet.item .context-notes .change .change-target:hover,
-.ffd20.sheet.item .conditionals .change .change-target:hover,
-.ffd20.sheet.item .changes .context-note .change-target:hover,
-.ffd20.sheet.item .context-notes .context-note .change-target:hover,
-.ffd20.sheet.item .conditionals .context-note .change-target:hover,
-.ffd20.sheet.item .changes .change .context-note-target:hover,
-.ffd20.sheet.item .context-notes .change .context-note-target:hover,
-.ffd20.sheet.item .conditionals .change .context-note-target:hover,
-.ffd20.sheet.item .changes .context-note .context-note-target:hover,
-.ffd20.sheet.item .context-notes .context-note .context-note-target:hover,
-.ffd20.sheet.item .conditionals .context-note .context-note-target:hover {
+.clff20.sheet.item .changes .change .change-target:hover,
+.clff20.sheet.item .context-notes .change .change-target:hover,
+.clff20.sheet.item .conditionals .change .change-target:hover,
+.clff20.sheet.item .changes .context-note .change-target:hover,
+.clff20.sheet.item .context-notes .context-note .change-target:hover,
+.clff20.sheet.item .conditionals .context-note .change-target:hover,
+.clff20.sheet.item .changes .change .context-note-target:hover,
+.clff20.sheet.item .context-notes .change .context-note-target:hover,
+.clff20.sheet.item .conditionals .change .context-note-target:hover,
+.clff20.sheet.item .changes .context-note .context-note-target:hover,
+.clff20.sheet.item .context-notes .context-note .context-note-target:hover,
+.clff20.sheet.item .conditionals .context-note .context-note-target:hover {
   box-shadow: 0 0 8px #da0000;
 }
-.ffd20.sheet.item .changes .change .change-target.invalid,
-.ffd20.sheet.item .context-notes .change .change-target.invalid,
-.ffd20.sheet.item .conditionals .change .change-target.invalid,
-.ffd20.sheet.item .changes .context-note .change-target.invalid,
-.ffd20.sheet.item .context-notes .context-note .change-target.invalid,
-.ffd20.sheet.item .conditionals .context-note .change-target.invalid,
-.ffd20.sheet.item .changes .change .context-note-target.invalid,
-.ffd20.sheet.item .context-notes .change .context-note-target.invalid,
-.ffd20.sheet.item .conditionals .change .context-note-target.invalid,
-.ffd20.sheet.item .changes .context-note .context-note-target.invalid,
-.ffd20.sheet.item .context-notes .context-note .context-note-target.invalid,
-.ffd20.sheet.item .conditionals .context-note .context-note-target.invalid {
+.clff20.sheet.item .changes .change .change-target.invalid,
+.clff20.sheet.item .context-notes .change .change-target.invalid,
+.clff20.sheet.item .conditionals .change .change-target.invalid,
+.clff20.sheet.item .changes .context-note .change-target.invalid,
+.clff20.sheet.item .context-notes .context-note .change-target.invalid,
+.clff20.sheet.item .conditionals .context-note .change-target.invalid,
+.clff20.sheet.item .changes .change .context-note-target.invalid,
+.clff20.sheet.item .context-notes .change .context-note-target.invalid,
+.clff20.sheet.item .conditionals .change .context-note-target.invalid,
+.clff20.sheet.item .changes .context-note .context-note-target.invalid,
+.clff20.sheet.item .context-notes .context-note .context-note-target.invalid,
+.clff20.sheet.item .conditionals .context-note .context-note-target.invalid {
   border: 2px solid #782e22;
   background: url(icons/misc/hazard-sign.svg) no-repeat 95% 50% rgba(0, 0, 0, 0.05);
 }
-.ffd20.sheet.item .changes .change .conditional-default,
-.ffd20.sheet.item .context-notes .change .conditional-default,
-.ffd20.sheet.item .conditionals .change .conditional-default,
-.ffd20.sheet.item .changes .context-note .conditional-default,
-.ffd20.sheet.item .context-notes .context-note .conditional-default,
-.ffd20.sheet.item .conditionals .context-note .conditional-default {
+.clff20.sheet.item .changes .change .conditional-default,
+.clff20.sheet.item .context-notes .change .conditional-default,
+.clff20.sheet.item .conditionals .change .conditional-default,
+.clff20.sheet.item .changes .context-note .conditional-default,
+.clff20.sheet.item .context-notes .context-note .conditional-default,
+.clff20.sheet.item .conditionals .context-note .conditional-default {
   flex: 0 0 18px;
 }
-.ffd20.sheet.item .changes .change .conditional-modifier,
-.ffd20.sheet.item .context-notes .change .conditional-modifier,
-.ffd20.sheet.item .conditionals .change .conditional-modifier,
-.ffd20.sheet.item .changes .context-note .conditional-modifier,
-.ffd20.sheet.item .context-notes .context-note .conditional-modifier,
-.ffd20.sheet.item .conditionals .context-note .conditional-modifier {
+.clff20.sheet.item .changes .change .conditional-modifier,
+.clff20.sheet.item .context-notes .change .conditional-modifier,
+.clff20.sheet.item .conditionals .change .conditional-modifier,
+.clff20.sheet.item .changes .context-note .conditional-modifier,
+.clff20.sheet.item .context-notes .context-note .conditional-modifier,
+.clff20.sheet.item .conditionals .context-note .conditional-modifier {
   display: flex;
 }
-.ffd20.sheet.item .conditionals .conditional,
-.ffd20.sheet.item .conditionals .conditional-modifier {
+.clff20.sheet.item .conditionals .conditional,
+.clff20.sheet.item .conditionals .conditional-modifier {
   padding: 1px;
 }
-.ffd20.sheet.item .conditionals .conditional select,
-.ffd20.sheet.item .conditionals .conditional-modifier select {
+.clff20.sheet.item .conditionals .conditional select,
+.clff20.sheet.item .conditionals .conditional-modifier select {
   max-width: max-content;
   min-width: 80px;
   flex: 1;
   border: 1px solid #7a7971;
   background: rgba(0, 0, 0, 0.05);
 }
-.ffd20.sheet.item .conditionals .conditional select:not(:first-child),
-.ffd20.sheet.item .conditionals .conditional-modifier select:not(:first-child) {
+.clff20.sheet.item .conditionals .conditional select:not(:first-child),
+.clff20.sheet.item .conditionals .conditional-modifier select:not(:first-child) {
   margin-left: 5px;
 }
-.ffd20.sheet.item .conditionals .conditional select:invalid,
-.ffd20.sheet.item .conditionals .conditional-modifier select:invalid {
+.clff20.sheet.item .conditionals .conditional select:invalid,
+.clff20.sheet.item .conditionals .conditional-modifier select:invalid {
   border: 2px solid #782e22;
   background: url(icons/misc/hazard-sign.svg) no-repeat 80% 50% rgba(0, 0, 0, 0.05);
 }
-.ffd20.sheet.item .conditionals .conditional input[type="text"],
-.ffd20.sheet.item .conditionals .conditional-modifier input[type="text"] {
+.clff20.sheet.item .conditionals .conditional input[type="text"],
+.clff20.sheet.item .conditionals .conditional-modifier input[type="text"] {
   height: 24px;
   border: 1px solid #7a7971;
   background: rgba(0, 0, 0, 0.05);
 }
-.ffd20.sheet.item .conditionals .conditional input[type="text"]:invalid,
-.ffd20.sheet.item .conditionals .conditional-modifier input[type="text"]:invalid {
+.clff20.sheet.item .conditionals .conditional input[type="text"]:invalid,
+.clff20.sheet.item .conditionals .conditional-modifier input[type="text"]:invalid {
   border: 2px solid #782e22;
   background: url(icons/misc/hazard-sign.svg) no-repeat 100% 50% rgba(0, 0, 0, 0.05);
 }
-.ffd20.sheet.item .conditionals .conditional input[type="text"]:not(:first-child),
-.ffd20.sheet.item .conditionals .conditional-modifier input[type="text"]:not(:first-child) {
+.clff20.sheet.item .conditionals .conditional input[type="text"]:not(:first-child),
+.clff20.sheet.item .conditionals .conditional-modifier input[type="text"]:not(:first-child) {
   margin-left: 5px;
 }
-.ffd20.sheet.item .conditionals .conditional input[class*="conditional-name"]:not(:first-child),
-.ffd20.sheet.item .conditionals .conditional-modifier input[class*="conditional-name"]:not(:first-child) {
+.clff20.sheet.item .conditionals .conditional input[class*="conditional-name"]:not(:first-child),
+.clff20.sheet.item .conditionals .conditional-modifier input[class*="conditional-name"]:not(:first-child) {
   margin-left: 0;
 }
-.ffd20.sheet.item .conditionals .conditional .conditional-name,
-.ffd20.sheet.item .conditionals .conditional-modifier .conditional-name,
-.ffd20.sheet.item .conditionals .conditional .conditional-formula,
-.ffd20.sheet.item .conditionals .conditional-modifier .conditional-formula {
+.clff20.sheet.item .conditionals .conditional .conditional-name,
+.clff20.sheet.item .conditionals .conditional-modifier .conditional-name,
+.clff20.sheet.item .conditionals .conditional .conditional-formula,
+.clff20.sheet.item .conditionals .conditional-modifier .conditional-formula {
   min-width: 140px;
 }
-.ffd20.sheet.item .conditionals .conditional .conditional-damage-type,
-.ffd20.sheet.item .conditionals .conditional-modifier .conditional-damage-type {
+.clff20.sheet.item .conditionals .conditional .conditional-damage-type,
+.clff20.sheet.item .conditionals .conditional-modifier .conditional-damage-type {
   min-width: 90px;
   max-width: 200px;
 }
-.ffd20.sheet.item .conditionals .conditional .form-group,
-.ffd20.sheet.item .conditionals .conditional-modifier .form-group {
+.clff20.sheet.item .conditionals .conditional .form-group,
+.clff20.sheet.item .conditionals .conditional-modifier .form-group {
   padding-left: 30px;
 }
-.ffd20.sheet.item .delete-damage,
-.ffd20.sheet.item .crit-damage-control,
-.ffd20.sheet.item .delete-attack,
-.ffd20.sheet.item .delete-change,
-.ffd20.sheet.item .delete-note,
-.ffd20.sheet.item .delete-conditional,
-.ffd20.sheet.item .delete-conditional-modifier {
+.clff20.sheet.item .delete-damage,
+.clff20.sheet.item .crit-damage-control,
+.clff20.sheet.item .delete-attack,
+.clff20.sheet.item .delete-change,
+.clff20.sheet.item .delete-note,
+.clff20.sheet.item .delete-conditional,
+.clff20.sheet.item .delete-conditional-modifier {
   width: 18px;
   flex: 0 0 18px;
   line-height: 24px;
@@ -3032,70 +3032,70 @@
   text-align: right;
   color: #7a7971;
 }
-.ffd20.sheet.item .add-attack,
-.ffd20.sheet.item .add-damage,
-.ffd20.sheet.item .add-change,
-.ffd20.sheet.item .add-note,
-.ffd20.sheet.item .add-conditional,
-.ffd20.sheet.item .add-conditional-modifier {
+.clff20.sheet.item .add-attack,
+.clff20.sheet.item .add-damage,
+.clff20.sheet.item .add-change,
+.clff20.sheet.item .add-note,
+.clff20.sheet.item .add-conditional,
+.clff20.sheet.item .add-conditional-modifier {
   flex: 0 0 auto;
   line-height: 24px;
   color: #7a7971;
   margin-left: 2px;
 }
-.ffd20.sheet.item .recharge span {
+.clff20.sheet.item .recharge span {
   line-height: 24px;
   flex: 0 0 80px;
 }
-.ffd20.sheet.item .recharge label.checkbox {
+.clff20.sheet.item .recharge label.checkbox {
   flex: 0 0 80px;
   text-align: right;
 }
-.ffd20.sheet.item .formula {
+.clff20.sheet.item .formula {
   flex: 10 0 80px;
 }
-.ffd20.sheet.item .formula .result .small {
+.clff20.sheet.item .formula .result .small {
   flex: 0 10 20px;
 }
-.ffd20.sheet.item .weapon-properties label.checkbox {
+.clff20.sheet.item .weapon-properties label.checkbox {
   flex: 0 0 98px;
 }
-.ffd20.sheet.item .loot-header {
+.clff20.sheet.item .loot-header {
   margin-bottom: 10px;
 }
-.ffd20.sheet.item div[data-tab="description"][data-group="primary"] nav {
+.clff20.sheet.item div[data-tab="description"][data-group="primary"] nav {
   flex: 0;
 }
-.ffd20.sheet.item div[data-tab="description"][data-group="primary"] .description-container {
+.clff20.sheet.item div[data-tab="description"][data-group="primary"] .description-container {
   flex: 1;
   height: 100%;
 }
-.ffd20.sheet.item section.inventory-body {
+.clff20.sheet.item section.inventory-body {
   overflow-y: auto;
 }
-.ffd20.sheet.item footer {
+.clff20.sheet.item footer {
   flex: 0;
 }
-.ffd20.sheet.item .tab[data-tab="advanced"] .tags .form-group {
+.clff20.sheet.item .tab[data-tab="advanced"] .tags .form-group {
   align-items: flex-start;
 }
 /* ----------------------------------------- */
 /*  Chat Cards
 /* ----------------------------------------- */
-.ffd20.chat-card {
+.clff20.chat-card {
   font-style: normal;
   font-size: 12px;
 }
-.ffd20.chat-card .card-header {
+.clff20.chat-card .card-header {
   padding: 3px 0;
   border-top: 2px groove #fff;
   border-bottom: 2px groove #fff;
 }
-.ffd20.chat-card .card-header img {
+.clff20.chat-card .card-header img {
   flex: 0 0 36px;
   margin-right: 5px;
 }
-.ffd20.chat-card .card-header h3 {
+.clff20.chat-card .card-header h3 {
   flex: 1;
   margin: 0;
   line-height: 28px;
@@ -3104,21 +3104,21 @@
   font-variant: small-caps;
   color: #4b4a44;
 }
-.ffd20.chat-card .card-content {
+.clff20.chat-card .card-content {
   margin: 5px 0;
 }
-.ffd20.chat-card .card-content h3 {
+.clff20.chat-card .card-content h3 {
   font-size: 12px;
   margin: 0;
   font-weight: bold;
 }
-.ffd20.chat-card .card-content > * {
+.clff20.chat-card .card-content > * {
   -webkit-user-select: text;
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
 }
-.ffd20.chat-card .card-range {
+.clff20.chat-card .card-range {
   display: block;
   margin: 0 2px 1px 0;
   padding: 1px 3px;
@@ -3130,98 +3130,98 @@
   flex: 0 1 auto;
   text-align: center;
 }
-.ffd20.chat-card .card-range:hover {
+.clff20.chat-card .card-range:hover {
   border-color: blue;
 }
-.ffd20.chat-card .card-buttons {
+.clff20.chat-card .card-buttons {
   margin: 2px 0;
 }
-.ffd20.chat-card .card-buttons.spell-buttons label,
-.ffd20.chat-card .card-buttons .card-button-group label {
+.clff20.chat-card .card-buttons.spell-buttons label,
+.clff20.chat-card .card-buttons .card-button-group label {
   text-align: center;
 }
-.ffd20.chat-card .card-buttons.spell-buttons button,
-.ffd20.chat-card .card-buttons .card-button-group button {
+.clff20.chat-card .card-buttons.spell-buttons button,
+.clff20.chat-card .card-buttons .card-button-group button {
   font-size: 12px;
   height: 20px;
   line-height: 16px;
   margin: 2px 0;
 }
-.ffd20.chat-card .card-buttons span {
+.clff20.chat-card .card-buttons span {
   display: block;
   line-height: 20px;
   text-align: center;
   border: 1px solid #ccc;
 }
-.ffd20.chat-card .card-footer {
+.clff20.chat-card .card-footer {
   padding: 3px 0 0;
   border-top: 2px groove #fff;
 }
-.ffd20.chat-card .card-footer .spell-failure {
+.clff20.chat-card .card-footer .spell-failure {
   padding: 4px;
   margin-bottom: 4px;
   border: 1px solid #999;
   border-radius: 3px;
 }
-.ffd20.chat-card .card-footer .spell-failure h3 {
+.clff20.chat-card .card-footer .spell-failure h3 {
   color: #4c6d9f;
   font-size: 16px;
   text-align: center;
 }
-.ffd20.chat-card .card-footer .spell-failure .dice-roll,
-.ffd20.chat-card .card-footer .spell-failure .dice-total {
+.clff20.chat-card .card-footer .spell-failure .dice-roll,
+.clff20.chat-card .card-footer .spell-failure .dice-total {
   padding: 0;
 }
-.ffd20.chat-card .attack-row,
-.ffd20.chat-card .damage-row {
+.clff20.chat-card .attack-row,
+.clff20.chat-card .damage-row {
   align-items: baseline;
 }
-.ffd20.chat-card .attack-row a.inline-result,
-.ffd20.chat-card .damage-row a.inline-result {
+.clff20.chat-card .attack-row a.inline-result,
+.clff20.chat-card .damage-row a.inline-result {
   border-radius: 2px;
 }
-.ffd20.chat-card .attack-row h1,
-.ffd20.chat-card .damage-row h1 {
+.clff20.chat-card .attack-row h1,
+.clff20.chat-card .damage-row h1 {
   margin-bottom: 4px;
   font-size: 1.5em;
   font-weight: bold;
   border-bottom: unset;
   box-shadow: inset 0px -2px 0px 0px #782e22;
 }
-.ffd20.chat-card .attack-row h2,
-.ffd20.chat-card .damage-row h2 {
+.clff20.chat-card .attack-row h2,
+.clff20.chat-card .damage-row h2 {
   font-size: 1em;
   margin-bottom: 4px;
   margin-top: 4px;
 }
-.ffd20.chat-card .fake-inline-roll {
+.clff20.chat-card .fake-inline-roll {
   padding: 1px 4px 0 4px;
   color: black;
   text-shadow: none;
   font-weight: normal;
 }
-.ffd20.chat-card .fake-inline-roll i {
+.clff20.chat-card .fake-inline-roll i {
   color: #7a7971;
 }
-.ffd20.chat-card .inline-roll,
-.ffd20.chat-card .fake-inline-roll {
+.clff20.chat-card .inline-roll,
+.clff20.chat-card .fake-inline-roll {
   flex: 0;
   height: 100%;
 }
-.ffd20.chat-card .inline-roll .dice-tooltip,
-.ffd20.chat-card .fake-inline-roll .dice-tooltip {
+.clff20.chat-card .inline-roll .dice-tooltip,
+.clff20.chat-card .fake-inline-roll .dice-tooltip {
   z-index: 1;
 }
-.ffd20.chat-card .inline-roll .dice-tooltip .part-header .part-formula,
-.ffd20.chat-card .fake-inline-roll .dice-tooltip .part-header .part-formula {
+.clff20.chat-card .inline-roll .dice-tooltip .part-header .part-formula,
+.clff20.chat-card .fake-inline-roll .dice-tooltip .part-header .part-formula {
   text-align: left;
 }
-.ffd20.chat-card .inline-roll.success,
-.ffd20.chat-card .fake-inline-roll.success {
+.clff20.chat-card .inline-roll.success,
+.clff20.chat-card .fake-inline-roll.success {
   background-color: #60c060;
 }
-.ffd20.chat-card .inline-roll.failure,
-.ffd20.chat-card .fake-inline-roll.failure {
+.clff20.chat-card .inline-roll.failure,
+.clff20.chat-card .fake-inline-roll.failure {
   background-color: #c06060;
 }
 #chat .chat-message .dice-roll .roll.die.success,
@@ -3369,7 +3369,7 @@
 /* ----------------------------------------- */
 /*  Basic Structure                          */
 /* ----------------------------------------- */
-.ffd20.sheet.actor.character {
+.clff20.sheet.actor.character {
   /* ----------------------------------------- */
   /*  Details Tab                              */
   /* ----------------------------------------- */
@@ -3380,24 +3380,24 @@
   /*  Spellbook                                */
   /* ----------------------------------------- */
 }
-.ffd20.sheet.actor.character .tab.details .charlevel {
+.clff20.sheet.actor.character .tab.details .charlevel {
   flex: 0 0 180px;
   padding: 0 5px 2px;
 }
-.ffd20.sheet.actor.character .tab.details .charlevel .level {
+.clff20.sheet.actor.character .tab.details .charlevel .level {
   height: 28px;
 }
-.ffd20.sheet.actor.character .tab.details .charlevel .experience input[type="text"] {
+.clff20.sheet.actor.character .tab.details .charlevel .experience input[type="text"] {
   width: 100px;
 }
-.ffd20.sheet.actor.character .tab.details .charlevel .xpbar {
+.clff20.sheet.actor.character .tab.details .charlevel .xpbar {
   width: 100%;
   flex: 0 0 8px;
   background: #666;
   border: 1px solid #000;
   border-radius: 3px;
 }
-.ffd20.sheet.actor.character .tab.details .charlevel .xpbar .bar {
+.clff20.sheet.actor.character .tab.details .charlevel .xpbar .bar {
   height: 4px;
   margin: 1px;
   display: block;
@@ -3405,61 +3405,61 @@
   border: 1px solid #000;
   border-radius: 2px;
 }
-.ffd20.sheet.actor.character div.skill-rank label {
+.clff20.sheet.actor.character div.skill-rank label {
   flex: 0;
   white-space: nowrap;
   margin-right: 10px;
 }
-.ffd20.sheet.actor.character div.skill-rank li.skill-rank-formula input[type="text"] {
+.clff20.sheet.actor.character div.skill-rank li.skill-rank-formula input[type="text"] {
   flex: 3 1 0;
 }
-.ffd20.sheet.actor.character .spellbook .item.title-case {
+.clff20.sheet.actor.character .spellbook .item.title-case {
   text-transform: capitalize;
 }
-.ffd20.sheet.actor.character .spellbook .item-controls {
+.clff20.sheet.actor.character .spellbook .item-controls {
   flex: 0 0 68px;
 }
-.ffd20.sheet.actor.character .spellbook .item-controls .toggle-prepared {
+.clff20.sheet.actor.character .spellbook .item-controls .toggle-prepared {
   color: #b5b3a4;
 }
-.ffd20.sheet.actor.character .spellbook .item-controls .toggle-prepared.prepared {
+.clff20.sheet.actor.character .spellbook .item-controls .toggle-prepared.prepared {
   color: #4b4a44;
 }
 /*
-.ffd20.sheet.actor.npc {
+.clff20.sheet.actor.npc {
 
 }
 */
-.ffd20.sheet.actor.npc.lite {
+.clff20.sheet.actor.npc.lite {
   min-width: 440px;
   min-height: 200px;
 }
-.ffd20.sheet.actor.npc.lite .sheet-header img.profile {
+.clff20.sheet.actor.npc.lite .sheet-header img.profile {
   flex: 0 0 100px;
   max-width: 100px;
   min-height: 100px;
   max-height: 100px;
 }
-.ffd20.sheet.actor.npc.lite .sheet-header .header-top {
+.clff20.sheet.actor.npc.lite .sheet-header .header-top {
   max-height: 40px;
 }
-.ffd20.sheet.actor.npc.lite .sheet-header .header-top .charname {
+.clff20.sheet.actor.npc.lite .sheet-header .header-top .charname {
   padding: 0;
   margin: 0;
 }
-.ffd20.sheet.actor.npc.lite .sheet-header .header-top .charname input[type="text"] {
+.clff20.sheet.actor.npc.lite .sheet-header .header-top .charname input[type="text"] {
   padding: 0;
   margin: 0;
   font-size: 24px;
   height: 24px;
 }
-.ffd20.sheet.actor.npc.lite .sheet-header .header-top .charlevel {
+.clff20.sheet.actor.npc.lite .sheet-header .header-top .charlevel {
   flex: 0 0 128px;
 }
-.ffd20.sheet.actor.npc.lite .sheet-header .attribute.health {
+.clff20.sheet.actor.npc.lite .sheet-header .attribute.health {
   border-right: 0;
 }
-.ffd20.sheet.actor.npc.lite table input[type="text"] {
+.clff20.sheet.actor.npc.lite table input[type="text"] {
   padding: 0;
   margin: 0;
   height: 20px;
@@ -3613,55 +3613,55 @@ span.text-box:hover {
 input.text-box {
   text-align: center;
 }
-.ffd20 table {
+.clff20 table {
   margin: 0;
 }
-.ffd20 table thead .icon {
+.clff20 table thead .icon {
   background-color: white;
 }
-.ffd20 table tbody th {
+.clff20 table tbody th {
   background: rgba(127, 127, 127, 0.5);
   color: white;
   text-shadow: 1px 1px black;
 }
-.ffd20 table tr td:not(.nocenter),
-.ffd20 table tr th:not(.nocenter) {
+.clff20 table tr td:not(.nocenter),
+.clff20 table tr th:not(.nocenter) {
   text-align: center;
 }
-.ffd20 table td:not(:last-child),
-.ffd20 table th:not(:last-child) {
+.clff20 table td:not(:last-child),
+.clff20 table th:not(:last-child) {
   border-right: 1px solid black;
 }
-.ffd20 table.magic-items-table .name {
+.clff20 table.magic-items-table .name {
   width: auto;
 }
-.ffd20 table.magic-items-table .aura {
+.clff20 table.magic-items-table .aura {
   width: 20%;
 }
-.ffd20 table.magic-items-table .cl {
+.clff20 table.magic-items-table .cl {
   width: 15%;
 }
-.ffd20 table.magic-items-table .identify-dc {
+.clff20 table.magic-items-table .identify-dc {
   width: 15%;
 }
-.ffd20 table.magic-items-table .identify {
+.clff20 table.magic-items-table .identify {
   width: 40px;
 }
-.ffd20 .item-list-search {
+.clff20 .item-list-search {
   display: flex;
   flex-wrap: nowrap;
   max-height: 1.8em;
   max-width: 120px;
 }
-.ffd20 .item-list-search ~ .currency {
+.clff20 .item-list-search ~ .currency {
   margin-left: 1em;
 }
-.ffd20 .item-list-search .search-input {
+.clff20 .item-list-search .search-input {
   border: 1px solid #7a7971;
   background-color: rgba(255, 255, 255, 0.6);
   max-width: 120px;
 }
-.ffd20 .item-list-search .search-input ~ .clear-search {
+.clff20 .item-list-search .search-input ~ .clear-search {
   margin-left: -1.45em;
   margin-right: 0.1em;
   margin-top: 1px;
@@ -3669,11 +3669,11 @@ input.text-box {
   align-self: center;
   padding: 2px;
 }
-.ffd20 .item-list-search .search-input ~ .clear-search:hover {
+.clff20 .item-list-search .search-input ~ .clear-search:hover {
   text-shadow: 0 0 5px rgba(255, 70, 70, 0.8);
   color: black;
 }
-#settings #ffd20-details > ul {
+#settings #clff20-details > ul {
   padding: 3px 8px;
   margin: 0;
 }
@@ -3864,7 +3864,7 @@ input.text-box {
 .widget.categorized-item-picker .item-picker-items .item.pre-select:not(:hover) {
   box-shadow: 0 0 6px orangered;
 }
-.ffd20-tooltip {
+.clff20-tooltip {
   display: flex;
   flex-flow: column nowrap;
   position: absolute;
@@ -3876,78 +3876,78 @@ input.text-box {
   background: url("../../ui/denim075.png") repeat;
   color: #f0f0e0;
 }
-.ffd20-tooltip .controls {
+.clff20-tooltip .controls {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 4px;
   z-index: 1;
 }
-.ffd20-tooltip .controls button {
+.clff20-tooltip .controls button {
   pointer-events: auto;
   flex: 0 0 32px;
   width: 32px;
   height: 28px;
 }
-.ffd20-tooltip .portrait {
+.clff20-tooltip .portrait {
   display: flex;
   justify-content: space-around;
 }
-.ffd20-tooltip .portrait img {
+.clff20-tooltip .portrait img {
   border: none;
 }
-.ffd20-tooltip .conditions,
-.ffd20-tooltip .buffs,
-.ffd20-tooltip .held-items {
+.clff20-tooltip .conditions,
+.clff20-tooltip .buffs,
+.clff20-tooltip .held-items {
   display: grid;
   grid-template-columns: auto auto;
 }
-.ffd20-tooltip .conditions .condition,
-.ffd20-tooltip .buffs .condition,
-.ffd20-tooltip .held-items .condition,
-.ffd20-tooltip .conditions .held-item,
-.ffd20-tooltip .buffs .held-item,
-.ffd20-tooltip .held-items .held-item {
+.clff20-tooltip .conditions .condition,
+.clff20-tooltip .buffs .condition,
+.clff20-tooltip .held-items .condition,
+.clff20-tooltip .conditions .held-item,
+.clff20-tooltip .buffs .held-item,
+.clff20-tooltip .held-items .held-item {
   flex: 0 0 50%;
 }
-.ffd20-tooltip .conditions .buff,
-.ffd20-tooltip .buffs .buff,
-.ffd20-tooltip .held-items .buff {
+.clff20-tooltip .conditions .buff,
+.clff20-tooltip .buffs .buff,
+.clff20-tooltip .held-items .buff {
   flex: 0 0 100%;
 }
-.ffd20-tooltip .conditions .condition,
-.ffd20-tooltip .buffs .condition,
-.ffd20-tooltip .held-items .condition,
-.ffd20-tooltip .conditions .buff,
-.ffd20-tooltip .buffs .buff,
-.ffd20-tooltip .held-items .buff,
-.ffd20-tooltip .conditions .held-item,
-.ffd20-tooltip .buffs .held-item,
-.ffd20-tooltip .held-items .held-item {
+.clff20-tooltip .conditions .condition,
+.clff20-tooltip .buffs .condition,
+.clff20-tooltip .held-items .condition,
+.clff20-tooltip .conditions .buff,
+.clff20-tooltip .buffs .buff,
+.clff20-tooltip .held-items .buff,
+.clff20-tooltip .conditions .held-item,
+.clff20-tooltip .buffs .held-item,
+.clff20-tooltip .held-items .held-item {
   display: flex;
   align-items: center;
   min-width: 220px;
 }
-.ffd20-tooltip .conditions .condition img,
-.ffd20-tooltip .buffs .condition img,
-.ffd20-tooltip .held-items .condition img,
-.ffd20-tooltip .conditions .buff img,
-.ffd20-tooltip .buffs .buff img,
-.ffd20-tooltip .held-items .buff img,
-.ffd20-tooltip .conditions .held-item img,
-.ffd20-tooltip .buffs .held-item img,
-.ffd20-tooltip .held-items .held-item img {
+.clff20-tooltip .conditions .condition img,
+.clff20-tooltip .buffs .condition img,
+.clff20-tooltip .held-items .condition img,
+.clff20-tooltip .conditions .buff img,
+.clff20-tooltip .buffs .buff img,
+.clff20-tooltip .held-items .buff img,
+.clff20-tooltip .conditions .held-item img,
+.clff20-tooltip .buffs .held-item img,
+.clff20-tooltip .held-items .held-item img {
   width: 16px;
   height: 16px;
 }
-.ffd20-tooltip .conditions .condition span,
-.ffd20-tooltip .buffs .condition span,
-.ffd20-tooltip .held-items .condition span,
-.ffd20-tooltip .conditions .buff span,
-.ffd20-tooltip .buffs .buff span,
-.ffd20-tooltip .held-items .buff span,
-.ffd20-tooltip .conditions .held-item span,
-.ffd20-tooltip .buffs .held-item span,
-.ffd20-tooltip .held-items .held-item span {
+.clff20-tooltip .conditions .condition span,
+.clff20-tooltip .buffs .condition span,
+.clff20-tooltip .held-items .condition span,
+.clff20-tooltip .conditions .buff span,
+.clff20-tooltip .buffs .buff span,
+.clff20-tooltip .held-items .buff span,
+.clff20-tooltip .conditions .held-item span,
+.clff20-tooltip .buffs .held-item span,
+.clff20-tooltip .held-items .held-item span {
   margin-left: 4px;
 }
 

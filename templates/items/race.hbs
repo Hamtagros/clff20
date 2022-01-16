@@ -6,21 +6,21 @@
 
     <div class="header-details flexrow">
       <h1 class="charname">
-        <input name="name" type="text" value="{{item.name}}" placeholder="{{localize "FFD20.ItemName"}}"/>
+        <input name="name" type="text" value="{{item.name}}" placeholder="{{localize "clff20.ItemName"}}"/>
       </h1>
       <div class="item-subtitle">
-        <h4 class="item-type">{{localize "FFD20.Race"}}</h4>
+        <h4 class="item-type">{{localize "clff20.Race"}}</h4>
       </div>
     </div>
   </header>
 
   {{!-- Item Sheet Navigation --}}
   <nav class="sheet-navigation tabs" data-group="primary">
-    <a class="item active" data-tab="description">{{ localize "FFD20.Description" }}</a>
-    <a class="item" data-tab="details">{{ localize "FFD20.Details" }}</a>
-    <a class="item" data-tab="changes">{{localize "FFD20.Changes"}}</a>
-    <a class="item" data-tab="links">{{localize "FFD20.Links"}}</a>
-    <a class="item" data-tab="advanced">{{localize "FFD20.Advanced"}}</a>
+    <a class="item active" data-tab="description">{{ localize "clff20.Description" }}</a>
+    <a class="item" data-tab="details">{{ localize "clff20.Details" }}</a>
+    <a class="item" data-tab="changes">{{localize "clff20.Changes"}}</a>
+    <a class="item" data-tab="links">{{localize "clff20.Links"}}</a>
+    <a class="item" data-tab="advanced">{{localize "clff20.Advanced"}}</a>
   </nav>
 
   {{!-- Item Sheet Body --}}
@@ -36,7 +36,7 @@
 
       {{!-- Racial Type --}}
       <div class="form-group">
-        <label>{{localize "FFD20.CreatureType"}}</label>
+        <label>{{localize "clff20.CreatureType"}}</label>
         <select name="data.creatureType">
           {{#select data.creatureType}}
           {{#each config.creatureTypes as |name type|}}
@@ -48,14 +48,14 @@
 
       <div class="form-group stacked">
         <div class="data-selector">
-          <a class="entry-selector" for="data.subTypes" data-fields="{{localize "FFD20.RaceSubtypePlural"}}" data-dtypes="String"><i class="fas fa-edit"></i></a>
-          <label for="data.subTypes">{{localize "FFD20.RaceSubtypePlural"}}</label>
+          <a class="entry-selector" for="data.subTypes" data-fields="{{localize "clff20.RaceSubtypePlural"}}" data-dtypes="String"><i class="fas fa-edit"></i></a>
+          <label for="data.subTypes">{{localize "clff20.RaceSubtypePlural"}}</label>
         </div>
       </div>
 
       {{!-- Proficiencies --}}
       <div class="form-group {{data.armorProf.cssClass}}">
-        <label for="data.weaponProf">{{localize "FFD20.TraitWeaponProf"}}</label>
+        <label for="data.weaponProf">{{localize "clff20.TraitWeaponProf"}}</label>
         <ul class="traits-list">
           {{#each data.weaponProf.selected as |v k|}}
             <li class="tag {{k}}">{{v}}</li>
@@ -65,7 +65,7 @@
       </div>
 
       <div class="form-group {{data.armorProf.cssClass}}">
-        <label for="data.armorProf">{{localize "FFD20.TraitArmorProf"}}</label>
+        <label for="data.armorProf">{{localize "clff20.TraitArmorProf"}}</label>
         <ul class="traits-list">
           {{#each data.armorProf.selected as |v k|}}
             <li class="tag {{k}}">{{v}}</li>
@@ -76,7 +76,7 @@
 
       {{!-- add racial languages selection --}}
   <div class="form-group {{data.languages.cssClass}}">
-    <label for="data.languages">{{localize "FFD20.Languages"}}</label>
+    <label for="data.languages">{{localize "clff20.Languages"}}</label>
     <ul class="traits-list">
       {{#each data.languages.selected as |v k|}}
       <li class="tag {{k}}">{{v}}</li>
@@ -87,15 +87,15 @@
     </div>
 
     <div class="tab flexcol" data-group="primary" data-tab="changes">
-      {{> "systems/ffd20/templates/items/parts/item-changes.hbs"}}
+      {{> "systems/clff20/templates/items/parts/item-changes.hbs"}}
     </div>
 
     <div class="tab flexcol" data-group="primary" data-tab="links">
-      {{> "systems/ffd20/templates/items/parts/item-links.hbs"}}
+      {{> "systems/clff20/templates/items/parts/item-links.hbs"}}
     </div>
 
     <div class="tab flexcol" data-group="primary" data-tab="advanced">
-      {{> "systems/ffd20/templates/items/parts/item-advanced.hbs"}}
+      {{> "systems/clff20/templates/items/parts/item-advanced.hbs"}}
     </div>
   </section>
 </form>

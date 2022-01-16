@@ -1,6 +1,6 @@
 # Pathfinder 1 Hooks
 
-## ffd20.prepareBaseActorData
+## clff20.prepareBaseActorData
 
 ### Parameters
 
@@ -10,7 +10,7 @@
 
 Called when an actor calls its `prepareBaseData` method.
 
-## ffd20.prepareDerivedActorData
+## clff20.prepareDerivedActorData
 
 ### Parameters
 
@@ -20,7 +20,7 @@ Called when an actor calls its `prepareBaseData` method.
 
 Called when an actor calls its `prepareDerivedData` method.
 
-## ffd20.migrationFinished
+## clff20.migrationFinished
 
 ### Description
 
@@ -101,7 +101,7 @@ Called when an item link has been created.
 - sheet<ItemSheetPF_Container> - The container's sheet.
 - data<Object> - The event's transfer data.
 
-## ffd20.addDefaultChanges
+## clff20.addDefaultChanges
 
 ### Parameters
 
@@ -112,7 +112,7 @@ Called when an item link has been created.
 
 Called when default changes are being determined and added for an actor. You can add your own changes into the `changes` array, which will also be added.
 
-## ffd20.getChangeFlat
+## clff20.getChangeFlat
 
 ### Parameters
 

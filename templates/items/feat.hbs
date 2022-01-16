@@ -6,7 +6,7 @@
 
     <div class="flexrow header-details">
       <h1 class="charname">
-        <input name="name" type="text" value="{{item.name}}" placeholder="{{localize "FFD20.ItemName"}}"/>
+        <input name="name" type="text" value="{{item.name}}" placeholder="{{localize "clff20.ItemName"}}"/>
       </h1>
 
       <ul class="summary">
@@ -15,7 +15,7 @@
         </li>
         <li>
           <label>
-            <input type="checkbox" name="data.disabled" {{checked data.disabled}}> {{localize "FFD20.Disabled"}}
+            <input type="checkbox" name="data.disabled" {{checked data.disabled}}> {{localize "clff20.Disabled"}}
           </label>
         </li>
       </ul>
@@ -24,27 +24,27 @@
 
   {{!-- Item Sheet Navigation --}}
   <nav class="sheet-navigation tabs" data-group="primary">
-    <a class="item active" data-tab="description">{{ localize "FFD20.Description" }}</a>
-    <a class="item" data-tab="details">{{ localize "FFD20.Details" }}</a>
-    <a class="item" data-tab="changes">{{ localize "FFD20.Changes" }}</a>
-    <a class="item" data-tab="links">{{localize "FFD20.Links"}}</a>
-    <a class="item" data-tab="advanced">{{localize "FFD20.Advanced"}}</a>
+    <a class="item active" data-tab="description">{{ localize "clff20.Description" }}</a>
+    <a class="item" data-tab="details">{{ localize "clff20.Details" }}</a>
+    <a class="item" data-tab="changes">{{ localize "clff20.Changes" }}</a>
+    <a class="item" data-tab="links">{{localize "clff20.Links"}}</a>
+    <a class="item" data-tab="advanced">{{localize "clff20.Advanced"}}</a>
   </nav>
 
   {{!-- Item Sheet Body --}}
   <section class="primary-body">
 
     {{!-- Description Tab --}}
-    {{> "systems/ffd20/templates/items/parts/item-description.hbs"}}
+    {{> "systems/clff20/templates/items/parts/item-description.hbs"}}
 
     {{!-- Details Tab --}}
     <div class="tab details" data-group="primary" data-tab="details">
 
-      <h3 class="form-header">{{localize "FFD20.Details"}}</h3>
+      <h3 class="form-header">{{localize "clff20.Details"}}</h3>
 
       {{!-- Feat Type --}}
       <div class="form-group select">
-        <label>{{localize "FFD20.Type"}}</label>
+        <label>{{localize "clff20.Type"}}</label>
         <select name="data.featType" value="{{data.featType}}">
           {{#select data.featType}}
           {{#each config.featTypes as |type a|}}
@@ -65,7 +65,7 @@
 
       {{!-- Proficiencies --}}
       <div class="form-group {{data.armorProf.cssClass}}">
-        <label for="data.weaponProf">{{localize "FFD20.TraitWeaponProf"}}</label>
+        <label for="data.weaponProf">{{localize "clff20.TraitWeaponProf"}}</label>
         <ul class="traits-list">
           {{#each data.weaponProf.selected as |v k|}}
             <li class="tag {{k}}">{{v}}</li>
@@ -75,7 +75,7 @@
       </div>
 
       <div class="form-group {{data.armorProf.cssClass}}">
-        <label for="data.armorProf">{{localize "FFD20.TraitArmorProf"}}</label>
+        <label for="data.armorProf">{{localize "clff20.TraitArmorProf"}}</label>
         <ul class="traits-list">
           {{#each data.armorProf.selected as |v k|}}
             <li class="tag {{k}}">{{v}}</li>
@@ -87,22 +87,22 @@
       {{!-- Feat Tags --}}
       <div class="form-group stacked">
         <div class="data-selector">
-          <a class="entry-selector" for="data.tags" data-fields="{{localize "FFD20.Tags"}}" data-dtypes="String"><i class="fas fa-edit"></i></a>
-          <label for="data.tags">{{localize "FFD20.Tags"}}</label>
+          <a class="entry-selector" for="data.tags" data-fields="{{localize "clff20.Tags"}}" data-dtypes="String"><i class="fas fa-edit"></i></a>
+          <label for="data.tags">{{localize "clff20.Tags"}}</label>
         </div>
 
         {{#if isClassFeature}}
         <div class="data-selector">
-          <a class="entry-selector" for="data.associations.classes" data-fields="{{localize "FFD20.ClassPlural"}}" data-dtypes="String"><i class="fas fa-edit"></i></a>
-          <label for="data.associations.classes">{{localize "FFD20.ClassPlural"}}</label>
+          <a class="entry-selector" for="data.associations.classes" data-fields="{{localize "clff20.ClassPlural"}}" data-dtypes="String"><i class="fas fa-edit"></i></a>
+          <label for="data.associations.classes">{{localize "clff20.ClassPlural"}}</label>
         </div>
         {{/if}}
       </div>
 
       {{#if isTemplate}}
       <div class="form-group">
-        <label>{{localize "FFD20.CROffset"}}</label>
-        <input type="text" name="data.crOffset" value="{{data.crOffset}}" placeholder="{{localize "FFD20.Formula"}}" />
+        <label>{{localize "clff20.CROffset"}}</label>
+        <input type="text" name="data.crOffset" value="{{data.crOffset}}" placeholder="{{localize "clff20.Formula"}}" />
       </div>
       {{/if}}
 
@@ -110,49 +110,49 @@
         {{#if owner}}
         {{#unless isTemplate}}
         <label class="checkbox">
-          <input type="checkbox" name="data.showInQuickbar" {{checked data.showInQuickbar}}/> {{localize "FFD20.ShowInQuickbar"}}
+          <input type="checkbox" name="data.showInQuickbar" {{checked data.showInQuickbar}}/> {{localize "clff20.ShowInQuickbar"}}
         </label>
         {{/unless}}
         {{/if}}
 
         <label class="checkbox">
-          <input type="checkbox" name="data.nonlethal" {{checked data.nonlethal}}/> {{localize "FFD20.Nonlethal"}}
+          <input type="checkbox" name="data.nonlethal" {{checked data.nonlethal}}/> {{localize "clff20.Nonlethal"}}
         </label>
       </div>
 
       {{!-- Activation --}}
-      <h3 class="form-header">{{localize "FFD20.FeatureUsage"}}</h3>
+      <h3 class="form-header">{{localize "clff20.FeatureUsage"}}</h3>
 
       {{!-- Item Activation Template --}}
-      {{> "systems/ffd20/templates/items/parts/item-activation.hbs"}}
+      {{> "systems/clff20/templates/items/parts/item-activation.hbs"}}
 
       {{!-- Action --}}
-      <h3 class="form-header">{{localize "FFD20.Attack"}}</h3>
+      <h3 class="form-header">{{localize "clff20.Attack"}}</h3>
 
       {{!-- Item Action Template --}}
-      {{> "systems/ffd20/templates/items/parts/item-action.hbs"}}
+      {{> "systems/clff20/templates/items/parts/item-action.hbs"}}
 
       {{!-- Measure Template --}}
-      <h3 class="form-header">{{localize "FFD20.MeasureTemplate"}}</h3>
+      <h3 class="form-header">{{localize "clff20.MeasureTemplate"}}</h3>
 
       {{!-- Item Measure Template --}}
-      {{> "systems/ffd20/templates/items/parts/item-template.hbs"}}
+      {{> "systems/clff20/templates/items/parts/item-template.hbs"}}
 
       {{!-- Advanced Tag --}}
-      {{> "systems/ffd20/templates/items/parts/item-tag.hbs"}}
+      {{> "systems/clff20/templates/items/parts/item-tag.hbs"}}
     </div>
 
     {{!-- Changes Tab --}}
     <div class="tab flexcol" data-group="primary" data-tab="changes">
-      {{> "systems/ffd20/templates/items/parts/item-changes.hbs"}}
+      {{> "systems/clff20/templates/items/parts/item-changes.hbs"}}
     </div>
 
     <div class="tab flexcol" data-group="primary" data-tab="links">
-      {{> "systems/ffd20/templates/items/parts/item-links.hbs"}}
+      {{> "systems/clff20/templates/items/parts/item-links.hbs"}}
     </div>
 
     <div class="tab flexcol" data-group="primary" data-tab="advanced">
-      {{> "systems/ffd20/templates/items/parts/item-advanced.hbs"}}
+      {{> "systems/clff20/templates/items/parts/item-advanced.hbs"}}
     </div>
   </section>
 </form>

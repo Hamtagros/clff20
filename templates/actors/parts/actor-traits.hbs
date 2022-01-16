@@ -1,6 +1,6 @@
 <div class="traits flexcol">
   <div class="form-group">
-    <label>{{localize "FFD20.Size"}}</label>
+    <label>{{localize "clff20.Size"}}</label>
     <select name="data.traits.size">
       {{#select data.traits.size}}
       {{#each config.actorSizes as |label size|}}
@@ -11,7 +11,7 @@
   </div>
 
   <div class="form-group">
-    <label>{{localize "FFD20.Stature"}}</label>
+    <label>{{localize "clff20.Stature"}}</label>
     <select name="data.traits.stature">
       {{#select data.traits.stature}}
       {{#each config.actorStatures as |label key|}}
@@ -22,37 +22,37 @@
   </div>
 
   <div class="form-group {{#unless data.traits.senses}}inactive{{/unless}}">
-    <label>{{localize "FFD20.Senses"}}</label>
-    <input type="text" name="data.traits.senses" value="{{data.traits.senses}}" placeholder="{{localize "FFD20.None"}}"/>
+    <label>{{localize "clff20.Senses"}}</label>
+    <input type="text" name="data.traits.senses" value="{{data.traits.senses}}" placeholder="{{localize "clff20.None"}}"/>
   </div>
 
   <div class="form-group {{#unless data.traits.dr}}inactive{{/unless}}">
-    <label>{{localize "FFD20.DamRed"}}</label>
-    <input type="text" name="data.traits.dr" value="{{data.traits.dr}}" placeholder="{{localize "FFD20.None"}}"/>
+    <label>{{localize "clff20.DamRed"}}</label>
+    <input type="text" name="data.traits.dr" value="{{data.traits.dr}}" placeholder="{{localize "clff20.None"}}"/>
   </div>
 
   <div class="form-group {{#unless data.traits.regen}}inactive{{/unless}}">
-    <label>{{localize "FFD20.Regeneration"}}</label>
-    <input type="text" name="data.traits.regen" value="{{data.traits.regen}}" placeholder="{{localize "FFD20.None"}}"/>
+    <label>{{localize "clff20.Regeneration"}}</label>
+    <input type="text" name="data.traits.regen" value="{{data.traits.regen}}" placeholder="{{localize "clff20.None"}}"/>
   </div>
 
   <div class="form-group {{#unless data.traits.fastHealing}}inactive{{/unless}}">
-    <label>{{localize "FFD20.FastHealing"}}</label>
-    <input type="text" name="data.traits.fastHealing" value="{{data.traits.fastHealing}}" placeholder="{{localize "FFD20.None"}}"/>
+    <label>{{localize "clff20.FastHealing"}}</label>
+    <input type="text" name="data.traits.fastHealing" value="{{data.traits.fastHealing}}" placeholder="{{localize "clff20.None"}}"/>
   </div>
 
   <div class="form-group {{#unless data.traits.eres}}inactive{{/unless}}">
-    <label>{{localize "FFD20.EnRes"}}</label>
-    <input type="text" name="data.traits.eres" value="{{data.traits.eres}}" placeholder="{{localize "FFD20.None"}}"/>
+    <label>{{localize "clff20.EnRes"}}</label>
+    <input type="text" name="data.traits.eres" value="{{data.traits.eres}}" placeholder="{{localize "clff20.None"}}"/>
   </div>
 
   <div class="form-group {{#unless data.traits.cres}}inactive{{/unless}}">
-    <label>{{localize "FFD20.ConRes"}}</label>
-    <input type="text" name="data.traits.cres" value="{{data.traits.cres}}" placeholder="{{localize "FFD20.None"}}"/>
+    <label>{{localize "clff20.ConRes"}}</label>
+    <input type="text" name="data.traits.cres" value="{{data.traits.cres}}" placeholder="{{localize "clff20.None"}}"/>
   </div>
 
   <div class="form-group {{data.traits.di.cssClass}}">
-    <label for="data.traits.di">{{localize "FFD20.DamImm"}}</label>
+    <label for="data.traits.di">{{localize "clff20.DamImm"}}</label>
     <ul class="traits-list">
       {{#each data.traits.di.selected as |v k|}}
       <li class="tag {{k}}">{{v}}</li>
@@ -62,7 +62,7 @@
   </div>
 
   <div class="form-group {{data.traits.dv.cssClass}}">
-    <label for="data.traits.dv">{{localize "FFD20.DamVuln"}}</label>
+    <label for="data.traits.dv">{{localize "clff20.DamVuln"}}</label>
     <ul class="traits-list">
       {{#each data.traits.dv.selected as |v k|}}
       <li class="tag {{k}}">{{v}}</li>
@@ -72,7 +72,7 @@
   </div>
 
   <div class="form-group {{data.traits.ci.cssClass}}">
-    <label for="data.traits.ci">{{localize "FFD20.ConImm"}}</label>
+    <label for="data.traits.ci">{{localize "clff20.ConImm"}}</label>
     <ul class="traits-list">
       {{#each data.traits.ci.selected as |v k|}}
       <li class="tag {{k}}">{{v}}</li>
@@ -82,7 +82,7 @@
   </div>
 
   <div class="form-group {{data.traits.languages.cssClass}}">
-    <label for="data.traits.languages">{{localize "FFD20.Languages"}}</label>
+    <label for="data.traits.languages">{{localize "clff20.Languages"}}</label>
     <ul class="traits-list">
       {{#each data.traits.languages.selected as |v k|}}
       <li class="tag {{k}}">{{v}}</li>
@@ -94,7 +94,7 @@
   {{#if isCharacter}}
     <div class="form-group {{data.traits.weaponProf.cssClass}}">
       <label for="data.traits.weaponProf">
-        {{localize "FFD20.TraitWeaponProf"}}
+        {{localize "clff20.TraitWeaponProf"}}
       </label>
       <ul class="traits-list tooltip">
         {{#each data.traits.weaponProf.selected as |v k|}}
@@ -102,7 +102,7 @@
         {{/each}}
         {{#if sourceDetails.data.traits.weaponProf.length}}
           <div class="tooltipcontent">
-            {{localize "FFD20.FromSources"}}:<br/>
+            {{localize "clff20.FromSources"}}:<br/>
             {{#each sourceDetails.data.traits.weaponProf as |src|}}{{src.name}}: {{src.value}}<br/>{{/each}}
           </div>
         {{/if}}
@@ -112,7 +112,7 @@
 
     <div class="form-group {{data.traits.armorProf.cssClass}}">
       <label for="data.traits.armorProf">
-        {{localize "FFD20.TraitArmorProf"}}
+        {{localize "clff20.TraitArmorProf"}}
       </label>
       <ul class="traits-list tooltip">
         {{#each data.traits.armorProf.selected as |v k|}}
@@ -120,7 +120,7 @@
         {{/each}}
         {{#if sourceDetails.data.traits.armorProf.length}}
           <div class="tooltipcontent">
-            {{localize "FFD20.FromSources"}}:<br/>
+            {{localize "clff20.FromSources"}}:<br/>
             {{#each sourceDetails.data.traits.armorProf as |src|}}{{src.name}}: {{src.value}}<br/>{{/each}}
           </div>
         {{/if}}
@@ -130,20 +130,20 @@
   {{/if}}
 
   <div class="form-group">
-    <label>{{localize "FFD20.Quadruped"}}</label>
+    <label>{{localize "clff20.Quadruped"}}</label>
     <label class="checkbox">
       <input type="checkbox" name="data.attributes.quadruped" {{checked data.attributes.quadruped}}/>
     </label>
   </div>
 
   <div class="form-group">
-    <label>{{localize "FFD20.LevelDrain"}}</label>
+    <label>{{localize "clff20.LevelDrain"}}</label>
     <input class="select-on-click" type="text" name="data.attributes.energyDrain" value="{{data.attributes.energyDrain}}"
                                                           placeholder="0" data-dtype="Number" />
   </div>
 
   {{!-- Point Buy Calculator --}}
   <div class="form-group">
-    <button type="button" class="pointbuy-calculator">{{localize "FFD20.PointBuyCalculator"}}</button>
+    <button type="button" class="pointbuy-calculator">{{localize "clff20.PointBuyCalculator"}}</button>
   </div>
 </div>

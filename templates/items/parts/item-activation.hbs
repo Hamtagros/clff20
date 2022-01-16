@@ -1,6 +1,6 @@
 {{!-- Activation Cost --}}
 <div class="form-group input-select">
-  <label>{{localize "FFD20.ActivationCost"}}</label>
+  <label>{{localize "clff20.ActivationCost"}}</label>
   <div class="form-fields">
     <input type="text" name="{{#unless unchainedActionEconomy}}data.activation.cost{{else}}data.unchainedAction.activation.cost{{/unless}}"
       value="{{#unless unchainedActionEconomy}}{{data.activation.cost}}{{else}}{{data.unchainedAction.activation.cost}}{{/unless}}" data-dtype="Number" placeholder=""/>
@@ -30,7 +30,7 @@
 
 {{!-- Ability Target --}}
 <div class="form-group input-select-select">
-  <label>{{localize "FFD20.Target"}}</label>
+  <label>{{localize "clff20.Target"}}</label>
   <div class="form-fields">
     <input type="text" name="data.target.value" value="{{data.target.value}}"/>
   </div>
@@ -38,9 +38,9 @@
 
 {{!-- Ability Range --}}
 <div class="form-group input-select">
-  <label>{{localize "FFD20.Range"}}</label>
+  <label>{{localize "clff20.Range"}}</label>
   <div class="form-fields">
-    {{#if canInputRange}}<input class="{{#unless isSpell}}formula{{/unless}}" type="text" name="data.range.value" value="{{data.range.value}}" placeholder="{{#unless isSpell}}{{localize "FFD20.Formula"}}{{/unless}}"/>{{/if}}
+    {{#if canInputRange}}<input class="{{#unless isSpell}}formula{{/unless}}" type="text" name="data.range.value" value="{{data.range.value}}" placeholder="{{#unless isSpell}}{{localize "clff20.Formula"}}{{/unless}}"/>{{/if}}
     <select name="data.range.units">
       {{#select data.range.units}}
       <option value=""></option>
@@ -55,9 +55,9 @@
 {{#if data.range.units}}
 {{!-- Minimum Range --}}
 <div class="form-group input-select">
-  <label>{{localize "FFD20.MinRange"}}</label>
+  <label>{{localize "clff20.MinRange"}}</label>
   <div class="form-fields">
-    {{#if canInputMinRange}}<input class="{{#unless isSpell}}formula{{/unless}}" type="text" name="data.range.minValue" value="{{data.range.minValue}}" placeholder="{{#unless isSpell}}{{localize "FFD20.Formula"}}{{/unless}}"/>{{/if}}
+    {{#if canInputMinRange}}<input class="{{#unless isSpell}}formula{{/unless}}" type="text" name="data.range.minValue" value="{{data.range.minValue}}" placeholder="{{#unless isSpell}}{{localize "clff20.Formula"}}{{/unless}}"/>{{/if}}
     <select name="data.range.minUnits">
       {{#select data.range.minUnits}}
       <option value=""></option>
@@ -73,7 +73,7 @@
 {{!-- Range Increments --}}
 {{#if showMaxRangeIncrements}}
 <div class="form-group input-select-select">
-  <label>{{localize "FFD20.MaximumRangeIncrements"}}</label>
+  <label>{{localize "clff20.MaximumRangeIncrements"}}</label>
   <div class="form-fields">
     <input type="text" name="data.range.maxIncrements" value="{{data.range.maxIncrements}}"/>
   </div>
@@ -82,7 +82,7 @@
 
 {{!-- Area --}}
 <div class="form-group input-select-select">
-  <label>{{localize "FFD20.Area"}}</label>
+  <label>{{localize "clff20.Area"}}</label>
   <div class="form-fields">
     <input type="text" name="data.spellArea" value="{{data.spellArea}}"/>
   </div>
@@ -90,12 +90,12 @@
 
 {{!-- Effect Duration --}}
 <div class="form-group input-select">
-  <label>{{localize "FFD20.Duration"}}</label>
+  <label>{{localize "clff20.Duration"}}</label>
   <div class="form-fields">
     {{#if isSpell}}
-    <input type="text" name="data.spellDuration" value="{{data.spellDuration}}" placeholder="{{localize "FFD20.SpellDurationExample"}}"/>
+    <input type="text" name="data.spellDuration" value="{{data.spellDuration}}" placeholder="{{localize "clff20.SpellDurationExample"}}"/>
     {{else}}
-    {{#if canInputDuration}}<input class="formula" type="text" name="data.duration.value" value="{{data.duration.value}}" placeholder="{{localize "FFD20.Formula"}}"/>{{/if}}
+    {{#if canInputDuration}}<input class="formula" type="text" name="data.duration.value" value="{{data.duration.value}}" placeholder="{{localize "clff20.Formula"}}"/>{{/if}}
     <select name="data.duration.units">
       {{#select data.duration.units}}
       <option value=""></option>
@@ -111,7 +111,7 @@
 {{!-- Limited Uses --}}
 {{#unless isSpell}}
 <div class="form-group uses-per">
-  <label>{{localize "FFD20.LimitedUses"}}</label>
+  <label>{{localize "clff20.LimitedUses"}}</label>
   <div class="form-fields">
     {{#if isCharged}}
     <input type="text" name="data.uses.value" value="{{data.uses.value}}" data-dtype="Number"/>
@@ -130,15 +130,15 @@
 </div>
 {{#if isCharged}}
 <div class="form-group uses-per">
-  <input class="formula" type="text" name="data.uses.maxFormula" value="{{data.uses.maxFormula}}" placeholder="{{localize "FFD20.MaximumUsesFormula"}}"/>
+  <input class="formula" type="text" name="data.uses.maxFormula" value="{{data.uses.maxFormula}}" placeholder="{{localize "clff20.MaximumUsesFormula"}}"/>
 </div>
 {{/if}}
 
 <div class="form-group stacked">
-  <label>{{localize "FFD20.AutoDeductCharges"}}</label>
+  <label>{{localize "clff20.AutoDeductCharges"}}</label>
   <div class="flexrow">
     <input type="checkbox" name="data.uses.autoDeductCharges" {{checked data.uses.autoDeductCharges}}/>
-    {{#if data.uses.autoDeductCharges}}<input type="text" name="data.uses.autoDeductChargesCost" placeholder="{{localize "FFD20.DeductChargeFormulaPlaceholder"}}"
+    {{#if data.uses.autoDeductCharges}}<input type="text" name="data.uses.autoDeductChargesCost" placeholder="{{localize "clff20.DeductChargeFormulaPlaceholder"}}"
       value="{{data.uses.autoDeductChargesCost}}" />{{/if}}
   </div>
 </div>

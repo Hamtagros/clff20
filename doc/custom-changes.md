@@ -7,11 +7,11 @@ In order to add custom change targets in e.g. a module, you will have to do two 
 
 ## Alter configuration object
 
-In your module, make a hook for "init", and alter the FFD20 configuration object. In this tutorial we'll add a change for an actor's carried GP (useless, most likely, but just for the tutorial's sake).
+In your module, make a hook for "init", and alter the clff20 configuration object. In this tutorial we'll add a change for an actor's carried GP (useless, most likely, but just for the tutorial's sake).
 
 ```js
 Hooks.once("init", () => {
-  CONFIG.FFD20.buffTargets.misc.gp = "Gold Pieces";
+  CONFIG.clff20.buffTargets.misc.gp = "Gold Pieces";
 });
 ```
 
@@ -19,7 +19,7 @@ Or, you could add a whole new base category for the changes.
 
 ```js
 Hooks.once("init", () => {
-  CONFIG.FFD20.buffTargets.currency = {
+  CONFIG.clff20.buffTargets.currency = {
     _label: "Currency",
     gp: "Gold Pieces",
   };
@@ -30,7 +30,7 @@ Alternatively, if you want the change to be present internally, but hidden from 
 
 ```js
 Hooks.once("init", () => {
-  CONFIG.FFD20.buffTargets.misc["~gp"] = "Gold Pieces";
+  CONFIG.clff20.buffTargets.misc["~gp"] = "Gold Pieces";
 });
 ```
 
@@ -39,7 +39,7 @@ Hooks.once("init", () => {
 Next, we have to add a hook that actually changes the actor's data.
 
 ```js
-Hooks.on("ffd20.getChangeFlat", (target, modifier, result) => {
+Hooks.on("clff20.getChangeFlat", (target, modifier, result) => {
   if (target === "gp") {
     result.keys.push("data.currency.gp");
   }
