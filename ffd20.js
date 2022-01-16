@@ -24198,6 +24198,7 @@ class CompendiumBrowser extends Application {
       const cacheVersions = game.settings.get("ffd20", "compendiumSaveVersions");
       const thisVersion = SemanticVersion.fromString(cacheVersions[this.type] || "0.0.1");
       const needVersion = SemanticVersion.fromString(NEED_NEW_VERSION[this.type]);
+      console.log(thisVersion);
       if (needVersion.isHigherThan(thisVersion)) {
         game.settings.set(
           "ffd20",
