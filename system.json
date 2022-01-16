@@ -31,98 +31,98 @@
     {
       "name": "classes",
       "label": "Pathfinder Classes",
-      "system": "ffd20",
+      "system": "clff20",
       "path": "./packs/classes.db",
       "entity": "Item"
     },
     {
       "name": "commonbuffs",
       "label": "Common Buffs",
-      "system": "ffd20",
+      "system": "clff20",
       "path": "./packs/commonbuffs.db",
       "entity": "Item"
     },
     {
       "name": "feats",
       "label": "Pathfinder Feats",
-      "system": "ffd20",
+      "system": "clff20",
       "path": "./packs/feats.db",
       "entity": "Item"
     },
     {
       "name": "items",
       "label": "Pathfinder Items",
-      "system": "ffd20",
+      "system": "clff20",
       "path": "./packs/items.db",
       "entity": "Item"
     },
     {
       "name": "armors-and-shields",
       "label": "Pathfinder Armor and Shields",
-      "system": "ffd20",
+      "system": "clff20",
       "path": "./packs/armors-and-shields.db",
       "entity": "Item"
     },
     {
       "name": "weapons-and-ammo",
       "label": "Pathfinder Weapons and Ammo",
-      "system": "ffd20",
+      "system": "clff20",
       "path": "./packs/weapons-and-ammo.db",
       "entity": "Item"
     },
     {
       "name": "racialhd",
       "label": "Pathfinder Racial HD",
-      "system": "ffd20",
+      "system": "clff20",
       "path": "./packs/racial-hd.db",
       "entity": "Item"
     },
     {
       "name": "class-abilities",
       "label": "Pathfinder Class Abilities",
-      "system": "ffd20",
+      "system": "clff20",
       "path": "./packs/class-abilities.db",
       "entity": "Item"
     },
     {
       "name": "monster-templates",
       "label": "Pathfinder Monster Templates",
-      "system": "ffd20",
+      "system": "clff20",
       "path": "./packs/monster-templates.db",
       "entity": "Item"
     },
     {
       "name": "sample-macros",
       "label": "Sample Macros",
-      "system": "ffd20",
+      "system": "clff20",
       "path": "./packs/sample-macros.db",
       "entity": "Macro"
     },
     {
       "name": "roll-tables",
       "label": "Roll Tables",
-      "system": "ffd20",
+      "system": "ffd2clff200",
       "path": "./packs/roll-tables.db",
       "entity": "RollTable"
     },
     {
       "name": "ultimate-equipment",
       "label": "Pathfinder Ultimate Equipment",
-      "system": "ffd20",
+      "system": "clff20",
       "path": "./packs/ultimate-equipment.db",
       "entity": "RollTable"
     },
     {
       "name": "conditions",
       "label": "Conditions",
-      "system": "ffd20",
+      "system": "clff20",
       "path": "./packs/conditions.db",
       "entity": "JournalEntry"
     },
     {
       "name": "skills",
       "label": "Skills",
-      "system": "ffd20",
+      "system": "clff20",
       "path": "./packs/skills.db",
       "entity": "JournalEntry"
     }
