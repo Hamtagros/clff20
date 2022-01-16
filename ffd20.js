@@ -3461,6 +3461,7 @@ class SemanticVersion {
   }
 
   isHigherThan(otherVersion) {
+    console.log(otherVersion);
     if (this.major > otherVersion.major) return true;
     if (this.major === otherVersion.major && this.minor > otherVersion.minor) return true;
     if (this.major === otherVersion.major
