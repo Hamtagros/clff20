@@ -140,7 +140,7 @@
   "gridUnits": "ft",
   "primaryTokenAttribute": "attributes.hp",
   "secondaryTokenAttribute": "attributes.mp",
-  "minimumCoreVersion": "9.236",
+  "minimumCoreVersion": "0.8.6",
   "compatibleCoreVersion": "9.242",
   "bugs": "https://github.com/Hamtagros/clff20/-/issues",
   "allowBugReporter": true,
