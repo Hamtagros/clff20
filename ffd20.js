@@ -44246,7 +44246,7 @@ Hooks.once("ready", async function () {
   ) {
     PREVIOUS_MIGRATION_VERSION = `${PREVIOUS_MIGRATION_VERSION}.0`;
   }
-  let needMigration = SemanticVersion.fromString(NEEDS_MIGRATION_VERSION).isHigherThan(
+  const needMigration = SemanticVersion.fromString(NEEDS_MIGRATION_VERSION).isHigherThan(
     SemanticVersion.fromString(PREVIOUS_MIGRATION_VERSION)
   );
   if (needMigration && game.user.isGM) {
