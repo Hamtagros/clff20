@@ -2,7 +2,7 @@
   "name": "clff20",
   "title": "Clone of pathfinder for clff20",
   "description": "Clone of pathfinder for clff20",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "author": "Hamtagros",
   "authors": [
     {
@@ -101,7 +101,7 @@
     {
       "name": "roll-tables",
       "label": "Roll Tables",
-      "system": "ffd2clff200",
+      "system": "clff20",
       "path": "./packs/roll-tables.db",
       "entity": "RollTable"
     },
@@ -140,8 +140,8 @@
   "gridUnits": "ft",
   "primaryTokenAttribute": "attributes.hp",
   "secondaryTokenAttribute": "attributes.mp",
-  "minimumCoreVersion": "0.8.6",
-  "compatibleCoreVersion": "9.242",
+  "minimumCoreVersion": "9.236",
+  "compatibleCoreVersion": "9",
   "bugs": "https://github.com/Hamtagros/clff20/-/issues",
   "allowBugReporter": true,
   "url": "https://github.com/Hamtagros/clff20",

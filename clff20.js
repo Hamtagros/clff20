@@ -1682,7 +1682,7 @@ const clff20 = {
     antagonized: "clff20.CondAntagonized",
     berserk: "clff20.CondBerserk",
     bleed: "clff20.CondBleed",
-    ffd20_blind: "clff20.CondBlinded",
+    clff20_blind: "clff20.CondBlinded",
     burning: "clff20.CondBurning",
     charmed: "clff20.CondCharmed",
     confused: "clff20.CondConfused",
@@ -1690,7 +1690,7 @@ const clff20 = {
     cursed: "clff20.CondCursed",
     dazed: "clff20.CondDazed",
     dazzled: "clff20.CondDazzled",
-    ffd20_deaf: "clff20.CondDeafened",
+    clff20_deaf: "clff20.CondDeafened",
     deprotect: "clff20.CondDeprotect",
     deshell: "clff20.CondDeshell",
     dimmed: "clff20.CondDimmed",
@@ -1718,12 +1718,12 @@ const clff20 = {
     petrified: "clff20.CondPetrified",
     pinned: "clff20.CondPinned",
     poisoned: "clff20.CondPoisoned",
-    ffd20_prone: "clff20.CondProne",
+    clff20_prone: "clff20.CondProne",
     sapped: "clff20.CondSapped",
     shaken: "clff20.CondShaken",
     sickened: "clff20.CondSickened",
     silenced: "clff20.CondSilenced",
-    ffd20_sleep: "clff20.CondSleep",
+    clff20_sleep: "clff20.CondSleep",
     slow: "clff20.CondSlow",
     squalled: "clff20.CondSqualled",
     staggered: "clff20.CondStaggered",
@@ -1739,7 +1739,7 @@ const clff20 = {
     antagonized: "systems/clff20/icons/conditions/antagonized.png",
     berserk: "systems/clff20/icons/conditions/berserk.png",
     bleed: "systems/clff20/icons/conditions/bleed.png",
-    ffd20_blind: "systems/clff20/icons/conditions/blind.png",
+    clff20_blind: "systems/clff20/icons/conditions/blind.png",
     burning: "systems/clff20/icons/conditions/burning.png",
     charmed: "systems/clff20/icons/conditions/charmed.png",
     confused: "systems/clff20/icons/conditions/confused.png",
@@ -1747,7 +1747,7 @@ const clff20 = {
     cursed: "systems/clff20/icons/conditions/cursed.png",
     dazed: "systems/clff20/icons/conditions/dazed.png",
     dazzled: "systems/clff20/icons/conditions/dazzled.png",
-    ffd20_deaf: "systems/clff20/icons/conditions/deaf.png",
+    clff20_deaf: "systems/clff20/icons/conditions/deaf.png",
     deprotect: "systems/clff20/icons/conditions/deprotect.png",
     deshell: "systems/clff20/icons/conditions/deshell.png",
     dimmed: "systems/clff20/icons/conditions/dimmed.png",
@@ -1776,12 +1776,12 @@ const clff20 = {
     petrified: "systems/clff20/icons/conditions/petrified.png",
     pinned: "systems/clff20/icons/conditions/pinned.png",
     poisoned: "systems/clff20/icons/conditions/poisoned.png",
-    ffd20_prone: "systems/clff20/icons/conditions/prone.png",
+    clff20_prone: "systems/clff20/icons/conditions/prone.png",
     sapped: "systems/clff20/icons/conditions/sapped.png",
     shaken: "systems/clff20/icons/conditions/shaken.png",
     sickened: "systems/clff20/icons/conditions/sickened.png",
     silenced: "systems/clff20/icons/conditions/silenced.png",
-    ffd20_sleep: "systems/clff20/icons/conditions/sleep.png",
+    clff20_sleep: "systems/clff20/icons/conditions/sleep.png",
     slow: "systems/clff20/icons/conditions/slow.png",
     squalled: "systems/clff20/icons/conditions/squalled.png",
     staggered: "systems/clff20/icons/conditions/staggered.png",
@@ -2243,7 +2243,7 @@ class HealthConfig extends FormApplication {
   /** @override */
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
-      title: game.i18n.localize("SETTINGS.ffd20HealthConfigName"),
+      title: game.i18n.localize("SETTINGS.clff20HealthConfigName"),
       id: "health-config",
       template: "systems/clff20/templates/settings/health.hbs",
       width: 480,
@@ -2710,15 +2710,15 @@ const registerSystemSettings = function () {
 
   // Health configuration
   game.settings.registerMenu("clff20", "healthConfig", {
-    name: "SETTINGS.ffd20HealthConfigName",
-    label: "SETTINGS.ffd20HealthConfigLabel",
-    hint: "SETTINGS.ffd20HealthConfigHint",
+    name: "SETTINGS.clff20HealthConfigName",
+    label: "SETTINGS.clff20HealthConfigLabel",
+    hint: "SETTINGS.clff20HealthConfigHint",
     icon: "fas fa-heartbeat",
     type: HealthConfig,
     restricted: true,
   });
   game.settings.register("clff20", "healthConfig", {
-    name: "SETTINGS.ffd20HealthConfigName",
+    name: "SETTINGS.clff20HealthConfigName",
     scope: "world",
     default: HealthConfig.defaultSettings,
     type: Object,
@@ -2826,15 +2826,15 @@ const registerSystemSettings = function () {
    * Register diagonal movement rule setting
    */
   game.settings.register("clff20", "diagonalMovement", {
-    name: "SETTINGS.ffd20DiagN",
-    hint: "SETTINGS.ffd20DiagL",
+    name: "SETTINGS.clff20DiagN",
+    hint: "SETTINGS.clff20DiagL",
     scope: "world",
     config: true,
     default: "5105",
     type: String,
     choices: {
-      555: "SETTINGS.ffd20DiagPHB",
-      5105: "SETTINGS.ffd20DiagDMG",
+      555: "SETTINGS.clff20DiagPHB",
+      5105: "SETTINGS.clff20DiagDMG",
     },
     onChange: (rule) => (canvas.grid.diagonalRule = rule),
   });
@@ -2845,8 +2845,8 @@ const registerSystemSettings = function () {
    * @deprecated
    */
   game.settings.register("clff20", "experienceRate", {
-    name: "SETTINGS.ffd20ExpRateN",
-    hint: "SETTINGS.ffd20ExpRateL",
+    name: "SETTINGS.clff20ExpRateN",
+    hint: "SETTINGS.clff20ExpRateL",
     scope: "world",
     config: false,
     default: "",
@@ -2878,45 +2878,45 @@ const registerSystemSettings = function () {
    * System of Units
    */
   game.settings.register("clff20", "units", {
-    name: "SETTINGS.ffd20UnitsN",
-    hint: "SETTINGS.ffd20UnitsL",
+    name: "SETTINGS.clff20UnitsN",
+    hint: "SETTINGS.clff20UnitsL",
     scope: "world",
     config: true,
     default: "imperial",
     type: String,
     choices: {
-      imperial: game.i18n.localize("SETTINGS.ffd20ImperialUnits"),
-      metric: game.i18n.localize("SETTINGS.ffd20MetricUnits"),
+      imperial: game.i18n.localize("SETTINGS.clff20ImperialUnits"),
+      metric: game.i18n.localize("SETTINGS.clff20MetricUnits"),
     },
     onChange: reRenderSheets,
   });
 
   game.settings.register("clff20", "distanceUnits", {
-    name: "SETTINGS.ffd20DistanceUnitsN",
-    hint: "SETTINGS.ffd20DistanceUnitsL",
+    name: "SETTINGS.clff20DistanceUnitsN",
+    hint: "SETTINGS.clff20DistanceUnitsL",
     scope: "world",
     config: true,
     default: "default",
     type: String,
     choices: {
       default: game.i18n.localize("clff20.Default"),
-      imperial: game.i18n.localize("SETTINGS.ffd20ImperialDistanceUnits"),
-      metric: game.i18n.localize("SETTINGS.ffd20MetricDistanceUnits"),
+      imperial: game.i18n.localize("SETTINGS.clff20ImperialDistanceUnits"),
+      metric: game.i18n.localize("SETTINGS.clff20MetricDistanceUnits"),
     },
     onChange: reRenderSheets,
   });
 
   game.settings.register("clff20", "weightUnits", {
-    name: "SETTINGS.ffd20WeightUnitsN",
-    hint: "SETTINGS.ffd20WeightUnitsL",
+    name: "SETTINGS.clff20WeightUnitsN",
+    hint: "SETTINGS.clff20WeightUnitsL",
     scope: "world",
     config: true,
     default: "default",
     type: String,
     choices: {
       default: game.i18n.localize("clff20.Default"),
-      imperial: game.i18n.localize("SETTINGS.ffd20ImperialWeightUnits"),
-      metric: game.i18n.localize("SETTINGS.ffd20MetricWeightUnits"),
+      imperial: game.i18n.localize("SETTINGS.clff20ImperialWeightUnits"),
+      metric: game.i18n.localize("SETTINGS.clff20MetricWeightUnits"),
     },
     onChange: reRenderSheets,
   });
@@ -2925,8 +2925,8 @@ const registerSystemSettings = function () {
    * Option to allow the background skills optional ruleset.
    */
   game.settings.register("clff20", "allowBackgroundSkills", {
-    name: "SETTINGS.ffd20BackgroundSkillsN",
-    hint: "SETTINGS.ffd20BackgroundSkillsH",
+    name: "SETTINGS.clff20BackgroundSkillsN",
+    hint: "SETTINGS.clff20BackgroundSkillsH",
     scope: "world",
     config: true,
     default: false,
@@ -2945,8 +2945,8 @@ const registerSystemSettings = function () {
    * Option to use the Fractional Base Bonuses optional ruleset.
    */
   game.settings.register("clff20", "useFractionalBaseBonuses", {
-    name: "SETTINGS.ffd20FractionalBaseBonusesN",
-    hint: "SETTINGS.ffd20FractionalBaseBonusesH",
+    name: "SETTINGS.clff20FractionalBaseBonusesN",
+    hint: "SETTINGS.clff20FractionalBaseBonusesH",
     scope: "world",
     config: true,
     default: false,
@@ -2960,8 +2960,8 @@ const registerSystemSettings = function () {
    * Option to automatically collapse Item Card descriptions
    */
   game.settings.register("clff20", "autoCollapseItemCards", {
-    name: "SETTINGS.ffd20AutoCollapseCardN",
-    hint: "SETTINGS.ffd20AutoCollapseCardL",
+    name: "SETTINGS.clff20AutoCollapseCardN",
+    hint: "SETTINGS.clff20AutoCollapseCardL",
     scope: "client",
     config: true,
     default: false,
@@ -2975,8 +2975,8 @@ const registerSystemSettings = function () {
    * Option to hide chat buttons
    */
   game.settings.register("clff20", "hideChatButtons", {
-    name: "SETTINGS.ffd20HideChatButtonsN",
-    hint: "SETTINGS.ffd20HideChatButtonsH",
+    name: "SETTINGS.clff20HideChatButtonsN",
+    hint: "SETTINGS.clff20HideChatButtonsH",
     scope: "client",
     config: true,
     default: false,
@@ -2990,8 +2990,8 @@ const registerSystemSettings = function () {
    * Option to change measure style
    */
   game.settings.register("clff20", "measureStyle", {
-    name: "SETTINGS.ffd20MeasureStyleN",
-    hint: "SETTINGS.ffd20MeasureStyleL",
+    name: "SETTINGS.clff20MeasureStyleN",
+    hint: "SETTINGS.clff20MeasureStyleL",
     scope: "world",
     config: true,
     default: true,
@@ -3002,8 +3002,8 @@ const registerSystemSettings = function () {
    * Low-light Vision Mode
    */
   game.settings.register("clff20", "lowLightVisionMode", {
-    name: "SETTINGS.ffd20LowLightVisionModeN",
-    hint: "SETTINGS.ffd20LowLightVisionModeH",
+    name: "SETTINGS.clff20LowLightVisionModeN",
+    hint: "SETTINGS.clff20LowLightVisionModeH",
     scope: "world",
     config: true,
     default: false,
@@ -3016,15 +3016,15 @@ const registerSystemSettings = function () {
   });
 
   game.settings.register("clff20", "sharedVisionMode", {
-    name: "SETTINGS.ffd20SharedVisionModeN",
-    hint: "SETTINGS.ffd20SharedVisionModeH",
+    name: "SETTINGS.clff20SharedVisionModeN",
+    hint: "SETTINGS.clff20SharedVisionModeH",
     scope: "world",
     config: true,
     default: "0",
     type: String,
     choices: {
-      0: "SETTINGS.ffd20SharedVisionWithoutSelection",
-      1: "SETTINGS.ffd20SharedVisionWithSelection",
+      0: "SETTINGS.clff20SharedVisionWithoutSelection",
+      1: "SETTINGS.clff20SharedVisionWithSelection",
     },
     onChange: () => {
       game.socket.emit("system.clff20", { eventType: "redrawCanvas" });
@@ -3035,8 +3035,8 @@ const registerSystemSettings = function () {
    * Set coin weight
    */
   game.settings.register("clff20", "coinWeight", {
-    name: "SETTINGS.ffd20CoinWeightN",
-    hint: "SETTINGS.ffd20CoinWeightH",
+    name: "SETTINGS.clff20CoinWeightN",
+    hint: "SETTINGS.clff20CoinWeightH",
     scope: "world",
     config: true,
     default: 50,
@@ -3055,8 +3055,8 @@ const registerSystemSettings = function () {
    * Hide token conditions
    */
   game.settings.register("clff20", "hideTokenConditions", {
-    name: "SETTINGS.ffd20HideTokenConditionsN",
-    hint: "SETTINGS.ffd20HideTokenConditionsH",
+    name: "SETTINGS.clff20HideTokenConditionsN",
+    hint: "SETTINGS.clff20HideTokenConditionsH",
     scope: "world",
     config: true,
     default: false,
@@ -3078,8 +3078,8 @@ const registerSystemSettings = function () {
    * Display default token conditions alongside system ones
    */
   game.settings.register("clff20", "coreEffects", {
-    name: "SETTINGS.ffd20CoreEffectsN",
-    hint: "SETTINGS.ffd20CoreEffectsH",
+    name: "SETTINGS.clff20CoreEffectsN",
+    hint: "SETTINGS.clff20CoreEffectsH",
     scope: "world",
     config: true,
     default: false,
@@ -3093,8 +3093,8 @@ const registerSystemSettings = function () {
    * Skip action dialog prompts
    */
   game.settings.register("clff20", "skipActionDialogs", {
-    name: "SETTINGS.ffd20SkipActionDialogsN",
-    hint: "SETTINGS.ffd20SkipActionDialogsH",
+    name: "SETTINGS.clff20SkipActionDialogsN",
+    hint: "SETTINGS.clff20SkipActionDialogsH",
     scope: "client",
     config: true,
     default: false,
@@ -3117,8 +3117,8 @@ const registerSystemSettings = function () {
    * Attack chat card template
    */
   game.settings.register("clff20", "attackChatCardTemplate", {
-    name: "SETTINGS.ffd20AttackChatCardTemplateN",
-    hint: "SETTINGS.ffd20AttackChatCardTemplateH",
+    name: "SETTINGS.clff20AttackChatCardTemplateN",
+    hint: "SETTINGS.clff20AttackChatCardTemplateH",
     scope: "world",
     config: true,
     default: "systems/clff20/templates/chat/attack-roll.hbs",
@@ -3133,8 +3133,8 @@ const registerSystemSettings = function () {
    * Unchained action economy
    */
   game.settings.register("clff20", "unchainedActionEconomy", {
-    name: "SETTINGS.ffd20UnchainedActionEconomyN",
-    hint: "SETTINGS.ffd20UnchainedActionEconomyH",
+    name: "SETTINGS.clff20UnchainedActionEconomyN",
+    hint: "SETTINGS.clff20UnchainedActionEconomyH",
     scope: "world",
     config: true,
     default: false,
@@ -3156,8 +3156,8 @@ const registerSystemSettings = function () {
    * Invert filter Shift-clicking
    */
   game.settings.register("clff20", "invertSectionFilterShiftBehaviour", {
-    name: "SETTINGS.ffd20InvertSectionFilterBehaviourN",
-    hint: "SETTINGS.ffd20InvertSectionFilterBehaviourH",
+    name: "SETTINGS.clff20InvertSectionFilterBehaviourN",
+    hint: "SETTINGS.clff20InvertSectionFilterBehaviourH",
     scope: "client",
     config: true,
     default: false,
@@ -3168,8 +3168,8 @@ const registerSystemSettings = function () {
    * Hide reach measurements
    */
   game.settings.register("clff20", "hideReachMeasurements", {
-    name: "SETTINGS.ffd20HideReachMeasurementsN",
-    hint: "SETTINGS.ffd20HideReachMeasurementsH",
+    name: "SETTINGS.clff20HideReachMeasurementsN",
+    hint: "SETTINGS.clff20HideReachMeasurementsH",
     scope: "client",
     config: true,
     default: false,
@@ -3180,8 +3180,8 @@ const registerSystemSettings = function () {
    * Display BAB iteratives instead of simply total
    */
   game.settings.register("clff20", "displayIteratives", {
-    name: "SETTINGS.ffd20DisplayIterativesN",
-    hint: "SETTINGS.ffd20DisplayIterativesH",
+    name: "SETTINGS.clff20DisplayIterativesN",
+    hint: "SETTINGS.clff20DisplayIterativesH",
     scope: "client",
     config: true,
     default: false,
@@ -3192,8 +3192,8 @@ const registerSystemSettings = function () {
    * Alternative reach corner rule
    */
   game.settings.register("clff20", "alternativeReachCornerRule", {
-    name: "SETTINGS.ffd20AlternativeReachCornerRuleN",
-    hint: "SETTINGS.ffd20AlternativeReachCornerRuleH",
+    name: "SETTINGS.clff20AlternativeReachCornerRuleN",
+    hint: "SETTINGS.clff20AlternativeReachCornerRuleH",
     scope: "world",
     config: true,
     default: false,
@@ -3481,7 +3481,7 @@ class SemanticVersion {
   }
 }
 
-class ChatMessageFFD20 extends ChatMessage {
+class ChatMessageclff20 extends ChatMessage {
   get isRoll() {
     return this.data.type === CONST.CHAT_MESSAGE_TYPES.ROLL || this.getFlag("clff20", "noRollRender");
   }
@@ -3489,7 +3489,7 @@ class ChatMessageFFD20 extends ChatMessage {
   /**
    * Return linked item or falsey
    *
-   * @type {ItemFFD20}
+   * @type {Itemclff20}
    */
   get itemSource() {
     let itemId = this.data.flags?.clff20?.metadata?.item;
@@ -3519,7 +3519,7 @@ const customRolls = function (message, speaker, rollData) {
       case "H":
       case "HEAL":
         rollData = rollData ?? actor?.getRollData() ?? {};
-        var roll = RollFFD20.safeRoll(value, rollData);
+        var roll = Rollclff20.safeRoll(value, rollData);
         var total = roll.total;
 
         return (async () => {
@@ -3552,7 +3552,7 @@ const formulaHasDice = function (formula) {
   return formula.match(/[0-9)][dD]/) || formula.match(/[dD][0-9(]/);
 };
 
-class DiceFFD20 {
+class Diceclff20 {
   /**
    * A standardized helper function for managing game system rolls.
    *
@@ -3669,7 +3669,7 @@ class DiceFFD20 {
           // Send message
           rolled = true;
 
-          if (chatMessage) return await ChatMessageFFD20.create(chatData);
+          if (chatMessage) return await ChatMessageclff20.create(chatData);
         } else {
           rolled = true;
           if (chatMessage) {
@@ -3846,7 +3846,7 @@ class DiceFFD20 {
 
         // Send message
         rolled = true;
-        if (chatMessage) ChatMessageFFD20.create(chatData);
+        if (chatMessage) ChatMessageclff20.create(chatData);
       } else {
         rolled = true;
         if (chatMessage) {
@@ -3911,7 +3911,7 @@ class DiceFFD20 {
   static messageRoll({ data, msgStr }) {
     let re = /\[\[(.+)\]\]/g;
     return msgStr.replace(re, (_, p1) => {
-      const roll = RollFFD20.safeRoll(p1, data);
+      const roll = Rollclff20.safeRoll(p1, data);
       return roll.total.toString();
     });
   }
@@ -5924,7 +5924,7 @@ const createCustomChatMessage = async function (
     }
   }
 
-  return ChatMessageFFD20.create(chatData);
+  return ChatMessageclff20.create(chatData);
 };
 
 const hideRollInfo = function (app, html, data) {
@@ -5963,7 +5963,7 @@ const hideGMSensitiveInfo = function (app, html, data) {
 const addChatCardTitleGradient = async function (app, html, data) {
   const card = html.find(".chat-card")[0];
   if (!card) return;
-  const actor = await ItemFFD20._getChatCardActor(card);
+  const actor = await Itemclff20._getChatCardActor(card);
   if (!actor) return;
   const item = actor.items.get(card.dataset.itemId);
   if (!item) return;
@@ -6115,7 +6115,7 @@ const _rollInitiative = async function (ids, { formula = null, updateTurn = true
           : messageOptions.rollMode || c.token.hidden || c.hidden
           ? "gmroll"
           : "roll";
-      const roll = RollFFD20.safeRoll(formula, actorData);
+      const roll = Rollclff20.safeRoll(formula, actorData);
       if (roll.err) ui.notifications.warn(roll.err.message);
       updates.push({ _id: id, initiative: roll.total });
 
@@ -6257,7 +6257,7 @@ const LinkFunctions = {
   },
 };
 
-class RollFFD20$1 extends Roll {
+class Rollclff20$1 extends Roll {
   static safeRoll(formula, data = {}, context, options = { suppressError: false }) {
     let roll;
     try {
@@ -6275,7 +6275,7 @@ class RollFFD20$1 extends Roll {
   }
 
   static safeTotal(formula, data) {
-    return isNaN(+formula) ? RollFFD20$1.safeRoll(formula, data).total : +formula;
+    return isNaN(+formula) ? Rollclff20$1.safeRoll(formula, data).total : +formula;
   }
 
   /**
@@ -6366,7 +6366,7 @@ class RollFFD20$1 extends Roll {
                 return parseRollStringVariable(o);
               }
               // Return roll result
-              return RollFFD20$1.safeRoll(o, this.data).total;
+              return Rollclff20$1.safeRoll(o, this.data).total;
             });
 
           return game.clff20.rollPreProcess[fn](...fnParams);
@@ -6387,7 +6387,7 @@ class RollFFD20$1 extends Roll {
   }
 
   /**
-   * Render the tooltip HTML for a RollFFD20 instance
+   * Render the tooltip HTML for a Rollclff20 instance
    *
    * @returns {Promise<string>} The rendered HTML tooltip as a string
    */
@@ -6552,7 +6552,7 @@ class ItemChange {
           value = result.value;
           operator = result.operator;
         } else {
-          value = RollFFD20$1.safeRoll(this.formula || "0", rollData, [t, this, rollData], {
+          value = Rollclff20$1.safeRoll(this.formula || "0", rollData, [t, this, rollData], {
             suppressError: this.parent && !this.parent.testUserPermission(game.user, "OWNER"),
           }).total;
         }
@@ -7337,7 +7337,7 @@ const addDefaultChanges = function (changes) {
         const classType = getProperty(c.data.data, "classType") || "base";
         let formula = CONFIG.clff20.classSavingThrowFormulas[classType][c.data.data.savingThrows[a].value];
         if (formula == null) formula = "0";
-        const total = Math.floor(RollFFD20.safeRoll(formula, { level: c.data.data.level }).total);
+        const total = Math.floor(Rollclff20.safeRoll(formula, { level: c.data.data.level }).total);
 
         // Add change
         changes.push(
@@ -7398,7 +7398,7 @@ const addDefaultChanges = function (changes) {
     if (mpAbility === "noncaster") return;
     if (mp_source.data.data.level === 0) return;
     const spellMath = CONFIG.clff20.ClassSpellLvlProgression[mp_source.data.data.classBaseMPTypes];
-    const currentSpellLvl = Math.floor(RollFFD20.safeRoll(spellMath, { level: mp_source.data.data.level }).total);
+    const currentSpellLvl = Math.floor(Rollclff20.safeRoll(spellMath, { level: mp_source.data.data.level }).total);
     let mpProg = CONFIG.clff20.classMPStatsBonus[currentSpellLvl];
     if (mpAbility !== "") {
       const arrayStr = JSON.stringify(mpProg);
@@ -7905,7 +7905,7 @@ const addDefaultChanges = function (changes) {
     if (!v) continue;
 
     switch (con) {
-      case "ffd20_blind":
+      case "clff20_blind":
         changes.push(
           ItemChange.create({
             formula: "-2",
@@ -7983,7 +7983,7 @@ const addDefaultChanges = function (changes) {
           name: game.i18n.localize("clff20.CondDazzled"),
         });
         break;
-      case "ffd20_deaf":
+      case "clff20_deaf":
         changes.push(
           ItemChange.create({
             formula: "-4",
@@ -8080,7 +8080,7 @@ const addDefaultChanges = function (changes) {
           value: game.i18n.localize("clff20.ChangeFlagNoDex"),
         });
         break;
-      case "ffd20_sleep":
+      case "clff20_sleep":
         changes.push(
           ItemChange.create({
             formula: "0",
@@ -8126,7 +8126,7 @@ const addDefaultChanges = function (changes) {
           value: game.i18n.localize("clff20.ChangeFlagNoStr"),
         });
         break;
-      case "ffd20_prone":
+      case "clff20_prone":
         changes.push(
           ItemChange.create({
             formula: "-4",
@@ -8818,7 +8818,7 @@ const hasTokenVision = function (token) {
 /**
  * Extend the base Actor class to implement additional game system logic.
  */
-class ActorFFD20 extends Actor {
+class Actorclff20 extends Actor {
   constructor(...args) {
     super(...args);
 
@@ -8867,7 +8867,7 @@ class ActorFFD20 extends Actor {
     if (this._queuedItemUpdates === undefined) this._queuedItemUpdates = {};
 
     /**
-     * @property {ItemFFD20[]} containerItems
+     * @property {Itemclff20[]} containerItems
      * All items this actor is holding in containers.
      */
     if (this.containerItems === undefined) this.containerItems = [];
@@ -8895,11 +8895,11 @@ class ActorFFD20 extends Actor {
 
     // Roll saving throw
     if (action === "defense-save") {
-      const actor = await ItemFFD20._getChatCardActor(card);
+      const actor = await Itemclff20._getChatCardActor(card);
       const saveId = button.dataset.save;
       if (actor) actor.rollSavingThrow(saveId, { event: event, skipPrompt: getSkipActionPrompt() });
     } else if (action === "save") {
-      const actors = ActorFFD20.getSelectedActors();
+      const actors = Actorclff20.getSelectedActors();
       const saveId = button.dataset.type;
       let noSound = false;
       for (let a of actors) {
@@ -8939,7 +8939,7 @@ class ActorFFD20 extends Actor {
   /**
    * Returns an array of all selected tokens, along with their actors.
    *
-   * @returns {Array.<ActorFFD20, Token>[]}
+   * @returns {Array.<Actorclff20, Token>[]}
    */
   static getSelectedActors() {
     let result = [];
@@ -9284,7 +9284,7 @@ class ActorFFD20 extends Actor {
           this.data,
           k,
           classes.reduce((cur, obj) => {
-            const v = RollFFD20$1.safeRoll(CONFIG.clff20.classBABFormulas[obj.data.data.bab], { level: obj.data.data.level })
+            const v = Rollclff20$1.safeRoll(CONFIG.clff20.classBABFormulas[obj.data.data.bab], { level: obj.data.data.level })
               .total;
 
             if (v !== 0) {
@@ -9341,7 +9341,7 @@ class ActorFFD20 extends Actor {
   /**
    * Checks if there's any matching proficiency
    *
-   * @param {ItemFFD20 } item - The item to check for.
+   * @param {Itemclff20 } item - The item to check for.
    * @param {string} proficiencyName - The proficiency name to look for. e.g. 'lightShield' or 'mediumArmor'.
    * @returns {boolean} Whether the actor is proficient with that item.
    */
@@ -9378,7 +9378,7 @@ class ActorFFD20 extends Actor {
       // Add spell slots based on ability bonus slot formula
       {
         const formula = getProperty(spellbook, "spellSlotAbilityBonusFormula") || "0";
-        spellbookAbilityScore += RollFFD20$1.safeRoll(formula, rollData).total;
+        spellbookAbilityScore += Rollclff20$1.safeRoll(formula, rollData).total;
       }
 
       const spellbookAbilityMod = Math.floor((spellbookAbilityScore - 10) / 2);
@@ -9413,7 +9413,7 @@ class ActorFFD20 extends Actor {
         if (spellbook.autoSpellLevelCalculation) {
           const autoKey = `data.attributes.spells.spellbooks.${spellbookKey}.cl.autoSpellLevelTotal`;
           const autoFormula = getProperty(spellbook, "cl.autoSpellLevelCalculationFormula") || "0";
-          const autoBonus = RollFFD20$1.safeTotal(autoFormula, rollData);
+          const autoBonus = Rollclff20$1.safeTotal(autoFormula, rollData);
           const autoTotal = Math.max(1, Math.min(20, total + autoBonus));
           setProperty(this.data, autoKey, autoTotal);
 
@@ -9429,7 +9429,7 @@ class ActorFFD20 extends Actor {
         }
 
         // Add from bonus formula
-        const clBonus = RollFFD20$1.safeRoll(formula, rollData).total;
+        const clBonus = Rollclff20$1.safeRoll(formula, rollData).total;
         total += clBonus;
         if (clBonus > 0) {
           setSourceInfoByName(this.sourceInfo, key, game.i18n.localize("clff20.CasterLevelBonusFormula"), clBonus);
@@ -9466,7 +9466,7 @@ class ActorFFD20 extends Actor {
       }
 
       const getAbilityBonus = (a) =>
-        a !== 0 && typeof spellbookAbilityMod === "number" ? ActorFFD20.getSpellSlotIncrease(spellbookAbilityMod, a) : 0;
+        a !== 0 && typeof spellbookAbilityMod === "number" ? Actorclff20.getSpellSlotIncrease(spellbookAbilityMod, a) : 0;
       // Spell slots
       {
         const bookPath = `data.attributes.spells.spellbooks.${spellbookKey}`;
@@ -9513,7 +9513,7 @@ class ActorFFD20 extends Actor {
               this.data,
               `${bookPath}.${spellbook.spontaneous ? "castPerDayAllOffsetFormula" : "preparedAllOffsetFormula"}`
             ) || "0";
-          const allLevelMod = RollFFD20$1.safeTotal(allLevelModFormula, rollData);
+          const allLevelMod = Rollclff20$1.safeTotal(allLevelModFormula, rollData);
 
           for (let a = 0; a < 10; a++) {
             // 0 is special because it doesn't get bonus preps and can cast them indefinitely so can't use the "cast per day" value
@@ -9533,7 +9533,7 @@ class ActorFFD20 extends Actor {
 
             let max =
               typeof spellsForLevel === "number" || (a === 0 && spellbook.hasCantrips)
-                ? spellsForLevel + getAbilityBonus(a) + allLevelMod + RollFFD20$1.safeTotal(offsetFormula, rollData)
+                ? spellsForLevel + getAbilityBonus(a) + allLevelMod + Rollclff20$1.safeTotal(offsetFormula, rollData)
                 : null;
 
             setProperty(this.data, `${bookPath}.spells.spell${a}.max`, max);
@@ -9628,7 +9628,7 @@ class ActorFFD20 extends Actor {
             let spellbookAbilityScore = getProperty(this.data, `data.abilities.${spellbookAbilityKey}.total`);
 
             const allLevelModFormula = getProperty(this.data, `${bookPath}.preparedAllOffsetFormula`) || "0";
-            const allLevelMod = RollFFD20$1.safeTotal(allLevelModFormula, rollData);
+            const allLevelMod = Rollclff20$1.safeTotal(allLevelModFormula, rollData);
 
             for (let a = 0; a < 10; a++) {
               if (!isNaN(spellbookAbilityScore) && spellbookAbilityScore - 10 < a) {
@@ -9649,7 +9649,7 @@ class ActorFFD20 extends Actor {
                 available += allLevelMod;
 
                 const formula = getProperty(this.data, `${bookPath}.spells.spell${a}.preparedOffsetFormula`) || "0";
-                available += RollFFD20$1.safeTotal(formula, rollData);
+                available += Rollclff20$1.safeTotal(formula, rollData);
 
                 const used = spells.reduce((acc, i) => {
                   const { level, spellbook, preparation } = i.data.data;
@@ -9703,7 +9703,7 @@ class ActorFFD20 extends Actor {
             : spellClass?.length > 0
             ? getProperty(rollData, `classes.${spellClass}.level`) || 0 // `
             : 0;
-        const roll = RollFFD20$1.safeRoll(formula, rollData);
+        const roll = Rollclff20$1.safeRoll(formula, rollData);
         setProperty(this.data, `data.attributes.spells.spellbooks.${spellbookKey}.spellPoints.max`, roll.total);
       }
 
@@ -10210,7 +10210,7 @@ class ActorFFD20 extends Actor {
             let srcValue =
               src.value != null
                 ? src.value
-                : RollFFD20$1.safeRoll(src.formula || "0", rollData, [changeTarget, src, this], {
+                : Rollclff20$1.safeRoll(src.formula || "0", rollData, [changeTarget, src, this], {
                     suppressError: !this.testUserPermission(game.user, "OWNER"),
                   }).total;
             if (src.operator === "set") srcValue = game.i18n.localize("clff20.SetTo").format(srcValue);
@@ -10378,7 +10378,7 @@ class ActorFFD20 extends Actor {
       for (let a = 0; a < level; a++) {
         const rollData = this.getRollData();
         rollData.level = a + 1;
-        const roll = RollFFD20$1.safeRoll(expConfig.custom.formula, rollData);
+        const roll = Rollclff20$1.safeRoll(expConfig.custom.formula, rollData);
         totalXP += roll.total;
       }
     }
@@ -10613,7 +10613,7 @@ class ActorFFD20 extends Actor {
   /**
    * Makes sure experience values are correct in update data.
    *
-   * @param {object} data - The update data, as per ActorFFD20.update()
+   * @param {object} data - The update data, as per Actorclff20.update()
    * @param updateData
    */
   _updateExp(updateData) {
@@ -10716,7 +10716,7 @@ class ActorFFD20 extends Actor {
     }
 
     mergeObject(itemData, initial);
-    return ItemFFD20.create(itemData, { parent: this });
+    return Itemclff20.create(itemData, { parent: this });
   }
 
   /* -------------------------------------------- */
@@ -10726,7 +10726,7 @@ class ActorFFD20 extends Actor {
   /**
    * Cast a Spell, consuming a spell slot of a certain level, FIX temp mp uses
    *
-   * @param {ItemFFD20} item   The spell being cast by the actor
+   * @param {Itemclff20} item   The spell being cast by the actor
    * @param {MouseEvent} ev The click event
    * @param root0
    * @param root0.skipDialog
@@ -10971,7 +10971,7 @@ class ActorFFD20 extends Actor {
 
     let props = [];
     if (notes.length > 0) props.push({ header: game.i18n.localize("clff20.Notes"), value: notes });
-    return DiceFFD20.d20Roll({
+    return Diceclff20.d20Roll({
       event: options.event,
       fastForward: options.skipDialog === true,
       staticRoll: options.staticRoll,
@@ -11012,7 +11012,7 @@ class ActorFFD20 extends Actor {
     const allowed = Hooks.call("actorRoll", this, "bab", null, options);
     if (allowed === false) return;
 
-    return DiceFFD20.d20Roll({
+    return Diceclff20.d20Roll({
       event: options.event,
       parts: [`@mod[${game.i18n.localize("clff20.BABAbbr")}]`],
       dice: options.dice,
@@ -11084,7 +11084,7 @@ class ActorFFD20 extends Actor {
 
     let props = [];
     if (notes.length > 0) props.push({ header: game.i18n.localize("clff20.Notes"), value: notes });
-    return DiceFFD20.d20Roll({
+    return Diceclff20.d20Roll({
       event: options.event,
       parts,
       dice: options.dice,
@@ -11155,7 +11155,7 @@ class ActorFFD20 extends Actor {
 
     let props = [];
     if (notes.length > 0) props.push({ header: game.i18n.localize("clff20.Notes"), value: notes });
-    return DiceFFD20.d20Roll({
+    return Diceclff20.d20Roll({
       event: options.event,
       parts: changes,
       dice: options.dice,
@@ -11188,7 +11188,7 @@ class ActorFFD20 extends Actor {
 
     let props = [];
     if (notes.length > 0) props.push({ header: game.i18n.localize("clff20.Notes"), value: notes });
-    return DiceFFD20.d20Roll({
+    return Diceclff20.d20Roll({
       event: event,
       parts: [`@cl[${game.i18n.localize("clff20.CasterLevel")}]`],
       data: rollData,
@@ -11226,10 +11226,10 @@ class ActorFFD20 extends Actor {
 
     let formulaRoll = 0;
     if (spellbook.concentrationFormula.length)
-      formulaRoll = RollFFD20$1.safeRoll(spellbook.concentrationFormula, rollData).total;
+      formulaRoll = Rollclff20$1.safeRoll(spellbook.concentrationFormula, rollData).total;
     rollData.formulaBonus = formulaRoll;
 
-    return DiceFFD20.d20Roll({
+    return Diceclff20.d20Roll({
       event: event,
       parts: [
         `@cl[${game.i18n.localize("clff20.CasterLevel")}] + @mod[${
@@ -11434,7 +11434,7 @@ class ActorFFD20 extends Actor {
     let props = this.getDefenseHeaders();
     if (notes.length > 0) props.push({ header: game.i18n.localize("clff20.Notes"), value: notes });
     const label = CONFIG.clff20.savingThrows[savingThrowId];
-    return DiceFFD20.d20Roll({
+    return Diceclff20.d20Roll({
       event: options.event,
       parts,
       dice: options.dice,
@@ -11509,7 +11509,7 @@ class ActorFFD20 extends Actor {
     const props = [];
     if (notes.length > 0) props.push({ header: game.i18n.localize("clff20.Notes"), value: notes });
 
-    return DiceFFD20.d20Roll({
+    return Diceclff20.d20Roll({
       event: options.event,
       parts,
       dice: options.dice,
@@ -11689,8 +11689,8 @@ class ActorFFD20 extends Actor {
       if (form) {
         value = form.find('[name="damage"]').val();
         let dR = form.find('[name="damage-reduction"]').val();
-        value = value.length ? RollFFD20$1.safeRoll(value, {}, []).total : 0;
-        dR = dR.length ? RollFFD20$1.safeRoll(dR, {}, []).total : 0;
+        value = value.length ? Rollclff20$1.safeRoll(value, {}, []).total : 0;
+        dR = dR.length ? Rollclff20$1.safeRoll(dR, {}, []).total : 0;
         if (multiplier < 0) {
           value = Math.ceil(value * multiplier);
           value = Math.min(value - dR, 0);
@@ -11937,7 +11937,7 @@ class ActorFFD20 extends Actor {
   }
 
   /**
-   * @returns {ItemFFD20[]} All items on this actor, including those in containers.
+   * @returns {Itemclff20[]} All items on this actor, including those in containers.
    */
   get allItems() {
     return [...this.containerItems, ...Array.from(this.items)];
@@ -12400,7 +12400,7 @@ class ActorFFD20 extends Actor {
         for (let k of Object.keys(result.classes[tag].savingThrows)) {
           let formula = CONFIG.clff20.classSavingThrowFormulas[classType][cls.data.data.savingThrows[k].value];
           if (formula == null) formula = "0";
-          result.classes[tag].savingThrows[k] = RollFFD20$1.safeRoll(formula, { level: cls.data.data.level }).total;
+          result.classes[tag].savingThrows[k] = Rollclff20$1.safeRoll(formula, { level: cls.data.data.level }).total;
 
           // Set base saving throws
           baseSavingThrows[k] = baseSavingThrows[k] ?? 0;
@@ -12557,7 +12557,7 @@ class ActorFFD20 extends Actor {
     return templates.reduce((cur, o) => {
       const crOffset = o.data.data.crOffset;
       if (typeof crOffset === "string" && crOffset.length)
-        cur += RollFFD20$1.safeRoll(crOffset, this.getRollData(data)).total;
+        cur += Rollclff20$1.safeRoll(crOffset, this.getRollData(data)).total;
       return cur;
     }, base);
   }
@@ -12626,8 +12626,8 @@ class ActorFFD20 extends Actor {
               .map((l) => actualChargeCost(l))
               .reduce((a, b) => a + b, 0) ?? 0,
           recharging: o.isCharged && o.chargeCost < 0,
-          color1: ItemFFD20.getTypeColor(o.type, 0),
-          color2: ItemFFD20.getTypeColor(o.type, 1),
+          color1: Itemclff20.getTypeColor(o.type, 0),
+          color2: Itemclff20.getTypeColor(o.type, 1),
         };
       });
   }
@@ -12757,7 +12757,7 @@ class ActorFFD20 extends Actor {
     result.max += Math.ceil(totalLevels / 2);
 
     // Bonus feat formula
-    const featCountRoll = RollFFD20$1.safeRoll(this.data.data.details.bonusFeatFormula || "0", this.getRollData());
+    const featCountRoll = Rollclff20$1.safeRoll(this.data.data.details.bonusFeatFormula || "0", this.getRollData());
     result.max += featCountRoll.total;
     if (featCountRoll.err) {
       const msg = game.i18n
@@ -12885,7 +12885,7 @@ class ActorFFD20 extends Actor {
           // Try to roll restoreFormula, fall back to restoring max spell points
           let restorePoints = spellbook.spellPoints.max;
           if (spellbook.spellPoints.restoreFormula) {
-            const restoreRoll = RollFFD20$1.safeRoll(spellbook.spellPoints.restoreFormula, this.getRollData());
+            const restoreRoll = Rollclff20$1.safeRoll(spellbook.spellPoints.restoreFormula, this.getRollData());
             if (restoreRoll.err) console.error(restoreRoll.err, spellbook.spellPoints.restoreFormula);
             else restorePoints = Math.min(spellbook.spellPoints.value + restoreRoll.total, spellbook.spellPoints.max);
           }
@@ -13084,7 +13084,7 @@ class AbilityTemplate extends MeasuredTemplate {
       const handlers = {};
       let moveTime = 0;
 
-      const ffd20Style = game.settings.get("clff20", "measureStyle") === true;
+      const clff20Style = game.settings.get("clff20", "measureStyle") === true;
 
       // Update placement (mouse-move)
       handlers.mm = (event) => {
@@ -13141,7 +13141,7 @@ class AbilityTemplate extends MeasuredTemplate {
           }
           this.data.distance += delta * -Math.sign(event.deltaY);
         } else {
-          if (ffd20Style && this.data.t === "cone") {
+          if (clff20Style && this.data.t === "cone") {
             delta = 90;
             snap = event.shiftKey ? delta : 45;
           } else {
@@ -13243,7 +13243,7 @@ class ChatAttack {
   /**
    * Sets the attack's item reference.
    *
-   * @param {ItemFFD20} item - The item to reference.
+   * @param {Itemclff20} item - The item to reference.
    */
   setItem(item) {
     if (item == null) {
@@ -13267,7 +13267,7 @@ class ChatAttack {
     data.critMult = 1;
     data.critCount = 0;
     // Add critical confirmation bonus
-    data.critConfirmBonus = RollFFD20.safeTotal(data.item.critConfirmBonus || "0") ?? 0;
+    data.critConfirmBonus = Rollclff20.safeTotal(data.item.critConfirmBonus || "0") ?? 0;
     // Determine ability multiplier
     if (data.item.ability.damageMult != null) data.ablMult = data.item.ability.damageMult;
     // Lower ability multiplier for secondary attacks
@@ -13779,7 +13779,7 @@ class ItemScriptCall {
   /**
    * Executes the script.
    *
-   * @param {object} shared - An object passed between script calls, and which is passed back as a result of ItemFFD20.executeScriptCalls.
+   * @param {object} shared - An object passed between script calls, and which is passed back as a result of Itemclff20.executeScriptCalls.
    * @param {object.<string, object>} extraParams - A dictionary containing extra parameters to pass on to the call.
    */
   async execute(shared, extraParams = {}) {
@@ -13806,7 +13806,7 @@ class ItemScriptCall {
 /**
  * Override and extend the basic :class:`Item` implementation
  */
-class ItemFFD20 extends Item {
+class Itemclff20 extends Item {
   constructor(...args) {
     super(...args);
 
@@ -13936,7 +13936,7 @@ class ItemFFD20 extends Item {
 
     const formula = getProperty(this.data, "data.uses.autoDeductChargesCost");
     if (!(typeof formula === "string" && formula.length > 0)) return 1;
-    const cost = RollFFD20$1.safeRoll(formula, this.getRollData()).total;
+    const cost = Rollclff20$1.safeRoll(formula, this.getRollData()).total;
     return cost;
   }
 
@@ -13989,11 +13989,11 @@ class ItemFFD20 extends Item {
       case "reach":
         return convertDistance(getProperty(this.getRollData(), "range.reach") || 0)[0];
       case "close":
-        return convertDistance(RollFFD20$1.safeRoll("25 + floor(@cl / 2) * 5", this.getRollData()).total)[0];
+        return convertDistance(Rollclff20$1.safeRoll("25 + floor(@cl / 2) * 5", this.getRollData()).total)[0];
       case "medium":
-        return convertDistance(RollFFD20$1.safeRoll("100 + @cl * 10", this.getRollData()).total)[0];
+        return convertDistance(Rollclff20$1.safeRoll("100 + @cl * 10", this.getRollData()).total)[0];
       case "long":
-        return convertDistance(RollFFD20$1.safeRoll("400 + @cl * 40", this.getRollData()).total)[0];
+        return convertDistance(Rollclff20$1.safeRoll("400 + @cl * 40", this.getRollData()).total)[0];
       case "mi":
         return convertDistance(range * 5280)[0];
       default:
@@ -14006,7 +14006,7 @@ class ItemFFD20 extends Item {
     if (rng.minUnits !== "" && rng.minValue !== null) {
       const rollData = this.getRollData();
       const formula = { melee: "@range.melee", reach: "@range.reach" }[rng.minUnits] ?? (rng.minValue || "0");
-      return convertDistance(RollFFD20$1.safeRoll(formula, rollData).total)[0];
+      return convertDistance(Rollclff20$1.safeRoll(formula, rollData).total)[0];
     }
     return 0;
   }
@@ -14071,13 +14071,13 @@ class ItemFFD20 extends Item {
       if (spellbook != null) {
         let formula = spellbook.baseDCFormula;
         if (data.save.dc.length > 0) formula += ` + ${data.save.dc}`;
-        result = RollFFD20$1.safeRoll(formula, rollData).total + dcBonus;
+        result = Rollclff20$1.safeRoll(formula, rollData).total + dcBonus;
       }
       return result;
     }
     const dcFormula = getProperty(data, "save.dc")?.toString() || "0";
     try {
-      result = RollFFD20$1.safeRoll(dcFormula, rollData).total + dcBonus;
+      result = Rollclff20$1.safeRoll(dcFormula, rollData).total + dcBonus;
     } catch (e) {
       console.error(e, dcFormula);
     }
@@ -14342,7 +14342,7 @@ class ItemFFD20 extends Item {
         const dur = this.data.data.duration;
         const unit = C.timePeriodsShort[dur.units];
         if (unit && dur.value) {
-          const val = RollFFD20$1.safeTotal(dur.value, this.getRollData());
+          const val = Rollclff20$1.safeTotal(dur.value, this.getRollData());
           labels.duration = [val, unit].filterJoin(" ");
         } else {
           labels.duration = null;
@@ -14464,7 +14464,7 @@ class ItemFFD20 extends Item {
         rng.long = null;
       } else if (typeof rng.value === "string" && rng.value.length) {
         try {
-          rng.value = RollFFD20$1.safeTotal(rng.value, this.getRollData()).toString();
+          rng.value = Rollclff20$1.safeTotal(rng.value, this.getRollData()).toString();
         } catch (err) {
           console.error(err);
         }
@@ -14476,7 +14476,7 @@ class ItemFFD20 extends Item {
       let dur = duplicate(data.duration || {});
       if (["inst", "perm", "spec", "seeText"].includes(dur.units)) dur.value = game.i18n.localize("clff20.Duration") + ":";
       else if (typeof dur.value === "string" && this.parentActor) {
-        dur.value = RollFFD20$1.safeRoll(dur.value || "0", this.getRollData(), [this.name, "Duration"]).total.toString();
+        dur.value = Rollclff20$1.safeRoll(dur.value || "0", this.getRollData(), [this.name, "Duration"]).total.toString();
       }
       labels.duration = [dur.value, C.timePeriods[dur.units]].filterJoin(" ");
     }
@@ -15103,7 +15103,7 @@ class ItemFFD20 extends Item {
     if (hasProperty(this.data, "data.uses.maxFormula")) {
       const maxFormula = getProperty(this.data, "data.uses.maxFormula");
       if (maxFormula !== "" && !formulaHasDice(maxFormula)) {
-        let roll = RollFFD20$1.safeRoll(maxFormula, rollData);
+        let roll = Rollclff20$1.safeRoll(maxFormula, rollData);
         setProperty(this.data, "data.uses.max", roll.total);
       } else if (formulaHasDice(maxFormula)) {
         const msg = game.i18n
@@ -15211,7 +15211,7 @@ class ItemFFD20 extends Item {
     if (templateData.isSpell && this.parent != null && this.parent.spellFailure > 0) {
       const spellbook = getProperty(this.parent.data, `data.attributes.spells.spellbooks.${this.data.data.spellbook}`);
       if (spellbook && spellbook.arcaneSpellFailure) {
-        templateData.spellFailure = RollFFD20$1.safeRoll("1d100").total;
+        templateData.spellFailure = Rollclff20$1.safeRoll("1d100").total;
         templateData.spellFailureSuccess = templateData.spellFailure > this.parentActor.spellFailure;
       }
     }
@@ -15298,10 +15298,10 @@ class ItemFFD20 extends Item {
             break;
           case "ft":
           case "mi":
-            rangeValue = convertDistance(RollFFD20$1.safeRoll(data.range.value || "0", rollData).total, data.range.units);
+            rangeValue = convertDistance(Rollclff20$1.safeRoll(data.range.value || "0", rollData).total, data.range.units);
             break;
           case "spec":
-            rangeValue = convertDistance(RollFFD20$1.safeRoll(data.range.value || "0", rollData).total);
+            rangeValue = convertDistance(Rollclff20$1.safeRoll(data.range.value || "0", rollData).total);
             break;
         }
         dynamicLabels.range =
@@ -15316,7 +15316,7 @@ class ItemFFD20 extends Item {
       // Duration
       if (data.duration != null) {
         if (!["inst", "perm"].includes(data.duration.units) && typeof data.duration.value === "string") {
-          let duration = RollFFD20$1.safeRoll(data.duration.value || "0", rollData).total;
+          let duration = Rollclff20$1.safeRoll(data.duration.value || "0", rollData).total;
           dynamicLabels.duration = [duration, CONFIG.clff20.timePeriods[data.duration.units]].filterJoin(" ");
         }
       }
@@ -15408,7 +15408,7 @@ class ItemFFD20 extends Item {
       xaroll;
     const rollData = this.getRollData();
     if (exAtkCountFormula.length > 0) {
-      xaroll = RollFFD20$1.safeRoll(exAtkCountFormula, rollData);
+      xaroll = Rollclff20$1.safeRoll(exAtkCountFormula, rollData);
       extraAttacks = Math.min(50, Math.max(0, xaroll.total)); // Arbitrarily clamp attacks
     }
     if (xaroll?.err) {
@@ -15422,7 +15422,7 @@ class ItemFFD20 extends Item {
     try {
       if (exAtkBonusFormula.length > 0) {
         rollData["attackCount"] = 1;
-        RollFFD20$1.safeRoll(exAtkBonusFormula, rollData);
+        Rollclff20$1.safeRoll(exAtkBonusFormula, rollData);
       }
     } catch (err) {
       const msg = game.i18n.localize("clff20.ErrorItemFormula").format(this.name, this.actor?.name);
@@ -15690,14 +15690,14 @@ class ItemFFD20 extends Item {
           for (const [i, modifier] of conditional.modifiers.entries()) {
             // Adds a formula's result to rollData to allow referencing it.
             // Due to being its own roll, this will only correctly work for static formulae.
-            const conditionalRoll = RollFFD20$1.safeRoll(modifier.formula, rollData);
+            const conditionalRoll = Rollclff20$1.safeRoll(modifier.formula, rollData);
             if (conditionalRoll.err) {
               const msg = game.i18n.format("clff20.WarningConditionalRoll", { number: i + 1, name: conditional.name });
               console.warn(msg);
               ui.notifications.warn(msg);
               // Skip modifier to avoid multiple errors from one non-evaluating entry
               continue;
-            } else conditionalData[[tag, i].join(".")] = RollFFD20$1.safeRoll(modifier.formula, rollData).total;
+            } else conditionalData[[tag, i].join(".")] = Rollclff20$1.safeRoll(modifier.formula, rollData).total;
 
             // Create a key string for the formula array
             const partString = `${modifier.target}.${modifier.subTarget}${
@@ -15731,7 +15731,7 @@ class ItemFFD20 extends Item {
         for (const target of ["effect.cl", "effect.dc", "misc.charges"]) {
           if (conditionalPartsCommon[target] != null) {
             const formula = conditionalPartsCommon[target].join("+");
-            const roll = RollFFD20$1.safeRoll(formula, rollData, [target, formula]).total;
+            const roll = Rollclff20$1.safeRoll(formula, rollData, [target, formula]).total;
             switch (target) {
               case "effect.cl":
                 rollData.cl += roll;
@@ -15750,7 +15750,7 @@ class ItemFFD20 extends Item {
       // Formulaic extra attacks
       if (fullAttack) {
         const exAtkCountFormula = getProperty(this.data, "data.formulaicAttacks.count.formula"),
-          exAtkCount = RollFFD20$1.safeRoll(exAtkCountFormula, rollData)?.total ?? 0,
+          exAtkCount = Rollclff20$1.safeRoll(exAtkCountFormula, rollData)?.total ?? 0,
           exAtkBonusFormula = this.data.data.formulaicAttacks?.bonus?.formula || "0";
         if (exAtkCount > 0) {
           try {
@@ -15758,7 +15758,7 @@ class ItemFFD20 extends Item {
             const fatlabel = this.data.data.formulaicAttacks.label || game.i18n.localize("clff20.FormulaAttack");
             for (let i = 0; i < exAtkCount; i++) {
               frollData["formulaicAttack"] = i + 1; // Add and update attack counter
-              const bonus = RollFFD20$1.safeRoll(exAtkBonusFormula, frollData).total;
+              const bonus = Rollclff20$1.safeRoll(exAtkBonusFormula, frollData).total;
               allAttacks.push({
                 bonus: `(${bonus})[${game.i18n.localize("clff20.Iterative")}]`,
                 label: fatlabel.format(i + 2),
@@ -16066,7 +16066,7 @@ class ItemFFD20 extends Item {
         // Determine size
         let dist = getProperty(this.data, "data.measureTemplate.size");
         if (typeof dist === "string") {
-          dist = RollFFD20$1.safeRoll(getProperty(this.data, "data.measureTemplate.size"), rollData).total;
+          dist = Rollclff20$1.safeRoll(getProperty(this.data, "data.measureTemplate.size"), rollData).total;
         }
         dist = convertDistance(dist)[0];
 
@@ -16306,7 +16306,7 @@ class ItemFFD20 extends Item {
           if (range != null) {
             templateData.range = range;
             if (typeof range === "string") {
-              templateData.range = RollFFD20$1.safeRoll(range, rollData).total;
+              templateData.range = Rollclff20$1.safeRoll(range, rollData).total;
               templateData.rangeFormula = range;
             }
             let usystem = game.settings.get("clff20", "distanceUnits"); // override
@@ -16329,7 +16329,7 @@ class ItemFFD20 extends Item {
               `data.attributes.spells.spellbooks.${this.data.data.spellbook}`
             );
             if (spellbook && spellbook.arcaneSpellFailure) {
-              const roll = RollFFD20$1.safeRoll("1d100");
+              const roll = Rollclff20$1.safeRoll("1d100");
               templateData.spellFailure = roll.total;
               templateData.spellFailureRoll = roll;
               templateData.spellFailureSuccess = templateData.spellFailure > this.parentActor.spellFailure;
@@ -16575,7 +16575,7 @@ class ItemFFD20 extends Item {
 
   /**
    * Place an attack roll using an item (weapon, feat, spell, or equipment)
-   * Rely upon the DiceFFD20.d20Roll logic for the core implementation
+   * Rely upon the Diceclff20.d20Roll logic for the core implementation
    *
    * @param root0
    * @param root0.data
@@ -16656,7 +16656,7 @@ class ItemFFD20 extends Item {
       }, []);
     }
     for (let c of changeBonus) {
-      parts.push(`${c.value}[${RollFFD20$1.cleanFlavor(c.source)}]`);
+      parts.push(`${c.value}[${Rollclff20$1.cleanFlavor(c.source)}]`);
     }
 
     // Add proficiency penalty
@@ -16667,13 +16667,13 @@ class ItemFFD20 extends Item {
     if (primaryAttack === false) parts.push(`-5[${game.i18n.localize("clff20.SecondaryAttack")}]`);
     // Add bonus
     if (bonus) {
-      rollData.bonus = RollFFD20$1.safeRoll(bonus, rollData).total;
+      rollData.bonus = Rollclff20$1.safeRoll(bonus, rollData).total;
       parts.push(`@bonus[${game.i18n.localize("clff20.SituationalBonus")}]`);
     }
 
     if ((rollData.d20 ?? "") === "") rollData.d20 = "1d20";
 
-    let roll = RollFFD20$1.safeRoll([rollData.d20, ...parts.filter((p) => !!p)].join("+"), rollData);
+    let roll = Rollclff20$1.safeRoll([rollData.d20, ...parts.filter((p) => !!p)].join("+"), rollData);
     return roll;
   }
 
@@ -16730,7 +16730,7 @@ class ItemFFD20 extends Item {
 
   /**
    * Place an attack roll using an item (weapon, feat, spell, or equipment)
-   * Rely upon the DiceFFD20.d20Roll logic for the core implementation
+   * Rely upon the Diceclff20.d20Roll logic for the core implementation
    *
    * @param options
    */
@@ -16745,7 +16745,7 @@ class ItemFFD20 extends Item {
     rollData.item = itemData;
     const title = `${this.name} - ${game.i18n.localize("clff20.OtherFormula")}`;
 
-    const roll = RollFFD20$1.safeRoll(itemData.formula, rollData);
+    const roll = Rollclff20$1.safeRoll(itemData.formula, rollData);
     return roll.toMessage({
       speaker: ChatMessage.getSpeaker({ actor: this.parent }),
       flavor: itemData.chatFlavor || title,
@@ -16755,7 +16755,7 @@ class ItemFFD20 extends Item {
 
   /**
    * Place a damage roll using an item (weapon, feat, spell, or equipment)
-   * Rely upon the DiceFFD20.damageRoll logic for the core implementation
+   * Rely upon the Diceclff20.damageRoll logic for the core implementation
    *
    * @param root0
    * @param root0.data
@@ -16871,7 +16871,7 @@ class ItemFFD20 extends Item {
       let rollParts = [];
       if (a === 0) rollParts = [...part.extra, ...extraParts];
       const roll = {
-        roll: RollFFD20$1.safeRoll([part.base, ...rollParts].join(" + "), rollData),
+        roll: Rollclff20$1.safeRoll([part.base, ...rollParts].join(" + "), rollData),
         damageType: part.damageType,
         type: part.type,
       };
@@ -16899,7 +16899,7 @@ class ItemFFD20 extends Item {
     // Add effect string
     let effectStr = "";
     if (typeof itemData.effectNotes === "string" && itemData.effectNotes.length) {
-      effectStr = DiceFFD20.messageRoll({
+      effectStr = Diceclff20.messageRoll({
         data: data,
         msgStr: itemData.effectNotes,
       });
@@ -16910,7 +16910,7 @@ class ItemFFD20 extends Item {
     });
     // Submit the roll to chat
     if (effectStr === "") {
-      RollFFD20$1.safeRoll(parts.join(" + ")).toMessage({
+      Rollclff20$1.safeRoll(parts.join(" + ")).toMessage({
         speaker: ChatMessage.getSpeaker({ actor: this.parentActor }),
         flavor: game.i18n.localize("clff20.UsesItem").format(this.name),
       });
@@ -16918,7 +16918,7 @@ class ItemFFD20 extends Item {
       const chatTemplate = "systems/clff20/templates/chat/roll-ext.hbs";
       const chatTemplateData = { hasExtraText: true, extraText: effectStr };
       // Execute the roll
-      let roll = RollFFD20$1.safeRoll(parts.join("+"), data);
+      let roll = Rollclff20$1.safeRoll(parts.join("+"), data);
 
       // Create roll template data
       const rollData = mergeObject(
@@ -17063,7 +17063,7 @@ class ItemFFD20 extends Item {
       if (button.dataset.tags?.split(" ").includes("nonlethal")) asNonlethal = true;
 
       const value = button.dataset.value;
-      if (!isNaN(parseInt(value))) ActorFFD20.applyDamage(parseInt(value), { asNonlethal });
+      if (!isNaN(parseInt(value))) Actorclff20.applyDamage(parseInt(value), { asNonlethal });
     }
     // Recover ammunition
     else if (["recoverAmmo", "forceRecoverAmmo"].includes(action)) {
@@ -17374,7 +17374,7 @@ class ItemFFD20 extends Item {
   getSpellPointCost(rollData = null) {
     if (!rollData) rollData = this.getRollData();
 
-    const roll = RollFFD20$1.safeRoll(getProperty(this.data, "data.spellPoints.cost") || "0", rollData);
+    const roll = Rollclff20$1.safeRoll(getProperty(this.data, "data.spellPoints.cost") || "0", rollData);
     return roll.total;
   }
 
@@ -17485,15 +17485,15 @@ class ItemFFD20 extends Item {
     data.data.range.value = origData.data.range.value;
     switch (data.data.range.units) {
       case "close":
-        data.data.range.value = RollFFD20$1.safeRoll("25 + floor(@cl / 2) * 5", { cl: slcl[1] }).total.toString();
+        data.data.range.value = Rollclff20$1.safeRoll("25 + floor(@cl / 2) * 5", { cl: slcl[1] }).total.toString();
         data.data.range.units = "ft";
         break;
       case "medium":
-        data.data.range.value = RollFFD20$1.safeRoll("100 + @cl * 10", { cl: slcl[1] }).total.toString();
+        data.data.range.value = Rollclff20$1.safeRoll("100 + @cl * 10", { cl: slcl[1] }).total.toString();
         data.data.range.units = "ft";
         break;
       case "long":
-        data.data.range.value = RollFFD20$1.safeRoll("400 + @cl * 40", { cl: slcl[1] }).total.toString();
+        data.data.range.value = Rollclff20$1.safeRoll("400 + @cl * 40", { cl: slcl[1] }).total.toString();
         data.data.range.units = "ft";
         break;
     }
@@ -17653,7 +17653,7 @@ class ItemFFD20 extends Item {
           await CONFIG.Item.documentClass.updateDocuments(updateData, { parent: this.parentActor });
         }
       }
-      // const newItemData = await ItemFFD20.create(itemData, { parent: this.parent });
+      // const newItemData = await Itemclff20.create(itemData, { parent: this.parent });
       // const newItem = this.parent.items.find((o) => o.id === newItemData.id);
 
       // // await this.setFlag("clff20", `links.classAssociations.${newItemData._id}`, co.level);
@@ -17664,9 +17664,9 @@ class ItemFFD20 extends Item {
 
     // Remove items associated to this class
     if (newLevel < curLevel) {
-      let associations = duplicate(this.getFlag("clff20", "links.classAssociations") || {});
-      let itemIds = [];
-      for (let [id, level] of Object.entries(associations)) {
+      const associations = duplicate(this.getFlag("clff20", "links.classAssociations") || {});
+      const itemIds = [];
+      for (const [id, level] of Object.entries(associations)) {
         const item = this.parent.items.find((o) => o.id === id);
         if (!item) {
           delete associations[id];
@@ -17774,7 +17774,7 @@ class ItemFFD20 extends Item {
   async createItemLink(linkType, dataType, targetItem, itemLink) {
     if (this.canCreateItemLink(linkType, dataType, targetItem, itemLink)) {
       const updateData = {};
-      let _links = duplicate(getProperty(this.data, `data.links.${linkType}`) || []);
+      const _links = duplicate(getProperty(this.data, `data.links.${linkType}`) || []);
       const link = this.generateInitialLinkData(linkType, dataType, targetItem, itemLink);
       _links.push(link);
       updateData[`data.links.${linkType}`] = _links;
@@ -17955,7 +17955,7 @@ class ItemFFD20 extends Item {
   /**
    * Generates a list of targets this modifier can have.
    *
-   * @param {ItemFFD20} item - The item for which the modifier is to be created.
+   * @param {Itemclff20} item - The item for which the modifier is to be created.
    * @returns {object.<string, string>} A list of targets
    */
   getConditionalTargets() {
@@ -18419,7 +18419,7 @@ class ItemFFD20 extends Item {
       attacks = [0];
 
     const appendAttack = (formula) => {
-      const bonus = RollFFD20$1.safeRoll(formula, rollData).total;
+      const bonus = Rollclff20$1.safeRoll(formula, rollData).total;
       if (Number.isFinite(bonus)) attacks.push(bonus);
     };
 
@@ -18431,7 +18431,7 @@ class ItemFFD20 extends Item {
     const fmAtk = itemData.formulaicAttacks?.count?.formula?.trim();
     if (fmAtk?.length > 0) {
       const fmAtkBonus = itemData.formulaicAttacks?.bonus?.formula?.trim() ?? "0";
-      const count = RollFFD20$1.safeRoll(fmAtk, rollData);
+      const count = Rollclff20$1.safeRoll(fmAtk, rollData);
       for (let i = 0; i < count.total; i++) {
         rollData.formulaicAttack = i + 1;
         appendAttack(fmAtkBonus);
@@ -18444,7 +18444,7 @@ class ItemFFD20 extends Item {
       .filter((c) => c.default && c.modifiers.find((sc) => sc.target === "attack"))
       .forEach((c) => {
         c.modifiers.forEach((cc) => {
-          const bonusRoll = RollFFD20$1.safeRoll(cc.formula, rollData);
+          const bonusRoll = Rollclff20$1.safeRoll(cc.formula, rollData);
           if (bonusRoll.total == 0) return;
           if (cc.subTarget?.match(/^attack\.(\d+)$/)) {
             const atk = parseInt(RegExp.$1, 10);
@@ -18513,7 +18513,7 @@ class ItemFFD20 extends Item {
     }
 
     // Attack bonus formula
-    const bonusRoll = RollFFD20$1.safeRoll(itemData.attackBonus ?? "0", rollData);
+    const bonusRoll = Rollclff20$1.safeRoll(itemData.attackBonus ?? "0", rollData);
     if (bonusRoll.total != 0)
       describePart(bonusRoll.total, bonusRoll.flavor ?? game.i18n.localize("clff20.AttackRollBonus"), -100);
 
@@ -18549,7 +18549,7 @@ class ItemFFD20 extends Item {
       .forEach((c) => {
         c.modifiers.forEach((cc) => {
           if (cc.subTarget === "allAttack") {
-            const bonusRoll = RollFFD20$1.safeRoll(cc.formula, rollData);
+            const bonusRoll = Rollclff20$1.safeRoll(cc.formula, rollData);
             if (bonusRoll.total == 0) return;
             describePart(bonusRoll.total, c.name, -5000);
           }
@@ -18585,7 +18585,7 @@ class ItemFFD20 extends Item {
     for (let c of conds) {
       for (let m of c.modifiers) {
         if (m.target !== "damage") continue;
-        const roll = RollFFD20$1.safeRoll(m.formula, rollData);
+        const roll = Rollclff20$1.safeRoll(m.formula, rollData);
         if (roll.err) continue;
         fakeCondChanges.push({
           flavor: c.name,
@@ -18870,7 +18870,7 @@ const sizeReach = function (size = "M", reach = false, stature = "tall") {
   if (typeof size === "number") size = Object.values(CONFIG.clff20.sizeChart)[size];
   size = Object.entries(CONFIG.clff20.sizeChart).find((o) => o[1] === size)[0];
 
-  return [new NumericTerm({ number: ActorFFD20.getReach(size, stature)[reach ? "reach" : "melee"] })];
+  return [new NumericTerm({ number: Actorclff20.getReach(size, stature)[reach ? "reach" : "melee"] })];
 };
 
 const getActorFromId = function (id) {
@@ -18988,7 +18988,7 @@ const createConsumableSpellDialog = function (itemData, { allowSpell = true } = 
 };
 
 const createConsumableSpell = async function (itemData, type) {
-  let data = await ItemFFD20.toConsumable(itemData, type);
+  let data = await Itemclff20.toConsumable(itemData, type);
 
   if (data._id) delete data._id;
   return data;
@@ -19034,7 +19034,7 @@ const colorToInt = function (color) {
 /**
  * Assembles an array of all possible buff targets.
  *
- * @param {ActorFFD20} [actor] - An actor for which to specifically get buff targets.
+ * @param {Actorclff20} [actor] - An actor for which to specifically get buff targets.
  * @param {string} [type] - Can be set to "contextNotes" to get context notes instead.
  * @returns {object.<string, BuffTargetItem>} The resulting array of buff targets.
  */
@@ -19069,7 +19069,7 @@ const getBuffTargets = function (actor, type = "buffs") {
 /**
  * Assembles an array of buff targets and their categories, ready to be inserted into a Widget_CategorizedItemPicker.
  *
- * @param {ActorFFD20} [actor] - An actor for which to specifically get buff targets.
+ * @param {Actorclff20} [actor] - An actor for which to specifically get buff targets.
  * @param {string} [type] - Can be set to "contextNotes" to get context notes instead.
  * @returns {Widget_CategorizedItemPicker~Category[]}
  */
@@ -19281,7 +19281,7 @@ const registerHandlebarsHelpers = function () {
     const owner = Boolean(options.hash["owner"]);
     const content = TextEditor.enrichHTML(options.hash["content"] || "", {
       secrets: owner,
-      entities: true,
+      documents: true,
       rollData: rollData,
     });
 
@@ -19299,7 +19299,7 @@ const registerHandlebarsHelpers = function () {
   Handlebars.registerHelper("distanceUnit", (type) => convertDistance(0, type)[1]);
 
   Handlebars.registerHelper("itemRange", (item, rollData) => {
-    // ItemFFD20.range is not accessible here and is thus largely duplicated here
+    // Itemclff20.range is not accessible here and is thus largely duplicated here
 
     let range = getProperty(item, "data.range.value");
     const rangeType = getProperty(item, "data.range.units");
@@ -19315,18 +19315,18 @@ const registerHandlebarsHelpers = function () {
         case "reach":
           return getProperty(rollData, "range.reach") || 0;
         case "close":
-          feet = RollFFD20.safeRoll("25 + floor(@cl / 2) * 5", rollData);
+          feet = Rollclff20.safeRoll("25 + floor(@cl / 2) * 5", rollData);
           break;
         case "medium":
-          feet = RollFFD20.safeRoll("100 + @cl * 10", rollData);
+          feet = Rollclff20.safeRoll("100 + @cl * 10", rollData);
           break;
         case "long":
-          feet = RollFFD20.safeRoll("400 + @cl * 40", rollData);
+          feet = Rollclff20.safeRoll("400 + @cl * 40", rollData);
           break;
         case "mi":
           return range * 5280; // TODO: Should remain as miles for shortness
         case "ft":
-          feet = RollFFD20.safeRoll(range, rollData);
+          feet = Rollclff20.safeRoll(range, rollData);
           break;
         default:
           return range;
@@ -19356,7 +19356,7 @@ const registerHandlebarsHelpers = function () {
     const rv = [];
 
     const reduceFormula = (formula) => {
-      const roll = RollFFD20.safeRoll(formula, rollData);
+      const roll = Rollclff20.safeRoll(formula, rollData);
       formula = roll.formula.replace(/\[[^\]]+\]/g, ""); // remove flairs
       return [roll, formula];
     };
@@ -20259,7 +20259,6 @@ class LevelUpForm extends DocumentSheet {
     };
 
     result.uuid = `${result.actor._id}.${result.data._id}`;
-
     return result;
   }
 
@@ -20274,7 +20273,7 @@ class LevelUpForm extends DocumentSheet {
       chatData.hp = {
         label: "clff20.LevelUp.Chat.Health.Manual",
         add: hp,
-        roll: RollFFD20$1.safeRoll(`${hp}`),
+        roll: Rollclff20$1.safeRoll(`${hp}`),
       };
       if (!Number.isNaN(hp)) {
         updateData["data.hp"] = item.data.data.hp + hp;
@@ -20282,7 +20281,7 @@ class LevelUpForm extends DocumentSheet {
     } else if (formData["health.roll"]) {
       // Roll for health
       const formula = `1d${item.data.data.hd}`;
-      const roll = RollFFD20$1.safeRoll(formula);
+      const roll = Rollclff20$1.safeRoll(formula);
       chatData.hp = {
         label: "clff20.LevelUp.Chat.Health.Roll",
         add: createInlineRollString(roll),
@@ -20384,7 +20383,7 @@ class LevelUpForm extends DocumentSheet {
       user: game.user.id,
       type: CONST.CHAT_MESSAGE_TYPES.ROLL,
       speaker,
-      roll: formData.hp?.roll ?? RollFFD20$1.safeRoll("0"),
+      roll: formData.hp?.roll ?? Rollclff20$1.safeRoll("0"),
     });
   }
 
@@ -20594,8 +20593,8 @@ class CurrencyTransfer extends FormApplication {
   /**
    * Transfer an amount of currency to a valid document
    *
-   * @param {Document} sourceDoc ActorFFD20 or ItemFFD20 with currency
-   * @param {Document} destDoc ActorFFD20 or ItemFFD20 with currency
+   * @param {Document} sourceDoc Actorclff20 or Itemclff20 with currency
+   * @param {Document} destDoc Actorclff20 or Itemclff20 with currency
    * @param {object|number} amount currency object containing transferred amount. Undefined keys will be assumed to be zero. Providing just a number will assume just gil
    * @param {boolean} sourceAlt Use alt currency on source
    * @param {boolean} destAlt Use alt currency on destination
@@ -20697,7 +20696,7 @@ class CurrencyTransfer extends FormApplication {
  *
  * @type {ActorSheet}
  */
-class ActorSheetFFD20 extends ActorSheet {
+class ActorSheetclff20 extends ActorSheet {
   constructor(...args) {
     super(...args);
 
@@ -21120,7 +21119,7 @@ class ActorSheetFFD20 extends ActorSheet {
     }
     // Count from bonus skill rank formula
     if (this.actor.data.data.details.bonusSkillRankFormula !== "") {
-      let roll = RollFFD20.safeRoll(this.actor.data.data.details.bonusSkillRankFormula, rollData);
+      let roll = Rollclff20.safeRoll(this.actor.data.data.details.bonusSkillRankFormula, rollData);
       if (roll.err) console.error(`An error occurred in the Bonus Skill Rank formula of actor ${this.actor.name}.`);
       skillRanks.allowed += roll.total;
       sourceData.push({
@@ -21173,7 +21172,7 @@ class ActorSheetFFD20 extends ActorSheet {
       });
 
       // Bonus feat formula
-      const featCountRoll = RollFFD20.safeRoll(this.document.data.data.details.bonusFeatFormula || "0", rollData);
+      const featCountRoll = Rollclff20.safeRoll(this.document.data.data.details.bonusFeatFormula || "0", rollData);
       const changes = this.document.changes.filter((c) => c.subTarget === "bonusFeats");
       const changeBonus = getHighestChanges(
         changes.filter((c) => {
@@ -21469,7 +21468,7 @@ class ActorSheetFFD20 extends ActorSheet {
         if (hasTypeFilter && !filters.has(`type-${data.featType}`)) return false;
       }
 
-      if (ItemFFD20.isInventoryItem(item.type)) {
+      if (Itemclff20.isInventoryItem(item.type)) {
         if (hasTypeFilter && item.type !== "loot" && !filters.has(`type-${item.type}`)) return false;
         else if (hasTypeFilter && item.type === "loot" && !filters.has(`type-${data.subType}`)) return false;
       }
@@ -22921,7 +22920,7 @@ class ActorSheetFFD20 extends ActorSheet {
         else if (item.type === "feat") arr[2].push(item);
         else if (item.type === "class") arr[3].push(item);
         else if (item.type === "attack") arr[4].push(item);
-        else if (ItemFFD20.isInventoryItem(item.type)) arr[0].push(item);
+        else if (Itemclff20.isInventoryItem(item.type)) arr[0].push(item);
         return arr;
       },
       [[], [], [], [], []]
@@ -23349,7 +23348,7 @@ class ActorSheetFFD20 extends ActorSheet {
   async _onDropItem(event, data) {
     if (!this.document.isOwner) return false;
 
-    const item = await ItemFFD20.implementation.fromDropData(data);
+    const item = await Itemclff20.implementation.fromDropData(data);
     const itemData = item.toJSON();
 
     // Handle item sorting within the same actor
@@ -23385,7 +23384,7 @@ class ActorSheetFFD20 extends ActorSheet {
    */
   _getSortSiblings(source) {
     return this.document.items.filter((i) => {
-      if (ItemFFD20.isInventoryItem(source.data.type)) return ItemFFD20.isInventoryItem(i.data.type);
+      if (Itemclff20.isInventoryItem(source.data.type)) return Itemclff20.isInventoryItem(i.data.type);
       return i.data.type === source.data.type && i.data.id !== source.data.id;
     });
   }
@@ -23575,11 +23574,11 @@ class ActorSheetFFD20 extends ActorSheet {
 
 /**
  * An Actor sheet for player character type actors in the clff20 system.
- * Extends the base ActorSheetFFD20 class.
+ * Extends the base ActorSheetclff20 class.
  *
- * @type {ActorSheetFFD20}
+ * @type {ActorSheetclff20}
  */
-class ActorSheetFFD20Character extends ActorSheetFFD20 {
+class ActorSheetclff20Character extends ActorSheetclff20 {
   /**
    * Define default rendering options for the NPC sheet
    *
@@ -23719,11 +23718,11 @@ class ActorSheetFFD20Character extends ActorSheetFFD20 {
 
 /**
  * An Actor sheet for NPC type characters in the game system.
- * Extends the base ActorSheetFFD20 class.
+ * Extends the base ActorSheetclff20 class.
  *
- * @type {ActorSheetFFD20}
+ * @type {ActorSheetclff20}
  */
-class ActorSheetFFD20NPC extends ActorSheetFFD20 {
+class ActorSheetclff20NPC extends ActorSheetclff20 {
   /**
    * Define default rendering options for the NPC sheet
    *
@@ -23752,7 +23751,7 @@ class ActorSheetFFD20NPC extends ActorSheetFFD20 {
   }
 
   // static get name() {
-  //   return game.i18n.localize("clff20.ActorSheetFFD20NPC");
+  //   return game.i18n.localize("clff20.ActorSheetclff20NPC");
   // }
 
   /* -------------------------------------------- */
@@ -23839,13 +23838,13 @@ class ActorSheetFFD20NPC extends ActorSheetFFD20 {
     event.preventDefault();
     const formula = this.actor.data.data.attributes.hp.formula;
     if (!formula) return;
-    const hp = RollFFD20.safeRoll(formula).total;
+    const hp = Rollclff20.safeRoll(formula).total;
     AudioHelper.play({ src: CONFIG.sounds.dice });
     this.actor.update({ "data.attributes.hp.value": hp, "data.attributes.hp.max": hp });
   }
 }
 
-class ActorSheetFFD20NPCLite extends ActorSheetFFD20NPC {
+class ActorSheetclff20NPCLite extends ActorSheetclff20NPC {
   /**
    * Define default rendering options for the NPC sheet
    *
@@ -23899,7 +23898,7 @@ class ActorSheetFFD20NPCLite extends ActorSheetFFD20NPC {
   }
 }
 
-class ActorSheetFFD20NPCLoot extends ActorSheetFFD20NPC {
+class ActorSheetclff20NPCLoot extends ActorSheetclff20NPC {
   /**
    * Define default rendering options for the NPC sheet
    *
@@ -23982,7 +23981,7 @@ class ActorSheetFFD20NPCLoot extends ActorSheetFFD20NPC {
   }
 }
 
-class TokenDocumentFFD20 extends TokenDocument {
+class TokenDocumentclff20 extends TokenDocument {
   async update(data, options) {
     // Resize token with actor size change
     const sizeKey = getProperty(data, "actorData.data.traits.size");
@@ -24595,7 +24594,7 @@ class CompendiumBrowser extends Application {
 
   _filterItems(item) {
     if (this.type === "spells" && item.type !== "spell") return false;
-    if (this.type === "items" && !ItemFFD20.isInventoryItem(item.type)) return false;
+    if (this.type === "items" && !Itemclff20.isInventoryItem(item.type)) return false;
     if (this.type === "feats" && item.type !== "feat") return false;
     if (this.type === "classes" && item.type !== "class") return false;
     if (this.type === "races" && item.type !== "race") return false;
@@ -25648,7 +25647,7 @@ class CompendiumBrowser extends Application {
   }
 }
 
-class SidebarFFD20 extends Sidebar {
+class Sidebarclff20 extends Sidebar {
   constructor(...args) {
     super(...args);
 
@@ -25850,7 +25849,7 @@ class ExperienceDistributor extends FormApplication {
   }
 }
 
-class ActiveEffectFFD20 extends ActiveEffect {
+class ActiveEffectclff20 extends ActiveEffect {
   async create(data, context) {
     const statusId = this.data["flags.core.statusId"],
       origin = this.data.origin,
@@ -26050,7 +26049,7 @@ Hooks.on("renderWidget_CategorizedItemPicker", (app, html, data) => {
   html.find(".pre-select")[0]?.scrollIntoView({ block: "nearest" });
 });
 
-class FFD20_HelpBrowser extends Application {
+class clff20_HelpBrowser extends Application {
   constructor(...args) {
     super(...args);
 
@@ -26257,7 +26256,7 @@ class FFD20_HelpBrowser extends Application {
  *
  * @type {ItemSheet}
  */
-class ItemSheetFFD20 extends ItemSheet {
+class ItemSheetclff20 extends ItemSheet {
   constructor(...args) {
     super(...args);
 
@@ -26291,7 +26290,7 @@ class ItemSheetFFD20 extends ItemSheet {
 
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
-      width: 580,
+      width: 1000,
       classes: ["clff20", "sheet", "item"],
       scrollY: [".tab.details", ".buff-flags", '.tab[data-tab="changes"]'],
       dragDrop: [
@@ -26672,6 +26671,7 @@ class ItemSheetFFD20 extends ItemSheet {
         },
         items: [],
       });
+      console.log(data.links.list);
     }
 
     // Add ammunition links
@@ -26910,10 +26910,10 @@ class ItemSheetFFD20 extends ItemSheet {
     let conditionals = Object.entries(formData).filter((e) => e[0].startsWith("data.conditionals"));
     formData["data.conditionals"] = conditionals.reduce((arr, entry) => {
       let [i, j, k] = entry[0].split(".").slice(2);
-      if (!arr[i]) arr[i] = ItemFFD20.defaultConditional;
+      if (!arr[i]) arr[i] = Itemclff20.defaultConditional;
       if (k) {
         formData[`data.conditionals.${i}.${j}.target`];
-        if (!arr[i].modifiers[j]) arr[i].modifiers[j] = ItemFFD20.defaultConditionalModifier;
+        if (!arr[i].modifiers[j]) arr[i].modifiers[j] = Itemclff20.defaultConditionalModifier;
         arr[i].modifiers[j][k] = entry[1];
         // Target dependent keys
         if (["subTarget", "critical", "type"].includes(k)) {
@@ -27237,13 +27237,13 @@ class ItemSheetFFD20 extends ItemSheet {
 
     let browser = null;
     for (let w of Object.values(ui.windows)) {
-      if (w instanceof FFD20_HelpBrowser) {
+      if (w instanceof clff20_HelpBrowser) {
         browser = w;
         browser.bringToTop();
         break;
       }
     }
-    if (!browser) browser = new FFD20_HelpBrowser();
+    if (!browser) browser = new clff20_HelpBrowser();
 
     browser.openURL(a.dataset.url);
   }
@@ -27275,7 +27275,7 @@ class ItemSheetFFD20 extends ItemSheet {
       const packItem = await pack.getDocument(data.id);
       if (packItem != null) {
         targetItem = packItem;
-        itemLink = `${pack.collection}.${packItem._id}`;
+        itemLink = `${pack.collection}.${packItem.data._id}`;
       }
     }
 
@@ -27551,7 +27551,7 @@ class ItemSheetFFD20 extends ItemSheet {
     if (a.classList.contains("add-conditional")) {
       await this._onSubmit(event); // Submit any unsaved changes
       const conditionals = this.item.data.data.conditionals || [];
-      return this.item.update({ "data.conditionals": conditionals.concat([ItemFFD20.defaultConditional]) });
+      return this.item.update({ "data.conditionals": conditionals.concat([Itemclff20.defaultConditional]) });
     }
 
     // Remove a conditional
@@ -27568,7 +27568,7 @@ class ItemSheetFFD20 extends ItemSheet {
       await this._onSubmit(event);
       const li = a.closest(".conditional");
       const conditionals = this.item.data.data.conditionals;
-      conditionals[Number(li.dataset.conditional)].modifiers.push(ItemFFD20.defaultConditionalModifier);
+      conditionals[Number(li.dataset.conditional)].modifiers.push(Itemclff20.defaultConditionalModifier);
       // duplicate object to ensure update
       return this.item.update({ "data.conditionals": duplicate(conditionals) });
     }
@@ -27591,7 +27591,7 @@ class ItemSheetFFD20 extends ItemSheet {
     if (a.classList.contains("add-note")) {
       const contextNotes = this.item.data.data.contextNotes || [];
       await this._onSubmit(event, {
-        updateData: { "data.contextNotes": contextNotes.concat([ItemFFD20.defaultContextNote]) },
+        updateData: { "data.contextNotes": contextNotes.concat([Itemclff20.defaultContextNote]) },
       });
     }
 
@@ -27825,7 +27825,7 @@ class ItemSheetFFD20 extends ItemSheet {
   }
 }
 
-class ItemSheetFFD20_Container extends ItemSheetFFD20 {
+class ItemSheetclff20_Container extends ItemSheetclff20 {
   constructor(...args) {
     super(...args);
 
@@ -28244,7 +28244,6 @@ class ItemSheetFFD20_Container extends ItemSheetFFD20 {
   _onDragStart(event) {
     // Skip entity links, since they should be handled differently
     if (event.target.classList.contains("entity-link")) return;
-
     // Create drag data for an owned item
     const elem = event.currentTarget;
     let dragData;
@@ -28327,7 +28326,7 @@ class ItemSheetFFD20_Container extends ItemSheetFFD20 {
       actor = game.actors.contents.find((o) => o.id === data.actorId);
     }
 
-    const item = await ItemFFD20.fromDropData(data);
+    const item = await Itemclff20.fromDropData(data);
     const itemData = duplicate(item.data);
 
     // Sort item
@@ -28341,9 +28340,8 @@ class ItemSheetFFD20_Container extends ItemSheetFFD20 {
     }
 
     // Create or transfer item
-    if (ItemFFD20.isInventoryItem(item.data.type)) {
+    if (Itemclff20.isInventoryItem(item.data.type)) {
       await this.item.createContainerContent(itemData);
-
       if (actor && actor === this.item.parentActor) {
         if (actor.items.get(data.data._id)) {
           await actor.deleteEmbeddedDocuments("Item", [data.data._id]);
@@ -28537,7 +28535,7 @@ class ItemSheetFFD20_Container extends ItemSheetFFD20 {
    */
   _getSortSiblings(source) {
     return this.item.items.filter((i) => {
-      if (ItemFFD20.isInventoryItem(source.data.type)) return ItemFFD20.isInventoryItem(i.data.type);
+      if (Itemclff20.isInventoryItem(source.data.type)) return Itemclff20.isInventoryItem(i.data.type);
       return i.data.type === source.data.type && i.data._id !== source.data._id;
     });
   }
@@ -28558,7 +28556,7 @@ class ItemSheetFFD20_Container extends ItemSheetFFD20 {
   }
 }
 
-class CompendiumDirectoryFFD20 extends CompendiumDirectory {
+class CompendiumDirectoryclff20 extends CompendiumDirectory {
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
       template: "systems/clff20/templates/sidebar/compendium.hbs",
@@ -29024,7 +29022,7 @@ async function PatchCore() {
   /**
    * @param path
    */
-  async function FFD20_getTemplate(path) {
+  async function clff20_getTemplate(path) {
     if (!Object.prototype.hasOwnProperty.call(_templateCache, path) || CONFIG.debug.template) {
       await new Promise((resolve) => {
         game.socket.emit("template", path, (resp) => {
@@ -29154,7 +29152,7 @@ async function PatchCore() {
   // Patch, patch, patch
   Combat.prototype._getInitiativeFormula = _getInitiativeFormula;
   Combat.prototype.rollInitiative = _rollInitiative;
-  window.getTemplate = FFD20_getTemplate;
+  window.getTemplate = clff20_getTemplate;
 
   // Apply low light vision patches
   patchLowLightVision();
@@ -29169,7 +29167,7 @@ async function PatchCore() {
       const src = `with (sandbox) { return ${this.term}; }`;
       try {
         const evalFn = new Function("sandbox", src);
-        this._total = evalFn(RollFFD20.MATH_PROXY);
+        this._total = evalFn(Rollclff20.MATH_PROXY);
       } catch (err) {
         err.message = `Failed to evaluate: '${this.term}'\n${err.message}`;
         throw err;
@@ -29236,7 +29234,7 @@ async function PatchCore() {
     };
   }
 
-  // Todo: Declare this in TokenDocumentFFD20 when/ if TokenDocument.getData calls the constructor's method
+  // Todo: Declare this in TokenDocumentclff20 when/ if TokenDocument.getData calls the constructor's method
   {
     const origFunc = TokenDocument.getTrackedAttributes;
     TokenDocument.getTrackedAttributes = function (data, _path = []) {
@@ -29300,7 +29298,7 @@ class SquareHighlight {
  * Highlights the reach of an attack for a token.
  *
  * @param {Token} token
- * @param {ItemFFD20} attack
+ * @param {Itemclff20} attack
  * @returns SquareHighlight
  */
 const showAttackReach = function (token, attack) {
@@ -29327,7 +29325,7 @@ const showAttackReach = function (token, attack) {
   if (["melee", "touch"].includes(minRangeKey)) minRange = range.melee;
   if (minRangeKey === "reach") minRange = range.reach;
   if (minRangeKey === "ft") {
-    minRange = RollFFD20.safeRoll(getProperty(attack.data, "data.range.minValue") || "0", rollData).total;
+    minRange = Rollclff20.safeRoll(getProperty(attack.data, "data.range.minValue") || "0", rollData).total;
   }
 
   let squares = {
@@ -29341,7 +29339,7 @@ const showAttackReach = function (token, attack) {
     squares.normal = getReachSquares(token, range.melee, minRange, null, { useReachRule });
     squares.reach = getReachSquares(token, range.reach, range.melee, null, { useReachRule });
   } else if (rangeKey === "ft") {
-    const r = RollFFD20.safeRoll(getProperty(attack.data, "data.range.value") || "0", rollData).total;
+    const r = Rollclff20.safeRoll(getProperty(attack.data, "data.range.value") || "0", rollData).total;
     squares.normal = getReachSquares(token, r, minRange, null, { useReachRule: true });
 
     // Add range increments
@@ -29362,10 +29360,10 @@ const showAttackReach = function (token, attack) {
     let r;
     switch (rangeKey) {
       case "close":
-        r = RollFFD20.safeRoll("25 + floor(@cl / 2) * 5", rollData).total;
+        r = Rollclff20.safeRoll("25 + floor(@cl / 2) * 5", rollData).total;
         break;
       case "medium":
-        r = RollFFD20.safeRoll("100 + @cl * 10", rollData).total;
+        r = Rollclff20.safeRoll("100 + @cl * 10", rollData).total;
         break;
     }
     squares.normal = getReachSquares(token, r, minRange, null, { useReachRule });
@@ -29843,7 +29841,7 @@ const _addSizeRollTest = async function (
   resultArr.push(test);
 
   try {
-    const roll = RollFFD20.safeRoll(
+    const roll = Rollclff20.safeRoll(
       `sizeRoll(${baseDie[0]}, ${baseDie[1]}, ${options.targetSize}, ${options.initialSize})`
     );
     if (roll.err) throw roll.err;
@@ -42002,7 +42000,7 @@ class ChangeLogWindow extends FormApplication {
   }
 }
 
-class TooltipFFD20 extends Application {
+class Tooltipclff20 extends Application {
   constructor() {
     super();
 
@@ -42345,7 +42343,38 @@ class TooltipFFD20 extends Application {
       this.clearBinds();
     });
   }
+
+  tokenHover(token, hovering) {
+    // Show token tooltip
+    if (hovering) {
+      const p = game.clff20.tooltip.mousePos;
+      const el = document.elementFromPoint(p.x, p.y);
+      // This check is required to prevent hovering over tokens under application windows
+      if (el?.id === "board") {
+        game.clff20.tooltip.bind(token);
+      }
+    }
+    // Hide token tooltip
+    else game.clff20.tooltip.unbind(token);
+  }
+
+  static toggle(enable) {
+    if (enable) {
+      if (!game.clff20.tooltip) {
+        game.clff20.tooltip = new Tooltipclff20();
+        Hooks.on("hoverToken", game.clff20.tooltip.tokenHover);
+      }
+      game.clff20.tooltip?.setPosition();
+    } else {
+      if (game.clff20.tooltip) {
+        Hooks.off("hoverToken", game.clff20.tooltip.tokenHover);
+        game.clff20.tooltip = null;
+      }
+    }
+  }
 }
+
+
 
 /**
  * Perform a system migration for the entire World, applying migrations for Actors, Items, and Compendium packs
@@ -42367,57 +42396,57 @@ const migrateWorld = async function () {
   await _migrateWorldSettings();
 
   // Migrate World Actors
-  console.log("Migrating Actor entities");
-  for (let a of game.actors.contents) {
-    try {
-      const updateData = migrateActorData(a.data);
-      if (!foundry.utils.isObjectEmpty(updateData)) {
-        console.log(`Migrating Actor entity ${a.name}`);
-        await a.update(updateData, { enforceTypes: false });
+    console.log("Migrating Actor documents");
+    for (const a of game.actors.contents) {
+      try {
+        const updateData = migrateActorData(a.data);
+        if (!foundry.utils.isObjectEmpty(updateData)) {
+          console.log(`Migrating Actor document ${a.name}`);
+          await a.update(updateData, { enforceTypes: false });
+        }
+      } catch (err) {
+        console.error(`Error migrating actor document ${a.name}`, err);
       }
-    } catch (err) {
-      console.error(`Error migrating actor entity ${a.name}`, err);
     }
-  }
 
-  // Migrate World Items
-  console.log("Migrating Item entities.");
-  for (let i of game.items.contents) {
-    try {
-      const updateData = migrateItemData(i.data);
-      if (!foundry.utils.isObjectEmpty(updateData)) {
-        console.log(`Migrating Item entity ${i.name}`);
-        await i.update(updateData, { enforceTypes: false });
+    // Migrate World Items
+    console.log("Migrating Item documents.");
+    for (const i of game.items.contents) {
+      try {
+        const updateData = migrateItemData(i.data);
+        if (!foundry.utils.isObjectEmpty(updateData)) {
+          console.log(`Migrating Item document ${i.name}`);
+          await i.update(updateData, { enforceTypes: false });
+        }
+      } catch (err) {
+        console.error(`Error migrating item document ${i.name}`, err);
       }
-    } catch (err) {
-      console.error(`Error migrating item entity ${i.name}`, err);
     }
-  }
 
-  // Migrate Actor Override Tokens
-  console.log("Migrating Scene entities.");
-  for (let s of game.scenes.contents) {
-    try {
-      const updateData = migrateSceneData(s.data);
-      if (!foundry.utils.isObjectEmpty(updateData)) {
-        console.log(`Migrating Scene entity ${s.name}`);
-        await s.update(updateData, { enforceTypes: false });
-        // If we do not do this, then synthetic token actors remain in cache
-        // with the un-updated actorData.
-        s.tokens.contents.forEach((t) => {
-          t._actor = null;
-        });
+    // Migrate Actor Override Tokens
+    console.log("Migrating Scene documents.");
+    for (const s of game.scenes.contents) {
+      try {
+        const updateData = await migrateSceneData(s.data);
+        if (!foundry.utils.isObjectEmpty(updateData)) {
+          console.log(`Migrating Scene document ${s.name}`);
+          await s.update(updateData, { enforceTypes: false });
+          // If we do not do this, then synthetic token actors remain in cache
+          // with the un-updated actorData.
+          s.tokens.contents.forEach((t) => {
+            t._actor = null;
+          });
+        }
+      } catch (err) {
+        console.error(`Error migrating scene document ${s.name}`, err);
       }
-    } catch (err) {
-      console.error(`Error migrating scene entity ${s.name}`, err);
     }
-  }
 
   // Migrate World Compendium Packs
   const packs = game.packs.filter((p) => {
     return (
       (["world", "clff20"].includes(p.metadata.package) || p.metadata.system === "clff20") &&
-      ["Actor", "Item", "Scene"].includes(p.metadata.entity) &&
+      ["Actor", "Item", "Scene"].includes(p.metadata.type ?? p.metadata.entity) &&
       !p.locked
     );
   });
@@ -42449,30 +42478,30 @@ const migrateWorld = async function () {
  * @returns {Promise}
  */
 const migrateCompendium = async function (pack) {
-  const entity = pack.metadata.entity;
-  if (!["Actor", "Item", "Scene"].includes(entity)) return;
+  const doc = pack.metadata.type ?? pack.metadata.entity ;
+  if (!["Actor", "Item", "Scene"].includes(doc)) return;
 
   // Begin by requesting server-side data model migration and get the migrated content
   await pack.migrate();
   const content = await pack.getDocuments();
 
   // Iterate over compendium entries - applying fine-tuned migration functions
-  console.log(`Migrating ${entity} entities in Compendium ${pack.collection}`);
-  for (let ent of content) {
+  console.log(`Migrating ${entity} documents in Compendium ${pack.collection}`);
+  for (const ent of content) {
     try {
       let updateData = null;
-      if (entity === "Item") updateData = migrateItemData(ent.data);
-      else if (entity === "Actor") updateData = migrateActorData(ent.data);
-      else if (entity === "Scene") updateData = migrateSceneData(ent.data);
+      if (doc === "Item") updateData = migrateItemData(ent.data);
+      else if (doc === "Actor") updateData = migrateActorData(ent.data);
+      else if (doc === "Scene") updateData = migrateSceneData(ent.data);
       expandObject(updateData);
       updateData["_id"] = ent.id;
       await ent.update(updateData);
-      console.log(`Migrated ${entity} entity ${ent.name} in Compendium ${pack.collection}`);
+      console.log(`Migrated ${doc} entity ${ent.name} in Compendium ${pack.collection}`);
     } catch (err) {
-      console.error(`Error migrating ${entity} entity ${ent.name} in Compendium ${pack.collection}`, err);
+      console.error(`Error migrating ${doc} entity ${ent.name} in Compendium ${pack.collection}`, err);
     }
   }
-  console.log(`Migrated all ${entity} entities from Compendium ${pack.collection}`);
+  console.log(`Migrated all ${doc} documents from Compendium ${pack.collection}`);
 };
 
 /**
@@ -43037,7 +43066,7 @@ const _migrateItemChanges = function (ent, updateData) {
     let newNotes = [];
     for (let n of notes) {
       if (n instanceof Array) {
-        newNotes.push(mergeObject(ItemFFD20.defaultContextNote, { text: n[0], subTarget: n[2] }, { inplace: false }));
+        newNotes.push(mergeObject(Itemclff20.defaultContextNote, { text: n[0], subTarget: n[2] }, { inplace: false }));
       } else {
         newNotes.push(n);
       }
@@ -43636,7 +43665,7 @@ const rollSaveMacro = function (actorId, saveId) {
  * @returns {Promise|void} The defense roll, or void if no actor is found
  */
 const rollDefenses = function ({ actorName = null, actorId = null } = {}) {
-  const actor = ActorFFD20.getActiveActor({ actorName: actorName, actorId: actorId });
+  const actor = Actorclff20.getActiveActor({ actorName: actorName, actorId: actorId });
   if (!actor) {
     const msg = game.i18n.format("clff20.ErrorNoApplicableActorFoundForAction", {
       0: game.i18n.localize("clff20.Action_RollDefenses"),
@@ -43782,12 +43811,12 @@ function initializeModules() {
     Hooks.once("dragRuler.ready", (SpeedProvider) => {
       const enhancedTerrain = game.modules.get("enhanced-terrain-layer")?.active;
 
-      class ffd20SpeedProvider extends SpeedProvider {
+      class clff20SpeedProvider extends SpeedProvider {
         get colors() {
           return [
-            { id: "walk", default: 0x00ff00, name: "SETTINGS.ffd20DragRulerWalk" },
-            { id: "dash", default: 0xffff00, name: "SETTINGS.ffd20DragRulerDash" },
-            { id: "run", default: 0xff8000, name: "SETTINGS.ffd20DragRulerRun" },
+            { id: "walk", default: 0x00ff00, name: "SETTINGS.clff20DragRulerWalk" },
+            { id: "dash", default: 0xffff00, name: "SETTINGS.clff20DragRulerDash" },
+            { id: "run", default: 0xff8000, name: "SETTINGS.clff20DragRulerRun" },
           ];
         }
 
@@ -43843,7 +43872,7 @@ function initializeModules() {
           return token.actor.data.data.attributes.speed.land.total;
         }
       }
-      dragRuler.registerSystem("clff20", ffd20SpeedProvider);
+      dragRuler.registerSystem("clff20", clff20SpeedProvider);
     });
   }
 }
@@ -43871,31 +43900,32 @@ Hooks.once("init", function () {
 
   // Create a clff20 namespace within the game global
   game.clff20 = {
-    documents: { ActorFFD20, ItemFFD20, TokenDocumentFFD20 },
-    entities: { ActorFFD20, ItemFFD20, TokenDocumentFFD20 },
+  //  polymorphism: { ActorBaseclff20, ItemBaseclff20 },
+    documents: { Actorclff20, Itemclff20, TokenDocumentclff20 },
+    entities: { Actorclff20, Itemclff20, TokenDocumentclff20 },
     applications: {
       // Actors
-      ActorSheetFFD20,
-      ActorSheetFFD20Character,
-      ActorSheetFFD20NPC,
-      ActorSheetFFD20NPCLite,
-      ActorSheetFFD20NPCLoot,
+      ActorSheetclff20,
+      ActorSheetclff20Character,
+      ActorSheetclff20NPC,
+      ActorSheetclff20NPCLite,
+      ActorSheetclff20NPCLoot,
       // Items
-      ItemSheetFFD20,
-      ItemSheetFFD20_Container,
+      ItemSheetclff20,
+      ItemSheetclff20_Container,
       // Misc
       ActorSheetFlags,
       ActorRestDialog,
       ActorTraitSelector,
-      CompendiumDirectoryFFD20,
+      CompendiumDirectoryclff20,
       CompendiumBrowser,
       EntrySelector,
       LevelUpForm,
       PointBuyCalculator,
       ScriptEditor,
-      SidebarFFD20,
-      TooltipFFD20,
-      FFD20_HelpBrowser,
+      Sidebarclff20,
+      Tooltipclff20,
+      clff20_HelpBrowser,
       ExperienceDistributor,
       // Widgets
       Widget_CategorizedItemPicker,
@@ -43903,14 +43933,14 @@ Hooks.once("init", function () {
     },
     compendiums: {},
     // Rolling
-    DiceFFD20,
+    Diceclff20,
     rollPreProcess: {
       sizeRoll: sizeDieExt,
       sizeReach: sizeReach,
       roll: normalDie,
     },
     //Chat
-    chat: { ChatAttack, ChatMessageFFD20 },
+    chat: { ChatAttack, ChatMessageclff20 },
     // Utility
     utils: {
       createTag,
@@ -43961,17 +43991,17 @@ Hooks.once("init", function () {
   };
 
   // Global exports
-  globalThis.RollFFD20 = RollFFD20$1;
+  globalThis.Rollclff20 = Rollclff20$1;
 
   // Record Configuration Values
   CONFIG.clff20 = clff20;
-  CONFIG.Actor.documentClass = ActorFFD20;
-  CONFIG.Token.documentClass = TokenDocumentFFD20;
-  CONFIG.ActiveEffect.documentClass = ActiveEffectFFD20;
-  CONFIG.Item.documentClass = ItemFFD20;
-  CONFIG.ui.compendium = CompendiumDirectoryFFD20;
-  CONFIG.ChatMessage.documentClass = ChatMessageFFD20;
-  CONFIG.Dice.rolls.splice(0, 0, RollFFD20$1);
+  CONFIG.Actor.documentClass = Actorclff20;
+  CONFIG.Token.documentClass = TokenDocumentclff20;
+  CONFIG.ActiveEffect.documentClass = ActiveEffectclff20;
+  CONFIG.Item.documentClass = Itemclff20;
+  CONFIG.ui.compendium = CompendiumDirectoryclff20;
+  CONFIG.ChatMessage.documentClass = ChatMessageclff20;
+  CONFIG.Dice.rolls.splice(0, 0, Rollclff20$1);
 
   // Register System Settings
   registerSystemSettings();
@@ -43988,21 +44018,21 @@ Hooks.once("init", function () {
 
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);
-  Actors.registerSheet("clff20", ActorSheetFFD20Character, {
+  Actors.registerSheet("clff20", ActorSheetclff20Character, {
     label: "clff20.Sheet.PC",
     types: ["character"],
     makeDefault: true,
   });
-  Actors.registerSheet("clff20", ActorSheetFFD20NPC, { label: "clff20.Sheet.NPC", types: ["npc"], makeDefault: true });
-  Actors.registerSheet("clff20", ActorSheetFFD20NPCLite, { label: "clff20.Sheet.NPCLite", types: ["npc"], makeDefault: false });
-  Actors.registerSheet("clff20", ActorSheetFFD20NPCLoot, { label: "clff20.Sheet.NPCLoot", types: ["npc"], makeDefault: false });
+  Actors.registerSheet("clff20", ActorSheetclff20NPC, { label: "clff20.Sheet.NPC", types: ["npc"], makeDefault: true });
+  Actors.registerSheet("clff20", ActorSheetclff20NPCLite, { label: "clff20.Sheet.NPCLite", types: ["npc"], makeDefault: false });
+  Actors.registerSheet("clff20", ActorSheetclff20NPCLoot, { label: "clff20.Sheet.NPCLoot", types: ["npc"], makeDefault: false });
   Items.unregisterSheet("core", ItemSheet);
-  Items.registerSheet("clff20", ItemSheetFFD20, {
+  Items.registerSheet("clff20", ItemSheetclff20, {
     label: "clff20.Sheet.Item",
     types: ["class", "feat", "spell", "consumable", "equipment", "loot", "weapon", "buff", "attack", "race"],
     makeDefault: true,
   });
-  Items.registerSheet("clff20", ItemSheetFFD20_Container, {
+  Items.registerSheet("clff20", ItemSheetclff20_Container, {
     label: "clff20.Sheet.Container",
     types: ["container"],
     makeDefault: true,
@@ -44206,36 +44236,41 @@ Hooks.once("setup", function () {
  */
 Hooks.once("ready", async function () {
   // Create tooltip
-  game.clff20.tooltip = new TooltipFFD20();
+  //game.clff20.tooltip = new Tooltipclff20();
+  game.clff20.tooltip = null;
+  const ttconf = game.settings.get("clff20", "tooltipConfig");
+  const ttwconf = game.settings.get("clff20", "tooltipWorldConfig");
+  if (!ttconf.disable && !ttwconf.disable) Tooltipclff20.toggle(true);
+
   window.addEventListener("resize", () => {
     game.clff20.tooltip.setPosition();
   });
-  window.addEventListener("keydown", (event) => {
-    const tooltipConfig = game.settings.get("clff20", "tooltipConfig");
-    if (event.key === "Shift" && game.user.isGM) {
-      game.clff20.tooltip.forceHideGMInfo = true;
-      game.clff20.tooltip.render();
-    } else if (event.key === "Control") {
-      if (tooltipConfig.hideWithoutKey) {
-        game.clff20.tooltip.show();
-      } else {
-        game.clff20.tooltip.hide();
-      }
-    }
-  });
-  window.addEventListener("keyup", (event) => {
-    const tooltipConfig = game.settings.get("clff20", "tooltipConfig");
-    if (event.key === "Shift" && game.user.isGM) {
-      game.clff20.tooltip.forceHideGMInfo = false;
-      game.clff20.tooltip.render();
-    } else if (event.key === "Control") {
-      if (tooltipConfig.hideWithoutKey) {
-        game.clff20.tooltip.hide();
-      } else {
-        game.clff20.tooltip.show();
-      }
-    }
-  });
+  // window.addEventListener("keydown", (event) => {
+  //   const tooltipConfig = game.settings.get("clff20", "tooltipConfig");
+  //   if (event.key === "Shift" && game.user.isGM) {
+  //     game.clff20.tooltip.forceHideGMInfo = true;
+  //     game.clff20.tooltip.render();
+  //   } else if (event.key === "Control") {
+  //     if (tooltipConfig.hideWithoutKey) {
+  //       game.clff20.tooltip.show();
+  //     } else {
+  //       game.clff20.tooltip.hide();
+  //     }
+  //   }
+  // });
+  // window.addEventListener("keyup", (event) => {
+  //   const tooltipConfig = game.settings.get("clff20", "tooltipConfig");
+  //   if (event.key === "Shift" && game.user.isGM) {
+  //     game.clff20.tooltip.forceHideGMInfo = false;
+  //     game.clff20.tooltip.render();
+  //   } else if (event.key === "Control") {
+  //     if (tooltipConfig.hideWithoutKey) {
+  //       game.clff20.tooltip.hide();
+  //     } else {
+  //       game.clff20.tooltip.show();
+  //     }
+  //   }
+  // });
 
   // Migrate data
   const NEEDS_MIGRATION_VERSION = "0.2.1";
@@ -44363,11 +44398,11 @@ Hooks.on("renderChatPopout", (app, html, data) => {
   if (game.settings.get("clff20", "hideChatButtons")) html.find(".card-buttons").hide();
 });
 
-Hooks.on("renderChatLog", (_, html) => ItemFFD20.chatListeners(html));
-Hooks.on("renderChatLog", (_, html) => ActorFFD20.chatListeners(html));
+Hooks.on("renderChatLog", (_, html) => Itemclff20.chatListeners(html));
+Hooks.on("renderChatLog", (_, html) => Actorclff20.chatListeners(html));
 
-Hooks.on("renderChatPopout", (_, html) => ItemFFD20.chatListeners(html));
-Hooks.on("renderChatPopout", (_, html) => ActorFFD20.chatListeners(html));
+Hooks.on("renderChatPopout", (_, html) => Itemclff20.chatListeners(html));
+Hooks.on("renderChatPopout", (_, html) => Actorclff20.chatListeners(html));
 
 Hooks.on("renderLightConfig", (app, html) => {
   addLowLightVisionToLightConfig(app, html);
@@ -44378,7 +44413,7 @@ Hooks.on("renderTokenHUD", (app, html, data) => {
 });
 
 Hooks.on("preUpdateItem", (item, changedData, options, userId) => {
-  const actor = item.parent instanceof ActorFFD20 ? item.parent : null;
+  const actor = item.parent instanceof Actorclff20 ? item.parent : null;
 
   if (actor) {
     // Update level
@@ -44457,7 +44492,7 @@ Hooks.on("controlToken", (token, selected) => {
 
 // Create race on actor
 Hooks.on("preCreateItem", (item, options, userId) => {
-  const actor = item.parent instanceof ActorFFD20 ? item.parent : null;
+  const actor = item.parent instanceof Actorclff20 ? item.parent : null;
 
   if (actor && actor.race && item.type === "race") {
     actor.race.update(item.data._source);
@@ -44466,7 +44501,7 @@ Hooks.on("preCreateItem", (item, options, userId) => {
 });
 
 Hooks.on("createItem", (item, options, userId) => {
-  const actor = item.parent instanceof ActorFFD20 ? item.parent : null;
+  const actor = item.parent instanceof Actorclff20 ? item.parent : null;
   if (userId !== game.user.id) return;
 
   // Create class
@@ -44510,7 +44545,7 @@ Hooks.on("createItem", (item, options, userId) => {
 });
 
 Hooks.on("deleteItem", async (item, options, userId) => {
-  const actor = item.parent instanceof ActorFFD20 ? item.parent : null;
+  const actor = item.parent instanceof Actorclff20 ? item.parent : null;
 
   if (actor) {
     // Remove token effects for deleted buff
@@ -44574,7 +44609,7 @@ Hooks.on("deleteItem", async (item, options, userId) => {
 });
 
 Hooks.on("updateItem", async (item, changedData, options, userId) => {
-  const actor = item.parent instanceof ActorFFD20 ? item.parent : null;
+  const actor = item.parent instanceof Actorclff20 ? item.parent : null;
 
   if (actor) {
     // Toggle buff
@@ -44676,12 +44711,12 @@ Hooks.on("renderSidebarTab", (app, html) => {
       );
 
     chlogButton.click(() => new ChangeLogWindow().render(true));
-    helpButton.click(() => new FFD20_HelpBrowser().openURL("systems/clff20/help/index.hbs"));
+    helpButton.click(() => new clff20_HelpBrowser().openURL("systems/clff20/help/index.hbs"));
   }
 });
 
 // Add compendium sidebar context options
-Hooks.on("getCompendiumDirectoryFFD20EntryContext", (html, entryOptions) => {
+Hooks.on("getCompendiumDirectoryclff20EntryContext", (html, entryOptions) => {
   // Add option to disable pack
   entryOptions.push({
     name: game.i18n.localize("clff20.Disable"),
@@ -44728,5 +44763,5 @@ const handleChatTooltips = function (event) {
   elem.find(".tooltipcontent").css("left", `${x}px`).css("top", `${y}px`).css("width", `${w}px`);
 };
 
-export { ActiveEffectFFD20, ActorFFD20, ActorSheetFFD20, ActorSheetFFD20Character, ActorSheetFFD20NPC, ActorSheetFFD20NPCLite, ActorSheetFFD20NPCLoot, ChatAttack, ChatMessageFFD20, DiceFFD20, clff20, ItemChange, ItemFFD20, ItemSheetFFD20, ItemSheetFFD20_Container, RollFFD20$1 as RollFFD20, SemanticVersion, TokenDocumentFFD20, dialogGetActor, dialogGetNumber, getChangeFlat, getSourceInfo, measureDistances };
+export { ActiveEffectclff20, Actorclff20, ActorSheetclff20, ActorSheetclff20Character, ActorSheetclff20NPC, ActorSheetclff20NPCLite, ActorSheetclff20NPCLoot, ChatAttack, ChatMessageclff20, Diceclff20, clff20, ItemChange, Itemclff20, ItemSheetclff20, ItemSheetclff20_Container, Rollclff20$1 as Rollclff20, SemanticVersion, TokenDocumentclff20, dialogGetActor, dialogGetNumber, getChangeFlat, getSourceInfo, measureDistances };
 //# sourceMappingURL=clff20.js.map
